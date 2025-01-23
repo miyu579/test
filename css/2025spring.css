@@ -653,8 +653,8 @@ body {
 	vertical-align: middle;
 }
 
-#spring2025 p.button a:hover{
-	opacity: 0.75;
+#spring2025 a:hover{
+	opacity: 0.85;
 }
 
 #spring2025 .recommend_point .inner ol.point li.point3 p.dpoint_logo{
@@ -1010,7 +1010,7 @@ body {
 	#spring2025 .main h1 img{
 	    position: relative;
     left: 0%;
-		top: 7px;
+		top: 13px;
 }
 	#spring2025 .main_bg {
 		background-image: url("../img/bg_main_2025spring_sp.jpg");
@@ -1140,7 +1140,8 @@ body {
 
 #spring2025 .campaign_button a strong{
 	font-size: 22px;
-	margin-bottom: 8px;
+	margin-top: 5px;
+    margin-bottom: 2px;
 }
 
 /*画面下固定ボタン*/
