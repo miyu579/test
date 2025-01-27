@@ -1,0 +1,1645 @@
+@charset "utf-8";
+/* GOLF me！2024 秋のキャンペーン */
+
+.cx:after{clear:both;content:".";display:block;height:0;visibility:hidden}
+#spring2025 ul,#spring2025 ol,#spring2025 p{
+	margin: 0;
+	padding: 0;
+}
+
+ul li,
+ol li{
+	list-style: none;
+}
+
+#spring2025 .ac{
+	text-align: center;
+}
+
+#spring2025 section{
+	overflow-x: visible;
+}
+
+body {
+	padding-bottom: 144px;
+}
+
+/*PC*/
+#spring2025 .pc_br{display: block;}
+#spring2025 .sp_br{display: inline;}
+
+#spring2025 .pc_view{display: block; margin: 0 auto;}
+#spring2025 .sp_view{display: none; margin: 0 auto;}
+
+/*main*/
+#spring2025 .main_bg{
+	background: url("../img/bg_main_2025spring.jpg")no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+#spring2025 .main{
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	width: 100%;
+}
+
+#spring2025 .main .inner{
+	width:calc(100% - 4px);
+	max-width:1200px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 3;
+	overflow: visible;
+}
+
+#spring2025 .main .inner:before,
+#spring2025 .main .inner:after{
+	position: absolute;
+	content: "";
+	bottom:-86px;
+	z-index: 1;
+}
+
+#spring2025 .main .inner:before{
+	background: url("../img/poinco01_2025spring.png") no-repeat;
+	background-position: left bottom;
+	background-size: 282px 447px;
+    width: 100%;
+    height: 100%;
+	left: -10%;
+}
+
+#spring2025 .main .inner:after{
+	background: url("../img/poinco02_2025spring.png") no-repeat;
+	background-position: right bottom;
+	   background-size: 144px 425px;
+    width: 100%;
+    height: 100%;
+	right: 0%;
+}
+
+#spring2025 .main h1{
+	margin: 0;
+}
+
+#spring2025 .main h1 img{
+	width: 93%;
+    max-width: 1000px;
+    height: 90%;
+	
+}
+
+#spring2025 .main .inner .dpoint{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+#spring2025 .main_button{
+	background: transparent url( "../img/main_bg_turf_2025spring.png");
+	background-size: cover;
+	padding-bottom: 12px;
+	padding-top: 30px;
+}
+
+#spring2025 .main_button .text{
+	font-size: 16px;
+	text-align: center;
+	margin: 16px auto 8px auto;
+}
+
+#spring2025 .main_button .text a{
+	color: #fff;
+	padding: 0 2px;
+}
+
+/*キャンペーンボタン*/
+#spring2025 .campaign_button .text a{
+	color: #fff;
+	padding: 0 2px;
+}
+#spring2025 .campaign_button{
+	position: relative;
+    font-size: 18px;
+    z-index: 5;
+}
+
+#spring2025 .campaign .campaign_button{
+	margin-bottom: 18px;
+}
+
+#spring2025 .campaign_button p{
+	margin: 0;
+	line-height: 1;
+}
+
+#spring2025 .campaign_button a{
+	color: #fff;
+	border-radius: 15px;
+	border-bottom: 6px solid #97000c;
+	background:linear-gradient(to top, #ed0c00, #ff0d00);
+	text-decoration: none;
+	display: block;
+	padding:  26px 10px 17px;
+	box-sizing: border-box;
+	text-align: center;
+	width: 720px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#spring2025 .main_button .campaign_button a{
+	padding:  26px 10px 17px;
+	width: 670px;
+}
+
+#spring2025 .campaign_button a:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - -5px);
+	right: 30px;
+	width: 12px;
+	height: 12px;
+	border-right: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	transform: translateY(-50%) rotate(-45deg);
+	vertical-align: middle;
+}
+
+#spring2025 .campaign_button a span{
+	font-size: 30px;
+}
+
+#spring2025 .campaign_button a strong{
+	font-size: 36px;
+	margin-bottom: 9px;
+	display: block;
+}
+
+/*画面下固定ボタン*/
+#spring2025 .fixed_button{
+	background: rgba(0,0,0,0.8);
+	width:100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	text-align: center;
+	padding: 16px 0;
+}
+
+#spring2025 .fixed_button .campaign_button a{
+	padding: 12px 0;
+	font-size: 16px;
+	border-radius: 6px;
+	border-bottom: 3px solid #97000c;
+	width:560px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+#spring2025 .fixed_button .campaign_button a:after{
+	top: calc(50% - -3px);
+	width: 10px;
+	height: 10px;
+	border-right: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+#spring2025 .fixed_button .campaign_button a strong{
+	font-size: 26px;
+	margin-bottom: 8px;
+}
+
+#spring2025 .fixed_button .campaign_button a span{
+	font-size: 20px;
+}
+
+#spring2025 .fixed_button .text,
+#spring2025 .fixed_button .text a{
+	color: #efefef;
+	margin-top: 12px;
+}
+
+#spring2025 .fixed_button .text a{
+	margin: 0 2px;
+}
+
+/*what_is*/
+#spring2025 .what_is .bg{
+	background: url("../img/bg_golf_2025spring.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	position: relative;
+}
+
+#spring2025 .what_is .bg:before,
+#spring2025 .what_is .bg:after{
+	content: "";
+	width: 100%;
+	height: 90px;
+	background: #f9f6d9;
+	position: absolute;
+	bottom: -0.5px;
+	left: 0;
+}
+
+#spring2025 .what_is .bg:before {
+	clip-path: polygon(0% 0%, 0% 100%, 50% 100%);
+}
+
+#spring2025 .what_is .bg:after {
+	clip-path: polygon(50% 100%, 100% 0%, 100% 100%);
+}
+
+#spring2025 .what_is .bg .bg_black{
+	background: rgba(0,0,0,0.6);
+	height: 100%;
+	width: 100%;
+	padding:70px 0 90px 0; 
+}
+
+#spring2025 .what_is .bg_black .inner{
+	width:calc(100% - 24px); 
+	max-width: 830px;
+	margin: 0 auto;
+}
+
+#spring2025 .what_is .bg_black .inner h2{
+	font-size: 60px;
+	color: #fff;
+	margin-bottom: 50px;
+	font-weight: 600;
+}
+
+#spring2025 .what_is .bg_black .inner h2 strong{
+	font-size: 80px;
+}
+
+#spring2025 .what_is .bg_black .inner p{
+	background: #e1325b;
+	padding: 10px 20px 3px;
+	box-sizing: border-box;
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0 auto 16px auto;
+	line-height: 1;
+	font-style: italic;
+}
+
+#spring2025 .what_is .bg_black .inner p strong{
+	font-size: 40px;
+	color: #fcff00;
+	line-height: 1;
+}
+
+#spring2025 .what_is .bg_black .inner p span{
+	font-size: 12px;
+}
+
+#spring2025 .what_is .bg_black .inner ul.notes {
+	color: #fff;
+	font-size: 12px;
+	text-align: left;
+	width: 1000px;
+}
+
+#spring2025 .what_is .guide{
+	width: 100%;
+	background: #f9f6d9;
+	padding: 30px 0 50px 0;
+	text-align: center;
+}
+
+#spring2025 .what_is .guide .inner{
+	width: calc(100% - 24px);
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#spring2025 .what_is .guide p{
+	font-size: 20px;
+	font-style: italic;
+	margin: 0 0 30px 0;
+}
+
+#spring2025 .what_is .guide dl{
+	font-style: italic;
+	line-height: 1;
+	position: relative;
+}
+
+#spring2025 .what_is .guide dl dt{
+	color: #2e2000;
+	font-size: 28px;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	right: 0;
+	font-weight: lighter;
+}
+
+#spring2025 .what_is .guide dl dt:before,
+#spring2025 .what_is .guide dl dt:after{
+	background: #2e2000;
+	content: "";
+	height: 5px;
+	width: 32px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+#spring2025 .what_is .guide dl dt:before{
+	transform: rotate(60deg);
+	margin-right: 5px;
+}
+
+#spring2025 .what_is .guide dl dt:after{
+	transform: rotate(-60deg);
+	margin-left: -14px;
+}
+
+#spring2025 .what_is .guide dl dt strong{
+	font-size: 36px;
+}
+
+#spring2025 .what_is .guide dl dd{
+	background: #fff;
+	color: #e1325b;
+	font-size: 30px;
+	padding: 46px 10px 24px 10px;
+	box-sizing: border-box;
+	font-weight: 600;
+	margin: 0;
+}
+
+#spring2025 .what_is .guide dl dd strong{
+	font-size: 36px;
+	background: #fcff00;
+	padding: 7px 7px 0px 5px;
+	box-sizing: border-box;
+	margin-left: 5px;
+}
+
+#spring2025 .what_is .guide dl dd strong span{
+	font-size: 30px;
+}
+
+#spring2025 .what_is .guide dl dd span.notes{
+	font-size: 12px;
+	color: #555;
+	font-weight: normal;
+}
+
+#spring2025 .what_is .guide ul.notes{
+	color: #555;
+	font-size: 12px;
+	text-align: left;
+}
+
+/*bg_green*/
+#spring2025 .bg_green{
+	background: repeating-linear-gradient(90deg, #90bc1f, #90bc1f 140px, #9bc336 140px, #9bc336 280px);
+	background-position: center;
+}
+
+/*おすすめポイント*/
+#spring2025 .recommend_point{
+	border-top: 20px solid #6c8c19;
+}
+
+#spring2025 .recommend_point .inner{
+	width: calc(100% - 24px);
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+#spring2025 .recommend_point .inner h2{
+	text-align: center;
+	margin: 0 0 -11px;
+}
+
+#spring2025 .recommend_point .inner ol.point{
+	padding-bottom: 30px;
+}
+
+#spring2025 .recommend_point .inner ol.point > li{
+	background: #fff;
+	border-radius: 10px;
+	background-image: linear-gradient(142deg, #ffc0d4 114px, transparent 0);
+	padding: 16px 20px 20px 20px;
+	box-sizing: border-box;
+	color: #111;
+	margin-bottom: 16px;
+	float: left;
+}
+
+#spring2025 .recommend_point .inner ol.point li.point1{
+	width: 100%;
+}
+
+#spring2025 .recommend_point .inner ol.point li.point2{
+	width: calc(50% - 9px);
+	margin-right: 18px;
+	min-height: 280px;
+}
+
+#spring2025 .recommend_point .inner ol.point li.point3{
+	width: calc(50% - 9px);
+	min-height: 280px;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content{
+	display: table;
+	width: 100%;
+	margin-bottom: 12px;
+}
+#spring2025 .recommend_point .inner ol.point li.point2 .content,
+#spring2025 .recommend_point .inner ol.point li.point3 .content{
+	margin-bottom: 20px;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content h3{
+	margin: 0;
+	display: table-cell;
+	width: 126px;
+	padding-top: 10px;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 30px;
+	padding-left: 30px;
+	line-height: 1.4;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text p{
+	margin: 7px 0 3px 0;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text p strong{
+	background: linear-gradient(transparent 60%, #fdff7f 60%);
+	font-weight: normal;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text p span.pc_br{
+	display: block;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text p span.notes{
+	font-size: 14px;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text div.balloon{
+	border-radius: 100px;
+	background: #e1325b;
+	padding: 8px 25px 5px;
+	font-size: 20px;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text div.balloon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 60px;
+  margin-left: -10px;
+  border: 6px solid transparent;
+  border-top: 10px solid #e1325b;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text div.balloon strong{
+	color: #fcff00;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan{
+	display: table;
+	border-collapse: separate;
+	border-spacing: 24px 0; 
+	margin: 0 auto;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li{
+	display: table-cell;
+	border-radius: 10px;
+	padding: 20px 0 12px 0;
+	text-align: center;
+	width: 285px;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li.one_year{
+	border: 3px solid #eec600;
+	background: #fffcec;
+	background-image: linear-gradient(135deg, #ff0024 40px, transparent 0);
+	position: relative;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li.six_months{
+	border: 3px solid #90bc1f;
+	background: #fbfff1;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li.three_months{
+	border: 3px solid #099bee;
+	background: #edf7fd;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li.one_year:before{
+	content: "対象プラン";
+	font-size: 11px;
+	color: #fff;
+	transform: rotate(-45deg); 
+	position: absolute;
+	left:-6px;
+	top: 14px;
+	font-weight: bold;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li h4{
+	font-size: 20px;
+	color: #fff;
+	border-radius: 30px;
+	padding: 5px 20px 0px 20px;
+	line-height: 1;
+	font-weight: normal;
+	box-sizing: border-box;
+	width: 180px;
+	margin: 0 auto 18px auto;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li.one_year h4{
+	background:linear-gradient(to right, #eec600, #c9a90c);
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li.six_months h4{
+	background: #90bc1f;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li.three_months h4{
+	background:#099bee;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li h4 em{
+	font-size: 30px;
+	font-style: normal;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li p{
+	font-size: 20px;
+	margin: 0 auto 3px auto;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li p em{
+	font-family: 'メイリオ',Meiryo,helvetica,arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 1;
+	margin: 0 3px;
+}
+#spring2025 .recommend_point .inner ol.point li ul.plan li p.exclud_tax em{font-size: 50px;}
+#spring2025 .recommend_point .inner ol.point li ul.plan li p.includ_tax em{font-size: 25px;}
+
+#spring2025 .recommend_point .inner ul.notes {
+	font-size: 12px;
+	padding: 0 10px;
+	margin-bottom: 16px;
+}
+
+#spring2025 .recommend_point .inner ul.notes li {
+	text-indent: -17px;
+	padding-left: 16px;
+	margin-bottom: 8px;
+}
+
+#spring2025 p.button{
+	font-size: 20px;
+	width: 300px;
+	text-align: center;
+	line-height: 1;
+	margin: 0 auto;
+}
+
+#spring2025 p.button a{
+	color: #e1325b;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border: 1px solid #e1325b;
+	border-bottom: 4px solid #e1325b;
+	border-radius: 100px;
+}
+
+#spring2025 p.button a:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - -1px);
+	right: 20px;
+	width: 8px;
+	height: 8px;
+	border-right: 3px solid #e1325b;
+	border-bottom: 3px solid #e1325b;
+	transform: translateY(-50%) rotate(-45deg);
+	vertical-align: middle;
+}
+
+#spring2025 a:hover{
+	opacity: 0.85;
+}
+
+#spring2025 .recommend_point .inner ol.point li.point3 p.dpoint_logo{
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*キャンペーンについて*/
+#spring2025 .campaign .detail .text a{
+	color:#fff;
+}
+#spring2025 .campaign h2 .pc_view{
+	max-width: 1000px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+        left: 1.5%;
+}
+#spring2025 .campaign .bg_confetti{
+	background: url("../img/bg_kira.png") no-repeat;
+	background-position: 40%;
+    background-size: 94%;
+    text-align: center;
+}
+
+#spring2025 .campaign h2{
+	margin: 0 0 12px 0;
+}
+
+#spring2025 .campaign .detail{
+	padding-bottom: 36px;
+}
+
+/*吹き出し*/
+#spring2025 .campaign .detail .bubble{
+	font-size: 22px;
+	border: 6px solid #412d00;
+	color: #412d00;
+	padding: 24px 10px;
+	box-sizing: border-box;
+	position: relative;
+	background: #fff;
+	border-radius: 100px;
+	text-align: center;
+	width: 720px;
+	margin: 0 auto;
+	line-height: 1;
+	margin-bottom: 24px;
+}
+
+#spring2025 .campaign .detail .bubble:before,
+#spring2025 .campaign .detail .bubble:after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+}
+
+#spring2025 .campaign .detail .bubble:before {
+	margin-left: -16px;
+	border: 16px solid transparent;
+	border-top: 22px solid #412d00;
+}
+
+#spring2025 .campaign .detail .bubble:after {
+	margin-left: -10px;
+	border: 10px solid transparent;
+	border-top: 15px solid #fff;
+}
+
+#spring2025 .campaign .detail .bubble span{
+	font-size: 18px;
+}
+
+#spring2025 .campaign .detail .text{
+	color: #111;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.8;
+}
+#spring2025 .campaign .detail .text
+#spring2025 .campaign .detail .text a{
+	color: #fff;
+}
+
+#spring2025 .campaign .detail ul.notes{
+	font-size: 14px;
+	padding: 0 10px;
+	margin:0 auto 16px auto;
+	width: 720px;
+}
+
+#spring2025 .campaign .detail ul.notes li {
+	text-indent: -15px;
+	padding-left: 14px;
+	margin-bottom: 4px;
+}
+
+/*お友達キャンぺーン*/
+#spring2025 .other_campaign{
+	background: url("../img/bg_campaign_2025spring");
+	background-size: cover;
+	background-position: center;
+}
+
+#spring2025 .other_campaign .inner{
+	width: calc(100% - 24px);
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 32px 0;
+	text-align: center;
+}
+
+#spring2025 .other_campaign h2{
+	margin: 0;
+}
+
+#spring2025 .other_campaign ul{
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#spring2025 .other_campaign ul li a{
+	background: #fff;
+	border-radius: 15px;
+	padding: 30px 0;
+	box-sizing: border-box;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 30px 0;
+	width: 100%;
+	position: relative;
+	display: block;
+	color: #111;
+	text-decoration: none;
+	box-shadow: 0px 0px 10px 0px rgb(65, 54, 0, 0.3);
+}
+
+#spring2025 .other_campaign ul li a:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - -6px);
+	right: 30px;
+	width: 14px;
+	height: 14px;
+	border-right: 6px solid #2e2000;
+	border-bottom: 6px solid #2e2000;
+	transform: translateY(-50%) rotate(-45deg);
+	vertical-align: middle;
+}
+
+#spring2025 .other_campaign ul li div.img,
+#spring2025 .other_campaign ul li div.text{
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.6;
+}
+
+#spring2025 .other_campaign ul li div.img{
+	width: 300px;
+	line-height: 1;
+}
+
+#spring2025 .other_campaign ul li div.text h3{
+	font-size: 30px;
+	margin: 0 0 18px 0;
+	font-weight: normal;
+}
+
+#spring2025 .other_campaign ul li div.text p{
+	font-size: 20px;
+	margin: 0;
+}
+
+#spring2025 .other_campaign ul li div.text span.pc_br{
+	display: block;
+}
+
+/*規約*/
+#spring2025 .terms{
+	background: #edebe6;
+}
+
+#spring2025 .terms h2{
+	background: #e1325b;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	padding: 28px 0;
+	margin: 0 0 50px 0;
+	line-height: 1.1;
+}
+
+#spring2025 .terms h2:before{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -16px;
+	border: 16px solid transparent;
+	border-top: 20px solid #e1325b;
+}
+
+#spring2025 .terms .inner{
+	width: calc(100% - 24px);
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+#spring2025 .terms dl{
+	background: #fff;
+	border-radius: 15px;
+	padding: 26px 30px;
+	box-sizing: border-box;
+	margin-bottom: 24px;
+	font-size: 18px;
+}
+
+#spring2025 .terms dl dt{
+	background: #e1325b;
+	text-align: center;
+	margin: 0 auto 24px auto;
+	font-size: 26px;
+	color: #fff;
+	width: 380px;
+	font-weight: normal;
+	border-radius: 30px;
+	padding: 4px 10px 2px;
+}
+
+#spring2025 .terms dl dd{
+	margin: 0;
+	padding: 0 42px;
+}
+
+#spring2025 .terms dl dd ul.text{
+	margin-bottom: 12px;
+}
+
+#spring2025 .terms dl dd ul.text li{
+	text-indent: -18px;
+	padding-left: 18px;
+	margin-bottom: 8px;
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+#spring2025 .terms dl dd ul.notes li{
+	text-indent: -15px;
+	padding-left: 14px;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+
+/*お問い合わせ*/
+#spring2025 .terms dl dd .tel{
+	display: table;
+	width: 310px;
+	margin: 0 auto;
+}
+
+#spring2025 .terms dl dd .tel a{
+	text-decoration: none;
+}
+
+#spring2025 .terms dl dd .tel .icon{
+	display: table-cell;
+	vertical-align: middle;
+	width: 42px;
+}
+
+#spring2025 .terms dl dd .tel .number{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 30px;
+	color: #e1325b;
+	font-family: 'メイリオ',Meiryo,helvetica,arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+	font-weight: bold;
+	padding-left: 12px;
+}
+
+#spring2025 .terms dl dd .tel a:hover{
+	opacity: 1;
+}
+
+#spring2025 .terms dl dd dl.time{
+	text-align: center;
+	margin: 0 0 24px 0;
+	padding: 0;
+}
+
+#spring2025 .terms dl dd dl.time dt{
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	color: #111;
+	background: none;
+	display: inline;
+}
+
+#spring2025 .terms dl dd dl.time dd{
+	padding: 0;
+	display: inline;
+	margin-left: 12px;
+}
+#spring2025 .main h1 img {
+		position: relative;
+        left: 4%;
+	}
+/*************************************************************************************/
+
+/*TB*/
+@media (max-width: 1100px) {
+#spring2025 .main h1 img {
+		position: relative;
+        left: 3%;
+	}
+	#spring2025 .main .inner:after{
+	        background-size: 11%;
+        bottom: -26px;
+		right:2%;
+}
+	#spring2025 .main .inner:before{
+	background-size: 21%;
+        left: -8%;
+        bottom: -32px;
+		
+}
+	#spring2025 .campaign .bg_confetti {
+		background-size: 120%;
+        background-position: 55%;
+	}
+}
+	
+/*************************************************************************************/
+
+/*SP*/
+@media (max-width: 768px) {
+	#spring2025 .campaign .bg_confetti{
+	background: url("../img/bg_kira.png") no-repeat;
+	background-size: 123%;
+    background-position: 55%;
+}
+	#spring2025 .campaign h2 .sp_view {
+		width: 100%;
+		height: 100%;
+		max-width: 375px;
+	}
+	#spring2025 .main h1 img{
+	    position: relative;
+    left: 0%;
+		top: 13px;
+}
+	#spring2025 .main_bg {
+		background-image: url("../img/bg_main_2025spring_sp.jpg");
+		background-position: top center;
+        background-size: cover;
+        background-size: 172%;
+	}
+body {
+	padding-bottom: 110px;
+}
+
+#spring2025 .pc_br{display: inline;}
+#spring2025 .sp_br{display: block;}
+	
+#spring2025 .pc_view{display: none;}
+#spring2025 .sp_view{display: block;}
+
+/*main*/
+#spring2025 .main{
+	height: auto;
+	min-width: 100%;
+	
+}
+
+#spring2025 .main:before{
+	background-size: 337px 438px;
+	width: 337px;
+	height: 100%;
+}
+
+#spring2025 .main:after{
+	background-size: 337px 438px;
+	width: 337px;
+	height: 100%;
+}
+
+#spring2025 .main .inner{
+	/*padding-top: 10px;*/
+}
+
+#spring2025 .main .inner:before{
+	/*background-size: 94px 117px;*/
+	background-size: 23%;
+        width: 100%;
+        height: 100%;
+        bottom: -20px;
+        left: -10%;
+    }
+
+
+#spring2025 .main .inner:after{
+	/*background-size: 105px 119px;*/
+	background-size: 12%;
+        width: 100%;
+        height: 100%;
+        bottom: -18px;
+        right: 0;
+}
+#spring2025 .main h1{
+	margin: 0;
+}
+
+#spring2025 .main h1 img{
+	width: 90%;
+        height: 90%;
+        max-width: 375px;
+        min-width: 316px;
+        margin: 0 auto;
+}
+
+#spring2025 .main .inner .dpoint{
+	top: 5px;
+	left: -50px;
+}
+
+#spring2025 .main .inner .dpoint img{
+	width: 41%;
+}
+
+#spring2025 .main_button{
+	padding: 22px 6px 8px 6px;
+}
+
+#spring2025 .main_button .text{
+	font-size: 12px;
+	margin: 8px auto 3px auto;
+}
+
+#spring2025 .main_button .text a,
+#spring2025 .campaign .detail .text a{
+	display: inline-block;
+}
+
+/*キャンペーンボタン*/
+#spring2025 .campaign_button{
+	font-size: 14px;
+}
+
+#spring2025 .campaign_button p{
+	line-height: 1.1;
+}
+
+#spring2025 .campaign_button a{
+	border-radius: 6px;
+	border-bottom: 3px solid #97000c;
+	padding: 16px 8px;
+	width: 100%;
+}
+
+#spring2025 .main_button .campaign_button a{
+	padding: 8px 8px;
+	width: 92%;
+}
+
+#spring2025 .campaign_button a:after{
+	top: calc(50% - -3px);
+	right: 10px;
+	width: 8px;
+	height: 8px;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+
+#spring2025 .campaign_button a span{
+	font-size: 14px;
+}
+
+#spring2025 .campaign_button a strong{
+	font-size: 22px;
+	margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+/*画面下固定ボタン*/
+#spring2025 .fixed_button{
+	padding: 8px 0;
+}
+
+#spring2025 .fixed_button .campaign_button a{
+	padding: 6px 0 8px 0;
+	font-size: 12px;
+	border-radius: 5px;
+	width:92%;
+}
+
+#spring2025 .fixed_button .campaign_button a:after{
+	top: calc(50% - -2px);
+	width: 7px;
+	height: 7px;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+
+#spring2025 .fixed_button .campaign_button a strong{
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+
+#spring2025 .fixed_button .campaign_button a span{
+	font-size: 12px;
+}
+
+#spring2025 .fixed_button .text{
+	margin: 6px 6px 0 6px;
+	font-size: 12px;
+}
+
+#spring2025 .fixed_button .text a{
+	display: inline-block;
+}
+
+/*what_is*/
+#spring2025 .what_is .bg:before,
+#spring2025 .what_is .bg:after{
+	height: 30px;
+}
+
+#spring2025 .what_is .bg .bg_black{
+	padding:3px 0 50px 0; 
+}
+
+#spring2025 .what_is .bg_black .inner h2{
+	font-size: 22px;
+	margin-bottom: 0;
+}
+
+#spring2025 .what_is .bg_black .inner h2 strong{
+	font-size: 36px;
+}
+
+#spring2025 .what_is .bg_black .inner p{
+	padding: 9px 20px 4px 20px;
+	font-size: 16px;
+	margin: 0 auto 16px auto;
+	line-height: 1.2;
+}
+
+#spring2025 .what_is .bg_black .inner p strong{
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+#spring2025 .what_is .bg_black .inner ul.notes {
+	width: calc(100% - 24px);
+}
+
+#spring2025 .what_is .guide{
+	padding: 20px 0 10px 0;
+}
+
+#spring2025 .what_is .guide p{
+	font-size: 16px;
+	font-style: italic;
+	margin: 0 0 30px 0;
+}
+
+#spring2025 .what_is .guide dl{
+	line-height: 1.2;
+	margin-bottom: 8px;
+}
+ 
+#spring2025 .what_is .guide dl dt{
+	font-size: 16px;
+}
+
+#spring2025 .what_is .guide dl dt:before,
+#spring2025 .what_is .guide dl dt:after{
+	height: 3px;
+	width: 26px;
+}
+
+#spring2025 .what_is .guide dl dt:before{
+	margin-right: 0;
+}
+
+#spring2025 .what_is .guide dl dt:after{
+	margin-left: -10px;
+}
+
+#spring2025 .what_is .guide dl dt strong{
+	font-size: 26px;
+}
+
+#spring2025 .what_is .guide dl dd{
+	font-size: 16px;
+	padding: 22px 0 12px 0;
+	line-height: 1.8;
+}
+
+#spring2025 .what_is .guide dl dd strong{
+	font-size: 22px;
+	padding: 7px 8px 1px 7px;
+	margin-left: 5px;
+	display: inline-block;
+	line-height: 1;
+}
+
+#spring2025 .what_is .guide dl dd strong span{
+	font-size: 16px;
+	margin: 0 1px;
+}
+
+#spring2025 .what_is .guide ul.notes{
+	margin-bottom: 12px;
+}
+
+#spring2025 .what_is .guide ul.notes li{
+	text-indent: -21px;
+	padding-left: 21px;
+}
+
+/*背景*/
+#spring2025 .bg_green{
+	background: repeating-linear-gradient(90deg, #90bc1f, #90bc1f 70px, #9bc336 70px, #9bc336 140px);
+}
+
+/*point*/
+#spring2025 .recommend_point{
+	border-top: 10px solid #6c8c19;
+}
+
+#spring2025 .recommend_point .inner{
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#spring2025 .recommend_point .inner h2 img{
+	width: 300px;
+	height: 70px;
+}
+
+#spring2025 .recommend_point .inner ol.point{
+	padding-bottom: 18px;
+}
+
+#spring2025 .recommend_point .inner ol.point > li{
+	background-image: linear-gradient(142deg, #ffc0d4 70px, transparent 0);
+	padding: 8px 6px 8px 6px;
+	margin-bottom: 8px;
+	float: none;
+}
+
+#spring2025 .recommend_point .inner ol.point li.point1,
+#spring2025 .recommend_point .inner ol.point li.point2,
+#spring2025 .recommend_point .inner ol.point li.point3{
+	width: calc(100% - 24px);
+	margin: 0 auto 8px auto;
+	height: auto;
+	min-height: auto;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content{
+	margin-bottom: 8px;
+}
+#spring2025 .recommend_point .inner ol.point li.point2 .content,
+#spring2025 .recommend_point .inner ol.point li.point3 .content{
+	margin-bottom: 8px;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content h3{
+	width: 80px;
+	padding-top: 6px;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content h3 img{
+	width: 80px;
+	height: 62px;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text{
+	font-size: 22px;
+	padding-left: 10px;
+	line-height: 1.2;
+}
+	
+#spring2025 .recommend_point .inner ol.point li .content div.text div.balloon{
+	padding: 12px 12px 8px;
+	font-size: 14px;
+	text-align: center;
+	margin: 6px 0;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text p span.pc_br{
+	display: inline;
+}
+
+#spring2025 .recommend_point .inner ol.point li .content div.text p span.notes{
+	font-size: 12px;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan{
+	display: block;
+	width: 100%;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li{
+	display: block;
+	padding: 10px 0 6px 0;
+	width: calc(100% - 12px);
+	margin: 0 auto 8px auto;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li.one_year:before{
+	left:-5px;
+	top: 12px;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li h4{
+	font-size: 16px;
+	padding: 7px 20px 5px 20px;
+	margin: 0 auto 12px auto;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li h4 em{
+	font-size: 22px;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li p{
+	font-size: 16px;
+	margin: 0 auto 2px auto;
+}
+
+#spring2025 .recommend_point .inner ol.point li ul.plan li p.exclud_tax em{font-size: 40px;}
+#spring2025 .recommend_point .inner ol.point li ul.plan li p.includ_tax em{font-size: 20px;}
+
+#spring2025 .recommend_point .inner ul.notes {
+	padding: 0 8px;
+}
+
+#spring2025 .recommend_point .inner ul.notes li {
+	text-indent: -17px;
+	padding-left: 16px;
+	margin-bottom: 8px;
+}
+
+#spring2025 p.button{
+	font-size: 16px;
+	width: 260px;
+}
+
+#spring2025 p.button a{
+	padding: 16px 5px;
+	border-bottom: 3px solid #e1325b;
+}
+
+#spring2025 p.button a:after{
+	right: 12px;
+	width: 6px;
+	height: 6px;
+	border-right: 2px solid #e1325b;
+	border-bottom: 2px solid #e1325b;
+}
+
+#spring2025 .recommend_point .inner ol.point li.point3 p.dpoint_logo img{
+	width:100px;
+	height: 27px;
+}
+
+/*キャンペーンについて*/
+#spring2025 .campaign h2{
+	margin: 0 0 12px 0;
+	margin: 0 auto 12px;
+        width: 95%;
+}
+
+#spring2025 .campaign .detail{
+	padding-bottom: 36px;
+	width:calc(100% - 24px);
+	margin: 0 auto;
+}
+
+/*吹き出し*/
+#spring2025 .campaign .detail .bubble{
+	font-size: 16px;
+	border: 3px solid #412d00;
+	padding: 8px 12px 12px 12px;
+	width: 96%;
+	line-height: 1.3;
+	margin-bottom: 12px;
+}
+
+#spring2025 .campaign .detail .bubble:before {
+	margin-left: -10px;
+	border: 10px solid transparent;
+	border-top: 14px solid #412d00;
+}
+
+#spring2025 .campaign .detail .bubble:after {
+	margin-left: -6px;
+	border: 6px solid transparent;
+	border-top: 10px solid #fff;
+}
+
+#spring2025 .campaign .detail .bubble span{
+	font-size: 14px;
+}
+
+#spring2025 .campaign .detail .text{
+	font-size: 14px;
+	margin-bottom: 12px;
+	line-height: 1.6;
+}
+
+#spring2025 .campaign .detail ul.notes{
+	font-size: 12px;
+	margin:0 auto 12px auto;
+	width: 100%;
+	padding: 0;
+}
+
+#spring2025 .campaign .detail ul.notes li {
+	text-indent: -12px;
+	padding-left: 12px;
+}
+
+/*お友達キャンぺーン*/
+#spring2025 .other_campaign .inner{
+	padding: 24px 0;
+}
+
+#spring2025 .other_campaign h2 img{
+	width: 300px;
+	height: 62px;
+}
+
+#spring2025 .other_campaign ul{
+	width: 100%;
+	padding: 0 12px;
+	box-sizing: border-box;
+}
+
+#spring2025 .other_campaign ul li a{
+	border-radius: 8px;
+	padding: 12px 0 16px 0;
+	display: block;
+}
+
+#spring2025 .other_campaign ul li a:after{
+	top: calc(50% - -4px);
+	right: 10px;
+	width: 8px;
+	height: 8px;
+	border-right: 3px solid #2e2000;
+	border-bottom: 3px solid #2e2000;
+}
+
+#spring2025 .other_campaign ul li div.img,
+#spring2025 .other_campaign ul li div.text{
+	display: block;
+	padding: 0 12px;
+	box-sizing: border-box;
+}
+
+#spring2025 .other_campaign ul li div.text{
+	padding: 0 16px;
+}
+
+#spring2025 .other_campaign ul li div.img{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+#spring2025 .other_campaign ul li div.img img{
+	width: 280px;
+}
+
+#spring2025 .other_campaign ul li div.text h3{
+	font-size: 18px;
+	margin: 0 0 2px 0;
+}
+
+#spring2025 .other_campaign ul li div.text p{
+	font-size: 14px;
+}
+
+#spring2025 .other_campaign ul li div.text span.pc_br{
+	display: inline;
+}
+
+/*規約*/
+#spring2025 .terms h2{
+	padding: 18px 12px;
+	margin: 0 0 12px 0;
+	box-sizing: border-box;
+	font-size: 22px;
+}
+
+#spring2025 .terms h2:before{
+	margin-left: -8px;
+	border: 8px solid transparent;
+	border-top: 10px solid #e1325b;
+}
+
+#spring2025 .terms .inner{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+#spring2025 .terms dl{
+	border-radius: 8px;
+	padding: 12px 12px;
+	margin-bottom: 8px;
+	font-size: 14px;
+	box-sizing: border-box;
+	margin: 0 12px 12px 12px;
+}
+
+#spring2025 .terms dl dt{
+	margin: 0 auto 8px auto;
+	font-size: 16px;
+	width: 200px;
+}
+
+#spring2025 .terms dl dd{
+	padding: 0;
+}
+
+#spring2025 .terms dl dd ul.text{
+	margin-bottom: 8px;
+}
+
+#spring2025 .terms dl dd ul.text li{
+	text-indent: -14px;
+	padding-left: 14px;
+	margin-bottom: 4px;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+#spring2025 .terms dl dd ul.notes li{
+	text-indent: -12px;
+	padding-left: 12px;
+	margin-bottom: 2px;
+	font-size: 12px;
+}
+
+/*contact*/
+#spring2025 .terms dl dd .tel{
+	width: 200px;
+}
+
+#spring2025 .terms dl dd .tel a{
+	text-decoration: none;
+	display: block;
+	line-height: 1;
+}
+
+#spring2025 .terms dl dd .tel .icon{
+	width: 26px;
+}
+
+#spring2025 .terms dl dd .tel .icon img{
+	width: 26px;
+}
+
+#spring2025 .terms dl dd .tel .number{
+	font-size: 20px;
+	padding-left: 6px;
+}
+
+#spring2025 .terms dl dd dl.time{
+	margin: 0 0 12px 0;
+}
+
+#spring2025 .terms dl dd dl.time dt,
+#spring2025 .terms dl dd dl.time dd{
+	font-size: 12px;
+}
+}
