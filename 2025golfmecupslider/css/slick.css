@@ -1,5 +1,7 @@
 /* Slider */
-
+.js-slider .slick-dots button:hover{
+  background-color: #cc3333;
+}
 .slick-track img{
 	width:1200px;
 	margin: 0 5px;
@@ -154,8 +156,8 @@
 .js-slider .slick-dots li {
   font-size: 0;
   line-height: 0;
-	width:30px;
-	height:30px;
+	width:25px;
+	height:25px;
 }
 .js-slider .slick-dots li + li {
   margin-left: 3%;
@@ -166,7 +168,7 @@
 
 
 .slide-arrow {
-	filter: drop-shadow(0px 0px 6px #aaa);
+filter: drop-shadow(0px 0px 4px #393939);
   bottom: 0;
   cursor: pointer;
   margin: auto;
@@ -182,6 +184,10 @@
   right: 2%;
 }
 @media screen and (max-width: 768px) {
+	.slide-arrow {
+
+	width:9%;
+}
 	.sliderArea {
 			width: 100%;
 	}
@@ -196,8 +202,8 @@
 	.js-slider .slick-dots button{
   height: 50%;
   width: 50%;
-		box-shadow:none;
-		
+		box-shadow: 0 0 4px #555555;
+
 }
 
 	.js-slider .slick-active button {

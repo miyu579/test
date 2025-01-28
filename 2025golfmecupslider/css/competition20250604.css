@@ -3,6 +3,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
 .big_orange {
   font-size: 2.0rem;
   color: #438b3e;
@@ -26,6 +27,7 @@ body{
 	object-fit: cover;
 	width: 100%;
 	height:100%;
+	pointer-events: none;
 }
 .block1 figure {
 	margin: 0;
@@ -46,7 +48,7 @@ body{
 
 .competition20250604 img{
 	display: block;
-	
+
 }
 
 .competition20250604 a:hover {
@@ -244,17 +246,20 @@ body{
 /*ゲスト紹介*/
 .competition20250604 .detail_guest {
   background: #dbedcc;
-  padding: 18px 0 30px 0;
+  padding: 0 0 30px 0;
 }
 
 .competition20250604 .profile {
     display: flex;
     background: #fff;
-	margin-bottom: 12px;
+
 	padding: 24px;
 	box-sizing: border-box;
 }
-
+.competition20250604 .profile +.profile{
+	margin-top: 12px;
+}
+	
 .competition20250604 .profile div.photo {
     width:25%;
 }
@@ -303,6 +308,8 @@ body{
 
 .competition20250604 .profile div.photo img {
     width:100%;
+	height: auto;
+        margin: 0 auto;
 }
 
 .competition20250604 .profile div.prfTxt span.nmTxt {
@@ -508,6 +515,9 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+	.c-cta-member {
+		padding-top: 13px;
+	}
 
 	.competition20250604 { 
 		font-size: 16px;
@@ -576,7 +586,7 @@ body{
 
 	/*スケジュール*/
     .competition20250604 .detail_cover{
-        padding:12px 0;
+        padding:0 0 30px;
     }
 	
     .competition20250604 .detail{
