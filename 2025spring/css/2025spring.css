@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* GOLF me！2024 秋のキャンペーン */
+/* GOLF me！2025 春のキャンペーン */
 
 .cx:after{clear:both;content:".";display:block;height:0;visibility:hidden}
 #spring2025 ul,#spring2025 ol,#spring2025 p{
@@ -17,7 +17,7 @@ ol li{
 }
 
 #spring2025 section{
-	overflow-x: visible;
+	overflow-x: hidden;
 }
 
 body {
@@ -87,7 +87,7 @@ body {
 #spring2025 .main h1 img{
 	width: 93%;
     max-width: 1000px;
-    height: 90%;
+    height: 93%;
 	
 }
 
@@ -188,6 +188,8 @@ body {
 	z-index: 100;
 	text-align: center;
 	padding: 16px 0;
+	right: 0;
+	left:0;
 }
 
 #spring2025 .fixed_button .campaign_button a{
