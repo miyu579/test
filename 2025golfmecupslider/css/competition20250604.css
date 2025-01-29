@@ -1,0 +1,698 @@
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.big_orange {
+  font-size: 2.0rem;
+  color: #438b3e;
+
+  margin-bottom: 15px;
+}
+.block1 {
+	max-width: 1000px;
+	margin: 0 auto　30px;;
+
+}
+.block1 .boxwrap div {
+	width: 48%;
+	text-align: left;
+}
+.block1 .boxwrap div + div {
+	margin-right: 5px;
+}
+
+.slideitem{
+	object-fit: cover;
+	width: 100%;
+	height:100%;
+	pointer-events: none;
+}
+.block1 figure {
+	margin: 0;
+}
+.competition20250604 .boxwrap {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  align-items: center;
+}
+.competition20250604 { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-size: 14px;
+}
+
+
+.competition20250604 img{
+	display: block;
+
+}
+
+.competition20250604 a:hover {
+    text-decoration: none;
+}
+
+.competition20250604 ul,
+.competition20250604 ol{
+	margin: 0;
+	padding: 0;
+}
+
+.competition20250604 ul li,
+.competition20250604 ol li{
+	list-style: none;
+}
+
+/*main*/
+.competition20250604 .kv {
+	background: url("../img/main_bg.jpg") no-repeat top center;
+    background-size:cover;
+    width:100%;
+	text-align: center;
+}
+.competition20250604 .thanks {
+	
+    background-size:cover;
+    width:100%;
+	text-align: center;
+	padding: 50px 0 10px;
+}
+.competition20250604 .thanks li{
+	color :#fff;
+	font-size:18px;
+}
+.competition20250604 .thanks li+li{
+	padding-top: 10px;
+}
+
+.competition20250604 .entry_button {
+    background-size:cover;
+    width:100%;
+	text-align: center;
+}
+.competition20250604 .main_button {
+	background-image:url("../img/thanksbg.jpg");
+	background-size:cover;                 /* 画像のサイズを指定    */
+    width:100%;                              /* 横幅のサイズを指定    */ 
+}
+.competition20250604 .main h1{
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+.competition20250604 .main h1 .pc{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1415px;
+}
+.competition20250604 .main h1 .sp{display: none;}
+
+
+/*button*/
+.competition20250604 .main_button{
+
+}
+
+.competition20250604 .main_button .entry_button{
+	padding: 24px 0;
+}
+
+.competition20250604 .main_button .entry_button ul.notes{
+	margin-bottom: 0;
+	text-align: left;
+	padding: 0;
+}
+
+.competition20250604 .main_button .entry_button ul.notes,
+.competition20250604 .main_button .entry_button ul.notes li strong,
+.competition20250604 .main_button .entry_button ul.notes li a{
+	color: #fff;
+}
+
+/*スケジュール*/
+.competition20250604 .detail_cover {
+    background: #edece2;
+    padding: 18px 0 30px 0;
+	font-size: 16px;
+}
+
+.competition20250604 .detail {
+	width: 100%;
+	max-width:1000px;
+    margin: 0 auto 55px;
+}
+
+.competition20250604 .detail td p{
+	padding: 0;
+	margin: 0;
+}
+
+.competition20250604 .detail td.tdbgImg {
+    background-image: url(../img/bg_detail.png); 
+    background-position: top right; 
+    background-repeat: no-repeat; 
+    background-size: 200px 188px
+}
+
+.competition20250604 .detailtd {
+    word-break: break-all;
+	font-size: 16px;
+}
+
+.competition20250604 .detail table {
+    border-collapse: collapse;
+    width:100%;
+    background: #fff;
+	border-bottom: 1px solid #cccdb6;
+	text-align: left;
+	color: #333;
+}
+
+.competition20250604 .detail th,
+.competition20250604 .detail td {
+    border-top:solid 1px #cccdb6;
+    padding: 15px 20px;
+	box-sizing: border-box;
+	word-break: break-all;
+}
+
+.competition20250604 .detail th {
+    background: #324131;
+    width:20%;
+    font-size: 18px;
+	font-weight: normal;
+	color: #fff9ee;
+}
+
+.competition20250604 i {
+    margin-right: 5px;
+    color: #874e0d;
+}
+
+.competition20250604 i.sanka {
+    margin-right: 5px;
+    color: #575757;
+    font-size: 0.8rem;
+}
+
+.competition20250604 .txtl {
+    font-size: 24px;
+	line-height: 1.6;
+	font-weight: 500;
+}
+
+.competition20250604 .detail_cover .txtl{
+	margin-bottom: 3px;
+}
+
+.competition20250604 .txts{
+    font-size: 16px;
+}
+
+.competition20250604 .detail_cover ul.notes{
+	margin: 0;
+	padding: 0;
+}
+
+.competition20250604 .detail_cover .access{
+	margin-bottom: 6px;
+}
+
+.competition20250604 .detail_cover .overview{
+	line-height: 1.8;
+}
+.entry_button p {
+		text-align: center;
+}
+/*タイトル*/
+.competition20250604 .detail_cover h2,
+.competition20250604 .detail_guest h2,
+.competition20250604 .block1 h2{
+  padding: 20px 6px 10px 6px;
+  margin: 0 0 20px 0;
+  border-bottom: solid 2px #000;
+  font-size: 22px;
+  box-sizing: border-box;
+  line-height: 1.2;
+}
+
+/*ゲスト紹介*/
+.competition20250604 .detail_guest {
+  background: #dbedcc;
+  padding: 0 0 30px 0;
+}
+
+.competition20250604 .profile {
+    display: flex;
+    background: #fff;
+
+	padding: 24px;
+	box-sizing: border-box;
+}
+.competition20250604 .profile +.profile{
+	margin-top: 12px;
+}
+	
+.competition20250604 .profile div.photo {
+    width:25%;
+}
+
+.competition20250604 .profile div.prfTxt{
+    padding: 12px 0 12px 24px;
+	box-sizing: border-box;
+	width: 75%;
+	line-height: 1.8;
+}
+
+.competition20250604 .profile div.prfTxt h3{
+	font-size: 24px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.competition20250604 .profile div.prfTxt h3 span{
+	font-size: 18px;
+}
+
+.competition20250604 .profile div.prfTxt dl{
+	margin:0 0 12px 0;
+	font-size: 16px;
+}
+
+.competition20250604 .profile div.prfTxt dl dt{
+	float: left;
+	line-height: 1.6;	
+}
+
+.competition20250604 .profile div.prfTxt dl dd{
+	line-height: 1.6;
+	margin: 0;
+}
+
+.competition20250604 .profile div.prfTxt dl dd:before{
+	content: "：";
+	padding: 0 6px;
+}
+
+.competition20250604 .profile div.prfTxt .text{
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.competition20250604 .profile div.photo img {
+    width:100%;
+	height: auto;
+        margin: 0 auto;
+}
+
+.competition20250604 .profile div.prfTxt span.nmTxt {
+    font-size:16px;
+}
+.c-cta-member {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #c33;
+    color: #fff;
+    font-size: 1.15em;
+    text-align: center;
+    box-shadow: 5px 5px #7e0f0f;
+}
+/*
+.bubble {
+    font-size: 22px;
+    border: 6px solid #412d00;
+    color: #412d00;
+    padding: 24px 10px;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    border-radius: 100px;
+    text-align: center;
+    width: 720px;
+    margin: 0 auto 24px;
+    line-height: 1;
+}
+.bubble:before {
+    margin-left: -16px;
+    border: 16px solid transparent;
+    border-top: 22px solid #412d00;
+}
+.bubble:before, #summer_golfmeday2024 .campaign .detail .bubble:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.bubble:after {
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-top: 15px solid #fff;
+}
+.bubble:before, #summer_golfmeday2024 .campaign .detail .bubble:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+*/
+/*golfmeとは*/
+.competition20250604 .about {
+    background: #e4f9ff;
+    padding:30px 0 40px;
+    text-align: center;
+}
+
+.competition20250604 .about img {
+    max-width:871px ;
+    width:100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*注意事項*/
+.competition20250604 .attention {
+    width:80%;
+    max-width: 700px;
+    margin: 0 auto;
+	padding: 36px 0;
+}
+
+.competition20250604 .attention h2 {
+    font-size:20px;
+    line-height: 150%;
+    background: #768f2c;
+    padding: 5px 15px;
+    color: #fff;
+    font-weight: normal;
+	box-sizing: border-box;
+	margin: 0 0 12px 0;
+}
+
+.competition20250604 .attention ol{
+	margin: 0;
+	padding: 0;
+}
+
+.competition20250604 .attention ol li {
+    line-height: 180%;
+	font-size: 14px;
+	padding: 12px 6px;
+	box-sizing: border-box;
+	border-bottom: 1px dashed #768f2c;
+	list-style: none;
+}
+
+/*button*/
+.competition20250604 .entry_button{
+	padding: 50px 0;
+}
+
+.competition20250604 .entry_button .inner{
+	width: 100%;
+	max-width:1000px;
+	margin: 0 auto;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.competition20250604 .entry_button p.button{
+	width: 80%;
+	margin: 0 auto 18px auto;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.competition20250604 .entry_button p.button a{
+	display: block;
+	color: #fff;
+	padding: 20px 6px;
+	box-sizing: border-box;
+	text-decoration: none;
+	border-radius: 18px;
+	background:linear-gradient(#f40000, #c80000);
+	border-bottom: 5px solid #5f0000;
+}
+
+.competition20250604 .entry_button p.button span{
+	font-size: 16px;
+	display: block;
+	font-weight: normal;
+	margin-top: 5px;
+}
+/*
+.competition20250604 .entry_button p.button a:hover{
+	opacity: 0.75;
+}*/
+.entry_button .button a{
+	pointer-events: none;
+}
+.member_btn:hover {
+	opacity: 0.75;
+}
+.competition20250604 .entry_button ul.notes li{
+	line-height: 1.6;
+	margin-bottom: 3px;
+}
+
+.competition20250604 .entry_button ul.notes li strong{
+	color: #ff0000;
+	font-weight: normal;
+}
+
+.competition20250604 .compe_20240704_visitor_btn p {
+  margin: 0 auto;
+}
+
+.competition20250604 .entry_button ul.notes li,
+.competition20250604 .detail_cover ul.notes li,
+.competition20250604 .attention ol li{
+	text-indent: -1em;
+	padding-left: 1em;
+}
+
+.competition20250604 .member_btn{
+	width: 420px;
+	margin: 18px auto 0 auto;
+}
+
+.competition20250604 .member_btn a{
+	text-decoration: none;
+}
+
+.competition20250604 .member_btn .c-cta-member strong{
+	font-size: 18px;
+}
+.competition20250604 .gaiyou{
+	padding: 10%;
+	text-align: center;
+}
+
+/*****************************************************************/
+
+@media screen and (max-width: 1100px) {
+	/*main*/
+	.competition20250604 .main h1{
+		background: url("../img/main_bg.jpg") no-repeat top center;
+    	background-size:cover;
+	}
+	
+	.competition20250604 .main h1 img{
+		width: 400px;
+		height: 431px;
+		margin-left: -200px;
+	}
+
+	
+
+}
+
+@media screen and (max-width: 768px) {
+	.c-cta-member {
+		padding-top: 13px;
+	}
+
+	.competition20250604 { 
+		font-size: 16px;
+	}
+
+	/*main*/
+	.competition20250604 .main h1{
+		background: url("../img/main_bg_sp.jpg") no-repeat top center;
+    	background-size:cover;
+	}
+
+	.competition20250604 .main h1 .pc{display: none;}
+	.competition20250604 .main h1 .sp{display: block;}
+	
+	.competition20250604 .main h1 img{
+		width: 100%;
+        height: 100%;
+        margin: 0 auto;
+	}
+
+	/*main button*/
+	.competition20250604 .main_button .entry_button {
+		padding: 16px 0;
+	}
+
+	/*button*/
+	.competition20250604 .entry_button{
+		padding: 20px 0;
+	}
+	
+	.competition20250604 .entry_button .inner{
+		width: 100%;
+		padding: 0 12px;
+		box-sizing: border-box;
+	}
+
+	.competition20250604 .entry_button p.button{
+		width: 96%;
+		font-size: 20px;
+	}
+
+	.competition20250604 .entry_button p.button a{
+		padding: 18px 6px 16px 6px;
+		border-radius: 8px;
+		border-bottom: 5px solid #5f0000;
+	}
+
+	.competition20250604 .entry_button p.button span{
+		margin-top: 3px;
+	}
+
+	.competition20250604 .entry_button ul.notes{
+		padding: 0 16px;
+		margin-top: 6px;
+		text-align: left;
+		font-size: 12px;
+	}
+	
+	.competition20250604 .entry_button ul.notes li{
+		line-height: 1.7;
+	}
+
+	.competition20250604 .c-cta-member, .c-cta-visitor{
+		margin-top: 0;
+	}
+
+	/*スケジュール*/
+    .competition20250604 .detail_cover{
+        padding:0 0 30px;
+    }
+	
+    .competition20250604 .detail{
+        width:95%;
+    }
+	
+	.competition20250604 .detail th {
+		font-size: 16px;
+		width:25%;
+        font-size: 16px;
+		padding: 14px 8px;
+		text-align: center;
+	}
+	
+	.competition20250604 .detail th{
+		padding: 16px 16px;
+	}
+	
+	.competition20250604 .detail td {
+    	padding: 14px 16px;
+	}
+
+    .competition20250604 .detail td.tdbgImg {
+        background-image:none;
+    }
+	
+	.competition20250604 .txts{
+    	font-size: 14px;
+	}
+	
+	.competition20250604 .detail_cover ul.notes{
+		font-size: 14px;	
+	}
+
+    .competition20250604 .txtl {
+        font-size: 18px;
+    }
+
+	/*profile*/
+	.competition20250604 .profile{
+		display: block;
+	}
+
+    .competition20250604 .profile div.photo {
+        width:100%;
+		padding: 0;
+		text-align: center;
+		margin-bottom: 12px;
+    }
+    
+    .competition20250604 .profile div.prfTxt{
+        width:100%;
+		padding: 0;
+    }
+	
+	.competition20250604 .profile div.prfTxt .text{
+		padding: 0;
+		font-size: 16px;
+	}
+	
+	.competition20250604 .profile div.photo img{
+		width:200px;
+		height: auto;
+		margin: 0 auto;
+	}
+	
+	/*goflmeとは*/
+    .competition20250604 .about {
+        padding:30px 2% 40px;
+    }
+	
+	/*注意事項*/
+    .competition20250604 .attention {
+        width:100%;
+        padding:0;
+    }
+
+    .competition20250604 .attention h2 {
+        font-size: 18px;
+        margin: 0 0 15px;
+    }
+	
+	.competition20250604 .attention ol{
+		padding: 0 16px;
+}
+
+	.competition20250604 .attention ol li{
+		padding: 12px 12px;
+	}
+	
+	.competition20250604 .member_btn{
+	width: 300px;
+	margin: 18px auto 0 auto;
+}
+
+	.competition20250604 .member_btn .c-cta-member{
+		height: 50px;
+	}
+
+.competition20250604 .member_btn .c-cta-member strong{
+	font-size: 16px;
+}
+	
+	
+}
