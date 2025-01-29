@@ -12,7 +12,7 @@ body{
 }
 .block1 {
 	max-width: 1000px;
-	margin: 0 auto;
+	margin: 0 auto　30px;;
 
 }
 .block1 .boxwrap div {
@@ -146,7 +146,7 @@ body{
 .competition20250604 .detail {
 	width: 100%;
 	max-width:1000px;
-    margin: 0 auto;
+    margin: 0 auto 55px;
 }
 
 .competition20250604 .detail td p{
@@ -493,6 +493,10 @@ body{
 
 .competition20250604 .member_btn .c-cta-member strong{
 	font-size: 18px;
+}
+.competition20250604 .gaiyou{
+	padding: 10%;
+	text-align: center;
 }
 
 /*****************************************************************/

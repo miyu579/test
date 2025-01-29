@@ -2,16 +2,36 @@
 .js-slider .slick-dots button:hover{
   background-color: #cc3333;
 }*/
-.slick-track img{
-	width:1200px;
-	margin: 0 5px;
+.js-slider .itemarea {
+	margin: 0 15px;
+	background-color: #fff;
 }
+.js-slider .textarea {
+	padding: 20px 39px 20px;
+}
+.js-slider .itemtitle {
+	font-size: 20px;
+	color: #026336;
+	margin: 0 0 10px;
+	font-weight: bold;
 
+}
+.js-slider .textarea p + p{
+	margin: 0;
+}
 .js-slider {
     max-width: 1000px;
 	width:100%;
     margin: auto;
 }
+.js-slider figure{
+	height:500px;
+}
+.slick-track img{
+	width:100%;
+
+}
+
 .slick-slider
 {
     position: relative;
@@ -139,7 +159,7 @@
   justify-content: center;
   margin: 0 0 0 auto;
   position: absolute;
-  bottom: 35px;
+  bottom: -8%;
 }
 
 .js-slider .slick-dots button{
@@ -182,6 +202,19 @@ filter: drop-shadow(0px 0px 4px #393939);
 }
 .next-arrow {
   right: 2%;
+}
+
+.slick-track {
+  display: flex;
+}
+.slick-slide {
+  height: auto !important;
+}
+@media screen and (max-width: 1100px) {
+.js-slider figure{
+
+	height:400px;
+}
 }
 @media screen and (max-width: 768px) {
 	.slide-arrow {
