@@ -242,7 +242,10 @@ body{
   box-sizing: border-box;
   line-height: 1.2;
 }
-
+.competition20250604 .detail_past{
+	background: #edece2;
+	padding-bottom: 1px;
+}
 /*ゲスト紹介*/
 .competition20250604 .detail_guest {
   background: #dbedcc;
