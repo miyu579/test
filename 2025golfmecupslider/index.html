@@ -306,7 +306,7 @@ GOLF me！で新しいゴルフ仲間をお探しの方、コンペにトライ�
 一人ずつ、拍手の中プレー開始を見送られました</p>
 </div></div>
 		<div class="itemarea"><figure><img src="img/past_4.JPG" width="2048" height="1538"  class="slideitem"  alt=""/></figure><div class="textarea"><p class="itemtitle">スペシャルな特典付き！</p><p>今回のコンペでは、18ホールのうちどこかの1ホールにて鈴蘭さんと一緒に帯同できるという、
-スペシャルな特典となっておりました。参加者のみなさんと一緒にティーショットを打ち、一緒のゴルフカードで移動し、
+スペシャルな特典となっておりました。参加者のみなさんと一緒にティーショットを打ち、一緒のゴルフカートで移動し、
 カップインから次のコースへの移動まで、4人で鈴蘭さんとお話しできる機会となっていました！</p>
 </div></div>
 		<div class="itemarea"><figure><img src="img/past_5.JPG" width="5328" height="4000"   class="slideitem" alt=""/></figure><div class="textarea"><p class="itemtitle">最後は表彰式</p><p>ここでもお二人の息ぴったりな司会で会が再び笑いの渦に！<br>表彰式では、ブービー賞・GOLF me！賞・3位・2位・1位を表彰させていただきました。最後の完全退出のときまで、黒田カントリークラブさん、鈴蘭さんと写真撮影時間がありました！</p>
@@ -439,6 +439,7 @@ GOLF me！事務局<br>
 	<script>
 	$(function(){
       $(".js-slider").slick({
+		  adaptiveHeigh:true,
         centerMode: true,
           dots: true,
           arrows: true,
@@ -449,7 +450,14 @@ GOLF me！事務局<br>
           speed: 500,
           infinite: true,
           touchMove: true,
-          pauseOnHover: true
+          pauseOnHover: true,
+		  responsive: [{
+        breakpoint: 767,
+        settings: {
+        slidesToShow: 1,
+			centerMode: false,
+        }
+    }]
       });
   });
 	</script>

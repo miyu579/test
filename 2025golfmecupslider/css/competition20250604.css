@@ -519,6 +519,10 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+	.competition20250604 .detail_guest {
+  background: #dbedcc;
+  padding: 0 0 1px 0;
+}
 	.c-cta-member {
 		padding-top: 13px;
 	}
@@ -590,7 +594,7 @@ body{
 
 	/*スケジュール*/
     .competition20250604 .detail_cover{
-        padding:0 0 30px;
+        padding:0 0 1px;
     }
 	
     .competition20250604 .detail{
