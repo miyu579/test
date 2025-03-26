@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #4a3301;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="長方形_6" data-name="長方形 6" class="cls-1" d="M2,24.992L18.014,14,2,3.009"/>
+</svg>
