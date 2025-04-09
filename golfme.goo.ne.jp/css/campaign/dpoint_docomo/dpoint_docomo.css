@@ -1,0 +1,2154 @@
+@charset "utf-8";
+/* dpoint_docomo */
+/*20250404dカード*/
+/* 三角
+#dpoint_docomo2025 .dcard_topic .dcard_card_arrow:before,
+#dpoint_docomo2025 .dcard_topic .dcard_card_arrow:after{
+	    content: "";
+
+    margin: 271px auto 0;
+    width: 74%;
+    height: 106px;
+    background: #f3ecd2;
+    position: absolute;
+    bottom: auto;
+    left: -1%;
+    padding-bottom: 30px;
+}
+#dpoint_docomo2025 .dcard_topic .dcard_card_arrow{
+	width: 100%;
+}
+#dpoint_docomo2025 .dcard_topic .dcard_card_arrow:before {
+	clip-path: polygon(0% 0%, 0% 100%, 50% 100%);
+}
+
+#dpoint_docomo2025 .dcard_topic .dcard_card_arrow:after {
+	clip-path: polygon(50% 100%, 100% 0%, 100% 100%);
+}
+#dpoint_docomo2025 .dcard_topic .arrow_color {
+	background-color: #f3ecd2;
+	height: 50px;
+	
+}*/
+
+
+#dpoint_docomo2025 .sp_view{display: none;}
+
+#dpoint_docomo2025 .dcard_topic .arrow_box div:nth-of-type(2){
+	margin: 15px 0 53px;
+}
+#dpoint_docomo2025 .dcard_topic .dcard_bg >div:nth-of-type(2){
+	margin: 13px 0 0;
+}
+#dpoint_docomo2025 .dcard_topic .dcard_bg{
+	padding: 20px;
+}
+#dpoint_docomo2025 .dcard_topic .sp_view img{
+	width: 90%;
+	height: 100%;
+	min-width: 302px;
+}
+#dpoint_docomo2025 .dcard_bg {
+
+}
+#dpoint_docomo2025 .dcard_bg >img {
+	    width: 85%;
+    height: 100%;
+}
+#dpoint_docomo2025 .dcard_topic ul.notes{
+	font-size: 12px;
+    padding: 0 10px;
+    margin-bottom: 16px;
+	text-align: left;
+	width: 86%;
+	margin: auto;
+
+}
+#dpoint_docomo2025 .dcard_topic p.button {
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    line-height: 1;
+    margin: 28px auto 22px;
+}
+#dpoint_docomo2025 .dcard_topic p.button a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - -1px);
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    transform: translateY(-50%) rotate(-45deg);
+    vertical-align: middle;
+}
+#dpoint_docomo2025 .dcard_topic p.button a{
+	 color: #000;
+    padding: 8px 10px 5px;
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    border: 2px solid #000;
+    border-bottom: 4px solid #000;
+    border-radius: 100px;
+    background: #ffe248;
+}
+
+#dpoint_docomo2025 .dcard_bg > picture img{
+	width: 321px;
+	height: auto;
+}
+
+#dpoint_docomo2025 .dcard_topic .dcard_bg_white{
+	background-color: #fff;
+	padding: 3%;
+}
+#dpoint_docomo2025 .dcard_topic .inner{
+	width: calc(100% - 24px);
+    max-width: 1000px;
+    margin: 0 auto;
+	background-color: #fff;
+	border-radius: 10px;
+}
+#dpoint_docomo2025 .dcard_bg {
+	background-color: #fffae6;
+	border-radius: 10px;
+}
+
+#dpoint_docomo2025 .dcard_topic div {
+	text-align: center;
+}
+#dpoint_docomo2025 .dcard_topic p {
+	font-size:30px;
+	font-weight: bold;
+	margin: 15px 0 8px;
+}
+#dpoint_docomo2025 .dcard_topic p span{
+	color: #cc0033;
+}
+#dpoint_docomo2025 .dcard_topic .dcard_card_arrow{
+	padding: 30px 0 0;
+}
+#dpoint_docomo2025 .dcard_topic .dcard_card_arrow img{
+	width: 55%;
+    height: 100%;
+    min-width: 265px;
+}
+#dpoint_docomo2025  .dcard_topic div:nth-of-type(3){
+	    margin: 7px 0 0;
+}
+#dpoint_docomo2025  .dcard_topic div:nth-of-type(5){
+	    margin: 20px 0 10px;
+}
+#dpoint_docomo2025 .dcard_topic .dcard_bg > p:nth-of-type(2) {
+
+	padding: 7px 0 1px;
+	margin: auto;
+    width: 68%;
+    min-width: 640px;
+	margin-bottom: 30px;
+}
+#dpoint_docomo2025 .dcard_bg > div .pc_view img{
+    max-width: 764px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+	#dpoint_docomo2025 .dcard_topic p.button {
+    font-size: 16px;
+    width: 300px;
+    text-align: center;
+    line-height: 1;
+    margin: 20px auto 22px;
+}
+	#dpoint_docomo2025 .dcard_topic .dcard_bg {
+    padding: 20px 0;
+}
+	#dpoint_docomo2025 .dcard_topic .dcard_bg >div:nth-of-type(2) {
+    margin: 1px 0 0;
+}
+	#dpoint_docomo2025 .dcard_topic .arrow_box div:nth-of-type(2) {
+    margin:0 0 25px;
+}
+	#dpoint_docomo2025 .dcard_topic .arrow_box div:nth-of-type(2) img{
+    width: 175px;
+	height: auto;
+}
+	#dpoint_docomo2025 .dcard_bg > picture img {
+    width:70%;
+		min-width: 160px;
+    height: auto;
+		max-width: 230px;
+}
+	#dpoint_docomo2025 .dcard_topic p {
+    margin: 0;
+}
+	#dpoint_docomo2025 .dcard_topic 
+    #dpoint_docomo2025 .dcard_topic p {
+        margin: 0;
+    
+}
+	#dpoint_docomo2025 .dcard_topic .sp_view img {
+    height: 100%;
+        width: 280.5px;
+        min-width: auto;
+}
+	#dpoint_docomo2025 .dcard_topic .sp_view + .sp_view img {
+    height: 100%;
+        width: 261.5px;
+        min-width: auto;
+}
+	#dpoint_docomo2025 .dcard_topic div:nth-of-type(5) img{
+ 	width: 178px;
+	height: 100%;
+}
+	#dpoint_docomo2025 .dcard_topic div:nth-of-type(3)  img {
+    height: 100%;
+		width:130px;
+		    margin: 0;
+}
+	#dpoint_docomo2025 .dcard_topic div:nth-of-type(4)  img {
+    height: 100%;
+
+}
+	    #dpoint_docomo2025 .dcard_topic .dcard_bg_white {
+        padding: 0;
+        border-radius: 10px;
+    }
+	#dpoint_docomo2025 .dcard_topic .dcard_bg_white {
+    padding: 0;
+}
+	#dpoint_docomo2025 .pc_view{display: none;}
+	#dpoint_docomo2025 .dcard_bg >div:nth-of-type(2) img{
+		width: 123px;
+		height:auto;
+	}
+	#dpoint_docomo2025 .dcard_bg {
+   padding: 0 0 20px
+}
+	#dpoint_docomo2025 .dcard_topic .dcard_bg p:nth-of-type(1) {
+    font-size: 17px;
+    margin: 5px 0 8px;
+}	
+	#dpoint_docomo2025 .dcard_topic .dcard_bg > .sp_view img{
+		width: 80%;
+    min-width: 302.5px;
+		margin-bottom: 7px;
+		max-width: 360px;
+}
+	#dpoint_docomo2025 .dcard_topic .dcard_bg > p:nth-of-type(2) {
+
+    padding: 7px 0 1px;
+    margin: auto;
+    width: 90%;
+    min-width: 300px;
+}
+	#dpoint_docomo2025 .dcard_topic .inner{
+		     
+	}
+}
+/*20250404dカード*/
+.cx:after,
+#dpoint_docomo2025 .recommend_point .inner .point_button:after,
+#dpoint_docomo2025 .acd-content:after{
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden
+}
+
+#dpoint_docomo2025 ul,#dpoint_docomo2025 ol,#dpoint_docomo2025 p{
+	margin: 0;
+	padding: 0;
+}
+#dpoint_docomo2025 .main_detail .automatic_apply{
+	font-size: 0;
+	line-height: 0;
+	margin-top: 8px;
+}
+
+ul li,
+ol li{
+	list-style: none;
+}
+
+#dpoint_docomo2025 .ac{
+	text-align: center;
+}
+
+#dpoint_docomo2025 section{
+	overflow-x: visible;
+}
+
+body {
+	padding-bottom: 144px;
+}
+
+a{
+    color: #0084ff;
+}
+
+/*PC*/
+#dpoint_docomo2025 .pc_br,
+#dpoint_docomo2025 .pc_view{display: block;}
+#dpoint_docomo2025 .sp_br{display: inline;}
+#dpoint_docomo2025 .sp_view{display: none;}
+
+/*main*/
+#dpoint_docomo2025 .main{
+	background: url("../../../img/campaign/dpoint_docomo/dpoint_docomo_main_bg.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	height: 666px;
+	z-index: 1;
+	width: 100%;
+}
+
+#dpoint_docomo2025 .main .inner{
+	width:100%;
+	max-width:995px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 3;
+	overflow: visible;
+    padding-top: 28px;
+}
+
+#dpoint_docomo2025 .main h1,
+#dpoint_docomo2025 .main h2{
+	margin: 0;
+}
+
+#dpoint_docomo2025 .main h1 img{
+	width:100%;
+	max-width:995px;
+}
+
+#dpoint_docomo2025 .main h2 img{
+	width: 100%;
+	max-width: 1000px;
+}
+
+#dpoint_docomo2025 .main .inner .dpoint{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+#dpoint_docomo2025 .main .inner .nttdocomo{
+    position: absolute;
+	top: 20px;
+	left: 0;
+    background: #fff;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+#dpoint_docomo2025 .main_detail{
+	background: linear-gradient(#99bb55 20%, #97b23c 80%);
+}
+
+#dpoint_docomo2025 .main_detail .detail{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#dpoint_docomo2025 .main_detail .detail .notes{
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+#dpoint_docomo2025 .main_detail .detail dl{
+	border:8px solid #5d9237;
+    background: #fff;
+    width: 400px;
+    border-radius: 16px;
+    margin: 0 5px 12px 5px;
+    text-align: center;
+}
+
+#dpoint_docomo2025 .main_detail .detail dl dt{
+	border-bottom:8px solid #5d9237;
+    padding: 12px 0;
+    min-height: 105px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#dpoint_docomo2025 .main_detail .detail dl dt ul{
+    display: flex;
+}
+
+#dpoint_docomo2025 .main_detail .detail dl dt ul li{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+#dpoint_docomo2025 .main_detail .detail dl dt ul li:first-child{
+    margin: 0 7px 0 5px;
+}
+#dpoint_docomo2025 .main_detail .detail dl dt ul li img{
+    width:80px;
+    height: auto;
+}
+#dpoint_docomo2025 .main_detail .detail dl dt ul li:nth-child(2) img
+	{
+		width: 140px;
+	}
+#dpoint_docomo2025 .main_detail .detail dl dt .text{
+    width: 100%;
+    line-height: 1;
+}
+
+#dpoint_docomo2025 .main_detail .detail dl dd{
+    background: #f6f0f0;
+    margin: 0;
+    border-radius: 0 0 12px 12px;
+    padding: 14px 6px 11px;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+#dpoint_docomo2025 .main_detail ul.detail_notes{
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+    max-width: 826px;
+    margin: 0 auto 24px auto;
+}
+
+#dpoint_docomo2025 .main_detail .detail_button{
+    margin: 0 auto 24px auto;
+}
+
+#dpoint_docomo2025 .main_button{
+	padding-bottom: 12px;
+}
+
+#dpoint_docomo2025 .main_button .text{
+	font-size: 16px;
+	text-align: center;
+	margin: 16px auto 8px auto;
+}
+
+#dpoint_docomo2025 .main_button .text a{
+	color: #fff;
+	padding: 0 2px;
+}
+
+/*キャンペーンボタン*/
+#dpoint_docomo2025 .registration_button{
+	font-size: 18px;
+}
+
+#dpoint_docomo2025 .campaign .registration_button{
+	margin-bottom: 18px;
+}
+
+#dpoint_docomo2025 .registration_button p{
+	margin: 0;
+	line-height: 1;
+}
+
+#dpoint_docomo2025 .registration_button a{
+	color: #fff;
+	border-radius: 15px;
+	border-bottom: 6px solid #97000c;
+	background:linear-gradient(to top, #ed0c00, #ff0d00);
+	text-decoration: none;
+	display: block;
+	padding: 24px 10px;
+	box-sizing: border-box;
+	text-align: center;
+	width: 720px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#dpoint_docomo2025 .main_button .registration_button a{
+	padding: 20px 10px;
+	width: 670px;
+}
+
+#dpoint_docomo2025 .registration_button a:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - -5px);
+	right: 30px;
+	width: 12px;
+	height: 12px;
+	border-right: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	transform: translateY(-50%) rotate(-45deg);
+	vertical-align: middle;
+}
+
+#dpoint_docomo2025 .registration_button a span{
+	font-size: 30px;
+}
+
+#dpoint_docomo2025 .registration_button a strong{
+	font-size: 36px;
+	margin-bottom: 14px;
+	display: block;
+}
+
+/*画面下固定ボタン*/
+#dpoint_docomo2025 .fixed_button{
+	background: rgba(0,0,0,0.8);
+	width:100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	text-align: center;
+	padding: 16px 0;
+}
+
+#dpoint_docomo2025 .fixed_button .registration_button a{
+	padding: 12px 0;
+	font-size: 16px;
+	border-radius: 6px;
+	border-bottom: 3px solid #97000c;
+	width:560px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+#dpoint_docomo2025 .fixed_button .registration_button a:after{
+	top: calc(50% - -3px);
+	width: 10px;
+	height: 10px;
+	border-right: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+#dpoint_docomo2025 .fixed_button .registration_button a strong{
+	font-size: 26px;
+	margin-bottom: 8px;
+}
+
+#dpoint_docomo2025 .fixed_button .registration_button a span{
+	font-size: 20px;
+}
+
+#dpoint_docomo2025 .fixed_button .text,
+#dpoint_docomo2025 .fixed_button .text a{
+	color: #efefef;
+	margin-top: 12px;
+}
+
+#dpoint_docomo2025 .fixed_button .text a{
+	margin: 0 2px;
+}
+
+/*what_is*/
+#dpoint_docomo2025 .what_is .bg{
+	background: url("../../../img/campaign/dpoint_docomo/bg_golf_dpoint_docomo.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	position: relative;
+}
+
+#dpoint_docomo2025 .what_is .bg:before,
+#dpoint_docomo2025 .what_is .bg:after{
+	content: "";
+	width: 100%;
+	height: 90px;
+	background: #f9f6d9;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+
+#dpoint_docomo2025 .what_is .bg:before {
+	clip-path: polygon(0% 0%, 0% 100%, 50% 100%);
+}
+
+#dpoint_docomo2025 .what_is .bg:after {
+	clip-path: polygon(50% 100%, 100% 0%, 100% 100%);
+}
+
+#dpoint_docomo2025 .what_is .bg .bg_black{
+	background: rgba(0,0,0,0.6);
+	height: 100%;
+	width: 100%;
+	padding:70px 0 90px 0; 
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner{
+	width:calc(100% - 24px); 
+	max-width: 830px;
+	margin: 0 auto;
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner h2{
+	font-size: 60px;
+	color: #fff;
+	margin-bottom: 50px;
+	font-weight: 600;
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner h2 strong{
+	font-size: 80px;
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner p{
+	background: #099bee;
+	padding: 6px 20px 10px 20px;
+	box-sizing: border-box;
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0 auto 16px auto;
+	line-height: 1;
+	font-style: italic;
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner p strong{
+	font-size: 40px;
+	color: #fcff00;
+	line-height: 1;
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner p span{
+	font-size: 12px;
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner ul.notes {
+	color: #fff;
+	font-size: 12px;
+	text-align: left;
+	width: 1000px;
+}
+
+#dpoint_docomo2025 .what_is .guide{
+	width: 100%;
+	background: #f9f6d9;
+	padding: 30px 0 50px 0;
+	text-align: center;
+}
+
+#dpoint_docomo2025 .what_is .guide .inner{
+	width: calc(100% - 24px);
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#dpoint_docomo2025 .what_is .guide p{
+	font-size: 20px;
+	font-style: italic;
+	margin: 0 0 30px 0;
+}
+
+#dpoint_docomo2025 .what_is .guide dl{
+	font-style: italic;
+	line-height: 1;
+	position: relative;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dt{
+	color: #2e2000;
+	font-size: 28px;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	right: 0;
+	font-weight: lighter;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dt:before,
+#dpoint_docomo2025 .what_is .guide dl dt:after{
+	background: #2e2000;
+	content: "";
+	height: 5px;
+	width: 32px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dt:before{
+	transform: rotate(60deg);
+	margin-right: 5px;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dt:after{
+	transform: rotate(-60deg);
+	margin-left: -14px;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dt strong{
+	font-size: 36px;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dd{
+	background: #fff;
+	color: #099bee;
+	font-size: 30px;
+	padding: 46px 10px 24px 10px;
+	box-sizing: border-box;
+	font-weight: 600;
+	margin: 0;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dd strong{
+	font-size: 36px;
+	background: #fcff00;
+	padding: 0px 15px 5px 5px;
+	box-sizing: border-box;
+	margin-left: 5px;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dd strong span{
+	font-size: 30px;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dd span.notes{
+	font-size: 12px;
+	color: #555;
+	font-weight: normal;
+}
+
+#dpoint_docomo2025 .what_is .guide ul.notes{
+	color: #555;
+	font-size: 12px;
+	text-align: left;
+}
+
+/*bg_green*/
+#dpoint_docomo2025 .bg_green{
+	background: repeating-linear-gradient(90deg, #90bc1f, #90bc1f 140px, #9bc336 140px, #9bc336 280px);
+	background-position: center;
+	padding-bottom: 35px;
+}
+
+/*おすすめポイント*/
+#dpoint_docomo2025 .recommend_point{
+	border-top: 20px solid #6c8c19;
+}
+
+#dpoint_docomo2025 .recommend_point .inner{
+	width: calc(100% - 24px);
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner h2{
+	text-align: center;
+	margin: 0;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point{
+	padding-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point > li{
+	background: #fff;
+	border-radius: 10px;
+	background-image: linear-gradient(142deg, #cde19a 114px, transparent 0);
+	padding: 16px 20px 20px 20px;
+	box-sizing: border-box;
+	color: #111;
+	margin-bottom: 16px;
+}
+#dpoint_docomo2025 .topic .inner ol.point div > li{
+	background: #fff;
+	border-radius: 10px;
+	background-image: linear-gradient(142deg, #ffbfd3 114px, transparent 0);
+	padding: 16px 20px 20px 20px;
+	box-sizing: border-box;
+	color: #111;
+	margin-bottom: 16px;
+}
+#dpoint_docomo2025 .topic .inner ol.point .point1 .guest_wrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+#dpoint_docomo2025 .topic .inner ol.point .point1 .guest_wrap figcaption{
+	text-align: center;
+	font-size: 20px;
+}
+#dpoint_docomo2025 .topic .inner ol.point .point1 .guest_wrap li{
+	width: 40%;
+}
+#dpoint_docomo2025 .topic .inner ol.point .point1 .guest_wrap li img{
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+}
+#dpoint_docomo2025 .topic .inner ol.point div+div .point1{
+
+	background-image: linear-gradient(142deg, #f1f184 114px, transparent 0);
+
+}
+#dpoint_docomo2025 .topic .inner ol.point div > li{
+	margin-bottom: 0;
+	padding: 16px 20px 1px 20px;
+}
+
+#dpoint_docomo2025 .topic .inner ol.point> div + div{
+	margin-top: 85px;
+
+}
+#dpoint_docomo2025 .topic .inner ol.point div.button_spring{
+	margin-top: 10px;
+
+}
+#dpoint_docomo2025 .topic .inner ol.point .cp_img{
+	text-align: center;
+}
+#dpoint_docomo2025 .topic .inner ol.point >div + div .cp_img img{
+	margin-top: 10px;
+	width: 87%;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point1{
+	width: 100%;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point2{
+	width: calc(50% - 9px);
+	margin-right: 18px;
+	min-height: 280px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3{
+	width: calc(50% - 9px);
+	min-height: 280px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content{
+	display: table;
+	width: 100%;
+	margin-bottom: 12px;
+}
+#dpoint_docomo2025 .topic .inner ol.point li .content{
+	display: block;
+}
+#dpoint_docomo2025 .topic .cp_img img{
+	width:100%;
+	height:100%;
+	margin-left: 2%;
+
+}
+#dpoint_docomo2025 .topic .inner ol.point div + div img{
+	margin-left: 0;
+
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point2 .content,
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3 .content{
+	margin-bottom: 20px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content h3{
+	margin: 0;
+	display: table-cell;
+	width: 126px;
+	padding-top: 10px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 30px;
+	padding-left: 30px;
+	line-height: 1.4;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li .guest_topic div.text{
+
+	vertical-align: middle;
+	font-size: 30px;
+	padding-left: 7%;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li .guest_topic{
+	margin: 33px 0 100px;
+
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text.point03{
+	padding-left: 10px;
+    letter-spacing: -1px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text p{
+	margin: 0;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text p+p{
+	font-size:20px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text p strong{
+	background: linear-gradient(transparent 60%, #fdff7f 60%);
+	font-weight: normal;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text p span.pc_br{
+	display: block;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text p span.notes{
+	font-size: 14px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan{
+	display: table;
+	border-collapse: separate;
+	border-spacing: 24px 0; 
+	margin: 0 auto 16px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li{
+	display: table-cell;
+	border-radius: 10px;
+	padding: 20px 0 14px 0;
+	text-align: center;
+	width: 285px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.one_year{
+	border: 3px solid #eec600;
+	background: #fffcec;
+	background-image: linear-gradient(135deg, #ff0024 40px, transparent 0);
+	position: relative;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.one_year div + div{
+	margin-top: -3px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.six_months{
+	border: 3px solid #90bc1f;
+	background: #fbfff1;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li .includ_notes{
+	font-size: 14px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan  .really_price{
+	font-size:25px;
+	font-weight: bold;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.one_year hr{
+	width:50%
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.one_year .really_price_icon{
+	display: inline-block;
+	font-size:14px;
+	font-weight: bold;
+	background-color: #c1a414;
+	border-radius: 9999px;
+	color:#fff;
+	padding: 3px 9px 1px;
+	margin-right: 6px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.six_months .really_price_icon {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #90bc1f;
+    border-radius: 9999px;
+    color: #fff;
+    padding: 3px 9px 1px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.three_months .really_price_icon {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #099bee;
+    border-radius: 9999px;
+    color: #fff;
+    padding: 3px 9px 1px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.three_months{
+	border: 3px solid #099bee;
+	background: #edf7fd;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.one_year:before{
+	content: "おすすめ";
+	font-size: 12px;
+	color: #fff;
+	transform: rotate(-45deg); 
+	position: absolute;
+	left:-4px;
+	top: 10px;
+	font-weight: bold;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li h4{
+	font-size: 20px;
+	color: #fff;
+	border-radius: 30px;
+	padding: 5px 20px 0 20px;
+	line-height: 1;
+	font-weight: normal;
+	box-sizing: border-box;
+	width: 180px;
+	margin: 0 auto 18px auto;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.one_year h4{
+	background:linear-gradient(to right, #eec600, #c9a90c);
+}
+
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.six_months h4{
+	background: #90bc1f;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.three_months h4{
+	background:#099bee;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li h4 em{
+	font-size: 30px;
+	font-style: normal;
+}
+
+#dpoint_docomo2025 .recommend_point .inner .plan li p{
+	font-size: 20px;
+	margin: 0 auto 3px auto;
+}
+#dpoint_docomo2025 .recommend_point .inner .plan .includ_annotation{
+	font-size: 15px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li .includ_point{
+	margin-bottom: 13px;
+	margin-top: 9px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li .includ_point_1{
+	margin-bottom: -8px;
+	margin-top: -7px;
+}
+#dpoint_docomo2025 .recommend_point .inner .plan .line_icon_pad{
+	margin: 14px 0 -6px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li .includ_point + .includ_point{
+	margin-top: 5px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li p em{
+	font-family: 'メイリオ',Meiryo,helvetica,arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 1;
+	margin: 0 3px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li div .includ_annotation em{
+	font-weight: bold;
+	margin: 0 1px 0 5px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li div .includ_annotation +.includ_annotation em{
+
+	margin-right:1px;
+	margin-left: 0;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li div .includ_annotation +.includ_annotation {
+
+	font-size: 17px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li p.exclud_tax em{font-size: 50px;}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li p.includ_tax em,
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li p.line_icon_pad em{font-size: 25px;}
+
+#dpoint_docomo2025 .recommend_point .inner ul.notes {
+	font-size: 12px;
+	padding: 0 10px;
+	margin-bottom: 16px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ul.notes li {
+	text-indent: -17px;
+	padding-left: 16px;
+	margin-bottom: 8px;
+}
+
+#dpoint_docomo2025 p.button{
+	font-size: 20px;
+	width: 300px;
+	text-align: center;
+	line-height: 1;
+	margin: 0 auto;
+}
+#dpoint_docomo2025 .button_spring .button,#dpoint_docomo2025 .button_competition .button{
+	
+	width: 50%;
+}
+#dpoint_docomo2025 p.button a{
+	color: #6c8c19;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border: 1px solid #83a239;
+	border-bottom: 4px solid #6c8c19;
+	border-radius: 100px;
+    background: #fff;
+}
+#dpoint_docomo2025 .button_spring p.button a{
+	color: #e1325b;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border: 1px solid #e1325b;
+	border-bottom: 4px solid #e1325b;
+	border-radius: 100px;
+    background: #fff;
+}
+#dpoint_docomo2025 .button_spring p.button a:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - -1px);
+	right: 20px;
+	width: 8px;
+	height: 8px;
+	border-right: 3px solid #e1325b;
+	border-bottom: 3px solid #e1325b;
+	transform: translateY(-50%) rotate(-45deg);
+	vertical-align: middle;
+}
+#dpoint_docomo2025 .button_competition p.button a{
+	color: #8b4f00;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border: 1px solid #8b4f00;
+	border-bottom: 4px solid #8b4f00;
+	border-radius: 100px;
+    background: #fff;
+}
+#dpoint_docomo2025 .button_competition p.button a:after{
+	border-right: 3px solid #8b4f00;
+	border-bottom: 3px solid #8b4f00;
+
+}
+#dpoint_docomo2025 .button_spring ,#dpoint_docomo2025 .button_competition {
+	width: 100%;
+}
+#dpoint_docomo2025 .button_competition {
+	margin: 18px 0;
+}
+#dpoint_docomo2025 .button_competition +  .button_competition {
+	margin:18px 0 45px;
+}
+#dpoint_docomo2025 p.button a:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - -1px);
+	right: 20px;
+	width: 8px;
+	height: 8px;
+	border-right: 3px solid #6c8c19;
+	border-bottom: 3px solid #6c8c19;
+	transform: translateY(-50%) rotate(-45deg);
+	vertical-align: middle;
+}
+
+#dpoint_docomo2025 p.button a:hover{
+	opacity: 0.75;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3 .dpoint_button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1.3;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3 .dpoint_button p.dpoint_logo{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3 .dpoint_button p.button a{
+    line-height: 1.2;
+    padding: 12px 10px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner .point_button p.button{
+    width: 360px;
+    margin-bottom: 24px;
+}
+
+/*キャンペーンについて*/
+#dpoint_docomo2025 .campaign h2{
+	margin: 0 0 12px 0;
+}
+
+#dpoint_docomo2025 .campaign .detail{
+	padding-bottom: 36px;
+}
+
+#dpoint_docomo2025 .campaign .detail .text{
+	color: #111;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 18px;
+	line-height: 1.8;
+}
+
+#dpoint_docomo2025 .campaign .detail .text a{
+	color: #fff;
+}
+
+#dpoint_docomo2025 .campaign .detail ul.notes{
+	font-size: 14px;
+	padding: 0 10px;
+	margin:0 auto 16px auto;
+	width: 720px;
+}
+
+#dpoint_docomo2025 .campaign .detail ul.notes li {
+	text-indent: -15px;
+	padding-left: 14px;
+	margin-bottom: 4px;
+}
+
+/*規約*/
+#dpoint_docomo2025 .terms{
+	background: #edebe6;
+}
+
+#dpoint_docomo2025 .terms h2{
+	background: #7ea31e;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	padding: 28px 0;
+	margin: 0 0 50px 0;
+	line-height: 1.1;
+}
+
+#dpoint_docomo2025 .terms h2:before{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -16px;
+	border: 16px solid transparent;
+	border-top: 20px solid #7ea31e;
+}
+
+#dpoint_docomo2025 .terms .inner{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 42px 60px 42px;
+    box-sizing: border-box;
+}
+
+/*開閉*/
+#dpoint_docomo2025 .acd-check{
+  display: none;
+}
+
+#dpoint_docomo2025 .terms .acd-title{
+	background: #fff;
+	border-radius: 15px;
+	font-size: 26px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 28px 30px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+#dpoint_docomo2025 .terms .acd-check:checked + .acd-title {
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+}
+
+#dpoint_docomo2025 .terms .acd-title:after,
+#dpoint_docomo2025 .terms .acd-check:checked + .acd-title:after{
+    content:"";
+    top:calc( 50% - 8px );
+    right: 30px;
+    position: absolute;
+    line-height: 1;
+    width: 16px;
+    height: 16px;
+    border: 6px solid #90bc1f;
+    border-left: 0;
+    border-bottom: 0;
+    transform: translateY(-25%) rotate(135deg);
+}
+
+#dpoint_docomo2025 .terms .acd-check:checked + .acd-title:after{
+    transform: translateY(25%) rotate(-45deg);
+}
+
+#dpoint_docomo2025 .acd-content{
+    display: none;
+}
+
+#dpoint_docomo2025 .acd-check:checked + .acd-title + .acd-content{
+    display: block;
+}
+
+#dpoint_docomo2025 .acd-content,
+#dpoint_docomo2025 .acd-check:checked + .acd-title + .acd-content{
+    /*height: 0;*/
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+    background: #fff;
+    padding: 0 30px;
+    border-radius: 0 0 15px 15px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+#dpoint_docomo2025 .acd-check:checked + .acd-title + .acd-content{
+    /*height: 100%;*/
+    opacity: 1;
+    visibility: visible;
+}
+
+#dpoint_docomo2025 .terms h3{
+    background: #90bc1f;
+	text-align: center;
+	margin: 0 auto 24px auto;
+	font-size: 18px;
+	color: #fff;
+	width: 340px;
+	font-weight: normal;
+	border-radius: 30px;
+	padding: 8px 0 10px 0;
+}
+
+#dpoint_docomo2025 .terms .detail{
+    margin-bottom: 48px;
+    padding: 0 30px;
+}
+
+#dpoint_docomo2025 .terms ul.text{
+	margin-bottom: 12px;
+}
+
+#dpoint_docomo2025 .terms ul.text li{
+	text-indent: -18px;
+	padding-left: 18px;
+	margin-bottom: 8px;
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+#dpoint_docomo2025 .terms ul.text li span.notes{
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+#dpoint_docomo2025 .terms ul.text li ul.notes{
+    margin-top: 6px;
+}
+
+#dpoint_docomo2025 .terms ul.notes li{
+	text-indent: -14px;
+	padding-left: 14px;
+	margin-bottom: 4px;
+	font-size: 14px;
+    color: #555;
+}
+
+#dpoint_docomo2025 .terms table{
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    border-spacing:0;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+#dpoint_docomo2025 .terms table thead tr th{
+    background: #edebe6;
+    padding: 18px 0;
+    line-height: 1.8;
+}
+
+#dpoint_docomo2025 .terms table span{
+    font-size: 14px;
+}
+
+#dpoint_docomo2025 .terms table dl{
+    font-size: 14px;
+    margin: 0;
+}
+
+#dpoint_docomo2025 .terms table th,
+#dpoint_docomo2025 .terms table td{
+    border-bottom: 1px solid #edebe6;
+    padding: 12px 0;
+}
+
+#dpoint_docomo2025 .terms table dl dt,#dpoint_docomo2025 .line_icon{
+    background: #555;
+    color: #fff;
+    padding: 3px 8px 2px 8px;
+    display: inline;
+    border-radius: 30px;
+    font-weight: normal;
+}
+#dpoint_docomo2025 .line_icon{
+	font-size: 14px;
+}
+#dpoint_docomo2025 .terms table dl dd{
+    display: inline;
+    font-weight: normal;
+    margin: 0 0 0 6px;
+}
+
+#dpoint_docomo2025 .terms .plan_sup{
+    background: #fcfedf;
+    width: 660px;
+    margin: 0 auto 28px auto;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+#dpoint_docomo2025 .terms .check_plans{
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 18px;
+}
+
+/*************************************************************************************/
+
+/*SP*/
+@media (max-width: 768px) {
+
+body {
+	padding-bottom: 110px;
+}
+
+#dpoint_docomo2025 .pc_br{display: inline;}
+#dpoint_docomo2025 .pc_view{display: none;}
+#dpoint_docomo2025 .sp_br,
+#dpoint_docomo2025 .sp_view{display: block;}
+
+/*main*/
+#dpoint_docomo2025 .main{
+	height: auto;
+}
+
+#dpoint_docomo2025 .main .inner{
+    padding-top: 46px;
+    padding-bottom: 12px;
+}
+
+#dpoint_docomo2025 .main h1,
+#dpoint_docomo2025 .main h2{
+	margin: 10px 0 -5px 0;
+}
+
+#dpoint_docomo2025 .main h1 img{
+	width: 100%;
+	max-width: 375px;
+    margin: 0 auto;
+}
+
+#dpoint_docomo2025 .main h2 img{
+	width: 100%;
+	max-width: 380px;
+}
+
+#dpoint_docomo2025 .main .inner .dpoint{
+	top: 8px;
+	right: 6px;
+}
+
+#dpoint_docomo2025 .main .inner .dpoint img{
+	width: 42px;
+	height: 42px;
+}
+
+#dpoint_docomo2025 .main .inner .nttdocomo{
+    position: absolute;
+	top: 6px;
+	left: 6px;
+    padding: 8px 12px;
+}
+
+#dpoint_docomo2025 .main .inner .nttdocomo img{
+	width: auto;
+	height: 28px;
+}
+
+#dpoint_docomo2025 .main_detail .detail{
+    padding: 0 8px;
+    margin-bottom: 4px;
+}
+
+#dpoint_docomo2025 .main_detail .detail dl{
+    margin-bottom: 8px;
+}
+
+#dpoint_docomo2025 .main_detail .detail dl dt{
+    min-height: 92px;
+}
+
+#dpoint_docomo2025 .main_detail .detail dl dt ul li img{
+    width:80px;
+    height: auto;
+}
+#dpoint_docomo2025 .main_detail .detail dl dt ul li:nth-child(2) img
+	{
+		width: 120px;
+	}
+#dpoint_docomo2025 .main_button{
+	padding: 0 6px 16px 6px;
+}
+
+#dpoint_docomo2025 .main_detail ul.detail_notes{
+    padding: 0 12px;
+    box-sizing: border-box;
+    margin: 0 auto 14px auto;
+}
+
+#dpoint_docomo2025 .main_button .text{
+	font-size: 12px;
+	margin: 8px auto 3px auto;
+}
+
+#dpoint_docomo2025 .main_button .text a,
+#dpoint_docomo2025 .campaign .detail .text a{
+	display: inline-block;
+}
+
+#dpoint_docomo2025 .main_detail .detail_button{
+    margin: 0 auto 12px auto;
+}
+
+/*登録ボタン*/
+#dpoint_docomo2025 .registration_button{
+	font-size: 14px;
+}
+
+#dpoint_docomo2025 .registration_button p{
+	line-height: 1.1;
+}
+
+#dpoint_docomo2025 .registration_button a{
+	border-radius: 6px;
+	border-bottom: 3px solid #97000c;
+	padding: 16px 8px;
+	width: 100%;
+}
+
+#dpoint_docomo2025 .main_button .registration_button a{
+	padding: 8px 8px;
+	width: 92%;
+}
+
+#dpoint_docomo2025 .registration_button a:after{
+	top: calc(50% - -3px);
+	right: 10px;
+	width: 8px;
+	height: 8px;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+
+#dpoint_docomo2025 .registration_button a span{
+	font-size: 14px;
+}
+
+#dpoint_docomo2025 .registration_button a strong{
+	font-size: 22px;
+	margin-bottom: 8px;
+}
+
+/*画面下固定ボタン*/
+#dpoint_docomo2025 .fixed_button{
+	padding: 8px 0;
+}
+
+#dpoint_docomo2025 .fixed_button .registration_button a{
+	padding: 6px 0 8px 0;
+	font-size: 12px;
+	border-radius: 5px;
+	width:92%;
+}
+
+#dpoint_docomo2025 .fixed_button .registration_button a:after{
+	top: calc(50% - -2px);
+	width: 7px;
+	height: 7px;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+
+#dpoint_docomo2025 .fixed_button .registration_button a strong{
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+
+#dpoint_docomo2025 .fixed_button .registration_button a span{
+	font-size: 12px;
+}
+
+#dpoint_docomo2025 .fixed_button .text{
+	margin: 6px 6px 0 6px;
+	font-size: 12px;
+}
+
+#dpoint_docomo2025 .fixed_button .text a{
+	display: inline-block;
+}
+
+/*what_is*/
+#dpoint_docomo2025 .what_is .bg:before,
+#dpoint_docomo2025 .what_is .bg:after{
+	height: 30px;
+}
+
+#dpoint_docomo2025 .what_is .bg .bg_black{
+	padding:30px 0 50px 0; 
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner h2{
+	font-size: 22px;
+	margin-bottom: 18px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.three_months .really_price_icon {
+    
+    padding: 2px 9px 0px;
+
+}
+#dpoint_docomo2025 .what_is .bg_black .inner h2 strong{
+	font-size: 36px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li .includ_point_1 {
+    margin-bottom: -5px;
+
+}
+#dpoint_docomo2025 .what_is .bg_black .inner p{
+	padding: 6px 20px 10px 20px;
+	font-size: 16px;
+	margin: 0 auto 16px auto;
+	line-height: 1.2;
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner p strong{
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+#dpoint_docomo2025 .what_is .bg_black .inner ul.notes {
+	width: calc(100% - 24px);
+}
+
+#dpoint_docomo2025 .what_is .guide{
+	padding: 20px 0 10px 0;
+}
+
+#dpoint_docomo2025 .what_is .guide p{
+	font-size: 16px;
+	font-style: italic;
+	margin: 0 0 30px 0;
+}
+
+#dpoint_docomo2025 .what_is .guide dl{
+	line-height: 1.2;
+	margin-bottom: 8px;
+}
+ 
+#dpoint_docomo2025 .what_is .guide dl dt{
+	font-size: 16px;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dt:before,
+#dpoint_docomo2025 .what_is .guide dl dt:after{
+	height: 3px;
+	width: 26px;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dt:before{
+	margin-right: 0;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dt:after{
+	margin-left: -10px;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dt strong{
+	font-size: 26px;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dd{
+	font-size: 16px;
+	padding: 22px 0 12px 0;
+	line-height: 1.8;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dd strong{
+	font-size: 22px;
+	padding: 5px 8px 5px 0px;
+	margin-left: 5px;
+	display: inline-block;
+	line-height: 1;
+}
+
+#dpoint_docomo2025 .what_is .guide dl dd strong span{
+	font-size: 16px;
+	margin: 0 1px;
+}
+
+#dpoint_docomo2025 .what_is .guide ul.notes{
+	margin-bottom: 12px;
+}
+
+#dpoint_docomo2025 .what_is .guide ul.notes li{
+	text-indent: -21px;
+	padding-left: 21px;
+}
+
+/*背景*/
+#dpoint_docomo2025 .bg_green{
+	background: repeating-linear-gradient(90deg, #90bc1f, #90bc1f 70px, #9bc336 70px, #9bc336 140px);
+}
+
+/*point*/
+#dpoint_docomo2025 .recommend_point{
+	border-top: 10px solid #6c8c19;
+}
+
+#dpoint_docomo2025 .recommend_point .inner{
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner h2 img{
+	width: 80%;
+	height: 100%;
+}
+#dpoint_docomo2025 .topic .inner ol.point div.button_spring {
+    margin-top: 10px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point{
+	padding-bottom: -3px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point > li{
+	background-image: linear-gradient(142deg, #cde19a 70px, transparent 0);
+	padding: 8px 6px 8px 6px;
+	margin-bottom: 8px;
+	float: none;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point1,
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point2,
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3{
+	width: calc(100% - 24px);
+	margin: 0 auto 8px auto;
+	height: auto;
+	min-height: auto;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content{
+	margin-bottom: 8px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point2 .content,
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3 .content{
+	margin-bottom: 8px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content h3{
+	width: 80px;
+	padding-top: 6px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content h3 img{
+	width: 80px;
+	height: 62px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text{
+	font-size: 22px;
+	padding-left: 10px;
+	line-height: 1.2;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text p span.pc_br{
+	display: inline;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text p span.notes{
+	font-size: 12px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan{
+	display: block;
+	width: 100%;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li{
+	display: block;
+	padding: 14px 0 13px 0;
+	width: calc(100% - 12px);
+	margin: 0 auto 8px auto;
+}
+#dpoint_docomo2025 .topic .inner ol.point .point1 .guest_wrap li img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+	#dpoint_docomo2025 .topic .inner ol.point .point1 .guest_wrap figcaption {
+    text-align: center;
+    font-size: 16px;
+}
+		#dpoint_docomo2025 .topic .inner ol.point .point1 .guest_wrap figcaption .small_name {
+    text-align: center;
+    font-size: 12px;
+	margin-top: -3px;
+}
+	#dpoint_docomo2025 .recommend_point .inner ol.point li .guest_topic div.text {
+    vertical-align: middle;
+    font-size: 20px;
+    padding-left: 4%;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li.one_year:before{
+	left:-5px;
+	top: 12px;
+}
+    #dpoint_docomo2025 .topic .inner ol.point div + div> li {
+        padding: 2%;
+    }
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li h4{
+	font-size: 16px;
+	padding: 5px 20px 8px 20px;
+	margin: 0 auto 12px auto;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li h4 em{
+	font-size: 22px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner .plan li p{
+	font-size: 16px;
+	margin: 0 auto 2px auto;
+}
+#dpoint_docomo2025 .recommend_point .inner .plan .line_icon_pad{
+	margin: 10px 0 -6px;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li p.exclud_tax em{font-size: 40px;}
+#dpoint_docomo2025 .recommend_point .inner ol.point li ul.plan li p.includ_tax em{font-size: 20px;}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3 .dpoint_button{
+    display: block;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3 .dpoint_button p.dpoint_logo{
+    margin-bottom: 12px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ul.notes {
+	padding: 0 8px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ul.notes li {
+	text-indent: -17px;
+	padding-left: 16px;
+	margin-bottom: 8px;
+}
+#dpoint_docomo2025 .topic .inner ol.point div > li{
+
+	background-image: linear-gradient(135deg, #ffbfd3 75px, transparent 0);
+}
+#dpoint_docomo2025 .topic .inner ol.point div+div .point1{
+
+	background-image: linear-gradient(135deg, #f1f184 75px, transparent 0);
+
+}
+#dpoint_docomo2025 p.button{
+	font-size: 16px;
+	width: 260px;
+}
+#dpoint_docomo2025 .topic .inner ol.point div > li {
+    margin-bottom: 0;
+    padding: 9px 10px 1px 3px;
+}
+#dpoint_docomo2025 .button_spring .button, #dpoint_docomo2025 .button_competition .button {
+    width: 333px;
+}
+	#dpoint_docomo2025 .topic .inner ol.point >div + div {
+    margin-top: 36px;
+}
+	#dpoint_docomo2025 .button_competition {
+    margin: 7px 0;
+}
+	#dpoint_docomo2025 .button_competition + .button_competition {
+    margin: 9px 0 20px;
+}
+#dpoint_docomo2025 p.button a{
+	padding: 16px 5px;
+	border-bottom: 3px solid #6c8c19;
+}
+#dpoint_docomo2025 .recommend_point .inner ol.point li .content div.text p+p {
+    font-size: 15px;
+	margin-top:2%; 
+}
+	#dpoint_docomo2025 .recommend_point .inner ol.point li .guest_topic {
+    margin: 16px 0 15px;
+}
+	#dpoint_docomo2025 .topic .inner ol.point >div + div .cp_img img {
+    margin-top: 9px;
+    width: 100%;
+}
+#dpoint_docomo2025 p.button a:after{
+	right: 12px;
+	width: 6px;
+	height: 6px;
+	border-right: 2px solid #6c8c19;
+	border-bottom: 2px solid #6c8c19;
+}
+
+#dpoint_docomo2025 .recommend_point .inner ol.point li.point3 p.dpoint_logo img{
+	width:100px;
+	height: 27px;
+}
+
+#dpoint_docomo2025 .recommend_point .inner .point_button p.button{
+    width: 86%;
+}
+#dpoint_docomo2025 .topic .inner ol.point .point1 .guest_wrap {
+
+}
+	#dpoint_docomo2025 .topic .inner ol.point .point1 .guest_wrap li {
+    width: 45%;
+}
+/*キャンペーンについて*/
+#dpoint_docomo2025 .campaign h2{
+	margin: 0 0 12px 0;
+}
+
+#dpoint_docomo2025 .campaign .detail{
+	padding-bottom: 36px;
+	width:calc(100% - 24px);
+	margin: 0 auto;
+}
+
+#dpoint_docomo2025 .campaign .detail .text{
+	font-size: 14px;
+	margin-bottom: 12px;
+	line-height: 1.6;
+}
+
+#dpoint_docomo2025 .campaign .detail ul.notes{
+	font-size: 12px;
+	margin:0 auto 12px auto;
+	width: 100%;
+	padding: 0;
+}
+
+#dpoint_docomo2025 .campaign .detail ul.notes li {
+	text-indent: -12px;
+	padding-left: 12px;
+}
+
+
+/*規約*/
+#dpoint_docomo2025 .terms h2{
+	padding: 18px 12px;
+	margin: 0 0 12px 0;
+	box-sizing: border-box;
+	font-size: 22px;
+}
+
+#dpoint_docomo2025 .terms h2:before{
+	margin-left: -8px;
+	border: 8px solid transparent;
+	border-top: 10px solid #7ea31e;
+}
+
+#dpoint_docomo2025 .terms .inner{
+	width: 100%;
+	padding: 0 12px 20px 12px;
+}
+
+/*開閉*/
+#dpoint_docomo2025 .terms .acd-title{
+	border-radius: 6px;
+	font-size: 18px;
+    padding: 12px 12px;
+    margin-bottom: 12px;
+}
+
+#dpoint_docomo2025 .terms .acd-check:checked + .acd-title {
+    border-radius: 6px 6px 0 0;
+}
+
+#dpoint_docomo2025 .terms .acd-title:after,
+#dpoint_docomo2025 .terms .acd-check:checked + .acd-title:after{
+    content:"";
+    top:calc(50% - 4px);
+    right: 12px;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #90bc1f;
+    border-left: 0;
+    border-bottom: 0;
+    transform: translateY(-25%) rotate(135deg);
+}
+
+#dpoint_docomo2025 .terms .acd-check:checked + .acd-title:after{
+    transform: translateY(25%) rotate(-45deg);
+}
+
+#dpoint_docomo2025 .acd-content,
+#dpoint_docomo2025 .acd-check:checked + .acd-title + .acd-content{
+    padding: 0 12px;
+    border-radius: 0 0 6px 6px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+#dpoint_docomo2025 .terms h3{
+	margin: 0 auto 12px auto;
+	font-size: 16px;
+	width: 80%;
+	padding: 6px 0 8px 0;
+}
+
+#dpoint_docomo2025 .terms .detail{
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+#dpoint_docomo2025 .terms dl{
+	border-radius: 8px;
+	padding: 12px 12px;
+	margin-bottom: 8px;
+	font-size: 14px;
+	box-sizing: border-box;
+	margin: 0 12px 12px 12px;
+}
+
+#dpoint_docomo2025 .terms dl dt{
+	margin: 0 auto 8px auto;
+	font-size: 16px;
+	width: 200px;
+}
+
+#dpoint_docomo2025 .terms dl dd{
+	padding: 0;
+}
+
+#dpoint_docomo2025 .terms dl dd ul.text{
+	margin-bottom: 8px;
+}
+
+#dpoint_docomo2025 .terms dl dd ul.text li{
+	text-indent: -14px;
+	padding-left: 14px;
+	margin-bottom: 4px;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+#dpoint_docomo2025 .terms dl dd ul.notes li{
+	text-indent: -12px;
+	padding-left: 12px;
+	margin-bottom: 2px;
+	font-size: 12px;
+}
+
+#dpoint_docomo2025 .terms ul.text li{
+    text-indent: -14px;
+	padding-left: 14px;
+    font-size: 14px;
+}
+
+#dpoint_docomo2025 .terms .table-wrap {
+  overflow-x: scroll;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(237, 235, 230, 0.3)) 0 0/10px 100%, linear-gradient(to right, rgba(255, 255, 255, 0), rgba(237, 235, 230, 0.3)) right/20px 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin-bottom: 16px;
+  
+  position: relative;
+  z-index: 0;
+}
+
+#dpoint_docomo2025 .terms .table-wrap table{
+  width:100%;
+  min-width: 580px;
+  font-size: 16px;
+  
+  background: linear-gradient(to left, hsla(0,0%,100%,0), white 15px) 0 0 / 50px 100%, linear-gradient(to right, hsla(0,0%,100%,0), white 15px) right / 50px 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  margin-bottom: 0;
+}
+
+#dpoint_docomo2025 .terms table thead tr th{
+    padding: 8px 0;
+    line-height: 1.6;
+}
+
+#dpoint_docomo2025 .terms table thead tr th dl{
+    padding: 0;   
+}
+
+#dpoint_docomo2025 .terms table dl dt{
+    font-size: 12px;
+}
+
+#dpoint_docomo2025 .terms .plan_sup{
+    width: 96%;
+    margin: 0 auto 16px auto;
+    padding: 18px 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#dpoint_docomo2025 .terms .check_plans{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+
+
+}
