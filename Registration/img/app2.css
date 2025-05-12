@@ -5634,7 +5634,7 @@ h1.c-news-card-title {
 	right:10%;
 }
 .icon_choice td>p {
-	width: 100%;
+	width: 80%;
 }
 .c-setting-noimage {
   display: inline-block;
@@ -5664,6 +5664,9 @@ h1.c-news-card-title {
 }
 
 @media (max-width: 768px) {
+	.icon_choice td>p {
+	width: 100%;
+}
 	.facephoto_choice .c-setting-noimage {
    display: inline-block;
         background-color: transparent;
@@ -5675,7 +5678,7 @@ h1.c-news-card-title {
 		.c-setting-noimage {
     display: inline-block;
     width: 146px;
-    height: 146px;
+    height: 1px;
     background-color: transparent;
     margin-left: 20px;
 }
@@ -5866,7 +5869,9 @@ h1+.c-setting-plan {
     width: 100%;
     margin-left: 0
   }
-
+	.c-setting-dl dd.icon_choice,.c-setting-dl dd.facephoto_choice {
+		margin-bottom: 0;
+	} 
   .c-setting-dl dd table tr {
     display: flex;
     flex-direction: column
