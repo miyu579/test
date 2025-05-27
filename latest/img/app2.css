@@ -8,7 +8,7 @@
 
 body {
   background-color: #fff;
-  color: #343434;
+  color: #FFFFFF;
   font-family: Noto Sans JP, sans-serif;
   line-height: 1.5;
   overflow-x: hidden
@@ -24,12 +24,49 @@ a:focus,
 a:active {
   opacity: .8
 }
-
 @media screen and (max-width: 787px) {
   .table-scroll {
     overflow-x: auto;
   }
 }
+/*20250416*/
+.c-plan-section .price-list .fo20_bold{
+	font-size:20px;
+	font-weight: bold;
+}
+.c-plan-section .price-list .fo18_normal{
+	font-size:18px;
+}
+.c-plan-section tr:nth-of-type(4) {
+	text-align: center;
+}
+@media screen and (max-width:768px) {
+	.c-plan-section tr:nth-of-type(4) td{
+	padding: 0;
+	font-size: 0;
+	}
+	.c-plan-section tr:nth-of-type(4) p{
+		width: 98%;
+		margin: auto;
+	}
+	.c-plan-section tr:nth-of-type(4) p:nth-of-type(3){
+		letter-spacing: -0.5px;
+		font-size: 13px;
+	}
+	.c-plan-section tr:nth-of-type(4) td:nth-of-type(2){
+		vertical-align: middle;
+	}
+	.c-plan-section .price-list .fo20_bold{
+	font-size:15px;
+	font-weight: bold;
+}
+	.c-plan-section .price-list .fo18_normal{
+	font-size:14px;
+}
+}
+
+/*20250416*/
+/*料金表*/
  .price-list table{
 	 margin: auto;
 	 width:75%;
@@ -37,13 +74,30 @@ a:active {
 	  border-collapse: collapse;
   /*表全体を線で囲う*/
 }
-/*料金表*/
+#course .letsclick{
+	font-size: 15px;
+	font-weight: bold;
+}
 .c-plan-section tr:nth-of-type(2) p:nth-of-type(2) {
     margin: -14px 0 -7px 16px;
 }
-.c-plan-section .price-box{
+.c-plan-section td:nth-of-type(3) .price-box{
 	margin: auto;
 	background-color: #149ac8;
+	width: 84px;
+	height:10px;
+	border-radius: 5px;
+}
+.c-plan-section td:nth-of-type(2) .price-box{
+	margin: auto;
+	background-color: #b3d137;
+	width: 84px;
+	height:10px;
+	border-radius: 5px;
+}
+.c-plan-section td:nth-of-type(1) .price-box{
+	margin: auto;
+	background-color: #a98a2f;
 	width: 84px;
 	height:10px;
 	border-radius: 5px;
@@ -67,6 +121,15 @@ a:active {
 	border-color: #c0c0c0;
 	border-width: 1px;
 	border-style: solid;
+}
+.c-plan-section tr:nth-of-type(4) td:nth-of-type(1){
+	color: #646464;
+}
+.c-plan-section tr:nth-of-type(4) td:nth-of-type(2){
+	color: #646464;
+}
+.c-plan-section tr:nth-of-type(4) td:nth-of-type(3){
+	color: #646464;
 }
 .c-plan-section tr td:nth-of-type(3){
 	color: #149ac8;
@@ -208,7 +271,8 @@ tr:nth-of-type(1) th:nth-of-type(1)::after{
 	margin: -14px 0 -7px;
 }
 .c-plan-section tr:nth-of-type(4) p:nth-of-type(2){
-	margin: -5px 0 0;
+	margin: 3px 0 0px;
+	
 }
 .c-plan-section tr:nth-of-type(6) p:nth-of-type(2){
 	margin: -9px 0 0;
@@ -382,7 +446,7 @@ tr:nth-of-type(1) th:nth-of-type(1)::after{
 		.c-plan-section  tr:nth-of-type(n+7) td{
 	padding: 0 0 10px;
 }
-	.c-plan-section  tr:nth-of-type(n+6) td:nth-of-type(2),.c-plan-section  tr:nth-of-type(n+6) td:nth-of-type(3){
+	.c-plan-section  tr:nth-of-type(n+7) td:nth-of-type(2),.c-plan-section  tr:nth-of-type(n+7) td:nth-of-type(3){
 
 }
 
@@ -425,7 +489,7 @@ tr:nth-of-type(1) th:nth-of-type(1)::after{
 	.c-plan-section tr:nth-of-type(8) td:nth-of-type(1) {
     border-bottom-width: 3px;
 }
-	    .c-plan-section .price-list tr:nth-of-type(6) .fo20_normal {
+	    .c-plan-section .price-list tr:nth-of-type(5) .fo20_normal {
         font-size: 15px;
         line-height: 13px;
         margin: auto;
@@ -437,9 +501,7 @@ tr:nth-of-type(1) th:nth-of-type(1)::after{
 		text-align: center;
 		margin: auto;
 }
-	.c-plan-section  tr:nth-of-type(5) p{
-	padding-left: 1px;
-}
+
 	.c-plan-section tr:nth-of-type(1) th:nth-of-type(1)::before {
     border: 3px solid #e7bd40;
     border-bottom: none;
@@ -489,7 +551,7 @@ tr:nth-of-type(1) th:nth-of-type(1)::after{
 
 }
 #top .head_pr_2{
-	background-color: #8fdeef;
+	 background: linear-gradient(#30b5ff);
 }
 #top .head_pr img {
 	object-fit: cover;
@@ -653,7 +715,7 @@ tr:nth-of-type(1) th:nth-of-type(1)::after{
   width: 100%;
   margin: 0 auto;
   text-decoration: none;
-	color: #4b4b4b;
+	color: #fff;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -809,7 +871,7 @@ color: #4b4b4b;
   .sticky_nav {
     position: fixed;
     bottom: 0;
-    background: #ddd;
+    background: #313131;
   }
 	.sticky_block .sticky_nav_inner_box {
 
@@ -819,7 +881,6 @@ color: #4b4b4b;
   .sticky_nav .sticky_nav_inner_box .nav_item {
 		width: 100%;
     height: 55px;
-    border-right: 1px solid #cacdce;
   }
   .sticky_nav .nav_item:nth-of-type(5) {
     border-right: none;
@@ -978,7 +1039,7 @@ color: #4b4b4b;
 		display: block;
 		width: 29px;
 		height: 3px;
-		background: #4B4B4B;
+		background: #fff;
 		margin: 3px 0;
 		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 	}
@@ -1242,7 +1303,8 @@ color: #4b4b4b;
 .js-slider2 .slick-active button {
   background-color: #4b4b4b;
 }	
-.arrow_box {
+.arrow_box {   
+	
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
@@ -3094,7 +3156,7 @@ h1.c-invitation-title {
 	text-align: left;
     width: 83%;
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 12px;
     min-width: 300px;
     padding-left: 17px;
 }
@@ -3178,9 +3240,9 @@ h1.c-invitation-title {
 }
 	#top .left-caution-big {
         text-align: left;
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
-        font-size: 15px;
+        font-size: 12px;
         min-width: 350px;
         padding: 0;
 }
@@ -10126,14 +10188,7 @@ transform: translateY(50%) rotate(315deg);
   text-align: left
 }
 
-.c-logout-plan-note p{
-    padding-left: 32px !important;
-    padding: 9px 0 5px 0;
-    background-image: url(./logout-caution.png);
-    background-repeat: no-repeat;
-    background-size: 23px 23px;
-    background-position: left top 50%;
-}
+
 
 .c-logout-fee {
   max-width: 784px;
@@ -10203,6 +10258,21 @@ transform: translateY(50%) rotate(315deg);
 }
 
 @media screen and (max-width: 768px) {
+	.c-logout-plan-note p{
+   padding-left: 20px !important;
+    padding: 2px 0 3px 0;
+    background-image: url(./logout-caution.png);
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    background-position: left top 20%;
+}.c-logout-plan-note p {
+    padding-left: 20px !important;
+        padding: 3px 0 5px 0;
+        background-image: url(./logout-caution.png);
+        background-repeat: no-repeat;
+        background-size: 13px 13px;
+        background-position: left top 50%;
+}
 	.details-summary {
 	position: relative;
 	font-size: 20px;
@@ -11384,7 +11454,15 @@ transform: translateY(50%) rotate(315deg);
 .c-setting-choice label {
   cursor: pointer
 }
-
+.c-logout-plan-note p {
+    padding-left: 20px !important;
+    padding: 0px 0 0px 0;
+    background-image: url(./logout-caution.png);
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    background-position: left top 50%;
+    margin-bottom: 4px;
+}
 .c-setting-choice strong,
 .c-plan-section strong {
   font-size: 2.25rem
@@ -26656,8 +26734,8 @@ z-index: 99;
 }
 
 .popup-img {
-  width: 300px;
-  height: 200px;
+  width: 311px;
+  height: 190px;
   border: 5px solid #d3d3d3;
 
 }
@@ -26671,7 +26749,7 @@ z-index: 99;
 }
 
 .popup.hidden {
-  opacity: 0;
+	opacity: 0;
 	
 }
 @media screen and (max-width: 1100px) {

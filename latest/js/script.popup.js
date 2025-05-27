@@ -8,5 +8,5 @@ jQuery(window).on("scroll", function ($) {
 
 //ポップアップバナーの閉じるボタンがクリックされた場合の処理
 $('.popup-close').on('click', function () {
-    $('.popup').addClass('hidden');
+   document.getElementById("wrapper").style.display="none";
 });
