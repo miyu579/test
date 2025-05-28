@@ -1,0 +1,876 @@
+@charset "utf-8";
+
+
+* {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%; /* iPhoneでランドスケープにした時に文字サイズ自動変更禁止 */
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.6;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    color: #333;
+    background-color: #F4F6F9;
+    background-attachment: fixed;
+    background-position: right -85% bottom -1px;
+    background-size: 63%;
+}
+.smartgolf202506_bg{
+	background-color: #2a364f;
+	background-image: url("../img/bodybg.png"),url("../img/bodybg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right -85% bottom -1px, left -292px top -80px;
+    background-size: 63%,40%;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.smartgolf202506_bg1{
+	background-color: #fff;
+	margin:  0 25%;
+	box-shadow: 0px 0px 10px 0px #000000;
+}
+.spOnly { display: none; }
+img {
+max-width: 100%;
+height: auto;
+vertical-align: bottom;
+}
+/* 共通*/
+
+#smartgolf202506{
+	 width:100%;
+	margin: auto;
+	background-color: #fff;
+	padding: 50px 0 0;
+	min-width: 750px;
+	
+}
+
+#smartgolf202506  .bold_only {
+	font-weight: bold;
+}
+#smartgolf202506  .redcolor {
+	color: #ed0c00;
+}
+#smartgolf202506  h3{
+	font-size: 26px;
+	font-weight: bold;
+	color: #11296b;
+	margin: 26px auto 33px;
+	text-align: center;
+}
+#smartgolf202506  h3 span{
+	font-weight: 500;
+	color: #1eaa39;
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+#smartgolf202506  h3 span + span{
+	font-weight: 600;
+	color: #11296b;
+	margin-top: -8px;
+	margin-bottom: 0;
+}
+
+/* 入会特典タイトル ボタン*/
+#smartgolf202506 .smartgolf202506_btn {
+	font-size: 25px;
+	margin: 30px auto 55px;
+	text-align: center;
+	border-radius: 30px;
+	padding: 10px 0;
+	color: #fff;
+	font-weight:500;
+	width: 60%;
+	background-color: #c11111;
+    box-shadow: 4px 4px 0px #650606;
+}
+#smartgolf202506 .smartgolf202506_benefits a,#smartgolf202506 .smartgolf202506_whatis a {
+	text-decoration: none;
+	color: #fff;
+	}
+#smartgolf202506 .smartgolf202506_btn a{
+	position: relative;
+}
+#smartgolf202506 .smartgolf202506_btn a::after
+ {
+   content: '';
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    right: 19px;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-top: 12px solid transparent;
+    border-right: 0 solid transparent;
+    border-left: 17px solid #fff;
+    border-bottom: 12px solid transparent;
+    box-sizing: border-box;
+}
+#smartgolf202506 .smartgolf202506_btn:hover,#smartgolf202506 a:hover{
+	opacity: 0.85;
+}
+
+@media (max-width: 1100px) {
+	.smartgolf202506_bg1 {
+    background-color: #fff;
+    margin: 0 9%;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+	#smartgolf202506 {
+    min-width: unset;
+}
+}
+@media screen and (max-width: 768px) {
+	.smartgolf202506_bg {
+     padding: 0;
+	background-color: #2a364f;
+	background-image: url(../img/bodybg.png), url(../img/bodybg.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: right 272px bottom -4px, right -31px top 0;
+	background-size: 44%, 34%;
+}
+	.spOnly{
+		display: block;
+	}
+	#smartgolf202506{
+	 width:100%;
+	margin: auto;
+	background-color: #fff;
+	padding: 20px 0 0;	
+	min-width: unset;
+}
+	.smartgolf202506_bg1 {
+    margin: 0 0%;
+    box-shadow:none;
+}
+	#smartgolf202506 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #11296b;
+    margin: 13px auto 19px;
+    text-align: center;
+}
+	#smartgolf202506 .smartgolf202506_btn {
+    font-size: 18px;
+    margin: 20px auto 38px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: 400;
+    width: 330px;
+}
+}
+
+/* 共通おわり*/
+
+
+/* ロゴ */
+#smartgolf202506 .smartgolf202506_boxwraplogo {
+	width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0% 0 4%;
+}
+#smartgolf202506 .smartgolf202506_boxwraplogo div{
+	width:45%;
+	max-width: 340px;
+	margin: auto;
+}
+#smartgolf202506 .smartgolf202506_boxwraplogo> div:nth-of-type(2){
+	width:38%;
+	max-width: 293px;
+    margin: 11px auto 0;
+}
+#smartgolf202506 .smartgolf202506_boxwraplogo  figure{
+	margin: 27px 0 5px;
+}
+@media (max-width: 1100px) {}
+@media screen and (max-width: 768px) {
+	#smartgolf202506 .smartgolf202506_boxwraplogo  figure{
+	width: 6%;
+margin-top: 8px;
+		margin: auto;
+}
+	#smartgolf202506 .smartgolf202506_boxwraplogo  figure{
+	        margin: auto;
+}
+	#smartgolf202506 .smartgolf202506_boxwraplogo img{
+		vertical-align: middle;
+	}
+#smartgolf202506 .smartgolf202506_boxwraplogo {
+}
+	#smartgolf202506 .smartgolf202506_boxwraplogo> div:nth-of-type(2){
+    margin: auto;
+}
+}
+/* ロゴおわり*/
+/* 入会特典タイトル */
+#smartgolf202506 h1{
+	font-size: 36px;
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	margin: 50px 0 30px;
+}
+#smartgolf202506 h1 span{
+	background-color: #0a3280;
+    display: inline-block;
+    padding: 0px 12px 2px;
+}
+#smartgolf202506 h1 span:nth-of-type(2){
+	margin-top: 10px;
+}
+#smartgolf202506 .smartgolf202506_downarrow{
+	margin: 20px auto;
+	text-align: center;
+}
+#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits01{
+	margin-bottom: 40px;
+}
+#smartgolf202506 .smartgolf202506_benefits  .smartgolf202506_benefits01 p{
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+}
+#smartgolf202506 .smartgolf202506_benefits  .smartgolf202506_benefits01 figure{
+	text-align: center;
+}
+#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits01 p span{
+	background-color: #ebcf59;
+	display: inline-block;
+	padding-left: 3px;
+}
+/* 入会特典タイトル 02*/
+#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits02{
+	background-image:url("../img/3benefits_bg.jpg");
+	background-size: cover;
+	padding: 30px 0 10px;
+	background-position: 0 92%;
+	background-repeat: no-repeat;
+}
+#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits02 ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	text-align: center;
+}
+#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits02 li{
+	width:30%;
+}
+#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits02 p{
+	font-size: 14px;
+	color: #fff;
+	text-align: left;
+	margin-top: 20px;
+	padding-left: 4%;
+}
+#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits02 p:nth-of-type(1){
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 15px;
+    margin-top: 0;
+	font-weight: 500;
+	padding-left: 0;
+}
+@media (max-width: 1100px) {
+	#smartgolf202506 h1{
+	font-size: 35px;
+}
+}
+@media screen and (max-width: 768px) {
+	#smartgolf202506 h1 span {
+    padding: 0px 7px 2px;
+}
+	#smartgolf202506 h1 span:nth-of-type(2) {
+    margin-top: 5px;
+}
+	#smartgolf202506 h1 {
+    font-size: 23px;
+    font-weight: 500;
+   margin: 27px 0 13px;
+}
+	#smartgolf202506 .smartgolf202506_downarrow {
+   margin: 4px auto 10px;
+
+}
+	#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits01 figure +figure{
+    width: 30%;
+}
+	#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits01 {
+    margin-bottom: 23px;
+}
+	#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits01 p {
+    font-size: 17px;
+}
+	#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits02 p:nth-of-type(1) {
+    font-size: 20px;
+}
+	#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits02 li {
+    width: 32%;
+}
+	#smartgolf202506 .smartgolf202506_benefits .smartgolf202506_benefits02 p {
+    padding-left: 20px;
+}
+}
+/* 入会特典タイトルおわり */
+
+/* smartgolfとは */
+#smartgolf202506 .smartgolf202506_whatis h2{
+	font-size: 30px;
+	font-weight: 500;
+	color: #fff;
+	margin: 44px auto 13px;
+	text-align: center;
+}
+#smartgolf202506 .smartgolf202506_whatis h2 span{
+	display: inline-block;
+	text-align: center;
+	background-color: #0a3280;
+	 padding: 0px 15px 2px;
+}
+#smartgolf202506 .smartgolf202506_whatis figure{
+	text-align: center;
+}
+#smartgolf202506 .smartgolf202506_whatis >section >p{
+	margin: auto;
+	text-align: center;
+	color:#11296b;
+	font-weight: 500;
+	width:80%;
+	font-size: 25px;
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+/* smartgolfとはpoint01 */
+#smartgolf202506 .smartgolf202506_whatis >section>section {
+	margin: 50px 0;
+
+}
+#smartgolf202506 .smartgolf202506_whatis >section>section hr{
+	border: 1px solid #e7e1e1;
+	width: 	80%;
+}
+
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div{
+	width: 73%;
+	background-color: #f4f6f9;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px 30px;
+	min-width: 590px;
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div >div{
+	width: 50%;
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div >div + div{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div >div:nth-of-type(1){
+	text-align: center;
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div + div{
+	margin-top: 20px;
+}
+
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div p{
+	color: #11296b;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 29px;
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div p+p{
+	color: #1d1d1d;
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 10px;
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div {
+    background: #edf7fd;
+    background-image: linear-gradient(135deg, #0b1e46 52px, transparent 0);
+    position: relative;
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div:before{
+	    content: "01";
+    font-size: 27px;
+    color: #fff;
+    transform: rotate(0deg);
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    font-weight: bold;
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div:nth-of-type(2):before{
+	    content: "02";
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div:nth-of-type(3):before{
+	    content: "03";
+}
+#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div:nth-of-type(4):before{
+	    content: "04";
+}
+/* smartgolfとはpoint02 */
+#smartgolf202506 .smartgolf202506_whatis section >section:nth-of-type(2) figure{
+	   width:80%;
+		margin: auto;
+}
+#smartgolf202506 .smartgolf202506_whatis section >section:nth-of-type(2) p{
+	width: 80%;
+	margin: 10px auto 0;
+}
+/* smartgolfとはpoint03 */
+#smartgolf202506 .smartgolf202506_whatis section >section:nth-of-type(3) div > div{
+	width: 80%;
+	margin: auto;
+}
+#smartgolf202506 .smartgolf202506_whatis section >section:nth-of-type(3) div > div + div{
+	margin-top: 50px;
+	margin-bottom: 60px;
+	text-align: right;
+}
+@media (max-width: 1100px) {
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div {
+    width: 88%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#smartgolf202506 .smartgolf202506_whatis >section >p{
+	font-size: 18px;
+}
+	#smartgolf202506 .smartgolf202506_whatis h2{
+	font-size: 22px;
+	font-weight: 500;
+	color: #fff;
+	margin: 28px auto 13px;
+	text-align: center;
+}
+	#smartgolf202506 .smartgolf202506_whatis >section>section {
+	margin: 24px 0;
+}
+   #smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div {
+        width: 95%;
+	   max-width: 420px;
+    }
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div {
+    background: #edf7fd;
+    background-image: linear-gradient(135deg, #0b1e46 42px, transparent 0);
+    position: relative;
+}
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div:before {
+    content: "01";
+    font-size: 21px;
+    color: #fff;
+    transform: rotate(0deg);
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    font-weight: bold;
+}
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div >div {
+    width: 35%;
+}
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div >div+div {
+    width: 61%;
+}
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div p {
+    font-size: 20px;
+}
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div p+p {
+   	font-size: 16px;
+        margin-top: 4px;
+        line-height: 21px;
+}
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div {
+    padding:0;
+}
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div {
+    justify-content: space-evenly;
+	height: 160px;
+		min-width: unset;
+}
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div >div:nth-of-type(1) img {
+    height: 50%;
+    max-width: 150px;
+}
+	#smartgolf202506 .smartgolf202506_whatis .smartgolf202506_boxwrap >div >div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+	#smartgolf202506 .smartgolf202506_whatis section >section:nth-of-type(2) p {
+    font-size: 16px;
+}
+	#smartgolf202506 .smartgolf202506_whatis section >section:nth-of-type(3) div > div {
+    margin: 0;
+	width:90%;
+}
+	#smartgolf202506 .smartgolf202506_whatis section >section:nth-of-type(3) div > div + div {
+    margin-top: 30px;
+    margin-bottom: 60px;
+	margin-left: 10%;
+}
+	}
+/* smartgolfとはおわり */
+
+/* 規約*/
+#smartgolf202506 .terms{
+	background: #e2e5ed;
+}
+
+#smartgolf202506 .terms h2{
+	background: #0b1e46;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	padding: 28px 0;
+	margin: 0 0 50px 0;
+	line-height: 1.1;
+}
+
+#smartgolf202506 .terms h2:before{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -16px;
+	border: 16px solid transparent;
+	border-top: 20px solid #0b1e46;
+}
+
+#smartgolf202506 .terms .inner{
+	width: calc(100% - 100px);
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+#smartgolf202506 .terms dl{
+	background: #fff;
+	border-radius: 15px;
+	padding: 26px 30px;
+	box-sizing: border-box;
+	margin-bottom: 24px;
+	font-size: 18px;
+}
+
+#smartgolf202506 .terms dl dt{
+	background: #0b1e46;
+	text-align: center;
+	margin: 0 auto 24px auto;
+	font-size: 26px;
+	color: #fff;
+	width: 380px;
+	font-weight: normal;
+	border-radius: 30px;
+	padding: 4px 10px 2px;
+}
+
+#smartgolf202506 .terms dl dd{
+	margin: 0;
+	padding: 0 42px;
+}
+
+#smartgolf202506 .terms dl dd ul.text{
+	margin-bottom: 12px;
+}
+
+#smartgolf202506 .terms dl dd ul.text li{
+	text-indent: -18px;
+	padding-left: 18px;
+	margin-bottom: 8px;
+	font-size: 18px;
+	line-height: 1.8;
+}
+#smartgolf202506 .terms dl dd ul.text li+li{
+	margin-bottom: 0;
+}
+#smartgolf202506 .terms dl dd ul.notes li{
+	text-indent: -15px;
+	padding-left: 14px;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+#smartgolf202506 .terms dl dd ul.text_02{
+	text-indent: -15px;
+	padding-left: 14px;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+#smartgolf202506 .terms dl dd ul.text_02 figure{
+	    width: 50%;
+    margin-left: -10px;
+}
+#smartgolf202506 .terms dl dd ul.text_02 ul.notes li{
+	text-indent: -23px;
+    padding: 0;
+    margin: 0;
+	padding-left: 16px;
+    font-size: 14px;
+}
+#smartgolf202506 .terms dl dd ul.text_02 li >p{
+	padding-top: 0;
+}
+#smartgolf202506 .terms dl dd ul.text_02 ul.notes {
+	text-indent: -15px;
+	padding: 0;
+	margin: -7px;
+	font-size: 14px;
+}
+#smartgolf202506 .table-wrap table{
+	border: #c3c3c3;
+	width:80%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+#smartgolf202506 .table-wrap tbody{
+	border: 1px solid #c3c3c3;
+}
+#smartgolf202506 .table-wrap table th{
+	font-weight: normal;
+	border: 1px solid #c3c3c3;
+}
+#smartgolf202506 .table-wrap table tr{
+	text-align: center;
+	border: 1px solid #c3c3c3;
+}
+#smartgolf202506 .table-wrap table .notes{
+	font-size: 14px;
+}
+#smartgolf202506 .table-wrap table td {
+	border: 1px;
+}
+
+@media screen and (max-width: 768px) {
+		#smartgolf202506 .table-wrap table .notes{
+	font-size: 10px;
+}
+	#smartgolf202506 .table-wrap table{
+	border: #c3c3c3;
+	width:100%;
+}
+	#smartgolf202506 .table-wrap table tr,#smartgolf202506 .table-wrap table th{
+	padding: 5px 0;
+}
+	#smartgolf202506 .terms h2{
+	padding: 18px 12px;
+	margin: 0 0 12px 0;
+	box-sizing: border-box;
+	font-size: 22px;
+}
+
+#smartgolf202506 .terms h2:before{
+	margin-left: -8px;
+	border: 8px solid transparent;
+	border-top: 10px solid #0b1e46;
+}
+
+#smartgolf202506 .terms .inner{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+#smartgolf202506 .terms dl{
+	border-radius: 8px;
+	padding: 12px 12px 30px;
+	margin-bottom: 8px;
+	font-size: 14px;
+	box-sizing: border-box;
+	margin: 0 12px 12px 12px;
+}
+
+#smartgolf202506 .terms dl dt{
+	margin: 0 auto 8px auto;
+	font-size: 16px;
+	width: 200px;
+}
+
+#smartgolf202506 .terms dl dd{
+	padding: 0;
+}
+
+#smartgolf202506 .terms dl dd ul.text{
+	margin-bottom: 8px;
+}
+
+#smartgolf202506 .terms dl dd ul.text li{
+	text-indent: -14px;
+	padding-left: 14px;
+	margin-bottom: 4px;
+	font-size: 14px;
+	line-height: 1.4;
+}
+#smartgolf202506 .terms dl dd ul.text .bold_only {
+        padding-left: 0;
+	text-indent: 0;
+    }
+#smartgolf202506 .terms dl dd ul.notes li{
+	text-indent: -30px;
+     padding-left: 33px;
+     margin-bottom: 2px;
+     font-size: 12px;
+}
+	#smartgolf202506 .terms dl:nth-of-type(3) .notes li{
+        text-indent: -11px;
+        padding-left: 12px;
+    }
+#smartgolf202506 .terms dl dd ul.text_02 >li{
+	text-indent: 0;
+	padding-left: 0;
+}
+#smartgolf202506 .terms dl dd ul.text_02 ul.notes li{
+	text-indent: -12px;
+        padding-left: 8px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        font-size: 12px;
+}
+#smartgolf202506 .terms dl dd ul.text_02 li >p{
+
+}
+#smartgolf202506 #smartgolf202506_applicable_conditions figure{
+	    width: 200px;
+    /* text-align: left; */
+    margin: 0;
+    margin-left: 14px;
+
+}
+	
+}
+/* 規約終わり*/
+/*お問い合わせ*/
+#smartgolf202506 .terms dl dd .tel{
+	display: table;
+	width: 310px;
+	margin: 0 auto;
+}
+
+#smartgolf202506 .terms dl dd .tel a{
+	text-decoration: none;
+}
+
+#smartgolf202506 .terms dl dd .tel .icon{
+	display: table-cell;
+	vertical-align: middle;
+	width: 42px;
+}
+
+#smartgolf202506 .terms dl dd .tel .number{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 30px;
+	color: #0b1e46;
+	font-family: 'メイリオ',Meiryo,helvetica,arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+	font-weight: bold;
+	padding-left: 12px;
+}
+
+#smartgolf202506 .terms dl dd .tel a:hover{
+	opacity: 1;
+}
+
+#smartgolf202506 .terms dl dd dl.time{
+	text-align: center;
+	margin: 0 0 24px 0;
+	padding: 0;
+}
+
+#smartgolf202506 .terms dl dd dl.time dt{
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	color: #111;
+	background: none;
+	display: inline;
+}
+
+#smartgolf202506 .terms dl dd dl.time dd{
+	padding: 0;
+	display: inline;
+	margin-left: 12px;
+}
+#smartgolf202506 .main h1 img {
+	position: relative;
+	top:14px;
+	}
+/*お問い合わせ ボタン*/
+#smartgolf202506 >section >section  .button{
+	margin: auto;
+	text-align: center;
+}
+#smartgolf202506 >section >section  .button a{
+	color: #0b1e46;
+    font-weight: 400;
+    border: 2px solid #0b1e46;
+    border-radius: 30px;
+    text-decoration: none;
+	padding: 9px 38px 9px 27px;
+	box-shadow:2px 3px 0px 0px #0b1e46;
+	position: relative;
+}
+#smartgolf202506 >section >section  .button a::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    bottom: 0;
+    right: 17px;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-top: 8px solid transparent;
+    border-right: 0 solid transparent;
+    border-left: 11px solid #0b1e46;
+    border-bottom: 8px solid transparent;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+#smartgolf202506 .terms dl dd .tel{
+	width: 200px;
+}
+
+#smartgolf202506 .terms dl dd .tel a{
+	text-decoration: none;
+	display: block;
+	line-height: 1;
+}
+
+#smartgolf202506 .terms dl dd .tel .icon{
+	width: 26px;
+}
+
+#smartgolf202506 .terms dl dd .tel .icon img{
+	width: 26px;
+}
+
+#smartgolf202506 .terms dl dd .tel .number{
+	font-size: 20px;
+	padding-left: 6px;
+}
+
+#smartgolf202506 .terms dl dd dl.time{
+	margin: 0 0 18px 0;
+}
+
+#smartgolf202506 .terms dl dd dl.time dt,
+#smartgolf202506 .terms dl dd dl.time dd{
+	font-size: 12px;
+}
+	}
+/*お問い合わせ終わり*/
