@@ -1023,7 +1023,7 @@ background: linear-gradient(90deg, rgba(227,191,80,1) 0%, rgba(226,184,39,1) 45%
 
 /*ゴルフ場*/
 #biccamera202506 .section_map {
-	margin-bottom: 95px;
+	margin-bottom: 0;
 }
 #biccamera202506 .section_map .inner > div {
     max-width:750px; display: block; margin: 0 auto;
