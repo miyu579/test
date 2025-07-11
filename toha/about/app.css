@@ -99,6 +99,10 @@ font-style: normal;
     border-bottom: 0;
     transform: translateY(-25%) rotate(45deg);
 }
+#aboutgolfmeinner .aboutgolfme-btn-3 a{
+	color: #333;
+	text-decoration: none;
+}
 /*共通おわり*/
 /*GOLF me！とは*/
 #aboutgolfmeinner .aboutgolfmewidth{
@@ -130,7 +134,7 @@ font-style: normal;
 
 #aboutgolfmeinner .aboutgolfmebgred{
 	margin: 30px 0 30px;
-	padding: 45px 0 0;
+	padding: 30px 0 0;
 	text-align: center;
 	position: relative;
 }
@@ -151,8 +155,10 @@ font-style: normal;
 }
 #aboutgolfmeinner .aboutgolfmebgred p{
 	font-size: 38px;
-	color: #fff;
-	font-weight: 900;
+    position: relative;
+    color: #fff;
+    font-weight: 900;
+    bottom: -30px;
 }
 /*ゴルフだってサブスクでしょおわり*/
 /*斜め人物*/
@@ -178,6 +184,7 @@ html.wf-active .corporate-mid-aboutgolfme p{
 }
 #aboutgolfmeinner .aboutgolfmethreecol p:first-of-type{
 	font-size: 40px;
+	margin: 7px 0 -17px;
 }
 #aboutgolfmeinner .aboutgolfmethreecol p:nth-of-type(2){
 	font-size: 50px;
@@ -185,29 +192,106 @@ html.wf-active .corporate-mid-aboutgolfme p{
 #aboutgolfmeinner .aboutgolfmethreecol >.aboutgolfmewidth{
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
+	z-index: -1;
 }
-#aboutgolfmeinner .aboutgolfmethreecol >div>.aboutgolfmewidth{
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(1):before{
+	content: "";
+    position: absolute;
+    background-image: url(../img/whatabout_people1.png);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    right: -254px;
+    background-size: 52%;
+    bottom: -90px;
+}
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(2):before{
+	content: "";
+    position: absolute;
+    height: 66px;
+    width: 100%;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    background-color: #eaeaea;;
+    left: 0px;
+    top: -64px;
+}
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(2)>div{
+	text-align: right;
+    position: relative;
+}
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(3)>div
+ {
+    text-align: left;
+    position: relative;
+}
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(3)>div:before{
+	content: "";
+    position: absolute;
+    background-image: url(../img/whatabout_people3.png);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+      right: -284px;
+    background-size: 86%;
+    top: -93px;
+}
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(2)>div:before{
+	content: "";
+    position: absolute;
+    background-image: url(../img/whatabout_people2.png);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+  left: -70px;
+    background-size: 72%;
+    top: -87px;
+}
+#aboutgolfmeinner .aboutgolfmethreecol .aboutgolfmebggrey{
+	    padding: 32px 0 80px;
+	position: relative;
+}
+
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(2)>.aboutgolfmewidth{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row-reverse;
 }
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(3)>.aboutgolfmewhat{
+    flex-direction: row;
+}
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(3){
+	    z-index: 2;
+    background-color: #fff;
+      padding: 30px 100px 0;
+    position: relative;
+}
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(3):before{
+	content: "";
+    position: absolute;
+    height: 66px;
+    width: 100%;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    background-color: #fff;
+    left: 0px;
+        top: -65px;
+}
+
+
 #aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(1)>div{
-	width: 72%;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
     justify-content: center;
+	    padding: 97px 0 72px;
 }
-#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(3)>div{
-	    width: 80%;
-	display: flex;
-	flex-direction: column;
-    justify-content: center;
-}
+
 #aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(1)>.aboutgolfmethreecol-img{
 	width: 28%;
 	display: flex;
 	flex-direction: column;
     justify-content: center;
+
 }
 #aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(3)>.aboutgolfmethreecol-img{
 	width: 20%;
@@ -220,6 +304,14 @@ html.wf-active .corporate-mid-aboutgolfme p{
 	display: flex;
 	flex-direction: column;
     justify-content: center;
+}
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(3)>div>div{
+	    width: 80%;
+
+}
+#aboutgolfmeinner .aboutgolfmethreecol >div:nth-of-type(3)>div img{
+	    width: 66%;
+
 }
 #aboutgolfmeinner .aboutgolfmethreecol >div>div>.aboutgolfmethreecol-img{
 	width: 44%;
@@ -242,8 +334,29 @@ html.wf-active .corporate-mid-aboutgolfme p{
 	text-align: left;
     padding: 25px 20px;
 }
+#aboutgolfmeinner .aboutgolfmereason .aboutgolfmewidth .aboutgolfmereason-content:nth-of-type(1){
+	background-image: url(../img/whatabout_reverse.png);
+    background-repeat: no-repeat;
+    background-position: right 20px top 10px;
+    background-size: 28%;
+}
+#aboutgolfmeinner .aboutgolfmereason .aboutgolfmewidth .aboutgolfmereason-content:nth-of-type(2){
+	background-image: url("../img/whatabout_pref.png");
+    background-repeat: no-repeat;
+    background-position: right 30px top 10px;
+    background-size: 20%;
+}
+#aboutgolfmeinner .aboutgolfmereason .aboutgolfmewidth .aboutgolfmereason-content:nth-of-type(3){
+	background-image: url("../img/whatabout_poinco.png");
+    background-repeat: no-repeat;
+        background-position: right 30px top 31px;
+    background-size: 28%;
+}
 #aboutgolfmeinner .aboutgolfmereason .aboutgolfmewidth .aboutgolfmereason-content + .aboutgolfmereason-content{
 	margin-top:30px;
+}
+#aboutgolfmeinner .aboutgolfmereason .aboutgolfmewidth .aboutgolfmereason-content .aboutgolfme-btn-1{
+	margin-top:20px;
 }
 #aboutgolfmeinner .aboutgolfmereason .aboutgolfmewidth .aboutgolfmereason-content .aboutgolfme-bgredtx{
 	background-color: #d00e31;
@@ -257,6 +370,12 @@ html.wf-active .corporate-mid-aboutgolfme p{
 	font-weight: 500;
 	line-height: 24px;
 	    margin-bottom: 8px;
+}
+#aboutgolfmeinner .aboutgolfmereason .aboutgolfmewidth .aboutgolfmereason-content:nth-of-type(3) .aboutgolfmereason-title{
+	background-image: url("../img/logo_dpoint.png");
+	background-repeat: no-repeat;
+	background-size: 8%;
+    background-position: top 13px right 279px;
 }
 #aboutgolfmeinner .aboutgolfmereason .aboutgolfmereason-title{
 	font-size: 28px;
@@ -289,10 +408,10 @@ html.wf-active .corporate-mid-aboutgolfme p{
 	background-image: url("../img/whatabout_people4.png");
 	background-repeat: no-repeat;
 	background-position: top 0 right 10px;
-	background-size: 30%;
+	background-size: 25%;
 	padding-top: 40px;
 	padding-left: 40px;
-	padding-bottom: 90px;
+	padding-bottom: 15px;
 }
 #aboutgolfmeinner .aboutgolfmenumber>div>div:nth-of-type(1) p{
     font-weight: 900;
@@ -387,6 +506,7 @@ html.wf-active .corporate-mid-aboutgolfme p{
 }
 #aboutgolfmeinner .aboutgolfmenumber>div>div .aboutgolfme-caution p{
 	display: block;
+	font-weight: normal;
 }
 #aboutgolfmeinner .aboutgolfmenumber>div>div .aboutgolfme-caution{
 	margin-bottom: 20px;
@@ -1517,6 +1637,7 @@ input[name="tab_item"] {
 	background-color: #d00e31;
 	text-align: center;
 	padding: 30px;
+	padding: 30px 0 60px;
 }
 #aboutgolfmeinner .aboutgolfme-trivia h2{
 	background-color: transparent;
@@ -1535,7 +1656,7 @@ input[name="tab_item"] {
 #aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-trivia-ic:after{
 	content: "";
     position: absolute;
-    bottom: -76%;
+    bottom: -67%;
     left: 50%;
     margin-left: -10px;
     border: 10px solid transparent;
@@ -1544,10 +1665,34 @@ input[name="tab_item"] {
 #aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-trivia-box{
 	background-color: #fff;
 	text-align: left;
-	padding: 15px;
+	padding: 15px 25px;
 }
-#aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-trivia-boxwrap{
+#aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-trivia-1 .aboutgolfme-trivia-boxwrap{
 	background-image: url("../img/whatabout_icon_p1.png");
+	padding-left: 155px;
+	background-repeat: no-repeat;
+	background-size: 17%;
+    background-position: 30px;
+	height: 150px;
+}
+#aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-trivia-2 .aboutgolfme-trivia-boxwrap{
+	background-image: url("../img/whatabout_icon_p2.png");
+	padding-left: 155px;
+	background-repeat: no-repeat;
+	background-size: 17%;
+    background-position: 30px;
+	height: 150px;
+}
+#aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-trivia-3 .aboutgolfme-trivia-boxwrap{
+	background-image: url("../img/whatabout_icon_p3.png");
+	padding-left: 155px;
+	background-repeat: no-repeat;
+	background-size: 17%;
+    background-position: 30px;
+	height: 150px;
+}
+#aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-trivia-4 .aboutgolfme-trivia-boxwrap{
+	background-image: url("../img/whatabout_icon_p4.png");
 	padding-left: 155px;
 	background-repeat: no-repeat;
 	background-size: 17%;
@@ -1758,10 +1903,10 @@ input[name="tab_item"] {
 #aboutgolfmeinner .slick-arrow.slick-hidden {
     display: none;
 }
-#aboutgolfmeinner .js-slider{
+#aboutgolfmeinner .aboutgolfme-js-slider{
   position: relative;
 }
-#aboutgolfmeinner .js-slider .slick-dots {
+#aboutgolfmeinner .aboutgolfme-js-slider .slick-dots {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -1769,9 +1914,11 @@ input[name="tab_item"] {
   margin: 0 0 0 auto;
   position: absolute;
   bottom: -6%;
+	padding-left: 0;
+	    bottom: -13%;
 }
 
-#aboutgolfmeinner .js-slider .slick-dots button{
+#aboutgolfmeinner .aboutgolfme-js-slider .slick-dots button{
   font-size: 0;
   border: 0;
   background-color: #fff;
@@ -1780,19 +1927,19 @@ input[name="tab_item"] {
 	max-height:30px;
   height: 100%;
   width: 100%;
-	box-shadow:0 0 10px #555555;
+	box-shadow: 0 0 10px #5f0415;
 }
-#aboutgolfmeinner .js-slider .slick-dots li {
+#aboutgolfmeinner .aboutgolfme-js-slider .slick-dots li {
   font-size: 0;
   line-height: 0;
 	width:25px;
 	height:25px;
 }
-#aboutgolfmeinner .js-slider .slick-dots li + li {
+#aboutgolfmeinner .aboutgolfme-js-slider .slick-dots li + li {
   margin-left: 3%;
 }
-#aboutgolfmeinner .js-slider .slick-active button {
-  background-color: #cc3333;
+#aboutgolfmeinner .aboutgolfme-js-slider .slick-active button {
+	background-color: #f2ff05;
 }	
 
 
@@ -1820,14 +1967,14 @@ filter: drop-shadow(0px 0px 4px #393939);
   height: auto !important;
 }
 @media screen and (max-width: 1100px) {
-#aboutgolfmeinner .js-slider figure{
+#aboutgolfmeinner .aboutgolfme-js-slider figure{
 
 	height:408px;
 }
 	#aboutgolfmeinner .slick-slide {
  	height: 700px !important;
 }
-	#aboutgolfmeinner .js-slider .textarea {
+	#aboutgolfmeinner .aboutgolfme-js-slider .textarea {
     padding: 65px 39px 20px;
 }
 }
@@ -1835,14 +1982,14 @@ filter: drop-shadow(0px 0px 4px #393939);
 	#aboutgolfmeinner .slick-slide {
  	height: auto !important;
 }
-	#aboutgolfmeinner .js-slider p {
+	#aboutgolfmeinner .aboutgolfme-js-slider p {
 		font-size: 14px;
 	}
-	#aboutgolfmeinner .js-slider figure{
+	#aboutgolfmeinner .aboutgolfme-js-slider figure{
 	width: 100%;
 	height:46%;
 }
-	#aboutgolfmeinner .js-slider .itemarea {
+	#aboutgolfmeinner .aboutgolfme-s-slider .itemarea {
 	margin: 0 5px;
 	background-color: #fff;
 }
@@ -1859,41 +2006,41 @@ filter: drop-shadow(0px 0px 4px #393939);
 	#aboutgolfmeinner .sliderArea {
 			width: 100%;
 	}
-	#aboutgolfmeinner .js-slider .slick-dots li {
+	#aboutgolfmeinner .aboutgolfme-js-slider .slick-dots li {
   font-size: 0;
   line-height: 0;
 	width: 20px;
 	height:20px;
 }
-	#aboutgolfmeinner .js-slider .slick-dots {
+	#aboutgolfmeinner .aboutgolfme-js-slider .slick-dots {
   bottom: -6%;
 
 }
-	#aboutgolfmeinner .js-slider .slick-dots button{
+	#aboutgolfmeinner .aboutgolfme-js-slider .slick-dots button{
   height: 100%;
   width: 100%;
 		box-shadow: 0 0 4px #555555;
 
 }
 
-	#aboutgolfmeinner .js-slider .slick-active button {
+	#aboutgolfmeinner .aboutgolfme-js-slider .slick-active button {
 
 }	
 	#aboutgolfmeinner .sliderWide {
 		width: 100%;
 	}
-#aboutgolfmeinner .js-slider {
+#aboutgolfmeinner .aboutgolfme-js-slider {
     
     width: 100%;
     margin: auto;
 	
 }
-	#aboutgolfmeinner .js-slider .itemtitle {
+	#aboutgolfmeinner .aboutgolfme-js-slider .itemtitle {
 	font-size: 16px;
 	margin-bottom: 10px;
 
 }
-	#aboutgolfmeinner .js-slider .textarea {
+	#aboutgolfmeinner .aboutgolfme-js-slider .textarea {
 	padding: 8% 5% 1%;
 }
 	#aboutgolfmeinner .prev-arrow {
@@ -1905,7 +2052,7 @@ filter: drop-shadow(0px 0px 4px #393939);
 	#aboutgolfmeinner .slick-track {
   display: flex;
 }
-#aboutgolfmeinner .js-slider .slick-dots li + li {
+#aboutgolfmeinner .aboutgolfme-js-slider .slick-dots li + li {
   margin-left: 2%;
 }
 
@@ -1913,7 +2060,157 @@ filter: drop-shadow(0px 0px 4px #393939);
 /*スライダーおわり*/
 
 /*豆知識おわり*/
+/*質問*/
+#aboutgolfmeinner .aboutgolfme-question{
+	text-align: center;
+	margin-bottom: 30px;
+}
+/*よくある質問*/
+/*追加分*/
+#aboutgolfmeinner .aboutgolfme-question .bic_ac {
+	width:90%;
+	margin: auto;
+	text-align: left;
+	margin: 0 auto 30px;
+}
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .question_caution{
+	font-size: 12px;
+    padding-left: 56px;
+    margin-top: -5px;
+    line-height: 14px;
+	list-style: none;
+	
+}
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acitem{
+	padding: 10px;
+}
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acquestion{
+	background-image: url("../img/whatabout_q.png");
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	background-size: 6%;
+}
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acanswer{
+	background-image: url("../img/whatabout_a.png");
+	background-repeat: no-repeat;
+	background-size: 6%;
+	background-position: 10px 18px;
+}
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acquestion p{
+	font-weight: 700;
+	padding: 12px;
+	padding-left: 56px;
+	padding-right: 61px;
+	font-size: 18px;
 
+	
+}
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acanswer p{
+	padding: 12px;
+	padding-left: 56px;
+	padding-top: 20px;
+	font-size: 17px;
+	font-weight: 700;
+	
+}
+
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acitem+.bic_acitem {
+margin-top: 1rem;
+}
+
+
+
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acitem {
+position: relative;
+overflow: hidden;
+background-color: #f1f2f5;
+	border-radius: 10px;
+}
+
+
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acitem>input {
+display: none;
+}
+
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acquestion {
+background-color: #f1f2f5;
+position: relative;
+z-index: 1;
+padding-right: 0;
+cursor: pointer;
+
+}
+	/* アコーディオン */
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acanswer {
+position: absolute;
+visibility: hidden;
+transform: translateY(-100%);
+
+background-color: #f1f2f5;
+
+border-top: none;
+}
+
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acitem>input:checked+label+.bic_acanswer {
+position: relative;
+visibility: visible;
+transform: translateY(0);
+}
+
+
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acquestion::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 0;
+        border-top: solid 4px #d00e31;
+    border-right: solid 4px #d00e31;
+        transform: rotate(135deg);
+        position: absolute;
+        top: -12%;
+        right: 0;
+        bottom: 0;
+        margin: auto 25px auto auto;
+
+}
+
+#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acitem>input:checked+label>.bic_acquestion::before {
+transform: translateY(50%) rotate(315deg);
+	
+}
+
+@media screen and (max-width:768px) {
+	#aboutgolfmeinner .aboutgolfme-question .bic_ac {
+	width:90%;
+	margin: auto;
+}
+	#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acquestion {
+    background-position: 2px 50%;
+    background-size: 35px 35px;
+}
+	#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acquestion::before {
+    right: -16px;
+		top: -5%;
+}
+	#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acquestion p {
+    padding: 12px;
+    padding-left: 50px;
+    padding-right: 45px;
+    font-size: 17px;
+    line-height: 21px;
+}
+	#aboutgolfmeinner .aboutgolfme-question .bic_ac .bic_acanswer {
+   background-size: 35px 35px;
+    background-position: 2px 54%;
+}
+	#aboutgolfmeinner .aboutgolfme-question .bic_ac .question_caution li{
+    text-indent: -10px;
+        padding-left: 10px;
+}
+}
+/*よくある質問おわり*/
+
+/*質問おわり*/
 /*追記おわり*/
 .slick-slider{
 	margin-bottom:30px;
@@ -19142,226 +19439,7 @@ template{
 .fa-steam-symbol:before{
 	content:""
 }
-.slick-slider{
-	position:relative;
-	display:block;
-	box-sizing:border-box;
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
-	-webkit-touch-callout:none;
-	-khtml-user-select:none;
-	-ms-touch-action:pan-y;
-	touch-action:pan-y;
-	-webkit-tap-highlight-color:transparent
-}
-.slick-list{
-	position:relative;
-	display:block;
-	overflow:hidden;
-	margin:0;
-	padding:0
-}
-.slick-list:focus{
-	outline:none
-}
-.slick-list.dragging{
-	cursor:pointer;
-	cursor:hand
-}
-.slick-slider .slick-track,.slick-slider .slick-list{
-	-webkit-transform:translate3d(0,0,0);
-	-moz-transform:translate3d(0,0,0);
-	-ms-transform:translate3d(0,0,0);
-	-o-transform:translate3d(0,0,0);
-	transform:translateZ(0)
-}
-.slick-track{
-	position:relative;
-	top:0;
-	left:0;
-	display:block;
-	margin-left:auto;
-	margin-right:auto
-}
-.slick-track:before,.slick-track:after{
-	display:table;
-	content:""
-}
-.slick-track:after{
-	clear:both
-}
-.slick-loading .slick-track{
-	visibility:hidden
-}
-.slick-slide{
-	display:none;
-	float:left;
-	height:100%;
-	min-height:1px
-}
-[dir=rtl] .slick-slide{
-	float:right
-}
-.slick-slide img{
-	display:block
-}
-.slick-slide.slick-loading img{
-	display:none
-}
-.slick-slide.dragging img{
-	pointer-events:none
-}
-.slick-initialized .slick-slide{
-	display:block
-}
-.slick-loading .slick-slide{
-	visibility:hidden
-}
-.slick-vertical .slick-slide{
-	display:block;
-	height:auto;
-	border:1px solid transparent
-}
-.slick-arrow.slick-hidden{
-	display:none
-}
-.slick-loading .slick-list{
-	background:#fff url(./ajax-loader.gif) center center no-repeat
-}
-@font-face{
-	font-family:slick;
-	font-weight:400;
-	font-style:normal;
-	src:url(./slick.eot);
-	src:url(./slick.eot?#iefix) format("embedded-opentype"),url(./slick.woff) format("woff"),url(./slick.ttf) format("truetype"),url(./slick.svg#slick) format("svg")
-}
-.slick-prev,.slick-next{
-	font-size:0;
-	line-height:0;
-	position:absolute;
-	top:50%;
-	display:block;
-	width:20px;
-	height:20px;
-	padding:0;
-	-webkit-transform:translate(0,-50%);
-	-ms-transform:translate(0,-50%);
-	transform:translateY(-50%);
-	cursor:pointer;
-	color:transparent;
-	border:none;
-	outline:none;
-	background:transparent
-}
-.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus{
-	color:transparent;
-	outline:none;
-	background:transparent
-}
-.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before{
-	opacity:1
-}
-.slick-prev.slick-disabled:before,.slick-next.slick-disabled:before{
-	opacity:.25
-}
-.slick-prev:before,.slick-next:before{
-	font-family:slick;
-	font-size:20px;
-	line-height:1;
-	opacity:.75;
-	color:#fff;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale
-}
-.slick-prev{
-	left:-25px
-}
-[dir=rtl] .slick-prev{
-	right:-25px;
-	left:auto
-}
-.slick-prev:before{
-	content:"←"
-}
-[dir=rtl] .slick-prev:before{
-	content:"→"
-}
-.slick-next{
-	right:-25px
-}
-[dir=rtl] .slick-next{
-	right:auto;
-	left:-25px
-}
-.slick-next:before{
-	content:"→"
-}
-[dir=rtl] .slick-next:before{
-	content:"←"
-}
-.slick-dotted.slick-slider{
-	margin-bottom:30px
-}
-.slick-dots{
-	position:absolute;
-	bottom:-25px;
-	display:block;
-	width:100%;
-	padding:0;
-	margin:0;
-	list-style:none;
-	text-align:center
-}
-.slick-dots li{
-	position:relative;
-	display:inline-block;
-	width:20px;
-	height:20px;
-	margin:0 5px;
-	padding:0;
-	cursor:pointer
-}
-.slick-dots li button{
-	font-size:0;
-	line-height:0;
-	display:block;
-	width:20px;
-	height:20px;
-	padding:5px;
-	cursor:pointer;
-	color:transparent;
-	border:0;
-	outline:none;
-	background:transparent
-}
-.slick-dots li button:hover,.slick-dots li button:focus{
-	outline:none
-}
-.slick-dots li button:hover:before,.slick-dots li button:focus:before{
-	opacity:1
-}
-.slick-dots li button:before{
-	font-family:slick;
-	font-size:32px!important;
-	line-height:20px;
-	position:absolute;
-	top:0;
-	left:0;
-	width:20px;
-	height:20px;
-	content:"•";
-	text-align:center;
-	opacity:.25;
-	color:#000;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale
-}
-.slick-dots li.slick-active button:before{
-	opacity:.75;
-	color:#000
-}
+
 .flex-btn-wrapper{
 	display:inline-flex;
 	flex-direction:column;
