@@ -52,7 +52,7 @@ font-style: normal;
     padding: 10px 15px 13px;
     font-size: 32px;
     margin: 50px 0 25px;
-	width: 460px;
+	width: 470px;
 }
 #aboutgolfmeinner .aboutgolfme-caution{
 	font-size: 12px;
@@ -236,7 +236,17 @@ font-style: normal;
 	margin-top: -3px;
 }
 @media screen and (max-width:768px) {
+	#aboutgolfmeinner .aboutgolfme-conbtn {
+    padding: 35px 0 22px;
+		
+}
+	#aboutgolfmeinner .aboutgolfme-conbtn h3 {
+    margin: 0 auto 20px;
+		padding: 5px 0;
+
+}
 	#aboutgolfmeinner .aboutgolfme-conbtn .aboutgolfme-btn-caution .aboutgolfme-14 {
+		        margin-top: -6px;
     font-size: 12px;
 	padding: 0;
 }
@@ -418,10 +428,11 @@ font-style: normal;
 }
 @media screen and (max-width:768px) {
 	#aboutgolfmeinner .aboutgolfmewhat h1 {
-                 background-color: #333;
+                display: inline-block;
+        background-color: #333;
         color: #fff;
-        padding:2px 4px 2px 8px;
-        width: 154px;
+        padding: 2px 8px 2px 8px;
+        width: auto;
         font-size: 20px;
         font-weight: 600;
         margin: 0;
@@ -457,7 +468,7 @@ font-style: normal;
     padding: 10px 15px 13px;
     font-size: 22px;
     margin: 30px 0 15px;
-	width: 280px;
+	width: 290px;
 }
 }
 /*GOLF me！とはおわり*/
@@ -1292,7 +1303,7 @@ input[name="tab_item"] {
 }
 	
 	#aboutgolfmeinner .aboutgolfme-flow .aboutgolfme-flowtab_contentboxwrap .aboutgolfmeredtex {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
 }
 	#aboutgolfmeinner .aboutgolfme-flow p {
@@ -1301,7 +1312,7 @@ input[name="tab_item"] {
 }#aboutgolfmeinner .aboutgolfme-flow .aboutgolfme-flowtab_contentboxwrap div
  {
     width: 64px;
-    margin: -17px 5px 0px 2px;
+    margin: -17px 5px 0px -7px;
 }
 	#aboutgolfmeinner .aboutgolfme-flow .aboutgolfme-flowtab_contentboxwrap .corporate-bol-aboutgolfme {
     font-size: 25px;
@@ -1310,6 +1321,9 @@ input[name="tab_item"] {
     background-color: #fffffff0;
     padding: 0 10px 10px 10px;
     text-align: left;
+}
+		#aboutgolfmeinner .aboutgolfme-flow .aboutgolfme-flowtab_contentbox p{
+    padding: 0;
 }
 	#aboutgolfmeinner .aboutgolfme-flowtab_content {
     padding: 25px 10px 30px;
@@ -1325,7 +1339,7 @@ input[name="tab_item"] {
     width: 10%;
 }
 	#aboutgolfmeinner .aboutgolfme-flow .aboutgolfme-btn-2 p {
-    width: 300px;
+    width: 290px;
 }
 	#aboutgolfmeinner .aboutgolfme-flow .aboutgolfme-btn-2 p:before {
     content: "";
@@ -1795,6 +1809,8 @@ input[name="tab_item"] {
 }
 	#aboutgolfmeinner .aboutgolfmeplan .aboutgolfme-ext .aboutgolfme-ext-guest .aboutgolfme-caution p, #aboutgolfmeinner .aboutgolfmeplan .aboutgolfme-ext .aboutgolfme-ext-cancel .aboutgolfme-caution p{
 	padding: 0;
+		width: 98%;
+        margin: 0 auto;
 }
 	#aboutgolfmeinner .aboutgolfmeplan .aboutgolfme-ext .aboutgolfme-ext-guest .aboutgolfme-caution, #aboutgolfmeinner .aboutgolfmeplan .aboutgolfme-ext .aboutgolfme-ext-cancel .aboutgolfme-caution {
     padding-left: 25px;
@@ -2611,7 +2627,7 @@ input[name="tab_item"] {
 	#aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-btn-3 p:before
  {
     top: calc(60% - 5px);
-    right: 30px;
+    right: 18px;
     width: 8px;
     height: 8px;
 }
@@ -2645,7 +2661,7 @@ input[name="tab_item"] {
     margin-bottom: 0;
 }
 #aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-btn-3 p {
-        width: 300px;
+        width: 280px;
         margin-top: 0;
 	}}
 /*スライダー*/
