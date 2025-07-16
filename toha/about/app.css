@@ -2606,6 +2606,7 @@ input[name="tab_item"] {
 }
 	 #aboutgolfmeinner .aboutgolfme-trivia h2 span{
 	  		font-size: 30px;
+		 padding-right: 3px;
 }
 	/*0716*/
 	#aboutgolfmeinner .aboutgolfme-trivia .aboutgolfme-trivia-1 .aboutgolfme-trivia-boxwrap {
