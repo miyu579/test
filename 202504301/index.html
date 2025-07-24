@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title></title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="description" content="">
+<meta property="og:url" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="csrf-token" content="x87PSdvp3qMluMjcpXh6x2bAIhY4aFzFXQYbbq8H">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="Shortcut Icon" href="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/favicon.ico" type="image/x-icon" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/apple-touch-icon.png" />
+<meta name="format-detection" content="telephone=no">
+
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+    golfme_user_id: "",
+    goo_login_type: "nologin",
+    golfme_login_type: "nologin",
+    golfme_plan_type: "",
+});
+// 本番ではJavaScriptのconsole.logを非表示にする
+if(true){
+    window.console.log = function(i){return;};
+    window.console.error = function(i){return;};
+    window.console.warn = function(i){return;};
+    window.console.debug = function(i){return;};
+    window.console.info = function(i){return;};
+}
+</script>
+
+<link rel="preload" as="style" href="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/app2.css" />
+<link rel="preload" as="style" href="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/app.css" />
+<link rel="modulepreload" href="https://cdn.golfme.goo.ne.jp/build/3.5.0/js/app2.js" />
+<link rel="modulepreload" href="https://cdn.golfme.goo.ne.jp/build/3.5.0/chunk/vendor.js" />
+<link rel="stylesheet" href="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/app2.css" />
+<link rel="stylesheet" href="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/app.css" />
+<script type="module" src="https://cdn.golfme.goo.ne.jp/build/3.5.0/js/app2.js"></script>
+
+<!-- 追加タグ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./css/20250501.css" />
+<!-- 追加タグ -->
+
+</head>
+<body id="top">
+
+    <div id="app">
+
+        <header class="">
+            <div class="l-header ">
+                <p class="l-header-logo">
+                    <a href="https://golfme.goo.ne.jp"><img src="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/logo.png" width="224" height="54" alt="GOLF me！(ゴルフミー)"/></a>
+                </p>
+                <p class="l-header-login">
+                    <a class="l-header-member-button" href="https://golfme.goo.ne.jp/register">メンバー登録（有料）はこちら</a>
+                    <a class="l-header-login-button" href="https://golfme.goo.ne.jp/d_account/auth/login">ログイン</a>
+                </p>
+            </div>
+        </header>
+        <nav class="l-global-nav">
+            <ul class="l-global-nav-above">
+                <li><a  href="https://golfme.goo.ne.jp/round/search/reserve/guest">プレー枠検索</a></li>
+                <li><a  href="https://golfme.goo.ne.jp/course">ゴルフ場一覧</a></li>
+                <li><a  href="https://golfme.goo.ne.jp/about">GOLF me！とは？</a></li>
+                <li><a  href="https://golfme.goo.ne.jp/guide">GOLF me！の使い方</a></li>
+            </ul>
+        </nav>
+
+        <hamburger-button>
+            <template v-slot:hamburger-button>
+                <span></span>
+                <span></span>
+                <span></span>
+            </template>
+            <template v-slot:content>
+                <p class="sp-menu-logo">
+                    <a href="https://golfme.goo.ne.jp">
+                        <img src="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/logo.png" width="226" height="60" alt="GOLF me！" />
+                    </a>
+                </p>
+                <nav class="sp-menu-nav">
+                    <ul>
+                        <li><a  href="https://golfme.goo.ne.jp/round/search/reserve/guest">プレー枠検索</a></li>
+                        <li><a  href="https://golfme.goo.ne.jp/course">ゴルフ場一覧</a></li>
+                        <li><a href="https://golfme.goo.ne.jp/about">GOLF me！とは？</a></li>
+                        <li><a href="https://golfme.goo.ne.jp/guide">GOLF me！の使い方</a></li>
+                    </ul>
+                </nav>
+                <div class="c-cta">
+                    <p class="c-cta-above">
+                        <a class="c-cta-member" href="https://golfme.goo.ne.jp/register/email/member"><strong>メンバー登録<span>（有料）</span>はこちら</strong></a>
+                    </p>
+                    <p class="c-cta-below">
+                        <a class="c-cta-visitor" href="https://golfme.goo.ne.jp/register/email/visitor"><strong>ビジター登録<span>（無料）</span>はこちら</strong><br />招待されているプレーの予約確認のみ可能。</a>
+                        <a class="c-cta-login" href="https://golfme.goo.ne.jp/d_account/auth/login"><strong>ログインする</strong><br />すでに会員の方はこちら</a>
+                    </p>
+                    <p class="u-ta-c">ご利用にはdアカウントが必要です。</p>
+                    <p class="u-ta-c">
+                        dアカウントをお持ちでない場合は<br class="u-sp-on-i" />
+                        <a href="https://id.smt.docomo.ne.jp/cgi8/id/register" target="_blank" rel="noopener nowrapper" style="color: #343434; text-decoration:underline;">
+                            dアカウントを作成
+                        </a>
+                        してください。
+                    </p>
+                </div>
+            </template>
+        </hamburger-button>
+
+        <div class="l-content-start l-bread-crumb">
+            <p>
+                <a href="https://golfme.goo.ne.jp">トップ</a> <span>&gt;</span>
+                <span>LP名称</span>
+            </p>
+        </div>
+
+    <div id="lp20250501">
+
+        <section class="section1">
+            <h1 class="mv">
+                <img src="./img/section1-mv.png" class="img_center pc" alt="NTT docomo GOLF me！（ゴルフミー！） 1人予約もグ～ッと手軽に！ ゴルフだってサブスクでしょ！" width="987" decoding="auto" loading="lazy">
+                <img src="./img/section1-mvsp.png" class="img_center sp" alt="NTT docomo GOLF me！（ゴルフミー！） 1人予約もグ～ッと手軽に！ ゴルフだってサブスクでしょ！" width="393" decoding="auto" loading="lazy">
+            </h1>
+            <div class="mv_button">
+                <a href="https://golfme.goo.ne.jp/register"><img src="./img/section1-mv-button.png" alt="今すぐメンバー登録" decoding="auto" loading="lazy"></a>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="inner">
+            
+            <h3>
+            <img class="img_center pc" src="./img/section2-user.png" width="752" alt="もっと手軽な料金でたくさんゴルフしたい！　他に支払いもあるし、やりくりが大変" decoding="auto" loading="lazy">
+            <img class="img_center sp" src="./img/section2-usersp.png" width="360" alt="もっと手軽な料金でたくさんゴルフしたい！　他に支払いもあるし、やりくりが大変" decoding="auto" loading="lazy" style="max-width: 400px;">
+            </h3>
+
+            <h2><div class="title_text">GOLF me!なら何回ラウンドしても</div><div class="text">月額定額!</div><span class="asterisk">※</span></h2>
+            <div class="text_sub" style="margin-top: 5px; text-align: left;">
+                ※土日・祝日・特定日利用、2サム・3サム保証には追加料金が必要です。<br class="pc">
+                ※月額料金に含まれるのはグリーンフィなどのプレー代、カートフィーのみで、<br class="pc">
+                ゴルフ場利用税、ロッカー利用料、キャディ利用料、食事料金等の料金は含まれません。
+            </div>
+
+            <h3 class="question">GOLF me!とは？</h3>
+            <h4 class="question_text">
+                株式会社NTTドコモが運営する<br>月額定額でゴルフラウンドを<br class="sp">おトクに楽しめる<br class="pc">サブスクサービス！
+            </h4>
+            <div class="text_sub">
+                ご利用にはdアカウントが必要です。dアカウントをお持ちでない場合は
+                <a href="https://id.smt.docomo.ne.jp/cgi8/id/register" style="font-size: 1em;">dアカウントを作成</a> してください。
+            </div>
+            <h3 class="point">Point</h3>
+            <h4>
+                <img class="img_center pc" src="./img/section2-point.png" width="658" alt="入会金０円、ゴルフ保険も月額料金にコミコミ、対象ゴルフ場全国最大級" decoding="auto" loading="lazy" style="margin: auto auto 20px auto;">
+                <img class="img_center sp" src="./img/section2-pointsp.png" width="658" alt="入会金０円、ゴルフ保険も月額料金にコミコミ、対象ゴルフ場全国最大級" decoding="auto" loading="lazy" style="margin: auto auto 35px auto;">
+            </h4>
+            <div class="section2_sub">
+                <div class="text">さらに!</div>
+                <img class="img_center" src="./img/common-section-dpoint.png" width="70" height="70" alt="dPOINTロゴ" decoding="auto" loading="lazy" style="margin: auto auto;" >
+            </div>
+            <a class="triangle" href="#lp2025common_section2">
+            <img class="img_center" src="./img/common-section-triangle.png" width="100" alt="" decoding="auto" loading="lazy" style="margin: 5px auto -20px auto; z-index: 1;" >
+            <img class="img_center" src="./img/common-section-triangle.png" width="100" alt="" decoding="auto" loading="lazy" style="margin: 10px auto;" >
+            </a>
+            <div class="section2_sub">
+                <img class="img_center poinko" src="./img/common-section-poinko1.png" width="110" height="137" alt="ポインコ兄" decoding="auto" loading="lazy" style="padding-left: 10px; margin-right: -45px;">
+                <h3 class="point_text">dポイント<span style="font-size: 0.7em; font-weight: 800;">が</span><br>たまる･つかえる!</h3>
+                <img class="img_center poinko" src="./img/common-section-poinko2.png" width="120" height="140" alt="ポインコ弟" decoding="auto" loading="lazy" style="margin-left: -45px; ">
+            </div>
+            <div class="section2_sub">
+                <strong class="card_text">dカードでのお支払いなら<br class="sp">還元率アップ！</strong>
+                <img class="img_center card" src="./img/common-section-card.png" width="194" height="129" alt="クレジットカード" decoding="auto" loading="lazy"  >
+            </div>
+            </div>
+        </section>
+
+        <section class="section9">
+            <div class="inner">
+              <div  class="widthfull">
+
+                 <h2><img class="img_center" src="./img/section9-otoku.png" width="780" alt="こんなにお得です" decoding="auto" loading="lazy"></h2>
+
+                <div class="section9_sub">
+                 <h3 id="itemA">
+                   <span style="color:#D00E31; ">年間<span class="en" style="font-size: 2em;">10</span>万円以上</span><span><br class="sp">おトクになるケースも！</span>
+                 </h3>
+                 <div id="itemB">
+                   <h4>平日のラウンドは追加費用なし! <br class="sp">月額定額で何度でもラウンドOK!</h4>
+                   <span style="font-size: 0.77em;">当日ゴルフ場でのお支払いは、<br class="sp">昼食代やゴルフ場利用税などの諸経費のみ<br>
+                    プレー費<span class="en">11,000</span>円(税込)は千葉エリアで平日1ラウンドする場合の昼食込みを想定
+                  </span>
+                 </div>
+                 <img id="itemC" class="img_center" src="./img/common-section-cashback.png" width="144" alt="5/31までに1年プランご入会で現金5000円キャッシュバック" decoding="auto" loading="lazy" >
+                </div>
+
+                <h3 class="plan">1年プラン・平日ラウンドの例</h3>
+
+                <div class="pc">
+
+                  <div class="">
+
+                  <div class="section9_plan_list"> 
+                    <!--月1回-->
+                    <div class="section9_plan">
+                      <div class="plan_type col_red">月<span style="font-size: 1.57em;">3</span>回</div>
+                      <div class="plan_otoku bgcol_red"><span class="en" style="font-size: 2em;">19,722</span>円<br>おトク!</div>
+                      <div class="plan_text">
+                        <p class="plan_text_bold">通常予約</p>
+                        <p>プレー費 <span class="number en">33,000</span> 円(税込)</p>
+                        <img class="img_center" src="./img/common-section-triangle.png" width="100" alt="" decoding="auto" loading="lazy" style="margin: 10px auto;" >
+                        <p class="plan_text_bold">GOLF me!</p>
+                        <table>
+                         <tr>
+                          <td>月額会費</td>
+                          <td class="number en">8,778</td>
+                          <td class="unit">円(税込)</td>
+                         </tr>
+                         <tr>
+                          <td>プレー費</td>
+                          <td class="number en col_red">0</td>
+                          <td class="unit col_red">円</td>
+                         </tr>
+                         <tr>
+                          <td>諸経費</td>
+                          <td class="number en">4,500</td>
+                          <td class="unit">円</td>
+                         </tr>
+                         <tr>
+                          <td colspan="2">合計<span class="number en">13,278</span></td>
+                          <td class="unit">円</td>
+                         </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <!--月2回-->
+                    <div class="section9_plan">
+                      <div class="plan_type" style="color: #EA5514;">月<span style="font-size: 1.57em;" >2</span>回</div>
+                      <div class="plan_otoku" style="background-color: #EA5514;"><span class="en" style="font-size: 2em;">10,222</span>円<br>おトク!</div>
+                      <div class="plan_text">
+                        <p class="plan_text_bold">通常予約</p>
+                        <p>プレー費 <span class="number en">22,000</span> 円(税込)</p>
+                        <img class="img_center" src="./img/common-section-triangle.png" width="100" alt="" decoding="auto" loading="lazy" style="margin: 10px auto;" >
+                        <p class="plan_text_bold">GOLF me!</p>
+                        <table>
+                         <tr>
+                          <td>月額会費</td>
+                          <td class="number en">8,778</td>
+                          <td class="unit">円(税込)</td>
+                         </tr>
+                         <tr>
+                          <td>プレー費</td>
+                          <td class="number en" style="color: #EA5514;">0</td>
+                          <td class="unit" style="color: #EA5514;">円</td>
+                         </tr>
+                         <tr>
+                          <td>諸経費</td>
+                          <td class="number en">3,000</td>
+                          <td class="unit">円</td>
+                         </tr>
+                         <tr>
+                          <td colspan="2">合計<span class="number en">11,778</span></td>
+                          <td class="unit">円</td>
+                         </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <!--月3回-->
+                    <div class="section9_plan">
+                      <div class="plan_type" style="color: #F18D00;">月<span style="font-size: 1.57em;" >1</span>回</div>
+                      <div class="plan_otoku" style="background-color: #F18D00;"><span class="en" style="font-size: 2em;">722</span>円<br>おトク!</div>
+                      <div class="plan_text">
+                        <p class="plan_text_bold">通常予約</p>
+                        <p>プレー費 <span class="number en">11,000</span> 円(税込)</p>
+                        <img class="img_center" src="./img/common-section-triangle.png" width="100" alt="" decoding="auto" loading="lazy" style="margin: 10px auto;" >
+                        <p class="plan_text_bold">GOLF me!</p>
+                        <table>
+                         <tr>
+                          <td>月額会費</td>
+                          <td class="number en">8,778</td>
+                          <td class="unit">円(税込)</td>
+                         </tr>
+                         <tr>
+                          <td>プレー費</td>
+                          <td class="number en" style="color: #F18D00;">0</td>
+                          <td class="unit" style="color: #F18D00;">円</td>
+                         </tr>
+                         <tr>
+                          <td>諸経費</td>
+                          <td class="number en">1,500</td>
+                          <td class="unit">円</td>
+                         </tr>
+                         <tr>
+                          <td colspan="2">合計<span class="number en">10,278</span></td>
+                          <td class="unit">円</td>
+                         </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                    </div>
+                </div>
+
+                <div class="sp">
+
+                    <div class="swiper mySwiper">
+
+                        <div class="swipe-icon" id="swipeIcon"><img src="./img/scroll-hint-icon.png" /></div>
+
+                        <div class="section9_plan_list swiper-wrapper"> 
+                            <!--月1回-->
+                            <div class="section9_plan swiper-slide">
+                                <div class="plan_type col_red">月<span style="font-size: 1.57em;" >3</span>回</div>
+                                <div class="plan_otoku bgcol_red"><span class="en" style="font-size: 2em;">19,722</span>円<br>おトク!</div>
+                                <div class="plan_text">
+                                    <p class="plan_text_bold">通常予約</p>
+                                    <p>プレー費 <span class="number en">33,000</span> 円(税込)</p>
+                                    <img class="img_center" src="./img/common-section-triangle.png" width="100" alt="" decoding="auto" loading="lazy" style="margin: 10px auto;" >
+                                    <p class="plan_text_bold">GOLF me!</p>
+                                    <table>
+                                    <tr>
+                                    <td>月額会費</td>
+                                    <td class="number en">8,778</td>
+                                    <td class="unit">円(税込)</td>
+                                    </tr>
+                                    <tr>
+                                    <td>プレー費</td>
+                                    <td class="number en col_red">0</td>
+                                    <td class="unit col_red">円</td>
+                                    </tr>
+                                    <tr>
+                                    <td>諸経費</td>
+                                    <td class="number en">4,500</td>
+                                    <td class="unit">円</td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2">合計<span class="number en">13,278</span></td>
+                                    <td class="unit">円</td>
+                                    </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--月2回-->
+                            <div class="section9_plan swiper-slide">
+                                <div class="plan_type" style="color: #EA5514;">月<span style="font-size: 1.57em;" >2</span>回</div>
+                                <div class="plan_otoku" style="background-color: #EA5514;"><span class="en" style="font-size: 2em;">10,222</span>円<br>おトク!</div>
+                                <div class="plan_text">
+                                    <p class="plan_text_bold">通常予約</p>
+                                    <p>プレー費 <span class="number en">22,000</span> 円(税込)</p>
+                                    <img class="img_center" src="./img/common-section-triangle.png" width="100" alt="" decoding="auto" loading="lazy" style="margin: 10px auto;" >
+                                    <p class="plan_text_bold">GOLF me!</p>
+                                    <table>
+                                    <tr>
+                                    <td>月額会費</td>
+                                    <td class="number en">8,778</td>
+                                    <td class="unit">円(税込)</td>
+                                    </tr>
+                                    <tr>
+                                    <td>プレー費</td>
+                                    <td class="number en" style="color: #EA5514;">0</td>
+                                    <td class="unit" style="color: #EA5514;">円</td>
+                                    </tr>
+                                    <tr>
+                                    <td>諸経費</td>
+                                    <td class="number en">3,000</td>
+                                    <td class="unit">円</td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2">合計<span class="number en">11,778</span></td>
+                                    <td class="unit">円</td>
+                                    </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--月3回-->
+                            <div class="section9_plan swiper-slide">
+                                <div class="plan_type" style="color: #F18D00;">月<span style="font-size: 1.57em;" >1</span>回</div>
+                                <div class="plan_otoku" style="background-color: #F18D00;"><span class="en" style="font-size: 2em;">722</span>円<br>おトク!</div>
+                                <div class="plan_text">
+                                    <p class="plan_text_bold">通常予約</p>
+                                    <p>プレー費 <span class="number en">11,000</span> 円(税込)</p>
+                                    <img class="img_center" src="./img/common-section-triangle.png" width="100" alt="" decoding="auto" loading="lazy" style="margin: 10px auto;" >
+                                    <p class="plan_text_bold">GOLF me!</p>
+                                    <table>
+                                    <tr>
+                                    <td>月額会費</td>
+                                    <td class="number en">8,778</td>
+                                    <td class="unit">円(税込)</td>
+                                    </tr>
+                                    <tr>
+                                    <td>プレー費</td>
+                                    <td class="number en" style="color: #F18D00;">0</td>
+                                    <td class="unit" style="color: #F18D00;">円</td>
+                                    </tr>
+                                    <tr>
+                                    <td>諸経費</td>
+                                    <td class="number en">1,500</td>
+                                    <td class="unit">円</td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2">合計<span class="number en">10,278</span></td>
+                                    <td class="unit">円</td>
+                                    </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+              </div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="inner">
+            <div class="section3_sub">
+            <h2>
+            <img class="img_center pc" src="./img/section3-singlereservation.png" width="666" alt="GOLFme!1人予約 ここがスゴイ（スマホでカンタン予約）" decoding="auto" loading="lazy" >
+            <img class="img_center sp" src="./img/section3-singlereservationsp.png" width="136" alt="GOLFme!1人予約 ここがスゴイ（スマホでカンタン予約）" decoding="auto" loading="lazy" style="padding-right: 55px;">
+            </h2>
+            </div>
+            <!--point1-->
+            <div class="section3_sub title">
+            <img class="point_img" src="./img/section3-point1.png" width="120" alt="POINT1" decoding="auto" loading="lazy">
+            <h3 class="text">シンプル操作で予約OK！</h3>
+            </div>
+            <div class="section3_sub" style="align-items: start;">
+                <div class="flow">
+                    <h4>空き枠<br>検索</h4>
+                    <img class="" src="./img/section3-point1-1.png" width="187" alt="プレー枠検索" decoding="auto" loading="lazy">
+                </div>
+                <div class="triangle-right"></div>
+                <div class="flow">
+                    <h4>プレー枠<br>選択</h4>
+                    <img class="" src="./img/section3-point1-2.png" width="187" alt="ゴルフ場選択" decoding="auto" loading="lazy">
+                </div>
+                <div class="triangle-right"></div>
+                <div class="flow">
+                    <h4>意気込み<br>入力</h4>
+                    <img class="" src="./img/section3-point1-3.png" width="187" alt="意気込み入力" decoding="auto" loading="lazy">
+                </div>
+                <div class="triangle-right"></div>
+                <div class="flow">
+                    <h4>仮予約<br>完了</h4>
+                    <img class="" src="./img/section3-point1-4.png" width="187" alt="仮予約完了" decoding="auto" loading="lazy">
+                </div>
+            </div>
+            <div>
+            <h4 class="text">
+            スタート時間や同組プレーヤーのプロフィールをチェックしながら、サクサク予約！<br>
+            前日の正午に2人以上参加していれば開催決定！
+            </h4>
+            </div>
+            <!--point2-->
+            <div class="section3_sub title" >
+            <img class="point_img " src="./img/section3-point2.png" width="120" alt="POINT2" decoding="auto" loading="lazy">
+            <h3 class="text">直前の飛び入り予約も対応！</h3>
+            </div>
+            <img class="img_center ponit2_img pc" src="./img/section3-point2-1.png" width="481" alt="予約" decoding="auto" loading="lazy" style="padding: 0 0 15px 154px; ">
+            <img class="img_center ponit2_img sp" src="./img/section3-point2-1sp.png" width="263" alt="予約" decoding="auto" loading="lazy" style="padding: 0 0 0 70px; ">
+            <h4 class="text">空枠があればラウンド前日の23時59分まで予約OK！<br>「明日の予定が急に空いた」...そんな時も、気軽にゴルフに行けるんです</h4>
+            <p class="text_note">※プレー日前日の正午を過ぎた空き枠を予約できる機能です。</p>
+            <p class="text_note">※飛び入り予約では予約後のキャンセルはできません。</p>
+            <!--point3-->
+            <div class="section3_sub  title">
+            <img class="point_img" src="./img/section3-point3.png" width="120" alt="POINT3" decoding="auto" loading="lazy">
+            <h3 class="text">前日正午までキャンセルは自由</h3>
+            </div>
+            <img class="img_center ponit3_img" src="./img/section3-point3-1.png" width="552" alt="ラウンド前日の正午" decoding="auto" loading="lazy" >
+            <h4 class="text">ラウンド前日の正午までは天気予報をチェックしてキャンセルもOK！</h4>
+            <!--point4-->
+            <div class="section3_sub  title">
+            <img class="point_img" src="./img/section3-point4.png" width="120" alt="POINT4" decoding="auto" loading="lazy">
+            <h3 class="text">チェックイン後すぐに次の予約OK！</h3>
+            </div>
+            <div class="section3_sub">
+            <img class="ponit4_img" src="./img/section3-point4-1.png" width="200" alt="チェックイン" decoding="auto" loading="lazy">
+            <div class="triangle-right_pc"></div>
+            <img class="ponit4_img" src="./img/section3-point4-2.png" width="200" alt="空き枠" decoding="auto" loading="lazy">
+            </div>
+            <h4 class="text">プレー当日、クラブハウスでチェックイン後、すぐに次回のラウンド予約OK！<br>
+            空き枠があれば連日のラウンドも可能！
+            </h4>
+            </div>
+        </section>
+
+
+        <section class="section4">
+
+            <div class="inner">
+
+                <div>
+
+                    <div class="header">
+                        <h2><img src="./img/section4-title.png" class="pc" width="366" alt="User's VOICE" decoding="auto" loading="lazy">
+                        <img src="./img/section4-titlesp.png" class="sp" width="366" alt="User's VOICE" decoding="auto" loading="lazy">
+                        </h2>
+                        <div class="header_r">
+                            <h4><img src="./img/section4-speachbubble.png" class="pc" width="319" alt="平日１人予約編!" decoding="auto" loading="lazy"></h4>
+                            <h3 class="headertext fw700">ひと足お先にGOLF me!を満喫中のユーザー様から、驚きと喜びの声がぞくぞく届いています！</h3>
+                         </div>
+                    </div>
+
+                    <div class="pc">
+                        <div class="voice">
+                            <div>
+                                <h3 class="voicetitle">自営業　Fさん　40代　GOLF me!歴 1年</h3>
+                                <h4 class="voicecomment">在宅業務で勤務時間の融通が効くので、<strong class="highlighter1 col_red fw700">月2〜3回は平日に1人予約でラウンド</strong>しています。今まではおサイフ事情で月1回が精一杯でしたが、GOLF me!に入会してから、思う存分ゴルフを楽しめています。1人予約を通して出会いも増え、そのご縁から自分の仕事に繋がったこともあるんですよ！</h4>
+                                <img class="pc" src="./img/section4-user1.png" width="158" alt="" decoding="auto" loading="lazy">
+                                <img class="sp" src="./img/section4-user1sp.png" width="107" alt="" decoding="auto" loading="lazy">
+                            </div>
+                            <div>
+                                <h3 class="voicetitle reverse">会社員　Uさん　30代　GOLF me!歴 6ヵ月</h3>
+                                <h4 class="voicecomment reverse">不動産業界の会社に勤務していて、平日休みのシフトなのでGOLF me!を利用してゴルフを楽しんでいます。<strong class="highlighter1 col_red fw700">プレー代が大幅に節約できるので、</strong>我慢していたおしゃれなゴルフウェアもシーズンごとに買えて本当に嬉しい！たくさん回れるからゴルフのスコアも着実に伸びてきて、念願の100切りも叶えられそうです！</h4>
+                                <img class="reverse_img pc" src="./img/section4-user2.png" width="158" alt="" decoding="auto" loading="lazy">
+                                <img class="reverse_img sp" src="./img/section4-user2sp.png" width="107" alt="" decoding="auto" loading="lazy">
+                            </div>
+                            <div>
+                                <h3 class="voicetitle">リタイア　Yさん　60代　GOLF me!歴 1年</h3>
+                                <h4 class="voicecomment">定年後に、ゴルフ、釣り、大型バイクなどいろんな趣味にハマりまして、毎日楽しいのですが小遣いのやりくりが大変...そんな時に出会ったのがGOLF me!でした。平日の1人予約で、朝少し早めに家を出て、空いている一般道をスイスイ走って高速代も節約...<strong class="highlighter1 col_red fw700">コスパを大切にして、長くゴルフを楽しみたい</strong>ですね。</h4>
+                                <img class="pc" src="./img/section4-user3.png" width="158" alt="" decoding="auto" loading="lazy">
+                                <img class="sp" src="./img/section4-user3sp.png" width="107" alt="" decoding="auto" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sp">
+                    <div class="swiper mySwiper2">
+                        <div class="swipe-icon" id="swipeIcon2"><img src="./img/scroll-hint-icon.png" /></div>
+
+                        <div class="swiper-wrapper voice">
+                            <div class="swiper-slide">
+                                <h3 class="voicetitle">自営業　Fさん　40代　GOLF me!歴 1年</h3>
+                                <h4 class="voicecomment">在宅業務で勤務時間の融通が効くので、<strong class="highlighter1 col_red fw700">月2〜3回は平日に1人予約でラウンド</strong>しています。今まではおサイフ事情で月1回が精一杯でしたが、GOLF me!に入会してから、思う存分ゴルフを楽しめています。1人予約を通して出会いも増え、そのご縁から自分の仕事に繋がったこともあるんですよ！</h4>
+                                <img class="pc" src="./img/section4-user1.png" width="158" alt="" decoding="auto" loading="lazy">
+                                <img class="sp" src="./img/section4-user1sp.png" width="107" alt="" decoding="auto" loading="lazy">
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="voicetitle reverse">会社員　Uさん　30代　GOLF me!歴 6ヵ月</h3>
+                                <h4 class="voicecomment reverse">不動産業界の会社に勤務していて、平日休みのシフトなのでGOLF me!を利用してゴルフを楽しんでいます。<strong class="highlighter1 col_red fw700">プレー代が大幅に節約できるので、</strong>我慢していたおしゃれなゴルフウェアもシーズンごとに買えて本当に嬉しい！たくさん回れるからゴルフのスコアも着実に伸びてきて、念願の100切りも叶えられそうです！</h4>
+                                <img class="reverse_img pc" src="./img/section4-user2.png" width="158" alt="" decoding="auto" loading="lazy">
+                                <img class="reverse_img sp" src="./img/section4-user2sp.png" width="107" alt="" decoding="auto" loading="lazy">
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="voicetitle">リタイア　Yさん　60代　GOLF me!歴 1年</h3>
+                                <h4 class="voicecomment">定年後に、ゴルフ、釣り、大型バイクなどいろんな趣味にハマりまして、毎日楽しいのですが小遣いのやりくりが大変...そんな時に出会ったのがGOLF me!でした。平日の1人予約で、朝少し早めに家を出て、空いている一般道をスイスイ走って高速代も節約...<strong class="highlighter1 col_red fw700">コスパを大切にして、長くゴルフを楽しみたい</strong>ですね。</h4>
+                                <img class="pc" src="./img/section4-user3.png" width="158" alt="" decoding="auto" loading="lazy">
+                                <img class="sp" src="./img/section4-user3sp.png" width="107" alt="" decoding="auto" loading="lazy">
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+
+               </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- LP共通セクション -->
+    <div id="lp2025common">
+
+        <section class="section5">
+
+            <div class="inner">
+
+                <div>
+                    <h2>
+                        <img class="img_center pc" src="./img/common-section5-title.png" width="750" alt="GOLFme! 選べる３つのプラン" decoding="auto" loading="lazy">
+                        <img class="img_center sp" src="./img/common-section5-titlesp.png" width="303" alt="GOLFme! 選べる３つのプラン" decoding="auto" loading="lazy">
+                    </h2>
+
+                    <div class="plan">
+                        <div  class="plan_list">
+                            <h3 class="subtitletext">とにかくおトクに<br class="pc">ラウンドしたい！</h3>
+                            <div class="month"> 
+                              <div>
+                                <h4 class="plantitle bgcol_red"><p><span class="year">1</span>年</p>プラン</h4>
+                              </div>
+                              <p class="monthly_fee">月額</p>
+                              <div class="planprice col_brown">
+                                <p>税抜<span class="yen">7,980</span>円</p>
+                                <p class="taxinc">（税込<span class="en">8,778</span>円）</p>
+                              </div>
+                            </div>
+                            <div class="campaign campaign_sp">
+                                <p class="col_brown">5/31まで! 1年プランご入会で</p>
+                                <p><span class="money">現金</span><span class="yen en">5,000</span>円</p>
+                                <p>キャッシュ<br class="sp">バック!</p>
+                            </div>
+                        </div>
+                        <div  class="plan_list">
+                            <h3 class="subtitletext">プレーの季節を選んで<br class="pc">楽しみたい！</h3>
+                            <div class="month">                        
+                              <div>
+                                 <h4 class="plantitle bgcol_orange"><p><span class="year">6</span>ヵ月</p>プラン</h4>
+                              </div>
+                              <p class="monthly_fee">月額</p>
+                              <div class="planprice col_brown">
+                                <p>税抜<span class="yen">8,980</span>円</p>
+                                <p class="taxinc">（税込<span class="en">9,878</span>円）</p>
+                              </div>
+                            </div>
+                           
+                        </div>
+                        <div  class="plan_list">
+                           <h3 class="subtitletext">まずはGOLF me!を<br class="pc">体験してみたい！</h3>
+                           <div class="month">
+                             <div>
+                                <h4 class="plantitle bgcol_yellow"><p><span class="year">3</span>ヵ月</p>プラン</h4>
+                             </div>
+                             <p class="monthly_fee">月額</p>
+                             <div class="planprice col_brown">
+                                <p>税抜<span class="yen">9,980</span>円</p>
+                                <p class="taxinc">（税込<span class="en">10,978</span>円）</p>
+                             </div>
+                           </div>
+                           <div class="campaign">
+                                <p>3ヶ月プラン限定！<br>
+                                初月0円キャンペーン開催中！</p>
+                                <div class="campaign_sub">
+                                 <div class="planprice col_brown">
+                                   <p>税抜<span class="yen">9,980</span>円</p>
+                                   <p class="taxinc">（税込<span class="en">10,978</span>円）</p>
+                                 </div>
+                                 <div class="arrow"></div>
+                                 <p>初月<br>料金</p>
+                                 <p><span class="en">0</span>円</p>
+                                </div>
+                             </div>
+                           
+                        </div>
+                    </div>
+
+                    <ul class="note" style="padding: 10px 0;">
+                        <li>平日は追加料金なしでご利用できます。土日・祝日・特定日利用、2サム・3サム保証にはエクストラチャージがかかります。</li>
+                        <li>月額料金に含まれるのはグリーンフィなどのプレー代、カートフィーのみで、ゴルフ場利用税、ロッカー利用料、キャディ利用料、食事料金等の料金は含まれません。</li>
+                        <li>起算日内で保有できる予約は1つまでです。詳しくはサービスサイトをご確認ください。</li>
+                    </ul>
+
+                    <h3 class="etctitle">その他料金</h3>
+
+                    <div class="etc1">
+                        <h4>
+                            <p class="etc1title">土日・祝日・特定日</p>
+                            <p class="etc1price">税抜4,500円<span>（税込4,950円）</span></p>
+                            <p class="etc1note">※1人・1プレーごと</p>
+                        </h4>
+                        <h4>
+                            <p class="etc1title">2サム保証</p>
+                            <p class="etc1price">税抜4,500円<span>（税込4,950円）</span></p>
+                            <p class="etc1note">※1人・1プレーごと</p>
+                        </h4>
+                        <h4>
+                            <p class="etc1title">3サム保証</p>
+                            <p class="etc1price">税抜1,500円<span>（税込1,650円）</span></p>
+                            <p class="etc1note">※1人・1プレーごと</p>
+                        </h4>
+                    </div>
+
+                    <div class="etc3">
+                        <strong class="title">ラッキー2サム・ラッキー3サム</strong>
+                        <p class="comment">2サム/3サム保証の追加費用を支払わずに複数人予約を行い、予約を受付けていた残りの枠に結果的に他メンバーの予約が入らず、2名もしくは3名のまま予約が成立した場合は、追加費用は掛かりませんのでご安心ください。</p>
+                        <img class="pc" src="./img/common-section5-etc3.png" width="338" alt="追加費用なしで2サムラウンド可能！" decoding="auto" loading="lazy">
+                        <img class="sp" src="./img/common-section5-etc3sp.png" width="338" alt="追加費用なしで2サムラウンド可能！" decoding="auto" loading="lazy">
+                    </div>
+
+                    <div class="etc2">
+                        <div>
+                            <h4 class="etc2title"><span>ゲスト利用</span><span class="pc">....</span><span>税抜9,000円</span><span>（税込9,900円）</span></h4>
+                            <p class="etc2note">※1人・1プレーごと</p>
+                            <p>メンバー会員（有料）の方が、ビジター会員（無料）の方を招待し、一緒にプレーをする場合。</p>
+                        </div>
+                        <div>
+                            <h4 class="etc2title"><span>キャンセル費用</span><span class="pc">...</span><span>1,000円</span><span>（不課税）</span></h4>
+                            <p>グループ予約の場合、キャンセル費用は代表者のおまとめ払いで支払いいただきます。</p>
+                        </div>
+                    </div>
+
+                    <ul class="note2">
+                        <li><strong>エクストラチャージ、キャンセル料のお支払いには、入会時、更新時に付与されるクーポンがご利用いただけます。</strong>
+                            <p>月額プラン、更新時期により付与数が異なります。詳しくはサービスサイトをご確認ください。</p>
+                        </li>
+                        <li><strong>月額料金にはゴルフ保険代金が含まれます。</strong>
+                            <p>ゴルフラウンド中のケガなどによるご自身の治療費用のほか、他人にケガ等をさせたり、他人の物を壊した場合などの損害補償まで幅広く補償します。</p>
+                        </li>
+                        <li><strong>ラウンドのキャンセルにはお一人・1プレー毎に、キャンセル料のお支払いをお願いしております。</strong>
+                            <p>グループ予約キャンセルの場合は代表者におまとめ払いをお願いしております。</p>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section_map">
+
+            <div class="inner">
+
+                <div>
+
+                    <h2 style="padding-bottom: 16px;">
+                        <div class="widthfull sp">
+                            <img src="./img/common-section5-largest-map1sp.png" width="393" alt="ゴルフラウンドサブスクでは全国最大級の提携ゴルフ場　対象コースは随時拡大中（関東地図）" decoding="auto" loading="lazy">
+                        </div>
+                        <img class="img_center pc" src="./img/common-section5-largest-map1.png" width="900" alt="ゴルフラウンドサブスクでは全国最大級の提携ゴルフ場　対象コースは随時拡大中（関東地図）" decoding="auto" loading="lazy">
+                    </h2>
+
+                    <div class="preflist1">
+                        <div class="pref11">
+                            <h3>千葉県</h3>
+                            <h4>千葉夷隅ゴルフクラブ</h4>
+                            <h4>勝浦ゴルフ倶楽部</h4>
+                            <h4>日本長江ゴルフクラブ</h4>
+                            <h4>森永高滝カントリー倶楽部</h4>
+                            <h4>ムーンレイクゴルフクラブ 茂原コース</h4>
+                            <h4>ムーンレイクゴルフクラブ 鶴舞コース</h4>
+                            <h4>千葉国際カントリークラブ</h4>
+                            <h4>大多喜カントリークラブ</h4>
+                            <h4>南総ヒルズカントリークラブ</h4>
+                            <h4>総丘カントリー倶楽部</h4>
+                            <h4>クリアビューゴルフクラブ＆ホテル</h4>
+                            <h4>イーグルレイクゴルフクラブ</h4>
+                            <h4>扶桑カントリー倶楽部</h4>
+                            <h4>成田の森カントリークラブ</h4>
+                        </div>
+                        <div class="pref12">
+                            <h3>神奈川県</h3>
+                            <h4>箱根園ゴルフ場</h4>
+                            <h4>箱根湯の花ゴルフ場</h4>
+                            <h4>湯河原カンツリー倶楽部</h4>
+                        </div>
+                        <div class="pref13">
+                            <h3>埼玉県</h3>
+                            <h4>埼玉国際ゴルフ倶楽部</h4>
+                            <h4>岡部チサンカントリークラブ</h4>
+                            <h4>富貴ゴルフ倶楽部</h4>
+                        </div>
+                        <div class="pref14">
+                            <h3>山梨県</h3>
+                            <h4>西東京ゴルフ倶楽部</h4>
+                            <h4>富士リゾートカントリークラブ</h4>
+                            <h4>中央都留カントリー倶楽部</h4>
+                        </div>
+                        <div class="pref15">
+                            <h3>静岡県</h3>
+                            <h4>修善寺カントリークラブ</h4>
+                            <h4>富士エースゴルフ倶楽部</h4>
+                            <h4>小田原ゴルフ倶楽部 日動御殿場コース</h4>
+                            <h4>西熱海ゴルフコース</h4>
+                        </div>
+                        <div class="pref16">
+                            <h3>群馬県</h3>
+                            <h4>サンコーカントリークラブ</h4>
+                        </div>
+                        <div class="pref17">
+                            <h3>栃木県</h3>
+                            <h4>メイフラワーゴルフクラブ</h4>
+                            <h4>TCC鶴カントリー倶楽部</h4>
+                            <h4>ピートダイゴルフクラブ ロイヤルコース</h4>
+                            <h4>ピートダイゴルフクラブ VIPコース</h4>
+                            <h4>千成ゴルフクラブ</h4>
+                            <h4>皐月ゴルフ倶楽部 鹿沼コース</h4>
+                            <h4>ハーモニーヒルズゴルフクラブ</h4>
+                            <h4>エヴァンタイユゴルフクラブ</h4>
+                        </div>
+                        <div class="pref18">
+                            <h3>茨城県</h3>
+                            <h4>岩瀬桜川カントリークラブ</h4>
+                            <h4>ゴルフ5カントリーかさまフォレスト</h4>
+                            <h4>ウィンザーパークゴルフアンド</h4>
+                            <h4>カントリークラブ</h4>
+                            <h4>グランドスラムカントリークラブ</h4>
+                        </div>
+                    </div>
+
+                    <img class="img_center pc" src="./img/common-section5-largest-map2.png" width="601" alt="中部近畿地図" decoding="auto" loading="lazy">
+                    <img class="img_center sp" style="padding-top: 30px;" src="./img/common-section5-largest-map2sp.png" width="360" alt="中部近畿地図" decoding="auto" loading="lazy">
+
+                    <div class="preflist2">
+                        <div class="pref21">
+                            <h3>兵庫県</h3>
+                            <h4>青野運動公苑アオノゴルフコース</h4>
+                            <h4>妙見富士カントリークラブ</h4>
+                            <h4>隨縁カントリークラブ 西神戸コース</h4>
+                            <h4>兵庫カンツリー倶楽部</h4>
+                            <h4>福崎東洋ゴルフ倶楽部</h4>
+                            <h4>青山台ゴルフ倶楽部</h4>
+                        </div>
+                        <div class="pref22">
+                            <h3>三重県</h3>
+                            <h4>名張カントリークラブ</h4>
+                            <h4>隨縁カントリークラブ キャニオン</h4>
+                            <h4>上野コース</h4>
+                        </div>
+                        <div class="pref23">
+                            <h3>愛知県</h3>
+                            <h4>庄内川ゴルフ倶楽部</h4>
+                        </div>
+                        <div class="pref25">
+                            <h3>岐阜県</h3>
+                            <h4>アドニスゴルフクラブ</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="lp2025common_section2"></section>
+
+        <section class="section2">
+            <div class="inner">
+                <div>
+                    <div style="padding: 15px 0;">
+                        <div class="section2_title" >
+                            <img id="itemA" src="./img/common-section-poinko1.png" width="110" alt="ポインコ兄" decoding="auto" loading="lazy">
+
+                            <h2 id="itemB">
+                                <img class="pc" src="./img/common-section-title.png" width="616" alt="dポイントがたまる使える" decoding="auto" loading="lazy">
+                                <img class="sp" src="./img/common-section-title.png" width="359" alt="dポイントがたまる使える" decoding="auto" loading="lazy">
+                            </h2>
+                            
+                            <img id="itemC"  src="./img/common-section-dpoint.png" width="70" alt="dポイントロゴマーク" decoding="auto" loading="lazy">
+
+                            <img id="itemD"  src="./img/common-section-poinko2.png" width="121" alt="ポインコ弟" decoding="auto" loading="lazy">
+
+                            <h3 id="itemE" class="section2text1 highlighter2 pc">GOLF me!のご利用で100円(税抜)につき１%たまる</h3>
+                            <h3 id="itemE" class="section2text1 highlighter2 sp"><img src="./img/common-section-1percent.png" decoding="auto" loading="lazy"></h3>
+
+                        </div>
+                    </div>
+                    
+                    <div class="pc">
+                    <div class="section2_sub">
+                      <img class="add pc"  src="./img/common-section2-add.png" width="144" alt="" decoding="auto" loading="lazy">
+                      <h4 class="card_text">
+                        <span class="sp">さらに！</span>dカードでのお支払いで<br>
+                        100円<span style="font-size: 0.5em;">(税込)</span>につき
+                        <span class="number">
+                          <img src="./img/common-section2-number.png" width="96" alt="" decoding="auto" loading="lazy">%たまる!
+                        </span>
+                      </h4>
+                      <img class="card pc" src="./img/common-section-card.png" width="352" alt="クレジットカード" decoding="auto" loading="lazy">
+                      <img class="card sp" src="./img/common-section-cardsp.png" width="146" alt="クレジットカード" decoding="auto" loading="lazy">
+                    </div>
+                    </div>
+                    <img class="sp" style="padding-top: 7px;" src="./img/common-section2-4percent.png" alt="さらに！ dカードでのお支払いで４％たまる！" decoding="auto" loading="lazy">
+
+                    <h4 class="comment8">ドコモユーザーなら、<br class="sp">さらにdポイントがたまる!</h4>
+
+                    <div class="menu">
+                        <img class="img_center pc" src="./img/common-section-menu.png" width="889" alt="" decoding="auto" loading="lazy">
+                        <img class="img_center sp" src="./img/common-section-menusp.png" width="889" alt="" decoding="auto" loading="lazy">
+                    </div>
+
+                    <div class="comment9">
+                        ※1「eximo」には特に記載のある場合を除き「eximo ポイ活」も含まれます。※2「ahamo」で「ポイ活オプション」サービスのご契約をされている方も対象です。</li>
+                    </div>
+
+                    <h3 class="comment10">いろいろ使える！便利なdポイント</h3>
+
+                    <div class="comment11">
+                        <h4>
+                            <img src="img/common-section-comment1.png" class="pc" width="100%" alt="GOLF me!月額費用の決済に" decoding="auto" loading="lazy">
+                            <img src="img/common-section-comment1sp.png" class="sp" width="100%" alt="GOLF me!月額費用の決済に" decoding="auto" loading="lazy">
+                        </h4>
+                        <h4>
+                            <img src="img/common-section-comment2.png" class="pc" width="100%" alt="GOLF me!エクストラチャージの決済に" decoding="auto" loading="lazy">
+                            <img src="img/common-section-comment2sp.png" class="sp" width="100%" alt="GOLF me!エクストラチャージの決済に" decoding="auto" loading="lazy">
+                        </h4>
+                        <h4>
+                            <img src="img/common-section-comment3.png" class="pc" width="100%" alt="dポイント加盟店でのお買い物に" decoding="auto" loading="lazy">
+                            <img src="img/common-section-comment3sp.png" class="sp" width="100%" alt="dポイント加盟店でのお買い物に" decoding="auto" loading="lazy">
+                        </h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section3">
+            <div class="inner">
+                <div>
+                    <h2><a href="https://golfme.goo.ne.jp/campaign/2025spring"><img src="./img/common-main01_2025spring.png" width="889" alt="GOLF me！2025春のキャンペーン　エントリー不要！1年プランにメンバー登録をすると5,000円キャッシュバック！" decoding="auto" loading="lazy"></a></h2>
+                    <a href="https://golfme.goo.ne.jp/campaign/2025spring" class="button" style="margin-top: 20px;">詳しくはこちら!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section4">
+            <div class="inner">
+                <div>
+                    <h2><a href="https://golfme.goo.ne.jp/information/121"><img src="./img/common-section4-banner.png" class="pc" width="889" alt="３ヶ月プラン限定 月額料金が初月０円キャンペーン" decoding="auto" loading="lazy"><img src="./img/common-section4-banner.png" class="sp" width="889" alt="３ヶ月プラン限定 月額料金が初月０円キャンペーン" decoding="auto" loading="lazy"></a></h2>
+                    <a href="https://golfme.goo.ne.jp/information/121" class="button" style="margin-top: 20px;">詳しくはこちら!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_banner3">
+            <div class="inner">
+                <div>
+                    <h2><a href="https://golfme.goo.ne.jp/competition/20250604/about">
+                    <img src="./img/common-section4-main4.png" class="pc" alt="GOLF me！（ゴルフミー！）-第2回GOLF me！CUP（スペシャルゲスト：山内鈴蘭、稲村亜美）" width="1300" decoding="auto" loading="lazy">
+                    <img src="./img/common-section4-mainsp2.png" class="sp" alt="GOLF me！（ゴルフミー！）-第2回GOLF me！CUP（スペシャルゲスト：山内鈴蘭、稲村亜美）" width="1010" decoding="auto" loading="lazy">
+                    </a></h2>
+                </div>
+            </div>
+        </section>
+
+        <p class="gotop sp"><a href="#top"><img src="./img/common-fixed-gotopsp.png" width="37" alt="" decoding="auto" loading="lazy"></a></p>
+        <div class="fixed">
+            <div class="fixed_inner_row1" id="lp2025popup">
+                <div class="closebutton">
+                    <label for="lp2025popclosed" class="closed"></label>
+                    <input type="checkbox" class="checked" name="check" id="lp2025popclosed" style="display:none;">
+                </div>
+                <div class="img">
+                    <h2><a href="https://golfme.goo.ne.jp/information/121"><img src="./img/common-section5-banner1-popup.png" width="250" alt="GOLFme! 2025 ３ヶ月プラン限定初月０円キャンペーン" decoding="auto" loading="lazy"></a></h2>
+                </div>
+            </div>
+            <div class="fixed_inner">
+                <div class="btn"><a target="_blank" href="https://golfme.goo.ne.jp/register"><img src="./img/common-fixed-btn.png" width="357" alt="メンバー登録する（有料）" decoding="auto" loading="lazy"></a></div>
+                <div class="msg">
+                    <strong>5/31まで！1年プラン入会で5,000円キャッシュバック！</strong>
+                    <strong>3ヵ月プラン入会で初月無料キャンペーン実施中！</strong>
+                </div>
+                <p class="gotop pc"><a href="#top"><img src="./img/common-fixed-gotop.png" width="70" alt="" decoding="auto" loading="lazy"></a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('lp2025popclosed').addEventListener('click', function() {
+            document.getElementById('lp2025popup').style.display = 'none';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: { clickable: true, },
+        initialSlide: 0,
+        breakpoints: { 768: { initialSlide: 1 } },
+    });
+
+    setTimeout(() => {
+        swiper.update();
+    }, 0);
+
+    const swipeHint = document.getElementById("swipeIcon");
+    let hasSwiped = false;
+    swiper.on('touchStart', function () {
+      if (!hasSwiped) {
+        hasSwiped = true;
+        swipeHint.classList.add("hide");
+      }
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: { clickable: true, },
+        initialSlide: 0,
+        breakpoints: { 768: { initialSlide: 1 } },
+    });
+
+    setTimeout(() => {
+        swiper2.update();
+    }, 0);
+
+    const swipeHint2 = document.getElementById("swipeIcon2");
+    let hasSwiped2 = false;
+    swiper2.on('touchStart', function () {
+      if (!hasSwiped2) {
+        hasSwiped2 = true;
+        swipeHint2.classList.add("hide");
+      }
+    });
+    </script>
+
+    <!-- フッター -->
+    <div class="c-back-to-top">
+      <p><a href="#top">ページ上部へ</a></p>
+    </div>
+    <footer class="l-footer">
+    <div class="l-footer__inner">
+      <ul class="l-footer-links l-footer-links-above">
+        <li><a href="https://golfme.goo.ne.jp/about">GOLF me！とは</a></li>
+        <li><a href="https://golfme.goo.ne.jp/guide">GOLF me！の使い方</a></li>
+        <li><a href="https://golfme.goo.ne.jp/qa">よくあるご質問</a></li>
+        <li><a href="https://golfme.goo.ne.jp/terms">GOLF me！サービス利用規約</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.docomo.ne.jp/utility/privacy/">プライバシーポリシー</a></li>
+        <li><a href="https://golfme.goo.ne.jp/transaction">特定商取引法に基づく表記</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://help.goo.ne.jp/help/article/711/">免責事項</a></li>
+      </ul>
+      <ul class="l-footer-links">
+        <li><a href="https://golfme.goo.ne.jp/course">提携ゴルフ場一覧</a></li>
+        <li><a href="https://golfme.goo.ne.jp/inquiry">お問い合わせ</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.goo.ne.jp/">gooトップ</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.docomo.ne.jp/corporate/">企業情報</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://advertising.nttr.co.jp/adinfo/">広告掲載</a></li>
+      </ul>
+      <div class="l-footer-sns">
+        <ul>
+          <li><a href="https://x.com/GOLFme_official" target="_blank" rel="noopener nowrapper"><img src="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/icon-x.png" width="60" height="60" alt="X" /></a></li>
+          <li><a href="https://www.instagram.com/golfme.official/" target="_blank" rel="noopener nowrapper"><img src="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/icon-instagram.png" width="60" height="60" alt="Instagram" /></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61556339857220" target="_blank" rel="noopener nowrapper"><img src="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/icon-facebook.png" width="60" height="60" alt="Facebook" /></a></li>
+        </ul>
+      </div>
+      <p class="l-footer-copyright">&copy; NTT DOCOMO</p>
+    </div>
+  </footer>
+  <div class="l-footer-docomo"><img src="https://cdn.golfme.goo.ne.jp/build/3.5.0/assets/footer-docomo.png" width="120" height="30" alt="NTT DOCOMO"></div>
+  </div>
+  </body>
+  <script>
+      // エンターキーで発火しないように処理を追加
+      document.addEventListener('keydown', function(event) {
+          if (event.key === 'Enter') {
+              event.preventDefault();
+          }
+      });
+  </script>
+</html>
