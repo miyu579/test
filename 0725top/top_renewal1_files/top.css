@@ -170,8 +170,11 @@ background-image: url("../img/top_renewal1_ic03.png");
 }
 	#top_service .top_service_price p {
     text-shadow: 0px 0px 6px #14243e;
-    margin: 0 0 7px;
+    margin: -3px 0 7px;
     vertical-align: bottom;
+}
+	#top_service .top_service_price div:nth-of-type(2) p{
+    margin-top: -4px;
 }
 	#top_service .top_service_price p span {
     font-size: 29px;
