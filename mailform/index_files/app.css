@@ -241,7 +241,7 @@
 
   #emailform_new .radioItem {
     font-size: 16px;
-    padding-left: 8px;
+    padding-left: 12px;
     line-height: 20px;
     margin-bottom: 0;
   }
@@ -60443,4 +60443,5 @@ body:has(#aboutgolfmeinner) {
   .c-user-register .c-setting-input-zip {
     max-width: unset
   }
+
 }
