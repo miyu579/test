@@ -279,7 +279,7 @@
 
  
   #emailform_new .emaliform_wide {
-    width: 98%;
+    width: 100%;
     padding: 5px 0 6px 13px;
     display: block;
     margin: 0 auto;
@@ -60435,4 +60435,5 @@ body:has(#aboutgolfmeinner) {
   .c-user-register .c-setting-input-zip {
     max-width: unset
   }
+
 }
