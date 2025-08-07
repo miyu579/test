@@ -205,7 +205,7 @@
   }
   #emailform_new h1 {
     font-size: 24px;
-        margin-bottom: 5px;
+        margin-bottom: 12px;
         margin-top: 22px;
   }
   #emailform_new .emailform_box {
@@ -60445,3 +60445,4 @@ body:has(#aboutgolfmeinner) {
   }
 
 }
+
