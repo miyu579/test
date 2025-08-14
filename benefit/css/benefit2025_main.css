@@ -1,0 +1,2215 @@
+@charset "utf-8";
+/* CSS Document */
+
+#benefit2025 * {
+  box-sizing: border-box;
+}
+.benefit2025_partner_html html {
+  -webkit-text-size-adjust: none; /* iPhoneでランドスケープにした時に文字サイズ自動変更禁止 */
+  font-size: 62.5%;
+}
+.benefit2025_partner_html body{
+	line-height:1;
+	margin: 0;
+}
+
+.benefit2025_partner_html,#benefit2025{
+   line-height: 1.6;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+#benefit2025 {
+	position: relative;
+	z-index: 1;
+}
+#benefit2025 section {
+	position: relative;
+	z-index: -1;
+}
+
+.benefit2025_partner_html a:hover ,.benefit2025_partner_html a:focus,.benefit2025_partner_html a:active {
+	opacity: .8;
+}
+.benefit2025_partner_html .sticky_block{
+	
+	z-index: 30;
+}
+.benefit2025_partner_html .sptbOnly{z-index: 30;}
+img {
+max-width: 100%;
+height: auto;
+vertical-align: bottom;
+}
+
+@media screen and (min-width:1100px) {
+	.benefit2025_partner_html .sptbOnly{
+		display: none!important;
+	}
+}
+@media screen and (min-width:768px) {
+	.benefit2025_partner_html .spOnly{
+		display: none!important;
+	}
+}
+@media screen and (max-width:1099.98px) {
+	.benefit2025_partner_html .pcOnly {
+		display: none!important;
+	}
+	.benefit2025_partner_html .sptbOnly{
+		display: block!important;
+	}
+	.benefit2025_partner_html .spOnly{
+		display: block!important;
+	}
+}
+@media screen and (max-width:768px) {
+	.benefit2025_partner_html .spOnly{
+		display: block!important;
+	}
+}
+/*共通*/
+#benefit2025 h2{
+	text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 30px;
+    padding-top: 30px;
+	
+}
+#benefit2025 h2 span{
+	    display: block;
+    padding: 3px 0;
+    background-color: #d00e31;
+    width: 100px;
+    margin: -1px auto 0px;
+	
+}
+#benefit2025 .customervoice_bg h2{
+	color:#fff;
+}
+@media screen and (max-width:768px) {
+	#benefit2025 h2 span {
+		display: block;
+		padding: 2px 0;
+		background-color: #d00e31;
+		width: 84px;
+		margin: -1px auto 0px;
+	}
+	#benefit2025 .customervoice_bg h2
+ {
+   font-size: 21px;
+	         margin-top: 10px;
+}
+}
+
+/*共通おわり*/
+
+/*KV*/
+
+#benefit2025 .benefit2025_bg{
+
+}
+#benefit2025 h1{
+	background-color: #d00e31;
+	text-align: center;
+	padding: 15px 0 15px;
+}
+/*KVおわり*/
+
+/*ロゴかける*/
+#benefit2025 .benefit2025_inner .caution{
+	font-size: 12px;
+}
+#benefit2025 .benefit2025_inner .whatis_caution{
+	text-indent: -12px;
+    padding-left: 10px;
+    font-size: 12px;
+    width: 90%;
+    margin: 20px auto;
+}
+/*ロゴかけるおわり*/
+#benefit2025 .benefit2025_inner{
+	width: 750px;
+	margin: 30px auto;
+}
+/*特典*/
+#benefit2025 .benefit {
+	    background-color: #fff;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding: 22px 0;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px #bdbdbd;
+}
+#benefit2025 .benefit >p:nth-of-type(1){
+	    background-image: url(../img/benefit2025_05.png);
+    background-repeat: no-repeat;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    background-position: top 2px right 50%;
+    padding: 5px;
+    margin-top: 0;
+       background-size: 475px 42px;
+    margin-bottom: -22px;
+}
+#benefit2025 .benefit >p:nth-of-type(n+2){
+	font-size:26px;
+	font-weight: bold;
+}
+#benefit2025 .benefit_bg >p{
+	font-size:18px;
+	font-weight: normal;
+	margin: 10px auto 0;
+	text-align: center;
+}
+#benefit2025 .benefit .oneyear_title{
+	color: #d00e31;
+	
+}
+#benefit2025 .benefit .big_zero{
+	display: inline-block;
+    color: #d00e31;
+    font-size: 50px;
+    line-height: 43px;
+}
+#benefit2025 .benefit ul{
+	width: 90%;
+	margin: auto;
+	text-align: left;
+}
+
+#benefit2025 .benefit_bg{
+	    background-color: #f1f2f5;
+	    margin-top: 0;
+	padding: 30px 0 10px;
+}
+@media screen and (max-width:768px) {
+	#benefit2025 .benefit .big_zero
+ {
+    font-size: 40px;
+}
+		#benefit2025 .benefit >p:nth-of-type(1) {
+	font-size: 16px;
+   background-size: 98% 100%;
+}
+	#benefit2025 .benefit >p:nth-of-type(n+2) {
+    font-size: 20px;
+    font-weight: bold;
+}
+	#benefit2025 .benefit {
+    width: 96%;
+}
+	#benefit2025 .benefit_bg >p {
+    font-size: 14px;
+
+}
+}
+/*特典おわり*/
+
+/*whatis*/
+#benefit2025 .whatis figure{
+	width:80%;
+	margin: auto;
+}
+#benefit2025 .whatis >p:nth-of-type(1){
+	padding-bottom: 14px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    background: url(../img/benefit2025_02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px auto 0;
+    background-size: 376px 59px;
+}
+#benefit2025 .whatis >p:nth-of-type(n+2){
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+}
+#benefit2025 .whatis >p:nth-of-type(3){
+	margin-top: -9px;
+}
+#benefit2025 .whatis .red_bold_big,#benefit2025 .whatis .red_bold_mid{
+	font-weight: bold;
+	color: #d00e31;
+}
+#benefit2025 .whatis .red_bold_big{
+	font-size: 37px;
+}
+#benefit2025 .whatis .red_bold_mid{
+	font-size: 28px;
+}
+#benefit2025 .whatis .small{
+	font-size: 16px;
+}
+#benefit2025 .whatis .recomend p{
+	font-size: 20px;
+	font-weight: 500;
+	padding: 7px 0 30px;;
+	text-align: center;
+	background-image: url("../img/benefit2025_04.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    background-size: 40%;
+}
+#benefit2025 .whatis .recomend {
+	margin-top: 30px;
+}
+#benefit2025 .whatis .recomend ul{
+	width: 410px;
+	margin: auto;
+}
+#benefit2025 .whatis .recomend li {
+	padding-left: 30px;
+	font-weight: 500;
+	font-size:18px;
+	background-image: url("../img/benefit2025_03.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	    background-size: 4%;
+}
+@media screen and (max-width:768px) {
+	#benefit2025 .benefit2025_inner{
+	width: 100%;
+	margin: 14px auto;
+	min-width: unset;
+}
+#benefit2025 .whatis .recomend ul{
+	width: 90%;
+	margin: auto;
+	max-width: 410px;
+}
+	#benefit2025 .whatis .recomend li {
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    background-image: url(../img/benefit2025_03.png);
+    background-repeat: no-repeat;
+    background-position: left 63%;
+    background-size: 6%;
+		line-height: 18px;
+}
+	#benefit2025 .whatis .recomend li + li{
+    margin-top: 15px;
+}
+	#benefit2025 .whatis .recomend p {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0 30px;
+    text-align: center;
+    background-image: url(../img/benefit2025_04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    background-size: 64%;
+}
+	#benefit2025 .whatis figure{
+	width:98%;
+}
+	#benefit2025 .whatis >p:nth-of-type(1) {
+    padding-bottom: 8px;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        background: url(../img/benefit2025_02.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin:15px auto 0px;
+        background-size: 304px 43px;
+}
+	#benefit2025 .whatis >p:nth-of-type(n+2){
+	font-size: 18px;
+}
+	#benefit2025 .whatis .small {
+    font-size: 12px;
+}
+	#benefit2025 .whatis .red_bold_big {
+    font-size: 26px;
+}
+	#benefit2025 .whatis .red_bold_mid
+ {
+    font-size: 20px;
+}
+	#benefit2025 .whatis .recomend {
+    margin-top: 10px;
+}
+	#benefit2025 .whatis >p:nth-of-type(3)
+ {
+    margin-top: -6px;
+}
+	#benefit2025 .benefit2025_btn {
+    margin: 40px auto 45px;
+}
+}
+/*whatisおわり*/
+
+/*ボタン*/
+
+#benefit2025 .benefit2025_btn {
+	font-size: 22px;
+	margin: 50px auto 55px;
+	text-align: center;
+	border-radius: 30px;
+	padding: 10px 0;
+	color: #fff;
+	font-weight:500;
+	width: 500px;
+	background-color: #d00e31;
+    box-shadow: 4px 4px 0px #910a22;
+	position:relative;
+	z-index: -4;
+}
+#benefit2025 .benefit2025_btn a {
+position: relative;
+    display: inline-block; /* Safari対策：インライン要素をブロック化 */
+    padding: 10px 40px 10px 20px; /* 矢印分の右余白を確保 */
+    background-color: #007acc; /* ボタン背景色（例） */
+    color: #fff;               /* 文字色（例） */
+    text-decoration: none;
+    font-weight: bold;
+	}
+
+#benefit2025 .benefit2025_btn a::after
+ {
+   content: '';
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 1px solid transparent; /* Safari対策：0→1px以上 */
+    border-left: 10px solid #fff;
+    border-bottom: 8px solid transparent;
+}
+#benefit2025 .benefit2025_btn:hover,#benefit2025 a:hover{
+	opacity: 0.85;
+}
+@media screen and (max-width:768px){
+	#benefit2025 .benefit2025_btn {
+    width:94%;
+	max-width: 500px;
+	font-size: 16px;
+		font-weight: bold;
+		        margin: 35px auto 30px;
+}
+	#benefit2025 .benefit2025_btn a::after
+ {
+     content: '';
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 1px solid transparent; /* Safari対策：0→1px以上 */
+    border-left: 10px solid #fff;
+    border-bottom: 8px solid transparent;
+}
+	#benefit2025 .benefit2025_btn:nth-of-type(3){
+		margin: 25px auto 35px;
+	}
+}
+/*おすすめポイント*/
+#benefit2025 .recomendpoint_bg {
+	background-color: #f5f0e4;
+	padding-bottom: 20px;
+	    padding-top: 1px;
+}
+#benefit2025 .recomendpoint_bg ul{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#benefit2025 .recomendpoint_bg ul + ul{
+	display:block;
+    font-size: 12px;
+	margin: 20px auto 0;
+	width: 700px;
+}
+#benefit2025 .recomendpoint_bg ul +ul li{
+	text-indent: -19px;
+	padding-left: 20px;
+}
+@media screen and (max-width:768px) {
+	#benefit2025 .recomendpoint_bg li{
+    width: 30%;
+}
+	#benefit2025 .recomendpoint_bg ul +ul li{
+    width: 100%;
+        text-indent: -20px;
+        padding-left: 20px;
+}
+	#benefit2025 h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding-top: 20px;
+}
+	#benefit2025 .recomendpoint_bg ul + ul {
+    margin: 20px auto 0;
+    width: 95%;
+		
+}
+}
+/*おすすめポイントおわり*/
+
+/*料金表*/
+/*20250609追加*/
+#benefit2025 .c-plan-section .price-list .fo20_bold{
+	font-size:20px;
+	font-weight: bold;
+}
+#benefit2025 .c-plan-section .price-list .fo18_normal{
+	font-size:18px;
+}
+#benefit2025 .c-plan-section .price-list .fo12_normal{
+	font-size:12px;
+}
+#benefit2025 .c-plan-section .price-list .fo16_normal{
+	font-size:16px;
+}
+#benefit2025 .c-plan-section .price-list .title_normal{
+	font-size:18px;
+}
+#benefit2025 .c-plan-section .price-list .title_normal{
+	font-weight: bold;
+}
+#benefit2025 .c-plan-section .price-list .fo20_normal{
+	font-size:20px;
+}
+#benefit2025 .c-plan-section .fo23_normal{
+	font-size:23px;
+}
+#benefit2025 .c-plan-section .price-list .fo25_normal{
+	font-size:25px;
+}
+#benefit2025 .c-plan-section .price-list .fo30_bold{
+	font-size:30px;
+	font-weight: bold;
+}
+#benefit2025 .c-plan-section .price-list .fo40_bold_big{
+	margin-right: 3px;
+	font-size:40px;
+	font-weight: bold;
+}
+#benefit2025 .only_bold {
+	font-weight: bold;
+}
+#benefit2025 .c-plan-section .price-list .fo22_bold{
+	font-weight: bold;
+	font-size: 22px;
+}
+/*料金表20250606*/
+#benefit2025 .c-logout-plan-note p {
+    padding-left: 20px !important;
+    padding: 0px 0 0px 0;
+    background-image: url("../../../img/campaign/dpoint_docomo/logout-caution.png");
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    background-position: left top 4px;
+    margin-bottom: 4px;
+}
+#benefit2025 .left-caution-big {
+    text-align: left;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 12px;
+    min-width: 300px;
+    padding-left: 5px;
+}
+#benefit2025 .left-caution {
+    text-align: left;
+    width: 95%;
+    margin: 0 auto 10px;
+    font-size: 12px;
+    text-indent: -21px;
+    padding-left: 17px;
+}
+ #benefit2025 .price-list table{
+	 width:75%;
+	 min-width: 710px;
+	  border-collapse: collapse;
+	 border-color:#fff;
+	 border-spacing: 10px;
+	 border:1px solid #dddddd;
+	 	 border-left: 3px solid #d00f31;
+	     margin: 0 auto 15px;
+	 text-align: center;
+	
+	
+  /*表全体を線で囲う*/
+}
+
+#benefit2025 .c-plan-section .price_normal div,
+#benefit2025 .price-list .price_normal td div,
+#benefit2025 .price-list .price_exaha_kan td div,
+#benefit2025 .price-list .price_exaha_zitu td div,
+#benefit2025 .price-list .price_iru_kan td div,
+#benefit2025 .price-list .price_iru_zitu td div,
+#benefit2025 .price-list .price_cupon td div{
+	display: inline-block;
+	width: 65%;
+	border-bottom: 3px solid #f1f1f1;
+}
+#benefit2025 .price-list tbody tr td:nth-of-type(2) {
+	border-right: 2px solid #bdbdbd;
+    border-left: 3px solid #d00f31;
+}
+#benefit2025 .price-list tbody tr td{
+	border: none;
+}
+#benefit2025 .price-list .price_normal td{
+	    padding: 8px 0 8px;
+}
+#benefit2025 .price-list .price_exaha_kan td{
+	padding: 17px 0 0px;
+}
+#benefit2025 .price-list .price_exaha_zitu td{
+	padding: 17px 0 15px;
+}
+#benefit2025 .price-list .price_iru_kan td{
+	padding: 17px 0 0px;
+}
+#benefit2025 .price-list .price_iru_zitu td{
+	padding:16px 0 15px;
+}
+#benefit2025 .price-list .price_cupon td{
+	 padding: 20px 0 0;
+}
+#benefit2025 .price-list tbody tr th,#benefit2025 .price-list tbody td{
+	vertical-align: middle;
+}
+#benefit2025 .price-list tbody tr th:nth-of-type(1),.price-list tbody tr td:nth-of-type(1){
+	background-color: #fff;
+}
+
+#benefit2025 .price-list tbody tr th:nth-of-type(1), .price-list tbody tr td:nth-of-type(2) {
+    background-color: #fff;
+}
+#benefit2025 .price-list tbody tr th:nth-of-type(1), .price-list tbody tr td:nth-of-type(3) {
+    background-color: #fff;
+}
+
+#benefit2025 .price-list .price_plan th:nth-of-type(1){
+	background: #d00f31;
+	color: #fff;
+	border-right: 3px solid #d00f31;
+    border-top: 3px solid #d00f31;
+	padding-top: 4px;
+}
+#benefit2025 .price-list .price_plan th:nth-of-type(2){
+	background:#b5b5b5;
+	color: #fff;
+	border-right: 1px solid #fff;
+}
+#benefit2025 .price-list .price_plan th:nth-of-type(3){
+	background:#b5b5b5;
+	color: #fff;
+}
+#benefit2025 .price-list .price_normal p:nth-of-type(2){
+	margin: -10px 0;
+}
+#benefit2025 .price-list .price_exaha_kan p:nth-of-type(2),.price-list .price_exaha_zitu p:nth-of-type(2),.price-list .price_iru_kan p:nth-of-type(2),.price-list .price_iru_zitu p:nth-of-type(2),.price-list .price_cupon p:nth-of-type(2){
+	margin: -10px 0;
+	padding-bottom: 16px;
+}
+#benefit2025 .price-list .price_plan p +p{
+	    margin-top: -13px;
+    padding-bottom: 4px;
+}
+#benefit2025 .price-list tbody tr.price_20 td:nth-of-type(1) ,.price-list tbody tr.price_exaha_kan td,.price-list tbody tr.price_exaha_zitu td {
+
+}
+
+#benefit2025 .price-list tr.price_zero td p{
+	font-size: 25px;
+    background-color: #f3f3f3;
+    width: 96%;
+    margin: 12px auto;
+    padding: 7px 0;
+	
+}
+#benefit2025 .price-list tr.price_zero td span{
+	display: inline-block;
+	padding: 0 4px;
+	font-size: 35px;
+	font-weight: bold;
+	    color: #d00f31;
+}
+#benefit2025 .price-list tr.price_20 td p{
+	font-size: 22px;
+    background-color: #f3f3f3;
+    width: 96%;
+    margin: 12px auto;
+    padding: 7px 0;
+}
+#benefit2025 .price-list tr.price_box td p{
+	font-size: 22px;
+    background-color: #f3f3f3;
+    width: 96%;
+    margin: 12px auto;
+    padding: 3px 0;
+}
+#benefit2025 .price-list tr.price_10 td p{
+	font-size: 22px;
+    background-color: #f3f3f3;
+    width: 96%;
+    margin: 30px auto 12px;
+    padding: 7px 0;
+}
+#benefit2025 .price-list tr.price_10  p .fo25_normal,.price-list tr.price_20  p .fo25_normal{
+
+}
+
+
+
+
+#benefit2025 .price-list .price_normal td:nth-of-type(1),
+#benefit2025 .price-list .price_exaha_kan td:nth-of-type(1),
+#benefit2025 .price-list .price_exaha_zitu td:nth-of-type(1),
+#benefit2025 .price-list .price_iru_kan td:nth-of-type(1),
+#benefit2025 .price-list .price_iru_zitu td:nth-of-type(1),
+#benefit2025 .price-list .price_cupon td:nth-of-type(1){
+	color:#d00f31;
+}
+
+#benefit2025 .price-list .price_normal td:nth-of-type(2),
+#benefit2025 .price-list .price_exaha_kan td:nth-of-type(2),
+#benefit2025 .price-list .price_exaha_zitu td:nth-of-type(2),
+#benefit2025 .price-list .price_iru_kan td:nth-of-type(2),
+#benefit2025 .price-list .price_iru_zitu td:nth-of-type(2),
+#benefit2025 .price-list .price_cupon td:nth-of-type(2){
+	color:#a5a5a5;
+}
+#benefit2025 .price-list .price_normal td:nth-of-type(3),
+#benefit2025 .price-list .price_exaha_kan td:nth-of-type(3),
+#benefit2025 .price-list .price_exaha_zitu td:nth-of-type(3),
+#benefit2025 .price-list .price_iru_kan td:nth-of-type(3),
+#benefit2025 .price-list .price_iru_zitu td:nth-of-type(3),
+#benefit2025 .price-list .price_cupon td:nth-of-type(3){
+	color:#a5a5a5;
+}
+#benefit2025 .price-list .price_campaign td:nth-of-type(1) div{
+	background-color: #d00f31;
+	width:100px;
+	height: 10px;
+	margin: auto;
+	border-radius: 100px;
+}
+#benefit2025 .price-list .price_campaign td:nth-of-type(2) div{
+	background-color: #a5a5a5;
+	width:100px;
+	height: 10px;
+	margin: auto;
+	border-radius: 100px;
+}
+#benefit2025 .price-list .price_campaign td:nth-of-type(3) div{
+	background-color: #a5a5a5;
+	width:100px;
+	height: 10px;
+	margin: auto;
+	border-radius: 100px;
+}
+#benefit2025 .price-list .price_cupon td:nth-of-type(3) .price-box{
+	background-color: #a5a5a5;
+	width:100px;
+	height: 10px;
+	margin: 0% auto 8%;
+	border-radius: 100px;
+	border: none;
+	display: block;
+}
+#benefit2025 .price-list .price_campaign td:nth-of-type(1){
+		 border-bottom: 3px solid #d00f31;
+}
+#benefit2025 .price-list .baloon div{
+	    bottom: 6px;
+    background-color: #ffba00;
+    padding: 6px 0px;
+    border-radius: 40px;
+    width: 24%;
+    position: relative;
+    z-index: 99;
+    top: 30px;
+    left: 7%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+	text-align: center;
+
+}
+ 
+#benefit2025 .price-list .baloon div:before{
+
+	content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border: 6px solid transparent;
+    border-top: 10px solid  #ffba00;
+}
+#benefit2025 .price-list .baloon div p{
+    font-weight: bold;
+    color: #333;
+}
+#benefit2025 .price-list .baloon div p+p{
+    margin-top:-10px;
+}
+#benefit2025 .price-list .baloon2 div{
+     bottom: 6px;
+    background-color: #8f8f8f;
+    padding: 6px 0px;
+    border-radius: 40px;
+    width: 40%;
+    position: relative;
+    z-index: 99;
+    top: -12px;
+    left: 46%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+#benefit2025 .price-list .baloon2 div:before{
+
+	content: "";
+    position: absolute;
+    top: 100%;
+        left: 16%;
+    margin-left: -10px;
+    border: 6px solid transparent;
+    border-top: 10px solid #8f8f8f;
+}
+#benefit2025 .price-list .baloon2 div:after{
+
+	content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: 32%;
+    border: 6px solid transparent;
+    border-top: 10px solid  #8f8f8f;
+}
+  /*適用条件・注意事項*/
+#benefit2025 .tekiyou {
+	margin-top: 10px;
+	color: #333;
+	width:750px;
+	margin:30px auto 0;
+	text-align: center;
+}
+#benefit2025 .tekiyou p{
+	font-size:14px;
+	
+}
+#benefit2025 .tekiyou p+p{
+	font-size:12px;
+}
+#benefit2025 .tekiyoutyuui p{
+	background-color: #d00e31;
+	color:#fff;
+	width:30%;
+	margin:0 auto 20px;
+	text-align: center;
+	border-radius: 100px;
+	font-size: 20px;
+}
+#benefit2025 .tekiyoutyuui p+p{
+	width: 98%;
+	margin: auto;
+	font-size: 18px;
+	background-color: transparent;
+	color: #333;
+	font-weight: bold;
+}
+
+#benefit2025 .tekiyoutyuui{
+	background-color: #f1f2f5;
+	padding-bottom: 30px;
+}
+#benefit2025 .tekiyoutyuui >div{
+	padding: 0;
+}
+#benefit2025 .tekiyoutyuui >div>div{
+	background-color: #fff;
+	padding: 20px 0;
+	border-radius: 10px;
+}
+#benefit2025 .tekiyoutyuui >div>div+div{
+	margin-top: 20px;
+}
+#benefit2025 .tekiyoutyuui h2{
+	background-color: #d00e31;
+	color:#fff;
+	text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+        padding: 20px 0;
+	margin-top: 60px;
+}
+#benefit2025 .tekiyoutyuui ul{
+	font-size: 18px;
+	width:90%;
+	margin: auto;
+	background-color: #fff;
+}
+#benefit2025 .tekiyoutyuui ul li{
+	text-indent: -15px;
+	padding-left: 15px;
+	margin-top: 10px;
+}
+#benefit2025 .tekiyoutyuui li + li{
+	margin-top: 10px;
+}
+#benefit2025 .tekiyoutyuui .left-caution{
+	font-size: 14px;
+	padding-left: 0;
+
+}
+@media screen and (max-width:768px) {
+	#benefit2025 .tekiyoutyuui >div>div {
+    padding: 15px 0;
+}
+	#benefit2025 .tekiyoutyuui h2 {
+    padding: 10px 0;
+}
+	#benefit2025 .tekiyoutyuui p {
+    font-size: 16px;
+		margin-bottom: 10px;
+}
+	#benefit2025 .tekiyoutyuui p+p{
+	font-size: 14px;
+
+}
+	#benefit2025 .tekiyoutyuui >div>div {
+    width:96%;
+		margin: auto;
+}
+#benefit2025 .tekiyoutyuui ul{
+	font-size: 14px;
+}
+	#benefit2025 .tekiyoutyuui .left-caution{
+	font-size: 12px;
+	padding-left: 0;
+
+}
+}
+  /*適用条件・注意事項おわり*/
+  /*表全体を線で囲う*/
+@media screen and (max-width:1100px) {
+	#benefit2025 .price-list .baloon{
+		width: 710px;
+        margin: auto;
+	}
+
+	#benefit2025 .price-list .baloon div {
+    bottom: 6px;
+        padding: 3px 0px;
+        border-radius: 40px;
+        width: 30%;
+        position: relative;
+        z-index: 99;
+               top: 26px;
+        left: 2%;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+}   
+	#benefit2025 .price-list .baloon2 div {
+        font-size: 16px;
+    }
+	}
+@media screen and (max-width:768px) {
+	#benefit2025 .price-list .baloon2 div {
+    bottom: 6px;
+    background-color: #8f8f8f;
+    padding: 6px 0px;
+    border-radius: 40px;
+    width: 48%;
+    position: relative;
+    z-index: 99;
+    top: -4px;
+    left: 43%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+	#benefit2025 .price-list .baloon div {
+        font-size: 14px;
+}   
+	#benefit2025 .price-list .baloon2 div {
+        font-size: 14px;
+    }
+	#benefit2025 .price-list .baloon div p+p {
+   margin-top: -8px;
+}
+	#benefit2025 .price-list .baloon {
+        width: 100%;
+        margin: auto;
+    		}
+	#benefit2025 .c-plan-section tr.price_campaign p{
+		width: 98%;
+		margin: auto;
+	}
+	#benefit2025 .c-plan-section tr.price_campaign p:nth-of-type(3){
+		letter-spacing: -0.5px;
+		font-size: 13px;
+	}
+	#benefit2025 .c-plan-section tr.price_campaign td:nth-of-type(2){
+		vertical-align: middle;
+	}
+	#benefit2025 .c-plan-section .price-list .fo20_bold{
+	font-size:15px;
+	font-weight: bold;
+}
+	#benefit2025 .c-plan-section .price-list .fo18_normal{
+	font-size:14px;
+}
+	#benefit2025 .price-list table {
+    margin: 10px auto;
+    width: 100%;
+    min-width: unset;
+}
+	
+#benefit2025 .c-plan-section .price-list .fo12_normal{
+	font-size:12px;
+}
+#benefit2025 .c-plan-section .price-list .fo16_normal{
+	font-size:16px;
+}
+#benefit2025 .c-plan-section .price-list .fo20_normal{
+	font-size:14px;
+}
+#benefit2025 .c-plan-section .fo23_normal{
+	font-size:14px;
+}
+#benefit2025 .c-plan-section .price-list .fo25_normal{
+	font-size:16px;
+}
+#benefit2025 .c-plan-section .price-list .fo30_bold{
+	font-size:18px;
+}
+#benefit2025 .c-plan-section .price-list .fo40_bold_big{
+	font-size:24px;
+}
+#benefit2025 .only_bold {
+	font-weight: bold;
+}
+#benefit2025 .c-plan-section .price-list .fo22_bold{
+	font-size: 16px;
+}
+	#benefit2025 .price-list tr.price_zero td p {
+    font-size: 18px;
+    background-color: #f3f3f3;
+    width: 96%;
+    margin: 5px auto;
+    padding: 2px 0;
+}
+	#benefit2025 .price-list tr.price_zero td span {
+    display: inline-block;
+    padding: 0 4px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d00f31;
+}
+#benefit2025 .price-list tr.price_20 td p {
+    font-size: 16px;
+    background-color: #f3f3f3;
+    width: 96%;
+    margin: 5px auto;
+    padding: 5px 0;
+	}
+	#benefit2025 .price-list tr.price_20 td p .fo25_normal{
+		font-size:18px;
+	}
+	#benefit2025 .price-list tr.price_10 td p {
+    font-size: 16px;
+    background-color: #f3f3f3;
+    width: 96%;
+    margin: 5px auto;
+    padding: 5px 0;
+	}
+	#benefit2025 .price-list tr.price_10 td p .fo25_normal{
+		font-size:18px;
+	}
+	#benefit2025 .price-list .price_plan p +p {
+    margin-top: -6px;
+    padding-bottom: 4px;
+}
+	#benefit2025 .price-list .price_normal p:nth-of-type(2) {
+    margin: -9px 0 -4px;
+}
+	#benefit2025 .price-list .price_exaha_kan td .fo23_normal,
+	#benefit2025 .price-list .price_iru_kan td .fo23_normal{
+		font-size: 13px;
+	}
+	#benefit2025 .price-list .price_exaha_kan td .fo30_bold,
+	#benefit2025 .price-list .price_iru_kan td .fo30_bold{
+		font-size: 18px;
+	}
+#benefit2025 .c-plan-section .price-list .fo12_normal {
+        font-size: 10px;
+    }
+
+	#benefit2025 .price-list .price_exaha_kan p:nth-of-type(2), #benefit2025 .price-list .price_exaha_zitu p:nth-of-type(2), #benefit2025 .price-list .price_iru_kan p:nth-of-type(2), #benefit2025 .price-list .price_iru_zitu p:nth-of-type(2), #benefit2025 .price-list .price_cupon p:nth-of-type(2)
+ {
+    margin: -5px 0 -10px;
+    padding-bottom: 0px;
+}
+	#benefit2025 .price-list .price_normal td{
+	padding-top: 8px;
+}
+#benefit2025 .price-list .price_exaha_kan td{
+	padding-top: 5px;
+}
+#benefit2025 .price-list .price_exaha_zitu td{
+	padding-top: 2px;
+}
+#benefit2025 .price-list .price_iru_kan td{
+	padding-top: 8px;
+}
+#benefit2025 .price-list .price_iru_zitu td{
+	padding-top: 0px;
+}
+#benefit2025 .price-list .price_cupon td{
+	 padding-top: 8px;
+	padding-bottom: 15px;
+}
+	#benefit2025 .price-list tbody tr td:nth-of-type(2) {
+    border-right: 1px solid #bdbdbd;
+        border-left: 3px solid #d00f31;
+}
+	#benefit2025 .c-plan-section .price_normal div, #benefit2025 .price-list .price_normal td div, #benefit2025 .price-list .price_exaha_kan td div, #benefit2025 .price-list .price_exaha_zitu td div, #benefit2025 .price-list .price_iru_kan td div, #benefit2025 .price-list .price_iru_zitu td div, #benefit2025 .price-list .price_cupon td div {
+    border-bottom: 2px solid #f1f1f1;
+}
+	#benefit2025 .price-list .price_cupon td:nth-of-type(3) .price-box {
+    width: 50px;
+    height: 6px;
+    margin: 6% auto 0%;
+    border-radius: 100px;
+    border: none;
+}
+	#benefit2025 .price-list .price_campaign td:nth-of-type(1) div{
+	background-color: #d00f31;
+	width: 50px;
+    height: 6px;
+    margin: 10% auto 12%;
+    border-radius: 100px;
+    border: none;
+}
+	#benefit2025 .price-list .price_campaign img{
+		width: 100%;
+		height: auto;
+	}
+#benefit2025 .price-list .price_campaign td:nth-of-type(2) div{
+
+	width: 50px;
+    height: 6px;
+    margin: 12% auto 12%;
+    border-radius: 100px;
+    border: none;
+}#benefit2025 .price-list .price_campaign td:nth-of-type(3) div{
+	width: 50px;
+    height: 6px;
+    margin: 12% auto 12%;
+    border-radius: 100px;
+    border: none;
+}
+	#benefit2025 .price-list tr.price_box td p {
+    font-size: 22px;
+    background-color: #f3f3f3;
+    width: 96%;
+    margin: 5px auto;
+    padding: 2px 0;
+}
+	#benefit2025 .price-list .price_exaha_zitu td .fo20_normal,#benefit2025 .price-list .price_iru_zitu td.fo20_normal{
+	margin-right: -10%;
+}
+#benefit2025 .left-caution-big {
+    text-align: left;
+    width: 93%;
+    margin: 5px auto 0;
+    font-size: 12px;
+    min-width: 300px;
+    padding-left: 0;
+}
+}
+/*料金おわり*/
+/*料金下注釈*/
+
+#benefit2025 .c-plan-section .left-caution p{
+	text-indent: -20px;
+	padding-left: 7px;
+}
+#benefit2025 .c-plan-section .left-caution-big p{
+	font-size: 12px;
+    background-image: url(../img/logout-caution.png);
+    background-repeat: no-repeat;
+    background-size: 2%;
+    background-position: top 4px left;
+    padding-left: 18px;
+}
+#benefit2025 .c-plan-section .left-caution-big p +p{
+	margin-top: 5px;
+}
+@media screen and (max-width:768px) {
+	#benefit2025 .c-plan-section .left-caution {
+    width: 95%;
+}
+	#benefit2025 .c-plan-section .left-caution-big p {
+    background-size: 13px;
+
+}
+	#benefit2025 .c-plan-section .left-caution {
+    font-size: 12px;
+    margin: 11px auto 10px;
+}
+}
+/*料金下注釈おわり*/
+
+/*その他料金*/
+#benefit2025 .exchsection >div,#benefit2025 .exchsection dl{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+#benefit2025 .exchsection dl{
+	border: 1px solid #ffd8db;
+	width: 90%;
+	margin: auto;
+	justify-content: space-between;
+}
+#benefit2025 .exchsection dl dt{
+	    display: flex;
+    width: 40%;
+    background-color: #ffd8db;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+	font-size: 16px;
+}
+#benefit2025 .exchsection >div {
+	
+}
+#benefit2025 .exchsection >div>div{
+	width:55%;
+	border: 1px solid #ebe6e6;
+	    padding: 20px 0;
+}
+#benefit2025 .exchsection >div>div>p{
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+#benefit2025 .exchsection >div>div + div{
+	width:40%;
+	border: none;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+#benefit2025 .exchsection >div>div + div >div{
+	border: 1px solid #ebe6e6;
+	padding: 20px 0;
+}
+#benefit2025 .exchsection >div>div + div >div >p:nth-of-type(1){
+	font-weight: 500;
+	margin-bottom: 3px;
+}
+#benefit2025 .exchsection >p{
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+#benefit2025 .exchsection p{
+	text-align: center;
+}
+#benefit2025 .exchsection .taxin{
+	font-size: 14px;
+	display: inline-block;
+	margin-top: -7px;
+}
+
+#benefit2025 .exchsection dl+dl{
+	margin-top: 10px;
+	border: 1px solid #8fbfe2;
+}
+#benefit2025 .exchsection dl+dl dt{
+	background-color: #8fbfe2;
+}
+#benefit2025 .exchsection dl dd{
+	width:60%;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+	    align-items: center;
+	padding: 9px 0 7px;
+}
+#benefit2025 .exchsection .left-caution{
+    font-size: 12px;
+    margin:0 auto;
+	width: 90%;
+}
+#benefit2025 .exchsection .left-caution p{
+    text-align: left;
+	text-indent: -15px;
+	line-height: 13px;
+}
+#benefit2025 .exchsection .left-caution p+p{
+    text-align: left;
+	text-indent: -15px;
+}
+#benefit2025 .exchsection dl .left-caution{
+	width: 57%;
+}
+@media screen and (max-width:768px) {
+	#benefit2025 .exchsection >div>div + div >div {
+    padding: 12px 0 20px;
+}
+	#benefit2025 .exchsection >div, #benefit2025 .exchsection dl {
+    flex-direction: column;
+}
+	#benefit2025 .exchsection >div>div {
+    width: 90%;
+    border: 1px solid #ebe6e6;
+    padding: 20px 0;
+   margin: 0 auto;
+}
+	#benefit2025 .exchsection dl dt {
+    width: 100%;
+    font-size: 16px;
+}
+	#benefit2025 .exchsection dl dd {
+    width: 70%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 9px 0 7px;
+    margin: auto;
+}
+	#benefit2025 .exchsection dl .left-caution {
+    width: 75%;
+}
+	#benefit2025 .exchsection dl dt {
+    padding: 7px 0;
+
+}
+	#benefit2025 .exchsection >div>div + div {
+    width: 90%;
+}
+	#benefit2025 .exchsection >div>div + div >div {
+    margin-top: 20px;
+}
+}
+/*その他料金おわり*/
+
+/*ゴルフ場*/
+#benefit2025 .section_map {
+	margin-bottom: 0;
+}
+#benefit2025 .section_map .inner > div {
+    max-width:750px; display: block; margin: 0 auto;
+}
+
+#benefit2025 .section_map .preflist1 h3 { border-bottom: 3px solid #D00E31; display: block; font-size:25px; padding-bottom: 9px; margin-bottom: 9px; }
+#benefit2025 .section_map .preflist1 h4 { font-size:17px; font-weight: 500; line-height: auto; }
+#benefit2025 .section_map .preflist1 {
+    padding-top: 20px;
+}
+#benefit2025 .section_map .preflist1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px 25px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "p1 p2 p7"
+    "p1 p3 p7"
+    "p1 p4 p5"
+    "p8 p6 .";
+}
+#benefit2025 .section_map .pref11 { grid-area: p1; }
+#benefit2025 .section_map .pref12 { grid-area: p2; }
+#benefit2025 .section_map .pref13 { grid-area: p3; }
+#benefit2025 .section_map .pref14 { grid-area: p4; }
+#benefit2025 .section_map .pref15 { grid-area: p5; }
+#benefit2025 .section_map .pref16 { grid-area: p6; }
+#benefit2025 .section_map .pref17 { grid-area: p7; }
+#benefit2025 .section_map .pref18 { grid-area: p8; }
+#benefit2025 .section_map .pref21 { grid-area: p21; }
+#benefit2025 .section_map .pref22 { grid-area: p22; }
+#benefit2025 .section_map .pref23 { grid-area: p23; }
+#benefit2025 .section_map .pref25 { grid-area: p25; }
+#benefit2025 .section_map .pref26 { grid-area: p26; }
+
+#benefit2025 .section_map .preflist2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 20px 20px;
+  grid-template-areas:
+  "p21 p22 p25"
+  "p21 p23 p26";
+}
+#benefit2025 .section_map .preflist2 h3 { border-bottom: 3px solid #D00E31; display: block; font-size:25px; padding-bottom: 9px; margin-bottom: 9px; }
+#benefit2025 .section_map .preflist2 h4 { font-size:17px; font-weight: 500; line-height: auto; }
+
+#benefit2025 .section_map .course{
+  white-space: nowrap;
+}
+#benefit2025 .section_map .new{
+  background-color: #D00E21;
+  color: #ffffff;
+  padding: 1px 2px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+#benefit2025 .section_map .inner .widthfull {
+    text-align: center;
+}
+	#benefit2025 .section_map .inner .widthfull img{
+    width: 75%;
+	} #benefit2025 .section_map .inner .img_center{
+		text-align: center;
+		margin: auto;
+	}
+
+
+@media (max-width: 920px) {
+  #benefit2025 .section2 .inner > div,
+  #benefit2025 .section_map .inner > div {
+    padding-left: 10px; padding-right: 10px;
+  }
+}
+@media (max-width: 1100px) {
+	#benefit2025 .section_map .inner .widthfull {
+    text-align: center;
+}
+	#benefit2025 .section_map .inner .widthfull img{
+    width: 75%;
+	} #benefit2025 .section_map .inner .img_center{
+		text-align: center;
+		margin: auto;
+	}
+}
+@media (max-width: 768px) {
+#benefit2025 .section_map .inner .widthfull img
+ {
+        width: 100%;
+    }
+  #benefit2025 .pc { display:none!important; }
+  #benefit2025 .sp { display: block!important; }
+  #benefit2025 .pc_br { display: inline; }
+
+  #benefit2025 img { width: 100%; }
+  #benefit2025 section { overflow-x: hidden; }
+
+  #benefit2025 .section1 .inner { padding: 0px 16px; }
+  #benefit2025 .section2 .inner { padding: 0px 16px; }
+  #benefit2025 .section3 .inner { padding: 0px 16px; }
+  #benefit2025 .section4 .inner { padding: 0px 16px; }
+  #benefit2025 .section5 .inner { padding: 40px 16px; padding-bottom: 25px; }
+  #benefit2025 .section_map .inner { padding: 0; padding-bottom: 60px; }
+
+  #benefit2025 .section5 h2 {
+    width: 83%;
+    margin: 0 auto;
+  }
+
+  #benefit2025 .section5 .plan {
+    grid-template-columns: 1fr; gap: 25px; padding: 10px 0;
+  }
+  #benefit2025 .section5 .plan > div {
+    margin: 0 auto;
+    width: 288px;
+  }
+  #benefit2025 .section_map .preflist1, 
+  #benefit2025 .section_map .preflist2, 
+  #benefit2025 .section5 .etc1, 
+  #benefit2025 .section5 .etc2 {
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+  }
+  #benefit2025 .section5 .etc1 { row-gap: 4px; }
+  #benefit2025 .section5 .etc2 { padding-top: 0; gap: 17px; }
+  #benefit2025 .section5 .etc2 p.etc2note { font-size: 12px; text-align: right; }
+  
+  #benefit2025 .section_map .pref11 { grid-area:unset; }
+  #benefit2025 .section_map .pref12 { grid-area:unset; }
+  #benefit2025 .section_map .pref13 { grid-area:unset; }
+  #benefit2025 .section_map .pref14 { grid-area:unset; }
+  #benefit2025 .section_map .pref15 { grid-area:unset; }
+  #benefit2025 .section_map .pref16 { grid-area:unset; }
+  #benefit2025 .section_map .pref17 { grid-area:unset; }
+  #benefit2025 .section_map .pref18 { grid-area:unset; }
+  #benefit2025 .section_map .pref21 { grid-area:unset; }
+  #benefit2025 .section_map .pref22 { grid-area:unset; }
+  #benefit2025 .section_map .pref23 { grid-area:unset; }
+  #benefit2025 .section_map .pref25 { grid-area:unset; }
+  #benefit2025 .section_map .pref26 { grid-area:unset; }
+ 
+  #benefit2025 .section_map .preflist1 { padding-top: 0px; width: 80%;
+        margin:  20px auto 0;}
+	#benefit2025 .section_map .preflist2 { padding-top: 0px; width: 80%;
+        margin: 20px auto 0;}
+  #benefit2025 .section_map .preflist1 h3 { font-size:20px; }
+  #benefit2025 .section_map .preflist1 h4 { font-size:14px; }
+  #benefit2025 .section_map .preflist2 h3 { font-size:20px; }
+  #benefit2025 .section_map .preflist2 h4 { font-size:14px; }
+}
+/*ゴルフ場おわり*/
+
+/*登録フロー*/
+#benefit2025 .flow_bg{
+	background-color: #f1f2f5;
+	padding-bottom: 20px;
+	    padding-top: 1px;
+}
+#benefit2025 .flow_bg .benefit2025_inner >div{
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+	align-items: center;
+	justify-content: space-evenly;
+}
+#benefit2025 .flow_bg .benefit2025_inner >div + div{
+	background-image: url(../img/benefit2025.png);
+    background-repeat: no-repeat;
+    background-position: 48% 22px;
+    padding-top: 50px;
+    background-size: 5%;
+}
+#benefit2025 .flow_bg .benefit2025_inner >div >div{
+	width: 10%;
+	margin-right: -10px;
+	z-index: 1;
+}
+#benefit2025 .flow_bg .benefit2025_inner div div+div{
+	background-color: #fff;
+	width: 90%;
+	padding: 12px 12px 15px 25px;
+	z-index: 0;
+	margin-right: 0;
+}
+#benefit2025 .flow_bg .benefit2025_inner div div+div p{
+	font-size: 24px;
+	font-weight: 500;
+}
+#benefit2025 .flow_bg .benefit2025_inner div div+div p+p{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+}
+@media screen and (max-width:768px) {
+	#benefit2025 .flow_bg .benefit2025_inner div div+div p {
+    font-size: 18px;
+    font-weight: 500;
+}
+	#benefit2025 .flow_bg .benefit2025_inner >div {
+    width: 95%;
+}
+	#benefit2025 .flow_bg .benefit2025_inner div div+div p+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+	#benefit2025 .flow_bg .benefit2025_inner >div >div {
+    width: 15%;
+}
+	#benefit2025 .flow_bg .benefit2025_inner div div+div {
+    width: 86%;
+}
+	#benefit2025 .flow_bg .benefit2025_inner >div + div{
+    background-position: 50% 20px;
+    background-size: 9%;
+	}
+}
+/*登録フローおわり*/
+
+/*会員の声*/
+#benefit2025 .customervoice_bg .voice_caution{
+	text-indent: -12px;
+    padding-left: 10px;
+    font-size: 12px;
+    width: 90%;
+    margin: 20px auto;
+	color: #fff;
+}
+
+#benefit2025 .customervoice_bg img{
+	width:100px;
+}
+#benefit2025 .customervoice_bg{
+	background-color: #d00e31;
+	padding-bottom: 20px;
+}
+#benefit2025 .customervoice_bg .benefit2025_inner{
+	margin-top: 0;
+}
+#benefit2025 .customervoice_bg > div >div{
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	width:80%;
+	border-radius: 14px;
+	padding: 16px 0;
+	box-shadow: 0px 0px 5px #49010e;
+}
+#benefit2025 .customervoice_bg > div >div+div{
+	margin-top: 20px;
+}
+
+#benefit2025 .customervoice_bg > div >div p:nth-of-type(2){
+	font-size: 18px;
+}
+#benefit2025 .customervoice_bg > div >div>div:nth-of-type(1){
+	width: 60%
+}
+#benefit2025 .customervoice_bg > div >div>div:nth-of-type(2){
+	width: 20%
+}
+#benefit2025 .customervoice_bg > div >div{
+	text-align: left;
+}
+#benefit2025 .customervoice_bg > div >div p{
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+#benefit2025 .customervoice_bg > div >div>p{
+	font-size: 25px;
+	color: #d00e31;
+	font-weight: 600;
+}
+#benefit2025 .customervoice_bg > div >div:nth-of-type(2n){
+	flex-direction: row-reverse;
+}
+@media screen and (max-width:768px) {
+	#benefit2025 .customervoice_bg > div >div{
+	width:96%;
+		box-shadow: 0px 0px 5px #ab2f45;
+		max-width: 600px;
+}
+	#benefit2025 .customervoice_bg > div >div p {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 21px;
+}
+	#benefit2025 .customervoice_bg > div >div>p {
+    font-size: 18px;
+}
+	#benefit2025 .customervoice_bg > div >div>div:nth-of-type(2){
+	width: 30%
+}
+}
+/*会員の声おわり*/
+
+/*キャンペーン*/
+#benefit2025 .campaign_bg h2 img{
+	width: 48%;
+    margin: 0 auto -20px;
+}
+#benefit2025 .campaign_bg{
+	background-color: #f1f2f5;
+	padding-bottom: 20px;
+	    padding-top: 1px;
+}
+#benefit2025 .campaign_bg .benefit2025_inner >div{
+	background-color: #fff;
+	box-shadow: 1px 1px 5px #979797;
+	border-radius: 9px;
+	width:80%;
+	margin: auto;
+	padding: 30px;
+}
+#benefit2025 .campaign_bg .benefit2025_inner >div figure{
+	text-align: center;
+	margin-bottom: 20px;
+}
+#benefit2025 .campaign_bg .benefit2025_inner >div img{
+	width:100%;
+	margin: auto;
+}
+#benefit2025 .campaign_bg .benefit2025_inner >div p{
+	width:100%;
+	margin: auto;
+}
+#benefit2025 .campaign_bg .benefit2025_inner >div p:nth-of-type(1){
+	font-size: 25px;
+	font-weight: 600;
+	
+}
+#benefit2025 .campaign_bg .benefit2025_inner >div p:nth-of-type(2){
+	line-height: 22px;
+}
+#benefit2025 .campaign_bg .benefit2025_inner >div p:nth-of-type(3){
+	font-weight:500;
+	margin-top: 5px;
+}
+@media screen and (max-width:768px) {
+	#benefit2025 .campaign_bg h2 img{
+	width: 65%;
+}
+	#benefit2025 .campaign_bg .benefit2025_inner >div {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #979797;
+    border-radius: 9px;
+    width: 95%;
+    margin: auto;
+    padding: 15px 15px 30px;
+}
+	#benefit2025 .campaign_bg .benefit2025_inner >div p:nth-of-type(1)
+ {
+    font-size: 22px;
+}
+	#benefit2025 .campaign_bg .benefit2025_inner >div p:nth-of-type(2) {
+    line-height: 20px;
+    font-size: 16px;
+}
+	#benefit2025 .campaign_bg .benefit2025_inner >div p:nth-of-type(3) {
+    font-weight: 600;
+    margin-top: 9px;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+}
+}
+/*キャンペーンおわり*/
+
+/*よくある質問*/
+/*追加分*/
+#benefit2025 .bic_ac {
+	width:80%;
+	margin: auto;
+}
+#benefit2025 .bic_ac .question_caution{
+	font-size: 12px;
+    padding-left: 56px;
+    margin-top: -5px;
+    line-height: 14px;
+	
+}
+#benefit2025 .bic_ac .bic_acitem{
+	padding: 10px;
+}
+#benefit2025 .bic_ac .bic_acquestion{
+	background-image: url("../img/benefit2025_q.png");
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	background-size: 6%;
+}
+#benefit2025 .bic_ac .bic_acanswer{
+	background-image: url("../img/benefit2025_a1.png");
+	background-repeat: no-repeat;
+	background-size: 6%;
+	background-position: 10px 54%;
+}
+#benefit2025 .bic_ac .bic_acquestion p{
+	font-weight: 500;
+	padding: 12px;
+	padding-left: 56px;
+	padding-right: 61px;
+
+	
+}
+#benefit2025 .bic_ac .bic_acanswer p{
+	padding: 12px;
+	padding-left: 56px;
+	padding-top: 20px;
+	font-size: 17px;
+	
+}
+
+#benefit2025 .bic_ac .bic_acitem+.bic_acitem {
+margin-top: 1rem;
+}
+
+
+
+#benefit2025 .bic_ac .bic_acitem {
+position: relative;
+overflow: hidden;
+background-color: #f1f2f5;
+	border-radius: 10px;
+}
+
+
+#benefit2025 .bic_ac .bic_acitem>input {
+display: none;
+}
+
+#benefit2025 .bic_ac .bic_acquestion {
+background-color: #f1f2f5;
+position: relative;
+z-index: 1;
+padding-right: 0;
+cursor: pointer;
+
+}
+	/* アコーディオン */
+#benefit2025 .bic_ac .bic_acanswer {
+position: absolute;
+visibility: hidden;
+transform: translateY(-100%);
+
+background-color: #f1f2f5;
+
+border-top: none;
+}
+
+#benefit2025 .bic_ac .bic_acitem>input:checked+label+.bic_acanswer {
+position: relative;
+visibility: visible;
+transform: translateY(0);
+}
+
+
+#benefit2025 .bic_ac .bic_acquestion::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 0;
+        border-top: solid 4px #d00e31;
+    border-right: solid 4px #d00e31;
+        transform: rotate(135deg);
+        position: absolute;
+        top: -12%;
+        right: 0;
+        bottom: 0;
+        margin: auto 25px auto auto;
+
+}
+
+#benefit2025 .bic_ac .bic_acitem>input:checked+label>.bic_acquestion::before {
+transform: translateY(50%) rotate(315deg);
+	
+}
+
+@media screen and (max-width:768px) {
+	#benefit2025 .bic_ac {
+	width:90%;
+	margin: auto;
+}
+	#benefit2025 .bic_ac .bic_acquestion {
+    background-position: 2px 50%;
+    background-size: 35px 35px;
+}
+	#benefit2025 .bic_ac .bic_acquestion::before {
+    right: -16px;
+		top: -5%;
+}
+	#benefit2025 .bic_ac .bic_acquestion p {
+    padding: 12px;
+    padding-left: 50px;
+    padding-right: 45px;
+    font-size: 17px;
+    line-height: 21px;
+}
+	#benefit2025 .bic_ac .bic_acanswer {
+   background-size: 35px 35px;
+    background-position: 2px 54%;
+}
+	#benefit2025 .bic_ac .question_caution li{
+    text-indent: -10px;
+        padding-left: 10px;
+}
+}
+/*よくある質問おわり*/
+
+/*ロゴ*/
+.benefit2025_partner_html .logo_text {
+    font-weight: bold;
+    color: #008344;
+    font-size: 14px;
+    text-align: center;
+}
+.benefit2025_partner_html .header {
+	padding-top: 10px;
+}
+.benefit2025_partner_html .none_deco{
+	text-decoration: none;
+}
+@media screen and (max-width: 1100px) {
+	.benefit2025_partner_html .logo_wrap {
+		padding-left: 20px;
+		color: #008344;
+		font-weight: 600;
+	        margin-bottom: 10px;
+	}
+	.benefit2025_partner_html .logo_wrap img{
+		width: 211px;
+	}
+}
+@media screen and (max-width: 768px) {
+    .benefit2025_partner_html .logo_wrap img {
+        width: 140px;
+        margin-bottom: -2px;
+    }
+	.benefit2025_partner_html .logo_wrap span{
+		font-size: 12px;
+	}
+	.benefit2025_partner_html .logo_wrap {
+        padding-left: 15px;
+        color: #008344;
+        font-weight: 600;
+		padding-bottom: 0px;
+    }
+}
+/*ロゴ終わり*/
+/*固定ヘッダー*/
+.benefit2025_partner_html .sticky_block {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #fff;
+}
+.benefit2025_partner_html .sticky_block .sticky_block_inner_wrap {
+	position: relative;
+	width: 100%;
+	background: #fff;
+  z-index: 20; /* 重ね順用　menu-slideより大きくなるよう設定 */
+	    padding: 6px 0 2px;
+
+}
+.benefit2025_partner_html .sticky_block .sticky_block_inner {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.benefit2025_partner_html .sticky_block .sticky_nav {
+  display: flex;
+	justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: bottom 0.3s, top 0.3s;
+	z-index: 2147483647!important;
+}
+.benefit2025_partner_html .sticky_block .sticky_nav img{
+  width: 172px;
+}
+.benefit2025_partner_html .sticky_block .sticky_nav_inner_box {
+  display: flex;
+	gap: 30px;
+}
+.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 82px;
+}
+.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item a {
+	position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+	color: #4b4b4b;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item.member a {
+	padding: 6px 10px 8px;
+	background: #ca1032;
+	color: #fff;
+	border: 2px solid #ca1032;
+	transition: .2s;
+}
+.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item.login {
+	background: #fff;
+}
+.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item.login a {
+	padding: 6px 15px 8px 37px;
+  color: #ca1032;
+  border: 2px solid #ca1032;
+  background: url(../img/ic_d.png) no-repeat;
+  background-size: 13px 19px;
+  background-position: 17px 50%;
+  transition: .2s;
+}
+.benefit2025_partner_html .menu-container {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  width: 100%;
+  background: #444;
+  color: #fff;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+}
+.benefit2025_partner_html .menu-container.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.benefit2025_partner_html .menu-text {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1101px) {
+	.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item.menu {
+		padding-right: 25px;
+	}
+	.benefit2025_partner_html .sticky_nav  .sticky_nav_inner_box .nav_item.member a:hover {
+		background: #fff;
+		color: #ca1032;
+		transition: .2s;
+	}
+	.benefit2025_partner_html .sticky_nav  .sticky_nav_inner_box .nav_item.login a:hover {
+		color: #d00f31;
+		border: 2px solid #d00f31;
+		transition: .2s;
+	}
+	.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item a span {
+		padding: 0 0 10px;
+		border-bottom: 2px solid transparent;
+		transition: .2s;
+	}
+	.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item a:hover span {
+		border-bottom: 2px solid #1eaa39;
+		transition: .2s;
+	}
+  .benefit2025_partner_html .menu-btn {
+		display: none;
+  }
+  .benefit2025_partner_html .menu-text {
+		position: relative;
+    display: block;
+    margin: 0 auto;
+		padding: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+		border-bottom: 2px solid transparent;
+		transition: .2s;
+  }
+  .benefit2025_partner_html .menu-text:hover {
+		transition: .2s;
+  }
+	.benefit2025_partner_html .menu-text::after {
+		position: absolute;
+    content: '';
+    top: 40%;
+    right: -20px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #4B4B4B;
+    border-bottom: 2px solid #4B4B4B;
+    transform: translateY(-50%) rotate(45deg);
+	}
+	.menu-slide {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+  .benefit2025_partner_html body {
+    padding-bottom: 55px;
+  }
+  .benefit2025_partner_html .sticky_nav {
+    position: fixed;
+    bottom: 0;
+    background: #ddd;
+	  left: 0;
+	  padding: 6px 0;
+  }
+	.benefit2025_partner_html .sticky_block .sticky_nav_inner_box {
+		gap: 0;
+		width: 100%;
+	}
+  .benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item {
+		width: 100%;
+    height: 55px;
+    border-right: 1px solid #cacdce;
+  }
+  .benefit2025_partner_html .sticky_nav .nav_item:nth-of-type(5) {
+    border-right: none;
+  }
+	.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item a {
+		height: 100%;
+	}
+	.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item.whatis a {
+		background: url("../img/ic_whatis.png") no-repeat;
+    background-size: 27px 27px;
+    background-position: 50% 25%;
+	}
+	.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item.price a {
+		background: url("../img/ic_price.png") no-repeat;
+    background-size: 30px 31px;
+    background-position: 50% 25%;
+	}
+	.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item.course a {
+		background: url("../img/ic_course.png") no-repeat;
+    background-size: 28px 23px;
+    background-position: 50% 25%;
+	}
+	.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item.flow a {
+		background: url("../img/ic_flow.png") no-repeat;
+    background-size: 21px 27px;
+    background-position: 50% 25%;
+	}
+	.benefit2025_partner_html .sticky_nav .sticky_nav_inner_box .nav_item.question a {
+		background: url("../img/ic_question.png") no-repeat;
+    background-size: 27px 27px;
+    background-position: 50% 25%;
+	}
+  .benefit2025_partner_html .sticky_nav  .sticky_nav_inner_box .nav_item a span {
+		position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+  }
+  .benefit2025_partner_html .menu-container {
+		display: none;
+  }
+  .benefit2025_partner_html .menu-btn {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit2025_partner_html .menu-text {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+  }
+	.benefit2025_partner_html .menu-slide {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 70%;
+		height: 100%;
+		padding: 15px 12px 0;
+		background: #fff;
+		transition: right 0.3s ease-in-out;
+		box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+		z-index: 10; /* 重ね順用　sticky_block_inner_wrapより小さくなるよう設定 */
+	}
+	.benefit2025_partner_html .menu-slide.show {
+		right: 0;
+	}
+	.benefit2025_partner_html .menu-slide a {
+    display: inline-block;
+		width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+		box-sizing: border-box;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_logo {
+		width: 150px;
+		margin: 0 auto;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_01,
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_02 {
+		padding-left: 0;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_01 li {
+		list-style:none;
+		border-top: 2px solid #c3c3c3;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_01 li:last-of-type {
+		border-bottom: 2px solid #c3c3c3;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_01 li a {
+		position: relative;
+    padding: 20px 25px 20px 5px;
+    color: #4b4b4b;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_01 li a::after {
+		content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+		border: 8px solid transparent;
+		border-left: 12px solid #4B4B4B;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_02 {
+		max-width: 188px;
+		margin: 50px auto 0;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_02 li {
+		list-style:none;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_02 li:nth-of-type(n+2) {
+		margin-top: 20px;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_02 li a {
+		padding: 13px 10px;
+		text-align: center;
+		font-weight: 500;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_02 li.member a {
+		color: #fff;
+		background: #ca1032;
+	}
+	.benefit2025_partner_html .menu-slide .menu-slide_link_block_02 li.login a {
+		padding-left: 40px;
+    color: #ca1032;
+    background: url(../img/ic_d.png) no-repeat;
+    background-size: 20px 28px;
+    background-position: 30px 50%;
+    border: 2px solid #ca1032;
+	}
+	
+	.benefit2025_partner_html .menu-btn {
+		cursor: pointer;
+		font-size: 16px;
+		background: none;
+		border: none;
+		transition: opacity 0.3s ease-in-out;
+	}
+	.benefit2025_partner_html .menu-btn .bar {
+		display: block;
+		width: 29px;
+		height: 3px;
+		background: #4B4B4B;
+		margin: 3px 0;
+		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	}
+	.benefit2025_partner_html .menu-btn.active .bar:nth-child(1) {
+		transform: translateY(9px) rotate(45deg);
+	}
+	.benefit2025_partner_html .menu-btn.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.benefit2025_partner_html .menu-btn.active .bar:nth-child(3) {
+		transform: translateY(-9px) rotate(-45deg);
+	}
+}
+/*固定ヘッダー終わり*/
