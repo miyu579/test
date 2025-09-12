@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 body {
   font-family: 'Noto Sans JP', 'Noto Sans', sans-serif;
@@ -1472,7 +1473,7 @@ strong, b {
 	}
 
 	.competition20251119 .main_bg {
-		background-image: url("../img/bg_main_2025spring_sp.jpg");
+		background-image: url("../img/bg_main_20251119compe_sp.jpg");
 		background-position: top center;
 		background-size: cover;
 		background-size: 172%;
@@ -1967,7 +1968,7 @@ strong, b {
 
 /*what_is*/
 .competition20251119 .what_is .bg {
-	background: url("../img/bg_golf_2025spring.jpg");
+	background: url("../img/bg_golf_20251119compe.jpg");
 	background-size: cover;
 	background-position: center;
 	text-align: center;
