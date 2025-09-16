@@ -1,0 +1,3392 @@
+
+.competition20251119_body body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.competition20251119_body body {
+  font-family: 'Noto Sans JP', 'Noto Sans', sans-serif;
+  font-weight: 400;
+}
+.competition20251119_body strong, .competition20251119_body b {
+  font-weight: 700;
+}
+
+
+.competition20251119_body img {
+  max-width: 100% !important;
+
+}
+
+
+.slick-track {
+  overflow: hidden; /* slick内オーバーフロー対策 */
+}
+.competition20251119 .visitor_btn_compe {
+	width: 100%;
+	margin: 20px auto 0 auto;
+}
+
+.competition20251119 .visitor_btn_compe .c-cta-visitor {
+	display: block;
+	width: 40%;
+	padding: 15px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	background-color: #00840a;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	box-shadow: 5px 5px #004a06;
+	margin: auto;
+}
+
+.competition20251119 .visitor_btn_compe a {
+	text-decoration: none;
+}
+
+/*料金表*/
+/*追加*/
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.three_months .really_price_icon {
+
+	padding: 2px 9px 0px;
+
+}
+
+.competition20251119 .what_is .bg_black .inner h2 strong {
+	font-size: 36px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li .includ_point_1 {
+	margin-bottom: -5px;
+
+}
+
+.competition20251119 .recommend_point .inner h2 img {
+	width: 60%;
+	height: 100%;
+}
+
+.competition20251119 .compe_spOnly{
+        display: none;
+    }
+@media screen and (max-width: 768px) {
+    .competition20251119 .compe_spOnly{
+        display: block;
+    }
+	.competition20251119 .visitor_btn_compe {
+		width: 300px;
+		margin: 18px auto 0 auto;
+	}
+
+	.competition20251119 .visitor_btn_compe .c-cta-visitor {
+		width: 100%;
+		font-size: 16px;
+		padding: 15px 13px 12px;
+		height: 50px;
+	}
+}
+
+.competition20251119 .button_competition {
+	margin: 7px 0;
+}
+
+.competition20251119 .button_competition+.button_competition {
+	margin: 9px 0 2px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text p+p {
+	font-size: 15px;
+	margin-top: 2%;
+}
+
+
+.competition20251119 .c-plan-section .price-list p {
+	margin: 0;
+}
+
+.competition20251119 .c-plan-section .price-list .fo20_bold {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.competition20251119 .c-plan-section .price-list .fo18_normal {
+	font-size: 18px;
+}
+
+.competition20251119 .c-plan-section .price-list .fo12_normal {
+	font-size: 12px;
+}
+
+.competition20251119 .c-plan-section .price-list .fo16_normal {
+	font-size: 16px;
+}
+
+.competition20251119 .c-plan-section .price-list .title_normal {
+	font-size: 18px;
+}
+
+.competition20251119 .c-plan-section .price-list .title_normal {
+	font-weight: bold;
+}
+
+.competition20251119 .c-plan-section .price-list .fo20_normal {
+	font-size: 20px;
+}
+
+.competition20251119 .c-plan-section .fo23_normal {
+	font-size: 23px;
+}
+
+.competition20251119 .c-plan-section .price-list .fo25_normal {
+	font-size: 25px;
+}
+
+.competition20251119 .c-plan-section .price-list .fo30_bold {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.competition20251119 .c-plan-section .price-list .fo40_bold_big {
+	margin-right: 3px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.competition20251119 .only_bold {
+	font-weight: bold;
+}
+
+.competition20251119 .c-plan-section .price-list .fo22_bold {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+/*料金表20250606*/
+.competition20251119 .c-logout-plan-note p {
+	padding-left: 20px !important;
+	padding: 0px 0 0px 0;
+	background-image: url("../img/logout-caution.png");
+	background-repeat: no-repeat;
+	background-size: 13px 13px;
+	background-position: left top 4px;
+	margin-bottom: 4px;
+}
+
+.competition20251119 .c-logout-plan-note p {
+	margin-top: 4px;
+}
+
+.competition20251119 .left-caution-big {
+	text-align: left;
+	width: 90%;
+	margin: 10px auto;
+	font-size: 12px;
+    box-sizing: border-box;
+}
+
+.competition20251119 .left-caution {
+	text-align: left;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 12px;
+        text-indent: -22px;
+    padding-left: 22px;
+    box-sizing: border-box;
+}
+
+.competition20251119 .left-caution p {
+	margin: 0;
+    min-width: unset;
+}
+
+.competition20251119 .left-caution p+p {
+	margin-top: 3px;
+}
+
+.competition20251119 .price-list table {
+	width: 75%;
+	min-width: 710px;
+	border-collapse: collapse;
+	border-color: #fff;
+	border-spacing: 10px;
+	border: 1px solid #dddddd;
+	margin: 0 auto 15px;
+	text-align: center;
+
+
+	/*表全体を線で囲う*/
+}
+
+.competition20251119 .c-plan-section .price_normal div,
+.competition20251119 .price-list .price_normal td div,
+.competition20251119 .price-list .price_exaha_kan td div,
+.competition20251119 .price-list .price_exaha_zitu td div,
+.competition20251119 .price-list .price_iru_kan td div,
+.competition20251119 .price-list .price_iru_zitu td div,
+.competition20251119 .price-list .price_cupon td div {
+	display: inline-block;
+	width: 65%;
+	border-bottom: 3px solid #f1f1f1;
+}
+
+.competition20251119 .price-list tbody tr td:nth-of-type(2) {
+	border-right: 2px solid #bdbdbd;
+	border-left: 2px solid #bdbdbd;
+}
+
+.competition20251119 .price-list tbody tr td {
+	border: none;
+}
+
+.competition20251119 .price-list .price_normal td {
+	padding: 8px 0 20px
+}
+
+.competition20251119 .price-list .price_exaha_kan td {
+	padding: 17px 0 0px;
+}
+
+.competition20251119 .price-list .price_exaha_zitu td {
+	padding: 17px 0 12px;
+}
+
+.competition20251119 .price-list .price_iru_kan td {
+	padding: 17px 0 0px;
+}
+
+.competition20251119 .price-list .price_iru_zitu td {
+	padding: 17px 0 12px;
+}
+
+.competition20251119 .price-list .price_cupon td {
+	padding: 20px 0 12px;
+}
+
+.competition20251119 .price-list tbody tr th:nth-of-type(1),
+.competition20251119 .price-list tbody tr td:nth-of-type(1) {
+	background-color: #fff;
+}
+
+.competition20251119 .price-list tbody tr th:nth-of-type(1),
+.competition20251119 .price-list tbody tr td:nth-of-type(2) {
+	background-color: #fff;
+}
+
+.competition20251119 .price-list tbody tr th:nth-of-type(1),
+.competition20251119 .price-list tbody tr td:nth-of-type(3) {
+	background-color: #fff;
+}
+
+.competition20251119 .price-list .price_plan th:nth-of-type(1) {
+	background: linear-gradient(90deg, rgba(227, 191, 80, 1) 0%, rgba(226, 184, 39, 1) 45%, rgba(242, 220, 94, 1) 100%);
+	color: #fff;
+}
+
+.competition20251119 .price-list .price_plan th:nth-of-type(2) {
+	background: #b3d137;
+	color: #fff;
+}
+
+.competition20251119 .price-list .price_plan th:nth-of-type(3) {
+	background: #1ac4ff;
+	color: #fff;
+}
+
+.competition20251119 .price-list .price_normal p:nth-of-type(2) {
+	margin: -10px 0;
+}
+
+.competition20251119 .price-list .price_exaha_kan p:nth-of-type(2),
+.competition20251119 .price-list .price_exaha_zitu p:nth-of-type(2),
+.competition20251119 .price-list .price_iru_kan p:nth-of-type(2),
+.competition20251119 .price-list .price_iru_zitu p:nth-of-type(2),
+.competition20251119 .price-list .price_cupon p:nth-of-type(2) {
+	margin: -10px 0;
+	padding-bottom: 16px;
+}
+
+.competition20251119 .price-list .price_plan p+p {
+	margin-top: -13px;
+	padding-bottom: 4px;
+}
+
+.competition20251119 .price-list tbody tr.price_20 td:nth-of-type(1),
+.price-list tbody tr.price_exaha_kan td,
+.price-list tbody tr.price_exaha_zitu td {}
+
+.competition20251119 .price-list tr.price_zero td p {
+	font-size: 25px;
+	background-color: #f3f3f3;
+	width: 96%;
+	margin: 12px auto;
+	padding: 7px 0;
+
+}
+
+.competition20251119 .price-list tr.price_zero td span {
+	display: inline-block;
+	padding: 0 4px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #d00f31;
+}
+
+.competition20251119 .price-list tr.price_20 td p {
+	font-size: 22px;
+	background-color: #f3f3f3;
+	width: 96%;
+	margin: 12px auto;
+	padding: 7px 0;
+}
+
+.competition20251119 .price-list tr.price_box td p {
+	font-size: 22px;
+	background-color: #f3f3f3;
+	width: 96%;
+	margin: 12px auto;
+	padding: 5px 0;
+}
+
+.competition20251119 .price-list tr.price_10 td p {
+	font-size: 22px;
+	background-color: #f3f3f3;
+	width: 96%;
+	margin: 30px auto 12px;
+	padding: 7px 0;
+}
+
+.competition20251119 .price-list tr.price_10 p .fo25_normal,
+.competition20251119 .price-list tr.price_20 p .fo25_normal {
+	color: #d00f31;
+}
+
+
+.competition20251119 .price-list .price_normal td:nth-of-type(1),
+.competition20251119 .price-list .price_exaha_kan td:nth-of-type(1),
+.competition20251119 .price-list .price_exaha_zitu td:nth-of-type(1),
+.competition20251119 .price-list .price_iru_kan td:nth-of-type(1),
+.competition20251119 .price-list .price_iru_zitu td:nth-of-type(1),
+.competition20251119 .price-list .price_cupon td:nth-of-type(1) {
+	color: #a98a2f;
+}
+
+.competition20251119 .price-list .price_normal td:nth-of-type(2),
+.competition20251119 .price-list .price_exaha_kan td:nth-of-type(2),
+.competition20251119 .price-list .price_exaha_zitu td:nth-of-type(2),
+.competition20251119 .price-list .price_iru_kan td:nth-of-type(2),
+.competition20251119 .price-list .price_iru_zitu td:nth-of-type(2),
+.competition20251119 .price-list .price_cupon td:nth-of-type(2) {
+	color: #93ac2d;
+}
+
+.competition20251119 .price-list .price_normal td:nth-of-type(3),
+.competition20251119 .price-list .price_exaha_kan td:nth-of-type(3),
+.competition20251119 .price-list .price_exaha_zitu td:nth-of-type(3),
+.competition20251119 .price-list .price_iru_kan td:nth-of-type(3),
+.competition20251119 .price-list .price_iru_zitu td:nth-of-type(3),
+.competition20251119 .price-list .price_cupon td:nth-of-type(3) {
+	color: #149ac8;
+}
+
+.competition20251119 .price-list .price_campaign td:nth-of-type(1) div {
+	background-color: #a98a2f;
+	width: 100px;
+	height: 10px;
+	margin: auto;
+	border-radius: 100px;
+}
+
+.competition20251119 .price-list .price_campaign td:nth-of-type(2) div {
+	background-color: #93ac2d;
+	width: 100px;
+	height: 10px;
+	margin: auto;
+	border-radius: 100px;
+}
+
+.competition20251119 .price-list .price_cupon td:nth-of-type(3) .price-box {
+	background-color: #149ac8;
+	width: 100px;
+	height: 10px;
+	margin: 15% auto 15%;
+	border-radius: 100px;
+	border: none;
+	display: block;
+}
+
+.competition20251119 .price-list .baloon div {
+	bottom: 6px;
+	background-color: #ff2300;
+	padding: 6px 0px;
+	border-radius: 40px;
+	width: 19%;
+	position: relative;
+	z-index: 99;
+	top: -6px;
+	left: 65%;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.competition20251119 .price-list .baloon div:before {
+
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	border: 6px solid transparent;
+	border-top: 10px solid #ff2300;
+}
+
+@media screen and (max-width:1100px) {
+	.competition20251119 .price-list .baloon {
+		width: 710px;
+		margin: auto;
+	}
+
+	.competition20251119 .price-list .baloon div {
+		bottom: 6px;
+		background-color: #ff2300;
+		padding: 3px 0px;
+		border-radius: 40px;
+		width: 30%;
+		position: relative;
+		z-index: 99;
+		top: 6px;
+		left: 68%;
+		color: #fff;
+		font-weight: bold;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.competition20251119 .price-list .baloon {
+		width: 100%;
+		margin: auto;
+	}
+
+	.competition20251119 .c-plan-section tr.price_campaign p {
+		width: 98%;
+		margin: auto;
+	}
+
+	.competition20251119 .c-plan-section tr.price_campaign p:nth-of-type(3) {
+		letter-spacing: -0.5px;
+		font-size: 13px;
+	}
+
+	.competition20251119 .c-plan-section tr.price_campaign td:nth-of-type(2) {
+		vertical-align: middle;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo20_bold {
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo18_normal {
+		font-size: 14px;
+	}
+
+	.competition20251119 .price-list table {
+		margin: 10px auto;
+		width: 100%;
+		min-width: unset;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo12_normal {
+		font-size: 12px;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo16_normal {
+		font-size: 16px;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo20_normal {
+		font-size: 14px;
+	}
+
+	.competition20251119 .c-plan-section .fo23_normal {
+		font-size: 14px;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo25_normal {
+		font-size: 16px;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo30_bold {
+		font-size: 18px;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo40_bold_big {
+		font-size: 24px;
+	}
+
+	.competition20251119 .only_bold {
+		font-weight: bold;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo22_bold {
+		font-size: 16px;
+	}
+
+	.competition20251119 .price-list tr.price_zero td p {
+		font-size: 18px;
+		background-color: #f3f3f3;
+		width: 96%;
+		margin: 12px auto;
+		padding: 2px 0;
+	}
+
+	.competition20251119 .price-list tr.price_zero td span {
+		display: inline-block;
+		padding: 0 4px;
+		font-size: 25px;
+		font-weight: bold;
+		color: #d00f31;
+	}
+
+	.competition20251119 .price-list tr.price_20 td p {
+		font-size: 16px;
+		background-color: #f3f3f3;
+		width: 96%;
+		margin: 12px auto;
+		padding: 5px 0;
+	}
+
+	.competition20251119 .price-list tr.price_20 td p .fo25_normal {
+		font-size: 18px;
+	}
+
+	.competition20251119 .price-list tr.price_10 td p {
+		font-size: 16px;
+		background-color: #f3f3f3;
+		width: 96%;
+		margin: 12px auto;
+		padding: 5px 0;
+	}
+
+	.competition20251119 .price-list tr.price_10 td p .fo25_normal {
+		font-size: 18px;
+	}
+
+	.competition20251119 .price-list .price_plan p+p {
+		margin-top: -6px;
+		padding-bottom: 4px;
+	}
+
+	.competition20251119 .price-list .price_normal p:nth-of-type(2) {
+		margin: -9px 0 -4px;
+	}
+
+	.competition20251119 .price-list .price_exaha_kan td .fo23_normal,
+	.competition20251119 .price-list .price_iru_kan td .fo23_normal {
+		font-size: 13px;
+	}
+
+	.competition20251119 .price-list .price_exaha_kan td .fo30_bold,
+	.competition20251119 .price-list .price_iru_kan td .fo30_bold {
+		font-size: 18px;
+	}
+
+	.competition20251119 .c-plan-section .price-list .fo12_normal {
+		font-size: 10px;
+	}
+
+	.competition20251119 .price-list .price_exaha_kan p:nth-of-type(2),
+	.competition20251119 .price-list .price_exaha_zitu p:nth-of-type(2),
+	.competition20251119 .price-list .price_iru_kan p:nth-of-type(2),
+	.competition20251119 .price-list .price_iru_zitu p:nth-of-type(2),
+	.competition20251119 .price-list .price_cupon p:nth-of-type(2) {
+		margin: -5px 0;
+		padding-bottom: 0px;
+	}
+
+	.competition20251119 .price-list .price_normal td {
+		padding: 0;
+	}
+
+	.competition20251119 .price-list .price_exaha_kan td {
+		padding: 0;
+	}
+
+	.competition20251119 .price-list .price_exaha_zitu td {
+		padding: 0;
+	}
+
+	.competition20251119 .price-list .price_iru_kan td {
+		padding: 0;
+	}
+
+	.competition20251119 .price-list .price_iru_zitu td {
+		padding: 0;
+	}
+
+	.competition20251119 .price-list .price_cupon td {
+		padding: 0;
+	}
+
+	.competition20251119 .price-list tbody tr td:nth-of-type(2) {
+		border-right: 1px solid #bdbdbd;
+		border-left: 1px solid #bdbdbd;
+	}
+
+	.competition20251119 .c-plan-section .price_normal div,
+	.competition20251119 .price-list .price_normal td div,
+	.competition20251119 .price-list .price_exaha_kan td div,
+	.competition20251119 .price-list .price_exaha_zitu td div,
+	.competition20251119 .price-list .price_iru_kan td div,
+	.competition20251119 .price-list .price_iru_zitu td div,
+	.competition20251119 .price-list .price_cupon td div {
+		border-bottom: 2px solid #f1f1f1;
+	}
+
+	.competition20251119 .price-list .price_cupon td:nth-of-type(3) .price-box {
+		background-color: #149ac8;
+		width: 50px;
+		height: 6px;
+		margin: 0% auto 10%;
+		border-radius: 100px;
+		border: none;
+	}
+
+	.competition20251119 .price-list .price_campaign td:nth-of-type(1) div {
+		background-color: #a98a2f;
+		width: 50px;
+		height: 6px;
+		margin: 18% auto 12%;
+		border-radius: 100px;
+		border: none;
+	}
+
+	.competition20251119 .price-list .price_campaign img {
+		width: 100%;
+		height: auto;
+	}
+
+	.competition20251119 .price-list .price_campaign td:nth-of-type(2) div {
+		background-color: #93ac2d;
+		width: 50px;
+		height: 6px;
+		margin: 18% auto 12%;
+		border-radius: 100px;
+		border: none;
+	}
+
+	.competition20251119 .price-list tr.price_box td p {
+		font-size: 22px;
+		background-color: #f3f3f3;
+		width: 96%;
+		margin: 14px auto;
+		padding: 2px 0;
+	}
+
+	.competition20251119 .price-list .price_exaha_zitu td .fo20_normal,
+	.competition20251119 .price-list .price_iru_zitu td.fo20_normal {
+		margin-right: -10%;
+	}
+
+	.competition20251119 .left-caution-big {
+		text-align: left;
+		margin: 5px auto 0;
+		font-size: 12px;
+		min-width: 300px;
+		padding-left: 0;
+	}
+}
+
+/*料金表おわり*/
+
+/*20250411*/
+.competition20251119 .bt_notes {
+	color: #fff;
+    margin: 5px auto 30px;
+    text-align: left;
+    width: 90%;
+    text-indent: -17px;
+    padding-left: 17px;
+}
+
+.competition20251119 .red_correction p:nth-of-type(1) {
+	color: #f00;
+	text-decoration: line-through;
+	text-decoration-thickness: 2px;
+}
+
+.competition20251119 .red_correction span {
+	color: #000;
+}
+
+.competition20251119 .red_correction p {
+	display: inline-block;
+}
+
+.competition20251119 .detail td.red_correction p+p {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.competition20251119 .red_correction p+p span {
+	font-weight: bold;
+	color: #f00;
+}
+
+@media screen and (max-width: 768px) {
+	.competition20251119 .red_correction p {
+		display: inline;
+	}
+
+	.competition20251119 .detail td.red_correction p+p {
+		font-size: 16px;
+		margin-left: 10px;
+	}
+}
+
+/*20250411*/
+
+.competition20251119 .big_orange {
+	font-size: 2.0rem;
+	color: #438b3e;
+
+	margin-bottom: 15px;
+}
+
+.competition20251119 .block1 {
+	max-width: 1000px;
+	margin: 0 auto 30px;
+	;
+
+}
+
+.competition20251119 .block1 .boxwrap div {
+	width: 48%;
+	text-align: left;
+}
+
+.competition20251119 .block1 .boxwrap div+div {
+	margin-right: 5px;
+}
+
+.competition20251119 .slideitem {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.competition20251119 .block1 figure {
+	margin: 0;
+}
+
+.competition20251119 .boxwrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.competition20251119 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+
+.competition20251119 img {
+	display: block;
+
+}
+
+.competition20251119 a:hover {
+	text-decoration: none;
+}
+
+.competition20251119 ul,
+.competition20251119 ol {
+	margin: 0;
+	padding: 0;
+}
+
+.competition20251119 .block1 hr {
+	color: #fff;
+}
+
+.competition20251119 .syoukai p {
+	font-size: 16px;
+	margin-top: 0;
+	margin-bottom: 5px;
+	padding: 0 1%;
+}
+
+.competition20251119 .syoukai p span {
+	font-weight: bold;
+}
+
+.competition20251119 .sen {
+	border-bottom: 2px dotted #989898;
+	width: 100%;
+	margin: auto;
+}
+
+.competition20251119 .zehi {
+
+	font-size: 20px;
+	font-weight: bold;
+	margin: 15px 0 2px;
+	color: #000;
+	text-align: center;
+}
+
+.competition20251119 ul li,
+.competition20251119 ol li {
+	list-style: none;
+}
+
+.competition20251119 .syoukai {
+	margin-bottom: 2%;
+}
+
+/*main*/
+.competition20251119 .kv {
+	background: url("../img/main_bg.jpg") no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+}
+
+.competition20251119 .thanks {
+
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+	padding: 50px 0 10px;
+}
+
+.competition20251119 .thanks li {
+	color: #fff;
+	font-size: 18px;
+}
+
+.competition20251119 .thanks li+li {
+	padding-top: 10px;
+}
+
+.competition20251119 .entry_button {
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+}
+
+.competition20251119 .main_button {
+	background-image: url("../img/thanksbg.jpg");
+	background-size: cover;
+	/* 画像のサイズを指定    */
+	/* 横幅のサイズを指定    */
+}
+
+.competition20251119 .main h1 {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+.competition20251119 .main h1 .pc {
+	width: 55%;
+	height: 55%;
+	margin: 0 auto;
+	max-width: 1415px;
+	min-width: 750px;
+}
+
+.competition20251119 .main h1 .sp {
+	display: none;
+}
+
+
+/*button*/
+.competition20251119 .main_button {}
+
+.competition20251119 .main_button .entry_button {
+	padding: 24px 0;
+}
+
+.competition20251119 .main_button .entry_button ul.notes {
+	margin-bottom: 0;
+	text-align: left;
+	padding: 0;
+}
+
+.competition20251119 .main_button .entry_button ul.notes,
+.competition20251119 .main_button .entry_button ul.notes li strong,
+.competition20251119 .main_button .entry_button ul.notes li a {
+	color: #fff;
+}
+
+/*スケジュール*/
+.competition20251119 .detail_cover {
+	background: #edece2;
+	padding: 18px 0 30px 0;
+	font-size: 16px;
+}
+
+.competition20251119 .detail {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto 55px;
+}
+
+.competition20251119 .detail td p {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.competition20251119 .detailtd {
+	word-break: break-all;
+	font-size: 16px;
+}
+
+.competition20251119 .detail table {
+	border-collapse: collapse;
+	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #cccdb6;
+	text-align: left;
+	color: #333;
+}
+
+.competition20251119 .detail th,
+.competition20251119 .detail td {
+	border-top: solid 1px #cccdb6;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	word-break: break-all;
+}
+
+.competition20251119 .detail th {
+	background: #594435;
+	width: 20%;
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff9ee;
+}
+
+.competition20251119 i {
+	margin-right: 5px;
+	color: #874e0d;
+}
+
+.competition20251119 i.sanka {
+	margin-right: 5px;
+	color: #575757;
+	font-size: 0.8rem;
+}
+
+.competition20251119 .txtl {
+	font-size: 22px;
+	line-height: 1.6;
+	font-weight: 500;
+}
+
+.competition20251119 .detail_cover .txtl {
+	margin-bottom: 3px;
+}
+
+.competition20251119 .txts {
+	font-size: 16px;
+}
+
+.competition20251119 .detail_cover ul.notes {
+	margin: 0;
+	padding: 0;
+}
+.competition20251119 .detail_cover ul.notes strong{
+	color: #ff0000;
+}
+
+.competition20251119 .detail_cover .access {
+	margin-bottom: 6px;
+}
+
+.competition20251119 .detail_cover .overview {
+	line-height: 1.8;
+}
+
+.competition20251119 .entry_button p {
+	text-align: center;
+}
+
+/*タイトル*/
+.competition20251119 .detail_cover h2,
+.competition20251119 .detail_guest h2,
+.competition20251119 .block1 h2 {
+	padding: 20px 6px 10px 6px;
+	margin: 0 0 20px 0;
+	border-bottom: solid 2px #000;
+	font-size: 22px;
+	box-sizing: border-box;
+	line-height: 1.2;
+}
+
+.competition20251119 .detail_past {
+	background: #edece2;
+	padding-bottom: 31px;
+}
+
+/*ゲスト紹介*/
+.competition20251119 .detail_guest {
+	background: #e7e3c2;
+	padding: 0 0 30px 0;
+}
+
+.competition20251119 .profile {
+	display: flex;
+	background: #fff;
+
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+.competition20251119 .profile+.profile {
+	margin-top: 12px;
+}
+
+.competition20251119 .profile div.photo {
+	width: 25%;
+}
+
+.competition20251119 .profile div.prfTxt {
+	padding: 12px 0 12px 24px;
+	box-sizing: border-box;
+	width: 75%;
+	line-height: 1.8;
+}
+
+.competition20251119 .profile div.prfTxt h3 {
+	font-size: 24px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.competition20251119 .profile div.prfTxt h3 span {
+	font-size: 18px;
+}
+
+.competition20251119 .profile div.prfTxt dl {
+	margin: 0 0 12px 0;
+	font-size: 16px;
+}
+
+.competition20251119 .profile div.prfTxt dl dt {
+	float: left;
+	line-height: 1.6;
+}
+
+.competition20251119 .profile div.prfTxt dl dd {
+	line-height: 1.6;
+	margin: 0;
+}
+
+.competition20251119 .profile div.prfTxt dl dd:before {
+	content: "：";
+	padding: 0 6px;
+}
+
+.competition20251119 .profile div.prfTxt .text {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.competition20251119 .profile div.photo img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.competition20251119 .profile div.prfTxt span.nmTxt {
+	font-size: 16px;
+}
+
+.c-cta-member {
+	display: block;
+	width: 40%;
+	padding: 1em;
+	border-radius: 8px;
+	box-sizing: border-box;
+	background-color: #c33;
+	color: #fff;
+	font-size: 1.15em;
+	text-align: center;
+	box-shadow: 5px 5px #7e0f0f;
+	margin: auto;
+}
+
+#competition20250604 .competition20251119 .main h1 .pc {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1415px;
+}
+
+/*
+.bubble {
+    font-size: 22px;
+    border: 6px solid #412d00;
+    color: #412d00;
+    padding: 24px 10px;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    border-radius: 100px;
+    text-align: center;
+    width: 720px;
+    margin: 0 auto 24px;
+    line-height: 1;
+}
+.bubble:before {
+    margin-left: -16px;
+    border: 16px solid transparent;
+    border-top: 22px solid #412d00;
+}
+.bubble:before, #summer_golfmeday2024 .campaign .detail .bubble:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.bubble:after {
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-top: 15px solid #fff;
+}
+.bubble:before, #summer_golfmeday2024 .campaign .detail .bubble:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+*/
+/*追加*/
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text p+p {
+	font-size: 20px;
+}
+
+/***料金**/
+.competition20251119 .recommend_point .inner ol.point li.point3 .dpoint_button {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	line-height: 1.3;
+}
+
+.competition20251119 p.button {
+	font-size: 20px;
+	width: 370px;
+	text-align: center;
+	line-height: 1;
+	margin: 0 auto;
+}
+
+.competition20251119 .line_icon {
+	font-size: 14px;
+}
+
+.competition20251119 .terms table dl dt,
+.competition20251119 .line_icon {
+	background: #555;
+	color: #fff;
+	padding: 3px 8px 2px 8px;
+	display: inline;
+	border-radius: 30px;
+	font-weight: normal;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year div+div,
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.six_months div+div,
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.three_months div+div {
+	margin-top: 10px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .includ_notes {
+	font-size: 14px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan .really_price {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year hr {
+	width: 50%
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year .really_price_icon {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #c1a414;
+	border-radius: 9999px;
+	color: #fff;
+	padding: 3px 9px 1px;
+	margin-right: 6px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.six_months .really_price_icon {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #90bc1f;
+	border-radius: 9999px;
+	color: #fff;
+	padding: 3px 9px 1px;
+	margin-right: 6px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.three_months .really_price_icon {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #099bee;
+	border-radius: 9999px;
+	color: #fff;
+	padding: 3px 9px 1px;
+	margin-right: 6px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li div .includ_annotation {
+
+	font-size: 15px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li .includ_point_1 {
+	margin-bottom: -8px;
+	margin-top: -7px;
+}
+
+.competition20251119 .recommend_point .inner .point .plan li p {
+	font-size: 20px;
+	margin: 0 auto 3px auto;
+}
+
+.competition20251119 .recommend_point .inner .point .plan li .line_icon_pad {
+	margin: 14px 0 1px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li div .includ_annotation em {
+	font-weight: bold;
+	margin: 0 1px 0 5px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li div .includ_annotation+.includ_annotation em {
+
+	margin-right: 1px;
+	margin-left: 0;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li div .includ_annotation+.includ_annotation {
+	font-size: 17px;
+}
+
+.competition20251119 .button_spring .button,
+.competition20251119 .button_competition .button {
+
+	width: 50%;
+}
+
+.competition20251119 .button_spring p.button a {
+	background-color: #fff;
+	color: #e1325b;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border: 1px solid #e1325b;
+	border-bottom: 4px solid #e1325b;
+	border-radius: 100px;
+}
+
+.competition20251119 .button_spring .button+.button {
+	margin-top: 20px;
+}
+
+.competition20251119 .button_spring p.button a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - -1px);
+	right: 20px;
+	width: 8px;
+	height: 8px;
+	border-right: 3px solid #e1325b;
+	border-bottom: 3px solid #e1325b;
+	transform: translateY(-50%) rotate(-45deg);
+	vertical-align: middle;
+}
+
+.competition20251119 .button_competition p.button a {
+	color: #8b4f00;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border: 1px solid #8b4f00;
+	border-bottom: 4px solid #8b4f00;
+	border-radius: 100px;
+	background: #fff;
+}
+
+.competition20251119 .button_competition p.button a:after {
+	border-right: 3px solid #8b4f00;
+	border-bottom: 3px solid #8b4f00;
+
+}
+
+.competition20251119 .button_spring,
+.competition20251119 .button_competition {
+	width: 100%;
+}
+
+.competition20251119 .button_competition {
+	margin: 18px 0;
+}
+
+.competition20251119 .button_competition+.button_competition {
+	margin: 18px 0 15px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li.point1 {
+	width: 100%;
+}
+
+.competition20251119 .topic .inner ol.point div>li {
+	background: #fff;
+	border-radius: 10px;
+	background-image: linear-gradient(142deg, #ffbfd3 114px, transparent 0);
+	padding: 16px 20px 20px 20px;
+	box-sizing: border-box;
+	color: #111;
+	margin-bottom: 16px;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap figcaption {
+	text-align: center;
+	font-size: 20px;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap li {
+	width: 40%;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.competition20251119 .topic .inner ol.point div+div .point1 {
+
+	background-image: linear-gradient(142deg, #f1f184 114px, transparent 0);
+
+}
+
+.competition20251119 .topic .inner ol.point div>li {
+	margin-bottom: 0;
+	padding: 16px 20px 1px 20px;
+}
+
+.competition20251119 .topic .inner ol.point>div+div {
+	margin-top: 85px;
+
+}
+
+.competition20251119 .topic .inner ol.point div.button_spring {
+	margin-top: 10px;
+
+}
+
+.competition20251119 .topic .inner ol.point .cp_img {
+	text-align: center;
+}
+
+.competition20251119 .topic .inner ol.point>div+div .cp_img img {
+	margin-top: 10px;
+	width: 87%;
+}
+
+.competition20251119 .topic .inner ol.point li .content {
+	display: block;
+}
+
+.competition20251119 .topic .cp_img img {
+	width: 100%;
+	height: 100%;
+	margin-left: 2%;
+
+}
+
+.competition20251119 .topic .inner ol.point div+div img {
+	margin-left: 0;
+
+}
+
+.competition20251119 .recommend_point .inner ol.point li .guest_topic div.text {
+
+	vertical-align: middle;
+	font-size: 30px;
+	padding-left: 7%;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .guest_topic {
+	margin: 33px 0 100px;
+
+}
+
+/*************************************************************************************/
+
+/*TB*/
+@media (max-width: 1100px) {
+	.competition20251119 .campaign .bg_confetti {
+		background: url("../img/bg_kira.png") no-repeat;
+		background-size: 123%;
+		background-position: 55%;
+	}
+
+	.competition20251119 .campaign h2 .sp_view {
+		width: 100%;
+		height: 100%;
+		max-width: 375px;
+	}
+
+	.competition20251119 .main h1 img {
+		position: relative;
+		left: 0%;
+
+	}
+
+	.competition20251119 .main_bg {
+		background-image: url("../img/bg_main_20251119compe_sp.jpg");
+		background-position: top center;
+		background-size: cover;
+		background-size: 172%;
+	}
+
+	.competition20251119_body body {
+		padding-bottom: 110px;
+	}
+
+	.competition20251119 .pc_br {
+		display: inline;
+	}
+
+	.competition20251119 .sp_br {
+		display: block;
+	}
+
+	.competition20251119 .pc_view {
+		display: none;
+	}
+
+	.competition20251119 .sp_view {
+		display: block;
+	}
+
+	/*main*/
+	.competition20251119 .main {
+		height: auto;
+		min-width: 100%;
+
+	}
+
+	.competition20251119 .main:after {
+		background-size: 337px 438px;
+		width: 337px;
+		height: 100%;
+	}
+
+	.competition20251119 .main .inner {
+		/*padding-top: 10px;*/
+	}
+
+	.competition20251119 .main .inner:before {
+		/*background-size: 94px 117px;*/
+		background-size: 23%;
+		width: 100%;
+		height: 100%;
+		bottom: -20px;
+		left: -10%;
+	}
+
+
+	.competition20251119 .main .inner:after {
+		/*background-size: 105px 119px;*/
+		background-size: 12%;
+		width: 100%;
+		height: 100%;
+		bottom: -18px;
+		right: 0;
+	}
+
+	.competition20251119 .main h1 {
+		margin: 0;
+	}
+
+	.competition20251119 .main h1 img {
+		width: 90%;
+		height: 90%;
+
+		margin: 0 auto;
+	}
+
+	.competition20251119 .main .inner .dpoint {
+		top: 5px;
+		left: -50px;
+	}
+
+	.competition20251119 .main .inner .dpoint img {
+		width: 41%;
+	}
+
+	.competition20251119 .main_button {
+		padding: 22px 6px 8px 6px;
+	}
+
+	.competition20251119 .main_button .text {
+		font-size: 12px;
+		margin: 8px auto 3px auto;
+	}
+
+	.competition20251119 .main_button .text a,
+	.competition20251119 .campaign .detail .text a {
+		display: inline-block;
+	}
+
+	/*キャンペーンボタン*/
+	.competition20251119 .campaign_button {
+		font-size: 14px;
+	}
+
+	.competition20251119 .campaign_button p {
+		line-height: 1.1;
+	}
+
+	.competition20251119 .campaign_button a {
+		border-radius: 6px;
+		border-bottom: 3px solid #97000c;
+		padding: 16px 8px;
+		width: 100%;
+	}
+
+	.competition20251119 .main_button .campaign_button a {
+		padding: 8px 8px;
+		width: 92%;
+	}
+
+	.competition20251119 .campaign_button a:after {
+		top: calc(50% - -3px);
+		right: 10px;
+		width: 8px;
+		height: 8px;
+		border-right: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+	}
+
+	.competition20251119 .campaign_button a span {
+		font-size: 14px;
+	}
+
+	.competition20251119 .campaign_button a strong {
+		font-size: 22px;
+		margin-top: 5px;
+		margin-bottom: 2px;
+	}
+
+	/*画面下固定ボタン*/
+	.competition20251119 .fixed_button {
+		padding: 8px 0;
+	}
+
+	.competition20251119 .fixed_button .campaign_button a {
+		padding: 6px 0 8px 0;
+		font-size: 12px;
+		border-radius: 5px;
+		width: 92%;
+	}
+
+	.competition20251119 .fixed_button .campaign_button a:after {
+		top: calc(50% - -2px);
+		width: 7px;
+		height: 7px;
+		border-right: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+	}
+
+	.competition20251119 .fixed_button .campaign_button a strong {
+		font-size: 18px;
+		margin-bottom: 4px;
+	}
+
+	.competition20251119 .fixed_button .campaign_button a span {
+		font-size: 12px;
+	}
+
+	.competition20251119 .fixed_button .text {
+		margin: 6px 6px 0 6px;
+		font-size: 12px;
+	}
+
+	.competition20251119 .fixed_button .text a {
+		display: inline-block;
+	}
+
+	/*what_is*/
+	.competition20251119 .what_is .bg:before,
+	.competition20251119 .what_is .bg:after {
+		height: 30px;
+	}
+
+	.competition20251119 .what_is .bg .bg_black {
+		padding: 3px 0 50px 0;
+	}
+
+	.competition20251119 .what_is .bg_black .inner h2 {
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+
+	.competition20251119 .what_is .bg_black .inner h2 strong {
+		font-size: 36px;
+	}
+
+	.competition20251119 .what_is .bg_black .inner p {
+		padding: 9px 20px 4px 20px;
+		font-size: 16px;
+		margin: 0 auto 16px auto;
+		line-height: 1.2;
+	}
+
+	.competition20251119 .what_is .bg_black .inner p strong {
+		font-size: 22px;
+		line-height: 1.2;
+	}
+
+	.competition20251119 .what_is .bg_black .inner ul.notes {
+		width: calc(100% - 24px);
+	}
+
+	.competition20251119 .what_is .guide {
+		padding: 20px 0 10px 0;
+	}
+
+	.competition20251119 .what_is .guide p {
+		font-size: 16px;
+		font-style: italic;
+		margin: 0 0 30px 0;
+	}
+
+	.competition20251119 .what_is .guide dl {
+		line-height: 1.2;
+		margin-bottom: 8px;
+	}
+
+	.competition20251119 .what_is .guide dl dt {
+		font-size: 16px;
+	}
+
+	.competition20251119 .what_is .guide dl dt:before,
+	.competition20251119 .what_is .guide dl dt:after {
+		height: 3px;
+		width: 26px;
+	}
+
+	.competition20251119 .what_is .guide dl dt:before {
+		margin-right: 0;
+	}
+
+	.competition20251119 .what_is .guide dl dt:after {
+		margin-left: -10px;
+	}
+
+	.competition20251119 .what_is .guide dl dt strong {
+		font-size: 26px;
+	}
+
+	.competition20251119 .what_is .guide dl dd {
+		font-size: 16px;
+		padding: 22px 0 12px 0;
+		line-height: 1.8;
+	}
+
+	.competition20251119 .what_is .guide dl dd strong {
+		font-size: 22px;
+		padding: 7px 8px 1px 7px;
+		margin-left: 5px;
+		display: inline-block;
+		line-height: 1;
+	}
+
+	.competition20251119 .what_is .guide dl dd strong span {
+		font-size: 16px;
+		margin: 0 1px;
+	}
+
+	.competition20251119 .what_is .guide ul.notes {
+		margin-bottom: 12px;
+	}
+
+	.competition20251119 .what_is .guide ul.notes li {
+		text-indent: -21px;
+		padding-left: 21px;
+	}
+
+	/*背景*/
+	.competition20251119 .bg_green {
+		background: repeating-linear-gradient(90deg, #90bc1f, #90bc1f 70px, #9bc336 70px, #9bc336 140px);
+	}
+
+	/*point*/
+	.competition20251119 .recommend_point {
+		border-top: 10px solid #6c8c19;
+	}
+
+	.competition20251119 .recommend_point .inner {
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+
+	.competition20251119 .recommend_point .inner h2 img {
+
+		display: inline-block;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point {
+		padding-bottom: 18px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point>li {
+		background-image: linear-gradient(142deg, #ffc0d4 70px, transparent 0);
+		padding: 8px 6px 8px 6px;
+		margin-bottom: 8px;
+		float: none;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li.point1,
+	.competition20251119 .recommend_point .inner ol.point li.point2,
+	.competition20251119 .recommend_point .inner ol.point li.point3 {
+		width: calc(100% - 24px);
+		margin: 0 auto 8px auto;
+		height: auto;
+		min-height: auto;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content {
+		margin-bottom: 8px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li.point2 .content,
+	.competition20251119 .recommend_point .inner ol.point li.point3 .content {
+		margin-bottom: 8px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content h3 {
+		width: 80px;
+		padding-top: 6px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content h3 img {
+		width: 80px;
+		height: 62px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content div.text {
+		font-size: 22px;
+		padding-left: 10px;
+		line-height: 1.2;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content div.text div.balloon {
+		padding: 12px 12px 8px;
+		font-size: 14px;
+		text-align: center;
+		margin: 6px 0;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content div.text p span.pc_br {
+		display: inline;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content div.text p span.notes {
+		font-size: 12px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan {
+		display: block;
+		width: 100%;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li {
+		display: block;
+		padding: 10px 0 6px 0;
+		width: calc(100% - 12px);
+		margin: 0 auto 8px auto;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year:before {
+		left: -5px;
+		top: 12px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li h4 {
+		font-size: 16px;
+		padding: 7px 20px 5px 20px;
+		margin: 0 auto 12px auto;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li h4 em {
+		font-size: 22px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li p {
+		font-size: 16px;
+		margin: 0 auto 2px auto;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li p.exclud_tax em {
+		font-size: 40px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li p.includ_tax em {
+		font-size: 20px;
+	}
+
+	.competition20251119 .recommend_point .inner ul.notes {
+		padding: 0 8px;
+	}
+
+	.competition20251119 .recommend_point .inner ul.notes li {
+		text-indent: -17px;
+		padding-left: 16px;
+		margin-bottom: 8px;
+	}
+
+	.competition20251119 p.button {
+		font-size: 16px;
+		width: 260px;
+	}
+
+	.competition20251119 p.button a {
+		padding: 16px 5px;
+		border-bottom: 3px solid #e1325b;
+	}
+
+	.competition20251119 p.button a:after {
+		right: 12px;
+		width: 6px;
+		height: 6px;
+		border-right: 2px solid #e1325b;
+		border-bottom: 2px solid #e1325b;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li.point3 p.dpoint_logo img {
+		width: 100px;
+		height: 27px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li.three_months .really_price_icon {
+
+		padding: 2px 9px 0px;
+
+	}
+
+	.competition20251119 .what_is .bg_black .inner h2 strong {
+		font-size: 36px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li .includ_point_1 {
+		margin-bottom: -5px;
+
+	}
+
+
+
+
+	.competition20251119 .button_spring .button,
+	.competition20251119 .button_competition .button {
+		width: 333px;
+	}
+
+	.competition20251119 .button_competition {
+		margin: 7px 0;
+	}
+
+	.competition20251119 .button_competition+.button_competition {
+		margin: 9px 0 2px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content div.text p+p {
+		font-size: 15px;
+		margin-top: 2%;
+	}
+
+	.competition20251119 .main h1 img {
+		position: relative;
+
+	}
+
+	.competition20251119 .main .inner:after {
+		background-size: 11%;
+		bottom: -26px;
+		right: 2%;
+	}
+
+	.competition20251119 .main .inner:before {
+		background-size: 21%;
+		left: -8%;
+		bottom: -32px;
+
+	}
+
+	.competition20251119 .campaign .bg_confetti {
+		background-size: 120%;
+		background-position: 55%;
+	}
+}
+
+/*what_is*/
+.competition20251119 .what_is .bg {
+	background: url("../img/bg_golf_20251119compe.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	position: relative;
+}
+
+.competition20251119 .what_is .bg:before,
+.competition20251119 .what_is .bg:after {
+	content: "";
+	width: 100%;
+	height: 90px;
+	background: #f9f6d9;
+	position: absolute;
+	bottom: -0.5px;
+	left: 0;
+}
+
+.competition20251119 .what_is .bg:before {
+	clip-path: polygon(0% 0%, 0% 100%, 50% 100%);
+}
+
+.competition20251119 .what_is .bg:after {
+	clip-path: polygon(50% 100%, 100% 0%, 100% 100%);
+}
+
+.competition20251119 .what_is .bg .bg_black {
+	background: rgba(0, 0, 0, 0.6);
+	height: 100%;
+	width: 100%;
+	padding: 70px 0 90px 0;
+}
+
+.competition20251119 .what_is .bg_black .inner {
+	width: calc(100% - 24px);
+	max-width: 830px;
+	margin: 0 auto;
+}
+
+.competition20251119 .what_is .bg_black .inner h2 {
+	font-size: 60px;
+	color: #fff;
+	margin-bottom: 50px;
+	font-weight: 600;
+}
+
+.competition20251119 .what_is .bg_black .inner h2 strong {
+	font-size: 80px;
+}
+
+.competition20251119 .what_is .bg_black .inner p {
+	background: #db6108;
+	padding: 10px 20px 3px;
+	box-sizing: border-box;
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0 auto 16px auto;
+	line-height: 1;
+	font-style: italic;
+}
+
+.competition20251119 .what_is .bg_black .inner p strong {
+	font-size: 40px;
+	color: #fcff00;
+	line-height: 1;
+}
+
+.competition20251119 .what_is .bg_black .inner p span {
+	font-size: 12px;
+}
+
+.competition20251119 .what_is .bg_black .inner ul.notes {
+	color: #fff;
+	font-size: 12px;
+	text-align: left;
+	width: 1000px;
+}
+
+.competition20251119 .what_is .guide {
+	width: 100%;
+	background: #f9f6d9;
+	padding: 30px 0 50px 0;
+	text-align: center;
+}
+
+.competition20251119 .what_is .guide .inner {
+	width: calc(100% - 24px);
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.competition20251119 .what_is .guide p {
+	font-size: 20px;
+	font-style: italic;
+	margin: 0 0 30px 0;
+}
+
+.competition20251119 .what_is .guide dl {
+	font-style: italic;
+	line-height: 1;
+	position: relative;
+}
+
+.competition20251119 .what_is .guide dl dt {
+	color: #2e2000;
+	font-size: 28px;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	right: 0;
+	font-weight: bold;
+}
+
+.competition20251119 .what_is .guide dl dt:before,
+.competition20251119 .what_is .guide dl dt:after {
+	background: #2e2000;
+	content: "";
+	height: 5px;
+	width: 32px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+.competition20251119 .what_is .guide dl dt:before {
+	transform: rotate(60deg);
+	margin-right: 5px;
+}
+
+.competition20251119 .what_is .guide dl dt:after {
+	transform: rotate(-60deg);
+	margin-left: -14px;
+}
+
+.competition20251119 .what_is .guide dl dt strong {
+	font-size: 36px;
+}
+
+.competition20251119 .what_is .guide dl dd {
+	background: #fff;
+	color: #db6108;
+	font-size: 30px;
+	padding: 46px 10px 24px 10px;
+	box-sizing: border-box;
+	font-weight: 600;
+	margin: 0;
+}
+
+.competition20251119 .what_is .guide dl dd strong {
+	font-size: 36px;
+	background: #fcff00;
+	padding: 7px 7px 0px 5px;
+	box-sizing: border-box;
+	margin-left: 5px;
+}
+
+.competition20251119 .what_is .guide dl dd strong span {
+	font-size: 30px;
+}
+
+.competition20251119 .what_is .guide dl dd span.notes {
+	font-size: 12px;
+	color: #555;
+	font-weight: normal;
+}
+
+.competition20251119 .what_is .guide ul.notes {
+	color: #555;
+	font-size: 12px;
+	text-align: left;
+}
+
+/*bg_green*/
+.competition20251119 .bg_green {
+	background: repeating-linear-gradient(90deg, #90bc1f, #90bc1f 140px, #9bc336 140px, #9bc336 280px);
+	background-position: center;
+}
+
+/*おすすめポイント*/
+.competition20251119 .recommend_point {
+	border-top: 20px solid #6c8c19;
+}
+
+.competition20251119 .topic {
+	padding-bottom: 60px;
+}
+
+.competition20251119 .recommend_point .inner {
+	width: calc(100% - 24px);
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.competition20251119 .recommend_point .inner h2 {
+	text-align: center;
+	margin: 0 0 -11px;
+}
+
+.competition20251119 .recommend_point .inner h2 img {
+	display: initial;
+}
+
+.competition20251119 .recommend_point .inner ol.point {
+	padding-bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.competition20251119 .recommend_point .inner ol.point>li {
+	background: #fff;
+	border-radius: 10px;
+	background-image: linear-gradient(142deg, #cde19a 114px, transparent 0);
+	padding: 16px 20px 20px 20px;
+	box-sizing: border-box;
+	color: #111;
+	margin-bottom: 16px;
+	float: left;
+}
+
+.competition20251119 .recommend_point .inner ol.point li.point1 {
+	width: 100%;
+}
+
+.competition20251119 .recommend_point .inner ol.point li.point2 {
+	width: calc(50% - 9px);
+	margin-right: 18px;
+	min-height: 280px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li.point3 {
+	width: calc(50% - 9px);
+	min-height: 280px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content {
+	display: table;
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li.point2 .content,
+.competition20251119 .recommend_point .inner ol.point li.point3 .content {
+	margin-bottom: 20px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content h3 {
+	margin: 0;
+	display: table-cell;
+	width: 126px;
+	padding-top: 10px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 30px;
+	padding-left: 30px;
+	line-height: 1.4;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text p {
+	margin: 7px 0 3px 0;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text p strong {
+	background: linear-gradient(transparent 60%, #fdff7f 60%);
+	font-weight: normal;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text p span.pc_br {
+	display: block;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text p span.notes {
+	font-size: 14px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text div.balloon {
+	border-radius: 100px;
+	background: #e1325b;
+	padding: 8px 25px 5px;
+	font-size: 20px;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text div.balloon:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 60px;
+	margin-left: -10px;
+	border: 6px solid transparent;
+	border-top: 10px solid #e1325b;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .content div.text div.balloon strong {
+	color: #fcff00;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 24px 0;
+	margin: 0 auto;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li {
+	display: table-cell;
+	border-radius: 10px;
+	padding: 20px 0 12px 0;
+	text-align: center;
+	width: 285px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year {
+	border: 6px solid #eec600;
+	background: #fffcec;
+	background-image: linear-gradient(135deg, #ff0024 40px, transparent 0);
+	position: relative;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.six_months {
+	border: 3px solid #90bc1f;
+	background: #fbfff1;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.three_months {
+	border: 3px solid #099bee;
+	background: #edf7fd;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year:before {
+	content: "対象プラン";
+	font-size: 11px;
+	color: #fff;
+	transform: rotate(-45deg);
+	position: absolute;
+	left: -6px;
+	top: 14px;
+	font-weight: bold;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li h4 {
+	font-size: 20px;
+	color: #fff;
+	border-radius: 30px;
+	padding: 5px 20px 0px 20px;
+	line-height: 1;
+	font-weight: normal;
+	box-sizing: border-box;
+	width: 180px;
+	margin: 0 auto 18px auto;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year h4 {
+	background: linear-gradient(to right, #eec600, #c9a90c);
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.six_months h4 {
+	background: #90bc1f;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li.three_months h4 {
+	background: #099bee;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li h4 em {
+	font-size: 30px;
+	font-style: normal;
+}
+
+
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li p em {
+	font-family: 'メイリオ', Meiryo, helvetica, arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 1;
+	margin: 0 3px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li p.exclud_tax em {
+	font-size: 50px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li ul.plan li p.includ_tax em {
+	font-size: 25px;
+}
+
+.competition20251119 .recommend_point .inner ul.notes {
+	font-size: 12px;
+	padding: 0 10px;
+	margin-bottom: 16px;
+}
+
+.competition20251119 .recommend_point .inner ul.notes li {
+	text-indent: -17px;
+	padding-left: 16px;
+	margin-bottom: 8px;
+}
+
+.competition20251119 p.button {
+	font-size: 20px;
+	width: 300px;
+	text-align: center;
+	line-height: 1;
+	margin: 0 auto;
+}
+
+.competition20251119 p.button a:after {
+	right: 12px;
+	width: 6px;
+	height: 6px;
+	border-right: 2px solid #db6108;
+	border-bottom: 2px solid #db6108;
+}
+
+.competition20251119 .topic .button {
+	font-size: 20px;
+	width: 60%;
+	text-align: center;
+	line-height: 1;
+	margin: 0 auto;
+}
+
+.competition20251119 p.button a {
+	background-color: #fff;
+	color: #db6108;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border: 1px solid #db6108;
+	border-bottom: 4px solid #db6108;
+	border-radius: 100px;
+}
+
+.competition20251119 p.button a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - -1px);
+	right: 10px;
+	width: 8px;
+	height: 8px;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	transform: translateY(-50%) rotate(-45deg);
+	vertical-align: middle;
+}
+
+
+
+.competition20251119 a:hover {
+	opacity: 0.85;
+}
+
+.competition20251119 .recommend_point .inner ol.point li.point3 p.dpoint_logo {
+	margin: 0 auto 10px;
+	text-align: center;
+}
+
+/*golfmeとは*/
+.competition20251119 .about {
+	background: #e4f9ff;
+	padding: 30px 0 40px;
+	text-align: center;
+}
+
+.competition20251119 .about img {
+	max-width: 871px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*注意事項*/
+.competition20251119 .attention {
+	width: 80%;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 36px 0;
+}
+
+.competition20251119 .attention h2 {
+	font-size: 20px;
+	line-height: 150%;
+	background: #594435;
+	padding: 5px 15px;
+	color: #fff;
+	font-weight: normal;
+	box-sizing: border-box;
+	margin: 0 0 12px 0;
+}
+
+.competition20251119 .attention ol span{
+	color:#ff0000;
+}
+
+.competition20251119 .attention ol li {
+	line-height: 180%;
+	font-size: 14px;
+	padding: 12px 6px;
+	box-sizing: border-box;
+	border-bottom: 1px dashed #768f2c;
+	list-style: none;
+}
+
+/*button*/
+.competition20251119 .entry_button {
+	padding: 50px 0;
+}
+.competition20251119 .entry_button .notes{
+	    margin: 5px auto 30px;
+    text-align: left;
+    width: 90%;
+    text-indent: -17px;
+    padding-left: 17px;
+}
+
+.competition20251119 .entry_button .inner {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.competition20251119 .entry_button p.button {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.competition20251119 .entry_button p.button a {
+	display: block;
+	color: #fff;
+	padding: 20px 6px;
+	box-sizing: border-box;
+	text-decoration: none;
+	border-radius: 18px;
+	background: linear-gradient(#f40000, #c80000);
+	border: none;
+	border-bottom: 5px solid #5f0000;
+}
+
+.competition20251119 .entry_button .service_button {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto 7px;
+}
+
+.competition20251119 .entry_button .service_button a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - -1px);
+	right: 20px;
+	width: 8px;
+	height: 8px;
+	border-right: 3px solid #db6108;
+	border-bottom: 3px solid #db6108;
+	transform: translateY(-50%) rotate(-45deg);
+	vertical-align: middle;
+}
+
+.competition20251119 .entry_button .service_button a {
+	color: #db6108;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border: 1px solid #db6108;
+	border-bottom: 4px solid #db6108;
+	border-radius: 100px;
+	background: #fff;
+	font-size: 20px;
+}
+
+.competition20251119 .entry_button .service_button_box {
+	margin-bottom: 20px;
+}
+
+.competition20251119 .entry_button p.button span {
+	font-size: 14px;
+	display: block;
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+.competition20251119 p.button a:hover {
+	opacity: 0.75;
+}
+
+.competition20251119 .entry_button p.button a:hover {
+	opacity: 0.75;
+}
+
+
+.competition20251119 .entry_button ul.notes li {
+	line-height: 1.6;
+	margin-bottom: 3px;
+}
+
+.competition20251119 .entry_button ul.notes li strong {
+	color: #ff0000;
+	font-weight: normal;
+}
+
+.competition20251119 .compe_20240704_visitor_btn p {
+	margin: 0 auto;
+}
+
+.competition20251119 .entry_button ul.notes li,
+.competition20251119 .detail_cover ul.notes li,
+.competition20251119 .attention ol li {
+	text-indent: -1em;
+	padding-left: 1em;
+}
+
+.competition20251119 .member_btn {
+	width: 100%;
+	margin: 50px auto 0 auto;
+}
+
+.competition20251119 .member_btn a {
+	text-decoration: none;
+}
+
+.competition20251119 .member_btn .c-cta-member strong {
+	font-size: 18px;
+}
+
+.competition20251119 .gaiyou {
+	padding: 10%;
+	text-align: center;
+}
+
+.competition20251119 .topic .inner ol.point div>li {
+	background: #fff;
+	border-radius: 10px;
+	background-image: linear-gradient(142deg, #ffbfd3 114px, transparent 0);
+	padding: 16px 20px 20px 20px;
+	box-sizing: border-box;
+	color: #111;
+	margin-bottom: 16px;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap figcaption {
+	text-align: center;
+	font-size: 20px;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap li {
+	width: 40%;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.competition20251119 .topic .inner ol.point div+div .point1 {
+
+	background-image: linear-gradient(142deg, #f1f184 114px, transparent 0);
+
+}
+
+.competition20251119 .topic .inner ol.point div>li {
+	margin-bottom: 0;
+	padding: 16px 20px 1px 20px;
+}
+
+.competition20251119 .topic .inner ol.point>div+div {
+	margin-top: 85px;
+
+}
+
+.competition20251119 .topic .inner ol.point div.button_spring {
+	margin-top: 10px;
+
+}
+
+.competition20251119 .topic .inner ol.point .cp_img {
+	text-align: center;
+}
+
+.competition20251119 .topic .inner ol.point>div+div .cp_img img {
+	margin-top: 10px;
+	width: 87%;
+}
+
+.competition20251119 .topic .inner ol.point div.button_spring {
+	margin-top: 10px;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap li img {
+	width: 100%;
+	height: 80%;
+	object-fit: cover;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap figcaption {
+	text-align: center;
+	font-size: 16px;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap figcaption .small_name {
+	text-align: center;
+	font-size: 12px;
+	margin-top: -3px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .guest_topic div.text {
+	vertical-align: middle;
+	font-size: 20px;
+	padding-left: 4%;
+	line-height: 1.4;
+	margin-bottom: 2px;
+}
+
+.competition20251119 .topic .inner ol.point div+div>li {
+	padding: 2%;
+}
+
+.competition20251119 .topic .inner ol.point div>li {
+
+	background-image: linear-gradient(135deg, #ffbfd3 75px, transparent 0);
+}
+
+.competition20251119 .topic .inner ol.point div+div .point1 {
+
+	background-image: linear-gradient(135deg, #f1f184 75px, transparent 0);
+
+}
+
+.competition20251119 .topic .inner ol.point div>li {
+	margin-bottom: 0;
+	padding: 9px 10px 1px 3px;
+}
+
+.competition20251119 .topic .inner ol.point>div+div {
+	margin-top: 36px;
+}
+
+.competition20251119 .recommend_point .inner ol.point li .guest_topic {
+	margin: 16px 0 15px;
+}
+
+.competition20251119 .topic .inner ol.point>div+div .cp_img img {
+	margin-top: 9px;
+	width: 100%;
+}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap {}
+
+.competition20251119 .topic .inner ol.point .point1 .guest_wrap li {
+	width: 45%;
+}
+
+/*****************************************************************/
+
+@media screen and (max-width: 1100px) {
+
+	/*main*/
+	.competition20251119 .main h1 {
+		background: url("../img/main_bg.jpg") no-repeat top center;
+		background-size: cover;
+	}
+
+	.competition20251119 .main h1 img {
+		width: 400px;
+		height: 431px;
+		margin-left: -200px;
+	}
+
+	.competition20251119 .detail_guest {
+		padding: 0 0 1px 0;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.competition20251119 .c-cta-member {
+
+		width: 100%;
+
+	}
+
+	.competition20251119 .syoukai {
+		margin-bottom: 3%;
+	}
+
+	.competition20251119 .syoukai span {
+		font-size: 14px;
+		margin-top: 1%;
+	}
+
+	.competition20251119 .syoukai {
+		font-size: 14px;
+	}
+
+	.competition20251119 .detail_guest {
+
+		padding: 0 0 1px 0;
+	}
+
+	.competition20251119 .c-cta-member {
+		padding-top: 13px;
+	}
+
+	.competition20251119 {
+		font-size: 16px;
+	}
+
+	/*main*/
+	.competition20251119 .main h1 {
+		background: url("../img/main_bg_sp.jpg") no-repeat top center;
+		background-size: cover;
+	}
+
+	.competition20251119 .main h1 .pc {
+		display: none;
+	}
+
+	.competition20251119 .main h1 .sp {
+		display: block;
+	}
+
+	.competition20251119 .main h1 img {
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	/*main button*/
+	.competition20251119 .main_button .entry_button {
+		padding: 16px 0;
+	}
+
+	/*button*/
+	.competition20251119 .entry_button {
+		padding: 20px 0;
+	}
+
+	.competition20251119 .entry_button .inner {
+		width: 100%;
+		padding: 0 8px;
+		box-sizing: border-box;
+	}
+
+	.competition20251119 .entry_button p.button {
+		width: 100%;
+		font-size: 20px;
+                max-width: unset;
+	}
+
+	.competition20251119 .entry_button p.button a {
+		padding: 18px 16px 11px 12px;
+		border-radius: 8px;
+		border-bottom: 5px solid #5f0000;
+	}
+
+	.competition20251119 .entry_button p.button span {
+		margin-top: 8px;
+                line-height: 17px;
+	}
+
+	.competition20251119 .entry_button ul.notes {
+		padding: 0 16px;
+		margin-top: 6px;
+		text-align: left;
+		font-size: 12px;
+	}
+
+	.competition20251119 .entry_button ul.notes li {
+		line-height: 1.7;
+	}
+
+	.competition20251119 .c-cta-member,
+	.competition20251119 .c-cta-visitor {
+		margin-top: 0;
+	}
+
+	/*スケジュール*/
+	.competition20251119 .detail_cover {
+		padding: 0 0 1px;
+	}
+
+	.competition20251119 .detail {
+		width: 95%;
+	}
+
+	.competition20251119 .detail th {
+		font-size: 16px;
+		width: 25%;
+		font-size: 16px;
+		padding: 14px 8px;
+		text-align: center;
+	}
+
+	.competition20251119 .detail th {
+		padding: 16px 16px;
+	}
+
+	.competition20251119 .detail td {
+		padding: 14px 16px;
+	}
+    .competition20251119 .detail .compe_small {
+            font-size: 14px;
+        }
+    .competition20251119 .detail .compe_small +.compe_small{
+            margin: 8px 0 5px;
+        }
+    .competition20251119 .detail .compe_small span{
+            font-size: 18px;
+        }
+
+	.competition20251119 .detail td.tdbgImg {
+		background-image: none;
+	}
+
+	.competition20251119 .txts {
+		font-size: 14px;
+	}
+
+	.competition20251119 .detail_cover ul.notes {
+		font-size: 14px;
+	}
+
+	.competition20251119 .txtl {
+		font-size: 18px;
+	}
+
+	/*profile*/
+	.competition20251119 .profile {
+		display: block;
+	}
+
+	.competition20251119 .profile div.photo {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		margin-bottom: 12px;
+	}
+
+	.competition20251119 .profile div.prfTxt {
+		width: 100%;
+		padding: 0;
+	}
+
+	.competition20251119 .profile div.prfTxt .text {
+		padding: 0;
+		font-size: 16px;
+	}
+
+	.competition20251119 .profile div.photo img {
+		width: 200px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	/*goflmeとは*/
+	.competition20251119 .about {
+		padding: 30px 2% 40px;
+	}
+
+	/*注意事項*/
+	.competition20251119 .attention {
+		width: 100%;
+		padding: 0;
+	}
+
+	.competition20251119 .attention h2 {
+		font-size: 18px;
+		margin: 0 0 15px;
+	}
+
+	.competition20251119 .attention ol {
+		padding: 0 16px;
+	}
+
+	.competition20251119 .attention ol li {
+		padding: 12px 12px;
+	}
+
+	.competition20251119 .member_btn {
+		width: 300px;
+		margin: 18px auto 0 auto;
+	}
+
+	.competition20251119 .member_btn .c-cta-member {
+		height: 50px;
+		padding: 12px 13px 12px;
+	}
+
+	.competition20251119 .member_btn .c-cta-member strong {
+		font-size: 16px;
+	}
+
+	.competition20251119 .syoukai p {
+		font-size: 14px;
+	}
+
+	/*what_is*/
+	.competition20251119 .what_is .bg:before,
+	.competition20251119 .what_is .bg:after {
+		height: 30px;
+	}
+
+	.competition20251119 .what_is .bg .bg_black {
+		padding: 3px 0 50px 0;
+	}
+
+	.competition20251119 .what_is .bg_black .inner h2 {
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+
+	.competition20251119 .what_is .bg_black .inner h2 strong {
+		font-size: 36px;
+	}
+
+	.competition20251119 .what_is .bg_black .inner p {
+		padding: 9px 20px 4px 20px;
+		font-size: 16px;
+		margin: 0 auto 16px auto;
+		line-height: 1.2;
+	}
+
+	.competition20251119 .what_is .bg_black .inner p strong {
+		font-size: 22px;
+		line-height: 1.2;
+	}
+
+	.competition20251119 .what_is .bg_black .inner ul.notes {
+		width: calc(100% - 24px);
+	}
+
+	.competition20251119 .what_is .guide {
+		padding: 20px 0 10px 0;
+	}
+
+	.competition20251119 .what_is .guide p {
+		font-size: 16px;
+		font-style: italic;
+		margin: 0 0 30px 0;
+	}
+
+	.competition20251119 .what_is .guide dl {
+		line-height: 1.2;
+		margin-bottom: 8px;
+	}
+
+	.competition20251119 .what_is .guide dl dt {
+		font-size: 16px;
+	}
+
+	.competition20251119 .what_is .guide dl dt:before,
+	.competition20251119 .what_is .guide dl dt:after {
+		height: 3px;
+		width: 26px;
+	}
+
+	.competition20251119 .what_is .guide dl dt:before {
+		margin-right: 0;
+	}
+
+	.competition20251119 .what_is .guide dl dt:after {
+		margin-left: -10px;
+	}
+
+	.competition20251119 .what_is .guide dl dt strong {
+		font-size: 26px;
+	}
+
+	.competition20251119 .what_is .guide dl dd {
+		font-size: 16px;
+		padding: 22px 0 12px 0;
+		line-height: 1.8;
+	}
+
+	.competition20251119 .what_is .guide dl dd strong {
+		font-size: 22px;
+		padding: 7px 8px 1px 7px;
+		margin-left: 5px;
+		display: inline-block;
+		line-height: 1;
+	}
+
+	.competition20251119 .what_is .guide dl dd strong span {
+		font-size: 16px;
+		margin: 0 1px;
+	}
+
+	.competition20251119 .what_is .guide ul.notes {
+		margin-bottom: 12px;
+	}
+
+	.competition20251119 .what_is .guide ul.notes li {
+		text-indent: -21px;
+		padding-left: 21px;
+	}
+
+	/*背景*/
+	.competition20251119 .bg_green {
+		background: repeating-linear-gradient(90deg, #90bc1f, #90bc1f 70px, #9bc336 70px, #9bc336 140px);
+	}
+
+	/*point*/
+	.competition20251119 .recommend_point {
+		border-top: 10px solid #6c8c19;
+	}
+
+	.competition20251119 .recommend_point .inner {
+		margin: 0 auto;
+		padding-top: 20px;
+		width: 96%;
+	}
+
+	.competition20251119 .recommend_point .inner h2 img {
+		width: 80%;
+		height: 100%;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point {
+		padding-bottom: 18px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point>li {
+		background-image: linear-gradient(141deg, #cde19a 55px, transparent 0);
+		padding: 8px 6px 8px 6px;
+		margin-bottom: 8px;
+		float: none;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li.point1,
+	.competition20251119 .recommend_point .inner ol.point li.point2,
+	.competition20251119 .recommend_point .inner ol.point li.point3 {
+		width: 100%;
+		margin: 0 auto 8px auto;
+		height: auto;
+		min-height: auto;
+		padding: 0 0 10px 0;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content {
+		margin-bottom: 8px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li.point2 .content,
+	.competition20251119 .recommend_point .inner ol.point li.point3 .content {
+		margin-bottom: 8px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content h3 {
+		width: 80px;
+		padding-top: 6px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content h3 img {
+		width: 80px;
+		height: 62px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content div.text {
+		font-size: 22px;
+		padding-left: 10px;
+		line-height: 1.2;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content div.text div.balloon {
+		padding: 12px 12px 8px;
+		font-size: 14px;
+		text-align: center;
+		margin: 6px 0;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content div.text p span.pc_br {
+		display: inline;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .content div.text p span.notes {
+		font-size: 12px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan {
+		display: block;
+		width: 100%;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li {
+		display: block;
+		padding: 10px 0 6px 0;
+		width: calc(100% - 12px);
+		margin: 0 auto 8px auto;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year:before {
+		left: -5px;
+		top: 12px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li h4 {
+		font-size: 16px;
+		padding: 7px 20px 5px 20px;
+		margin: 0 auto 12px auto;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li h4 em {
+		font-size: 22px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li p {
+		font-size: 16px;
+		margin: 0 auto 2px auto;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li p.exclud_tax em {
+		font-size: 40px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li p.includ_tax em {
+		font-size: 20px;
+	}
+
+	.competition20251119 .recommend_point .inner ul.notes {
+		padding: 0 8px;
+	}
+
+	.competition20251119 .recommend_point .inner ul.notes li {
+		text-indent: -17px;
+		padding-left: 16px;
+		margin-bottom: 8px;
+	}
+
+	.competition20251119 p.button {
+		font-size: 16px;
+		width: 260px;
+	}
+
+	.competition20251119 .recommend_point p.button a {
+		font-size: 16px;
+	}
+
+	.competition20251119 p.button a {
+		font-size: 20px;
+		        padding: 7px 0px;
+	}
+
+	.competition20251119 .recommend_point p.button a:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: calc(50% - -1px);
+		        right: 10px;
+		width: 8px;
+		height: 8px;
+		transform: translateY(-50%) rotate(-45deg);
+		vertical-align: middle;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li.point3 p.dpoint_logo img {
+		width: 100px;
+		height: 27px;
+	}
+
+	.competition20251119 .topic .inner ol.point .point1 .guest_wrap li img {
+		width: 100%;
+		height: 80%;
+		object-fit: cover;
+	}
+
+	.competition20251119 .topic .inner ol.point .point1 .guest_wrap figcaption {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.competition20251119 .topic .inner ol.point .point1 .guest_wrap figcaption .small_name {
+		text-align: center;
+		font-size: 12px;
+		margin-top: -3px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .guest_topic div.text {
+		vertical-align: middle;
+		font-size: 20px;
+		padding-left: 4%;
+		line-height: 1.4;
+		margin-bottom: 2px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year:before {
+		left: -5px;
+		top: 12px;
+	}
+
+	.competition20251119 .topic .inner ol.point div+div>li {
+		padding: 2%;
+	}
+
+	.competition20251119 .topic .inner ol.point .point1 .guest_wrap li img {
+		width: 100%;
+		height: 80%;
+		object-fit: cover;
+	}
+
+	.competition20251119 .topic .inner ol.point .point1 .guest_wrap figcaption {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.competition20251119 .topic .inner ol.point .point1 .guest_wrap figcaption .small_name {
+		text-align: center;
+		font-size: 12px;
+		margin-top: -3px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .guest_topic div.text {
+		vertical-align: middle;
+		font-size: 20px;
+		padding-left: 4%;
+		line-height: 1.4;
+		margin-bottom: 2px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li ul.plan li.one_year:before {
+		left: -5px;
+		top: 12px;
+	}
+
+	.competition20251119 .topic .inner ol.point div+div>li {
+		padding: 2%;
+	}
+
+	.competition20251119 .topic .inner ol.point div>li {
+
+		background-image: linear-gradient(135deg, #ffbfd3 75px, transparent 0);
+	}
+
+	.competition20251119 .topic .inner ol.point div+div .point1 {
+
+		background-image: linear-gradient(135deg, #f1f184 75px, transparent 0);
+
+	}
+
+	.competition20251119 p.button {
+		font-size: 16px;
+		        font-size: 16px;
+        min-width: 220px;
+        width: 80%;
+        max-width: 300px;
+	}
+
+	.competition20251119 .topic .inner ol.point div>li {
+		margin-bottom: 0;
+		padding: 9px 10px 1px 3px;
+	}
+
+	.competition20251119 .button_spring .button,
+	.competition20251119 .button_competition .button {
+		width: 100%;
+	}
+
+	.competition20251119 .topic .button {
+		font-size: 20px;
+		width: 64%;
+		min-width: 310px;
+		text-align: center;
+		line-height: 1;
+		margin: 0 auto;
+	}
+
+	.competition20251119 .topic .inner ol.point>div+div {
+		margin-top: 36px;
+	}
+
+	.competition20251119 .recommend_point .inner ol.point li .guest_topic {
+		margin: 16px 0 15px;
+	}
+
+	.competition20251119 .topic .inner ol.point>div+div .cp_img img {
+		margin-top: 9px;
+		width: 100%;
+	}
+
+	.competition20251119 .topic .inner ol.point .point1 .guest_wrap {}
+
+	.competition20251119 .topic .inner ol.point .point1 .guest_wrap li {
+		width: 45%;
+	}
+}
