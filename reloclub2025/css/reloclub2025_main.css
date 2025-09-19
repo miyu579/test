@@ -149,7 +149,7 @@ vertical-align: bottom;
     font-size: 22px;
     font-weight: bold;
     color: #333;
-    background-position: top 2px right 50%;
+    background-position: top 1px right 50%;
     padding: 5px;
     margin-top: 0;
        background-size: 390px 42px;
@@ -2212,4 +2212,5 @@ transform: translateY(50%) rotate(315deg);
 		transform: translateY(-9px) rotate(-45deg);
 	}
 }
+
 /*固定ヘッダー終わり*/
