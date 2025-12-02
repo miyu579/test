@@ -109,8 +109,8 @@
                       
 			     </div>
                   <div class="closeinfo_box">
-            <div class="closeinfo_member_an"><a href="#closeinfo_member"><p>メンバー（有料）<br class="sptbOnly">会員の皆様</p></a></div>
-            <div class="closeinfo_visitor_an"><a href="#closeinfo_visitor"><p>ビジター（無料）<br class="sptbOnly">会員の皆様</p></a></div>
+            <div class="closeinfo_member_an"><a href="#closeinfo_member" class="closeinfo_anchor_mv"><p>メンバー（有料）<br class="sptbOnly">会員の皆様</p></a></div>
+            <div class="closeinfo_visitor_an"><a href="#closeinfo_visitor" class="closeinfo_anchor_mv"><p>ビジター（無料）<br class="sptbOnly">会員の皆様</p></a></div>
                       
                   </div>
         </div>
@@ -425,6 +425,35 @@
   </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.popup.js"></script>
-    
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const anchorLinks = document.querySelectorAll('.closeinfo_anchor_mv');
+
+  anchorLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const href = this.getAttribute('href');
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      // 固定ヘッダーの高さを取得
+      const nav = document.querySelector('.sticky_block');
+      const navHeight = nav ? nav.offsetHeight : 0;
+
+      // 背景が見切れないように調整余白を追加
+      const extraMargin = 10; // 必要に応じて調整（20〜40px推奨）
+
+      const position = target.getBoundingClientRect().top + window.pageYOffset - navHeight - extraMargin;
+
+      window.scrollTo({
+        top: position,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+</script>
+
 </body>
 </html>

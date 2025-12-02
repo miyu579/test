@@ -107,12 +107,11 @@ vertical-align: bottom;
 }
 @media screen and (max-width:768px) {
 	#closeinfo2026 h2 span {
-		display: block;
 		padding: 2px 0;
-		background-color: #d00e31;
 		width: 84px;
-		margin: -1px auto 0px;
+		margin: 0px auto 0px;
 	}
+
 	
 #closeinfo2026 h2 {
     padding-top: 15px;
@@ -449,6 +448,29 @@ background-position: center 56%;
     width: 94%;
     margin: auto;
 }
+        #closeinfo2026 #closeinfo_visitor h2 span
+ {
+    padding: 2px 0;
+    width: 84px;
+    margin: 0px auto 0px;
+}
+}
+@media screen and (max-width: 1100px) {
+    #closeinfo2026 #closeinfo_member h3, #closeinfo2026 #closeinfo_visitor h3 {
+        padding: 6px 20px 6px;
+        background-color: #4d4d4d;
+        color: #ffffff;
+        border-radius: 0;
+        font-weight: normal;
+        font-weight: bold;
+        /* border-radius: 30px; */
+        margin: 0 auto 20px;
+        font-size: 18px;
+        display: block;
+        width: 600px;
+        line-height: 20px;
+    }
+
 }
 /*メンバー会員スケジュールおわり*/
 @media screen and (max-width:768px) {
@@ -532,12 +554,17 @@ line-height: 23px;
 }#closeinfo2026 .closeinfo_thanks div p{
     padding: 0 20px;
 }
+@media screen and (max-width: 1100px) {@media screen and (max-width: 1100px) {
+#closeinfo2026 .closeinfo_thanks {
+    margin: 0;
+}
+}
 @media screen and (max-width: 768px) {
     #closeinfo2026 .closeinfo_thanks {
     text-align: center;
     font-size: 17px;
     font-weight: bold;
-    margin: 0 0 60px;
+    margin: 60px 0 60px;
     }
     #closeinfo2026 .closeinfo_thanks p+p{
         margin-top: 10px;
@@ -650,6 +677,13 @@ line-height: 23px;
 }
 
 @media screen and (max-width: 768px){
+    #closeinfo2026 #closeinfo_contact {
+        margin: 50px auto 60px;
+    }
+#closeinfo2026 #closeinfo_contact .closeinfo2026_inner .closeinfo_contactbt {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
 #closeinfo2026 #closeinfo_contact .closeinfo2026_inner .closeinfo_contactbt p:before {
     content: '';
     width: 8px;
@@ -689,10 +723,10 @@ line-height: 23px;
 }
     #closeinfo2026 #closeinfo_contact .closeinfo2026_inner .closeinfo_contactbt a {
     font-size: 18px;
-    border: 3px solid #333;
+    border: 2px solid #333;
     width: 80%;
     padding: 1px 36px 2px 36px;
-    border-bottom: 4px solid #333;
+    border-bottom: 3px solid #333;
         max-width: 400px;
 }
 }
@@ -734,7 +768,7 @@ line-height: 23px;
 }
 #closeinfo2026 .accordion-btn {
       padding: 0;
-  cursor: pointer;
+
   position: -webkit-sticky;
   position: sticky;
   top: 0;
