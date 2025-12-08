@@ -3,30 +3,6 @@
 @import"https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
-/*終了告知*/
- #friend_finish{
-    background-color: #f1f2f5;
-    color:#ff0d00;
-    font-weight: bold;
-    font-size: 24px;
-    margin: 10px auto;
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-}#friend_finish br{
-        display: none;
-    }
-
-@media screen and (max-width: 768px) {
-    #friend_finish{
-        font-size: 18px;
-        padding: 10px 5px
-    }#friend_finish br{
-        display: block!important;
-    }
-}
-
-/*終了告知おわり*/
 
 .slick-slider {
   margin-bottom: 30px;
@@ -50010,8 +49986,7 @@ body:has(#lp20250501lp3) {
   max-width: 100%;
   height: auto;
   border-style: none;
-  border: 0;
-margin: 10px auto 10px;
+  border: 0
 }
 
 #lp20250501lp3 a {
@@ -51353,18 +51328,19 @@ margin: 10px auto 10px;
 
 #lp20250501lp3 .fixed .fixed_inner {
   display: grid;
-    align-items: center;
-    gap: 0;
+  grid-template-columns: 40% 1fr .1fr;
+  align-items: center;
+  gap: 20px;
   position: static;
   width: 100%;
-  background: #ffffff9e;
-        justify-content: center;
+  background: #ffffff9e
 }
 
 #lp20250501lp3 .fixed .btn {
   display: inline-grid;
   justify-content: end;
   pointer-events: all;
+  margin-left: 10px
 }
 
 #lp20250501lp3 .fixed .msg {
