@@ -1,0 +1,25 @@
+/*終了告知*/
+#campaign_finish{
+    background-color: #f1f2f5;
+    color:#ff0d00;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    
+}#campaign_finish br{
+        display: none;
+    }
+
+@media screen and (max-width: 768px) {
+   #campaign_finish{
+        font-size: 17px;
+        padding: 10px 5px;
+        line-height: 19px;
+    }#campaign_finish br{
+        display: block!important;
+    }
+}
+/*終了告知おわり*/
