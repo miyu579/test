@@ -113,9 +113,10 @@
 })();
 </script>
 <!--終了お知らせ-->
-        <!--キャンペーン終了-->
+<!--キャンペーン終了-->
 <link rel="stylesheet" href="../campaign_finish_common/campaign_finish_common.css">
 <link rel="stylesheet" href="../campaign_finish_common_fixednews/campaign_finish_common_fixednews.css">
+<link rel="stylesheet" href="../campaign_finish_common_text/campaign_finish_common_text.css">
 <script>
 (function () {
 
@@ -128,6 +129,11 @@
   const fetchFixedNewsHTML = fetch("../campaign_finish_common_fixednews/campaign_finish_common_fixednews.html")
     .then(res => res.ok ? res.text() : "")
     .catch(() => "");
+    
+  // ▼ テキスト要素（新規追加分）
+const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_common_text.html")
+  .then(res => res.ok ? res.text() : "")
+  .catch(() => "");
 
   // ▼ 挿入処理
   document.addEventListener("DOMContentLoaded", async function () {
@@ -137,6 +143,9 @@
 
     // ---- ② 追加したい挿入先 ----
     const fixedNewsTarget = document.querySelector("#campaign_finish_common_fixednews");
+    
+      // ---- ③ 新規挿入先（テキスト用） ----
+  const textTarget = document.querySelector("#campaign_finish_common_text");
 
     // ---- ① campaign_finish_common.html を挿入 ----
     const finishHTML = await fetchFinishHTML;
@@ -149,9 +158,23 @@
     if (fixedNewsTarget && fixedNewsHTML) {
       fixedNewsTarget.innerHTML = fixedNewsHTML;
     }
-
+        // ---- ③ campaign_finish_common_text.html を挿入 ----
+  const textHTML = await fetchTextHTML;
+  if (textTarget && textHTML) {
+    textTarget.innerHTML = textHTML;
+  }
   });
 })();
+window.addEventListener("load", async function() {
+  const finishHTML = await fetchFinishHTML;
+  const finishTarget = document.querySelector("#campaign_finish");
+  if (finishTarget && finishHTML) {
+    finishTarget.insertAdjacentHTML("beforeend", finishHTML);
+    // ← lazy画像の再評価を促す
+    setTimeout(() => window.dispatchEvent(new Event("scroll")), 200);
+  }
+});
+
 </script>
     <!--キャンペーン終了-->
   <script type="module" src="./index_files/app2.js.%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"></script>
@@ -695,6 +718,7 @@
                         <br>
                         <span class="pc_br">あなたとお友達がメンバー会員登録すると、</span>それぞれにdポイント1,500Pプレゼント！</p>
                     </div>
+                      <div id="campaign_finish_common_text"></div>
                   </a>
                 </li>
               </ul>
