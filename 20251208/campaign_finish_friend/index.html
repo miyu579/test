@@ -3,7 +3,7 @@
 <html lang="ja" class="summer-golf-html">
 
 <head>
-     <!--終了お知らせ-->
+        <!--終了お知らせ-->
   <link rel="preload" href="../closenews_common/closenews_common.html" as="fetch" crossorigin="anonymous">
     <!--終了お知らせ-->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -79,7 +79,7 @@
   <link rel="preload" href="https://cdn.golfme.goo.ne.jp/build/4.9.2/assets/section3-tablabel2on.png" as="image" media="(min-width: 769px)">
   <link rel="preload" href="https://cdn.golfme.goo.ne.jp/build/4.9.2/assets/section3-tablabel2on-sp.png" as="image" media="(max-width: 768px)">
   <link rel="stylesheet" href="./index_files/swiper-bundle.min.css">
-    <!--終了お知らせ-->
+       <!--終了お知らせ-->
   <link rel="stylesheet" href="../closenews_common/closenews_common.css">
      <script>
 (function() {
@@ -95,24 +95,23 @@
     const target = document.querySelector(".closenews_common");
     if (!target) return;
 
-    const html = await fetchHTML;
-    if (!html) return;
+   const html = await fetchHTML;
+if (html) {
+  target.innerHTML = html;
 
-    // HTML 挿入
-    target.innerHTML = html;
+  const parent = target.querySelector(".header_fix_close");
+  const bar = target.querySelector(".header_fix_close_box");
 
-    // ▼ 高さ調整（ページ本体側の paddingTop）
-    const parent = target.querySelector(".header_fix_close");
-    const bar = target.querySelector(".header_fix_close_box");
+  function adjustCloseHeader() {
+    if (!bar || !parent) return;
+    const barHeight = bar.offsetHeight;
+    parent.style.paddingTop = (barHeight - 1) + "px";
+  }
 
-    function adjustCloseHeader() {
-      if (!bar || !parent) return;
-      const barHeight = bar.offsetHeight;
-      parent.style.paddingTop = (barHeight - 1) + "px"; // 
-    }
-
-    adjustCloseHeader();
-    window.addEventListener("resize", adjustCloseHeader);
+  adjustCloseHeader();
+  window.addEventListener("resize", adjustCloseHeader);
+}
+// ← 「if (!html) return;」を削除してこの形に
 
     
   });
@@ -123,6 +122,7 @@
     <!--キャンペーン終了-->
 <link rel="stylesheet" href="../campaign_finish_common/campaign_finish_common.css">
 <link rel="stylesheet" href="../campaign_finish_common_fixednews/campaign_finish_common_fixednews.css">
+<link rel="stylesheet" href="../campaign_finish_common_text/campaign_finish_common_text.css">
 <script>
 (function () {
 
@@ -135,6 +135,11 @@
   const fetchFixedNewsHTML = fetch("../campaign_finish_common_fixednews/campaign_finish_common_fixednews.html")
     .then(res => res.ok ? res.text() : "")
     .catch(() => "");
+    
+  // ▼ テキスト要素（新規追加分）
+const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_common_text.html")
+  .then(res => res.ok ? res.text() : "")
+  .catch(() => "");
 
   // ▼ 挿入処理
   document.addEventListener("DOMContentLoaded", async function () {
@@ -144,6 +149,9 @@
 
     // ---- ② 追加したい挿入先 ----
     const fixedNewsTarget = document.querySelector("#campaign_finish_common_fixednews");
+    
+      // ---- ③ 新規挿入先（テキスト用） ----
+  const textTarget = document.querySelector("#campaign_finish_common_text");
 
     // ---- ① campaign_finish_common.html を挿入 ----
     const finishHTML = await fetchFinishHTML;
@@ -156,9 +164,23 @@
     if (fixedNewsTarget && fixedNewsHTML) {
       fixedNewsTarget.innerHTML = fixedNewsHTML;
     }
-
+        // ---- ③ campaign_finish_common_text.html を挿入 ----
+  const textHTML = await fetchTextHTML;
+  if (textTarget && textHTML) {
+    textTarget.innerHTML = textHTML;
+  }
   });
 })();
+window.addEventListener("load", async function() {
+  const finishHTML = await fetchFinishHTML;
+  const finishTarget = document.querySelector("#campaign_finish");
+  if (finishTarget && finishHTML) {
+    finishTarget.insertAdjacentHTML("beforeend", finishHTML);
+    // ← lazy画像の再評価を促す
+    setTimeout(() => window.dispatchEvent(new Event("scroll")), 200);
+  }
+});
+
 </script>
     <!--キャンペーン終了-->
   <script src="./index_files/jquery-3.7.1.min.js.%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"></script>
@@ -312,7 +334,7 @@
       </p>
     </div>
     <div id="lp20250501lp3">
-        <div id="campaign_finish"></div>
+         <div id="campaign_finish"></div>
       <section class="section1">
         <div class="key">
           <h1 class="mv">
@@ -634,7 +656,7 @@
                 <div class="inner3">
                   <img src="./index_files/section_fd_campaign_sub01_pc.png" class="sub pc" alt="期間" decoding="auto" loading="lazy">
                   <img src="./index_files/section_fd_campaign_sub01_sp.png" class="sub sp" alt="期間" decoding="auto" loading="lazy">
-                  <p style="text-align: center;">2024年3月5日~常時開催</p>
+                  <p style="text-align: center;">2024年3月5日~<s>常時開催</s><br class="spOnly"><span>2026年●月●日23時59分入会完了まで</span></p>
                 </div>
               </div>
               <div class="inner2 fadein fadein-bottom">
@@ -734,7 +756,37 @@
       </p>
         <div id="campaign_finish_common_fixednews">
             </div>
-
+      <div class="fixed">
+        <div class="fixed_inner_row1" id="lp2025popup">
+          <div class="closebutton">
+            <label for="lp2025popclosed" class="closed">
+            </label>
+            <input type="checkbox" class="checked" name="check" id="lp2025popclosed" style="display: none;">
+          </div>
+          <div class="img">
+            <h2>
+              <a href="https://golfme.goo.ne.jp/campaign/3monthfree">
+                <img src="./index_files/fixed-banner1-popup.png" width="250" height="205" alt="GOLFme! 2025 ３ヶ月プラン限定初月０円キャンペーン" decoding="auto" loading="lazy">
+              </a>
+            </h2>
+          </div>
+        </div>
+        <div class="fixed_inner">
+          <div class="btn">
+            <a target="_blank" href="https://golfme.goo.ne.jp/register">
+              <img src="./index_files/fixed-btn.png" width="357" height="50" alt="メンバー登録する（有料）" decoding="auto" loading="lazy">
+            </a>
+          </div>
+          <div class="msg">
+            <strong>3ヵ月プラン入会で初月無料キャンペーン実施中！</strong>
+          </div>
+          <p class="gotop pc">
+            <a href="https://golfme.goo.ne.jp/campaign/friends#top">
+              <img src="./index_files/fixed-gotop.png" width="70" alt="" decoding="auto" loading="lazy">
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
     <div id="lp20250501common">
       <section class="section5">
@@ -1102,6 +1154,7 @@
               </a>
             </h2>
             <a href="https://golfme.goo.ne.jp/campaign/3monthfree" class="button" style="margin-top: 20px;">詳しくはこちら!</a>
+              <div id="campaign_finish_common_text"></div>
           </div>
         </div>
       </section>

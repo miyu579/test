@@ -3,7 +3,18 @@
 @import"https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
-
+/*20251209*/
+.summer-golf-body #lp20250501lp3 .fixed{
+    display: none;
+}
+.summer-golf-body .section_fd_campaign s{
+    color: #d00f31;
+    padding:0 10px;
+}
+.summer-golf-body .section_fd_campaign span{
+    color: #d00f31;
+}
+/*20251209*/
 .slick-slider {
   margin-bottom: 30px;
   position: relative;
@@ -51323,7 +51334,7 @@ body:has(#lp20250501lp3) {
   width: 100%;
   bottom: 0;
   z-index: 9999;
-  pointer-events: none
+  pointer-events: none;
 }
 
 #lp20250501lp3 .fixed .fixed_inner {
