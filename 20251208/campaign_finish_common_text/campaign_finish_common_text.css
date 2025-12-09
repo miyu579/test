@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+#campaign_finish_common_text p{
+    font-size: 20px;
+}
+#campaign_finish_common_text br{
+        display: none;
+    }@media screen and (max-width:768px) {
+#campaign_finish_common_text p{
+            font-size: 16px;
+        line-height: 19px;
+}
+  #campaign_finish_common_text br{
+        display: block;
+    }
+}
