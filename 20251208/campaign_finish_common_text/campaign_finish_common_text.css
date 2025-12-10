@@ -5,6 +5,7 @@
     color:#ca1032;
     margin: 10px auto;
     background-color: #fff;
+        text-align: center;
 }
 #campaign_finish_common_text br{
         display: none;
@@ -12,7 +13,6 @@
 #campaign_finish_common_text p{
             font-size: 14px;
         line-height: 19px;
-    text-align: center;
 }
   #campaign_finish_common_text br{
         display: block;
