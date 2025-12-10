@@ -171,15 +171,6 @@ const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_comm
   }
   });
 })();
-window.addEventListener("load", async function() {
-  const finishHTML = await fetchFinishHTML;
-  const finishTarget = document.querySelector("#campaign_finish");
-  if (finishTarget && finishHTML) {
-    finishTarget.insertAdjacentHTML("beforeend", finishHTML);
-    // ← lazy画像の再評価を促す
-    setTimeout(() => window.dispatchEvent(new Event("scroll")), 200);
-  }
-});
 
 </script>
     <!--キャンペーン終了-->
