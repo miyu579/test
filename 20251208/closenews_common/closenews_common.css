@@ -1,106 +1,135 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*20251211アコーディオン*/
-#closenews_common .close_header_notice_bar {
-
-  cursor: pointer;
-}
-#closenews_common .close_header_notice {
-  pointer-events: none;
-}
-
-/* 実際に操作したい部分だけ有効化 */
-#closenews_common .close_header_notice_bar,
-#closenews_common .close_header_notice_content,
-#closenews_common .close_header_notice_content a {
-  pointer-events: auto;
-}
-@charset "utf-8";
-/* CSS Document */
-#closenews_common .closenews_common p{
-    margin: 0;
-}
-/*20251211アコーディオン*/
-#closenews_common .close_header_notice_content p{
-    padding:0px 0 10px;
-    margin: 0;
-    font-weight: bold;
-}
-/* 固定ヘッダー風アコーディオン */
-#closenews_common .close_header_notice {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100; /* 他要素より前面に */
-}
-
-/* 親がページの一部として存在 */
-
-
-/* バー */
-#closenews_common .close_header_notice_bar {
-  background: #f1f2f5;
-  color: #ca1032;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}#closenews_common .close_header_notice_bar p{
-position: relative;
-    padding-right: 30px;
-    margin: 0;
-}#closenews_common .close_header_notice_bar p:before{
-    content: '';
-    width: 10px;
-    height: 10px;
-    border: 0;
-    border-top: solid 3px #d00e31;
-    border-right: solid 3px #d00e31;
-    transform: rotate(135deg);
-    position: absolute;
-    top: 20%;
-    right: 0;
-    bottom: 0;
-    margin:0;
-}
-#closenews_common .close_header_notice.open .close_header_notice_bar p::before {
-  transform: translateY(50%) rotate(-45deg);
-}
-/* 開閉部分 */
-#closenews_common .close_header_notice_content {
-  background: #f1f2f5;
-  color: #333;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.6;
-  overflow: hidden;
-
-  transform: translateY(-10px);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-/* 開いたとき */
-#closenews_common .close_header_notice.open .close_header_notice_content {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-
-/*20251211アコーディオン*/
-
-
 /*20251121*/
+.header_fix_close{
+    position: relative;
+}
+.header_fix_close .header_fix_close_box{
+    width: 100%;
+    text-align: center;
+    background-color: #f1f2f5f2;
+    color: #ca1032;
+    font-weight: bold;
+    padding: 5px 0 8px;
+    font-size: 18px;
+    margin: 0 auto;
+    display: block;
+    top: 0;
+    position: fixed;
+    z-index:12;
+}
+.header_fix_close_dropdowncontent{
+background-color:#f1f2f5;
+  padding: 10px 0 10px;
+  z-index: 1;
+    color: #333;
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+     position: relative;
 
+}
+.header_fix_close_dropdowncontent p{
+ color: #333;
+    font-weight: bold;
+}.header_fix_close_dropdowncontent a{ 
+    color: #333;
+}
+.header_fix_close_dropdowncontent span{
+    margin:0 10px;
+}.header_fix_close_dropdowncontent span +span{
+    margin-left: 0;
+    
+}
+.header_fix_close_dropdowncontent p+p{
+    display: inline-block;
+    color: #333;
+    font-weight: normal;
+}
+.header_fix_close:hover .header_fix_close_dropdowncontent {
 
+}
+.header_fix_close_link{
+    font-size: 17px;
+    margin-top: 3px;
+    text-decoration: none;
+    border: none;
+}
+.header_fix_close_link a{ 
+    text-decoration: none;
+    border: none;
+    display: block;
+    width: 150px;
+    margin: auto;
+    position: relative;
+
+}
+.header_fix_close_link a:before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-top: solid 2px #2d4a98;
+    border-right: solid 2px #2d4a98;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 9%;
+    right: -14px;
+    bottom: 0;
+    margin: auto 25px auto auto;
+}
+.header_fix_close_link p{ 
+    border: none;
+    text-decoration: none;
+        width:300px;
+}
+.header_fix_close div p{
+    margin: 0 auto;
+}
+.header_fix_close_spOnly{
+    display: none;
+}
+@media screen and (max-width:1100px) {
+.header_fix_close_dropdowncontent {
+    padding: 10px 5px 10px;
+}
+}
+@media screen and (max-width:768px) {
+    .header_fix_close div p {
+        line-height: 20px;
+        width: 96%;
+    margin:-2px auto 0;
+}
+    .header_fix_close_spOnly{
+    display: block;
+}
+.header_fix_close .header_fix_close_box {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 6px 0  4px;
+}
+    .header_fix_close_link {
+    font-size: 15px;
+
+}    .header_fix_close_link a{
+
+        margin:2px auto 0;
+
+}
+    .header_fix_close_dropdowncontent {
+       font-size: 14px;
+}    
+    .header_fix_close_dropdowncontent p{
+  width: 96%;
+    margin: auto;
+
+}
+    .header_fix_close_dropdowncontent {
+    padding: 0px 0px 10px;
+}
+}
 /*20251121おわり*/
 
 /*spヘッダー調整*/
@@ -125,13 +154,12 @@ position: relative;
         margin-right: 0px;
     }
         div.sp-menu.active {
-        z-index: 98;
+        z-index: 10;
     }
         .sp-drawer-menu button.active {
-        z-index: 101;
+        z-index: 13;
     } .sp-drawer-menu div.active {
-        
-       z-index: 99;
+        z-index: 11;
     }
 }
 

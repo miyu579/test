@@ -79,59 +79,47 @@
   <link rel="preload" href="https://cdn.golfme.goo.ne.jp/build/4.9.2/assets/section3-tablabel2on.png" as="image" media="(min-width: 769px)">
   <link rel="preload" href="https://cdn.golfme.goo.ne.jp/build/4.9.2/assets/section3-tablabel2on-sp.png" as="image" media="(max-width: 768px)">
   <link rel="stylesheet" href="./index_files/swiper-bundle.min.css">
- <!--終了お知らせ-->
+       <!--終了お知らせ-->
   <link rel="stylesheet" href="../closenews_common/closenews_common.css">
-    <script>
+     <script>
 (function() {
 
-  // ▼ closenews_common を事前 fetch
+  // fetch を限界まで早く開始する
   const fetchHTML = fetch("../closenews_common/closenews_common.html")
     .then(res => res.text())
     .catch(() => "");
 
+  // DOM ができた瞬間に挿入（最速描画）
   document.addEventListener("DOMContentLoaded", async function() {
 
-    const target = document.querySelector("#closenews_common");
+    const target = document.querySelector(".closenews_common");
     if (!target) return;
 
-    const html = await fetchHTML;
-    if (!html) return;
+   const html = await fetchHTML;
+if (html) {
+  target.innerHTML = html;
 
-    // ▼ HTML を挿入
-    target.innerHTML = html;
+  const parent = target.querySelector(".header_fix_close");
+  const bar = target.querySelector(".header_fix_close_box");
 
-    // ▼ 挿入後に固定バーの高さで body を押し下げる
-    const notice = document.querySelector(".close_header_notice");
-    const bar = notice?.querySelector(".close_header_notice_bar");
+  function adjustCloseHeader() {
+    if (!bar || !parent) return;
+    const barHeight = bar.offsetHeight;
+    parent.style.paddingTop = (barHeight - 1) + "px";
+  }
 
-    function adjustBodyPadding() {
-      if (!bar) return;
-      document.body.style.paddingTop = bar.offsetHeight + "px";
-    }
+  adjustCloseHeader();
+  window.addEventListener("resize", adjustCloseHeader);
+}
+// ← 「if (!html) return;」を削除してこの形に
 
-    adjustBodyPadding();
-    window.addEventListener("resize", adjustBodyPadding);
-
-    // ▼ 開閉処理
-    const toggleBtn = notice.querySelector(".close_header_notice_toggle");
-
-    // どこをクリックしても開閉したい → bar 全体にクリックイベント
-    const clickArea = notice.querySelector(".close_header_notice_bar");
-
-    clickArea.addEventListener("click", () => {
-      const isOpen = notice.classList.toggle("open");
-      toggleBtn.setAttribute("aria-expanded", isOpen);
-
-      // 開閉後にバーの高さが変わる可能性があるため再調整
-      adjustBodyPadding();
-    });
-
+    
   });
+
 })();
 </script>
-
 <!--終了お知らせ-->
-   <!--キャンペーン終了-->
+    <!--キャンペーン終了-->
 <link rel="stylesheet" href="../campaign_finish_common/campaign_finish_common.css">
 <link rel="stylesheet" href="../campaign_finish_common_fixednews/campaign_finish_common_fixednews.css">
 <link rel="stylesheet" href="../campaign_finish_common_text/campaign_finish_common_text.css">
@@ -147,49 +135,44 @@
   const fetchFixedNewsHTML = fetch("../campaign_finish_common_fixednews/campaign_finish_common_fixednews.html")
     .then(res => res.ok ? res.text() : "")
     .catch(() => "");
-
+    
   // ▼ テキスト要素（新規追加分）
-  const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_common_text.html")
-    .then(res => res.ok ? res.text() : "")
-    .catch(() => "");
+const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_common_text.html")
+  .then(res => res.ok ? res.text() : "")
+  .catch(() => "");
 
   // ▼ 挿入処理
   document.addEventListener("DOMContentLoaded", async function () {
 
-    // ---- ① 複数箇所 (.campaign_finish)
-    const finishTargets = document.querySelectorAll(".campaign_finish");
-    const finishHTML = await fetchFinishHTML;
+    // ---- ① 元の挿入先 ----
+    const finishTarget = document.querySelector("#campaign_finish");
 
-    if (finishTargets.length && finishHTML) {
-      finishTargets.forEach(el => {
-        el.innerHTML = finishHTML;
-      });
+    // ---- ② 追加したい挿入先 ----
+    const fixedNewsTarget = document.querySelector("#campaign_finish_common_fixednews");
+    
+      // ---- ③ 新規挿入先（テキスト用） ----
+  const textTarget = document.querySelector("#campaign_finish_common_text");
+
+    // ---- ① campaign_finish_common.html を挿入 ----
+    const finishHTML = await fetchFinishHTML;
+    if (finishTarget && finishHTML) {
+      finishTarget.innerHTML = finishHTML;
     }
 
-    // ---- ② 固定ニュース（IDは1箇所）
-    const fixedNewsTarget = document.querySelector("#campaign_finish_common_fixednews");
+    // ---- ② campaign_finish_common_fixednews.index を挿入 ----
     const fixedNewsHTML = await fetchFixedNewsHTML;
-
     if (fixedNewsTarget && fixedNewsHTML) {
       fixedNewsTarget.innerHTML = fixedNewsHTML;
     }
-
-    // ---- ③ テキスト要素（クラスで複数対応）
-    const textTargets = document.querySelectorAll(".campaign_finish_common_text");
-    const textHTML = await fetchTextHTML;
-
-    if (textTargets.length && textHTML) {
-      textTargets.forEach(el => {
-        el.innerHTML = textHTML;
-      });
-    }
-
+        // ---- ③ campaign_finish_common_text.html を挿入 ----
+  const textHTML = await fetchTextHTML;
+  if (textTarget && textHTML) {
+    textTarget.innerHTML = textHTML;
+  }
   });
-
 })();
+
 </script>
-
-
     <!--キャンペーン終了-->
   <script src="./index_files/jquery-3.7.1.min.js.%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"></script>
   <script src="./index_files/swiper-bundle.min.js.%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89" defer></script>
@@ -247,7 +230,7 @@
 </head>
 
 <body id="top" class="summer-golf-body">
-     <div id="closenews_common"></div>
+    <div class="closenews_common"></div>
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVNPHPH" height="0" width="0" style="display:none;visibility:hidden">
     </iframe>
@@ -349,7 +332,7 @@
             <img src="./index_files/lp3_section1-mv.png" class="img_center pc" alt="NTT docomo GOLF me！（ゴルフミー！）おトクさもナイスイン!! ゴルフだってサブスクでしょ！" width="987" height="349" decoding="auto" loading="lazy">
             <img src="./index_files/lp3_section1-mv-sp.png" class="img_center sp" alt="NTT docomo GOLF me！（ゴルフミー！）おトクさもナイスイン!! ゴルフだってサブスクでしょ！" width="393" height="592" decoding="auto" loading="lazy">
           </h1>
-          <div class="mv_button campaign_finish_none">
+          <div class="mv_button">
             <a href="https://golfme.goo.ne.jp/register">
               <img src="./index_files/section1-mv-button.png" width="451" height="85" alt="今すぐメンバー登録" decoding="auto" loading="lazy">
             </a>
@@ -1162,7 +1145,7 @@
               </a>
             </h2>
             <a href="https://golfme.goo.ne.jp/campaign/3monthfree" class="button" style="margin-top: 20px;">詳しくはこちら!</a>
-             <div class="campaign_finish_common_text"></div>
+              <div id="campaign_finish_common_text"></div>
           </div>
         </div>
       </section>

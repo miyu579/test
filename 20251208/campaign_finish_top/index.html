@@ -101,55 +101,44 @@
   <link rel="stylesheet" href="./img/app.css">
 <!--終了お知らせ-->
   <link rel="stylesheet" href="../closenews_common/closenews_common.css">
-    <script>
+     <script>
 (function() {
 
-  // ▼ closenews_common を事前 fetch
+  // fetch を限界まで早く開始する
   const fetchHTML = fetch("../closenews_common/closenews_common.html")
     .then(res => res.text())
     .catch(() => "");
 
+  // DOM ができた瞬間に挿入（最速描画）
   document.addEventListener("DOMContentLoaded", async function() {
 
-    const target = document.querySelector("#closenews_common");
+    const target = document.querySelector(".closenews_common");
     if (!target) return;
 
     const html = await fetchHTML;
     if (!html) return;
 
-    // ▼ HTML を挿入
+    // HTML 挿入
     target.innerHTML = html;
 
-    // ▼ 挿入後に固定バーの高さで body を押し下げる
-    const notice = document.querySelector(".close_header_notice");
-    const bar = notice?.querySelector(".close_header_notice_bar");
+    // ▼ 高さ調整（ページ本体側の paddingTop）
+    const parent = target.querySelector(".header_fix_close");
+    const bar = target.querySelector(".header_fix_close_box");
 
-    function adjustBodyPadding() {
-      if (!bar) return;
-      document.body.style.paddingTop = bar.offsetHeight + "px";
+    function adjustCloseHeader() {
+      if (!bar || !parent) return;
+      const barHeight = bar.offsetHeight;
+      parent.style.paddingTop = (barHeight - 1) + "px"; // 
     }
 
-    adjustBodyPadding();
-    window.addEventListener("resize", adjustBodyPadding);
+    adjustCloseHeader();
+    window.addEventListener("resize", adjustCloseHeader);
 
-    // ▼ 開閉処理
-    const toggleBtn = notice.querySelector(".close_header_notice_toggle");
-
-    // どこをクリックしても開閉したい → bar 全体にクリックイベント
-    const clickArea = notice.querySelector(".close_header_notice_bar");
-
-    clickArea.addEventListener("click", () => {
-      const isOpen = notice.classList.toggle("open");
-      toggleBtn.setAttribute("aria-expanded", isOpen);
-
-      // 開閉後にバーの高さが変わる可能性があるため再調整
-      adjustBodyPadding();
-    });
-
+    
   });
+
 })();
 </script>
-
 <!--終了お知らせ-->
   <script type="module" src="./img/app2.js.%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"></script>
   <script type="text/javascript" src="./img/f.txt"></script>
@@ -163,7 +152,7 @@
 </head>
 
 <body id="top">
-		 <div id="closenews_common"></div>
+		<div class="closenews_common"></div>
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVNPHPH" height="0" width="0" style="display:none;visibility:hidden">
     </iframe>
@@ -233,6 +222,7 @@
 		</div></div>
 		  
 	<script src="js/script.header.js"></script>
+	
 
 	  
  
