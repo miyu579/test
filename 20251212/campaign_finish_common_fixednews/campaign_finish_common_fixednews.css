@@ -10,7 +10,6 @@
     padding: 16px 0;
     right: 0;
     left: 0;
-    z-index: 2;
 }
 #campaign_finish_common_fixednews br{
         display: none;
@@ -64,7 +63,27 @@
     transform: translateY(-50%) rotate(-45deg);
     vertical-align: middle;
 }
+
 @media screen and (max-width:768px) {
+    #campaign_finish_common_fixednews .campaign_finish_common_fixednews_btn:after {
+    top: calc(50% + 2px);
+    right: 15px;
+}
+    #campaign_finish_common_fixednews p+p {
+    font-size: 14px;
+    width: 94%;
+    margin-top: 1px;
+    text-underline-offset: 3px;
+}
+    #campaign_finish_common_fixednews .campaign_finish_common_fixednews_btn{
+        width: 96%;
+    max-width: 500px;
+    padding: 5px 0 3px;
+        margin: 0 auto 3px;
+    }
+    #campaign_finish_common_fixednews strong {
+    font-size: 20px;
+}
 #campaign_finish_common_fixednews p{
             font-size: 16px;
         line-height: 19px;
@@ -72,4 +91,18 @@
   #campaign_finish_common_fixednews br{
         display: block;
     }
+    #campaign_finish_common_fixednews span{
+    font-size:16px;
+    margin: 0 -3px 0 -5px;
+}
+    #campaign_finish_common_fixednews .text {
+    font-size: 12px;
+    width: 98%;
+    margin: auto;
+        line-height: 14px;
+}
+    #campaign_finish_common_fixednews>div {
+
+    padding: 6px 0 6px;
+}
 }

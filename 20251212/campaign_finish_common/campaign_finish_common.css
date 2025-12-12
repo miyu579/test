@@ -1,6 +1,6 @@
 /*終了告知*/
 .campaign_finish{
-    margin: 30px auto 0;
+    margin: 0 auto 0;
     position: relative;
     z-index: 2;
 }
@@ -46,6 +46,7 @@ div.campaign_finish div a{
 .campaign_finish strong{
     font-size: 30px;
 }
+
 @media screen and (max-width: 768px) {
    .campaign_finish{
         font-size: 17px;
@@ -54,6 +55,25 @@ div.campaign_finish div a{
     }.campaign_finish br{
         display: block!important;
     }
+    div.campaign_finish div a {
+        width: 98%;
+    max-width: 500px;
+    }
+    .campaign_finish strong {
+    font-size: 24px;
+}
+    .campaign_finish span {
+    font-size: 18px;
+        margin: 0 -8px 0 -10px;
+}
+    .campaign_finish p+p {
+   font-size: 14px;
+        width: 94%;
+}
+    .campaign_finish a:after {
+
+    right: 10px;
+}
 }
 
 /*終了告知おわり*/

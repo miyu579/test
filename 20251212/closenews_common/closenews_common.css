@@ -38,7 +38,13 @@
 
 /* 親がページの一部として存在 */
 
-
+#closenews_common .campaign_finish br{
+        display: none;
+    }
+@media screen and (max-width: 768px) {
+#closenews_common .campaign_finish br{
+        display: block!important;
+    }
 /* バー */
 #closenews_common .close_header_notice_bar {
   background: #f1f2f5;
@@ -53,8 +59,9 @@
   gap: 10px;
 }#closenews_common .close_header_notice_bar p{
 position: relative;
-    padding-right: 30px;
     margin: 0;
+    padding: 5px 30px 5px 0;
+    
 }#closenews_common .close_header_notice_bar p:before{
     content: '';
     width: 10px;
@@ -92,6 +99,7 @@ position: relative;
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
+    
 }
 
 
@@ -105,6 +113,27 @@ position: relative;
 
 /*spヘッダー調整*/
 @media screen and (max-width: 768px) {
+    #closenews_common .close_header_notice.open .close_header_notice_content {
+  padding: 0 10px;
+    
+}   
+    #closenews_common .close_header_notice.open .close_header_notice_content br{
+  margin: 10px 0;
+    
+}
+    #closenews_common .close_header_notice_content p {
+    padding: 0px 0 10px;
+    margin: 0;
+    font-weight: normal;
+        line-height: 20px;
+}
+    #closenews_common .close_header_notice_bar {
+    font-size: 18px;
+    padding: 0px;
+}
+    #closenews_common .close_header_notice_bar p:before {
+    top: 25%;
+}
     div.l-header {
         position: static;
         margin-bottom: 0

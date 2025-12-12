@@ -24,7 +24,11 @@
     }#dpoint_docomo2025 #dpoint_docomo2025_finish br{
         display: block!important;
     }
+    #dpoint_docomo2025 .campaign_finish p+p {
+ margin-top: 5px;
+    }
 }
+
 #dpoint_docomo2025 .campaign_finish a {
     color: #fff;
 }

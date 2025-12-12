@@ -14,6 +14,12 @@
 .summer-golf-body .section_fd_campaign span{
     color: #d00f31;
 }
+@media (max-width: 768px) {
+    #lp20250501lp3 p.gotop {
+        bottom: 126px;
+
+    }
+}
 /*20251209*/
 .slick-slider {
   margin-bottom: 30px;

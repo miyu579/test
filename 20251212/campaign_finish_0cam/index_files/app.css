@@ -18,6 +18,42 @@
     padding-bottom: 12px;
     padding-top: 0;
 }
+div.campaign_finish {
+    margin-top: 30px;
+}
+#threemonthfree div.main_bg {
+    overflow-x: visible; 
+}
+
+@media (max-width: 1100px) {
+#threemonthfree div.campaign_finish {
+        padding: 0px 0 129px;
+        display: block;
+    }
+    #threemonthfree section {
+         overflow-x:visible; 
+    }
+}
+@media (max-width: 1100px) {
+  #threemonthfree div.main_button {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #threemonthfree div.main_button {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+    #threemonthfree div.campaign_finish {
+        padding: 0;
+} 
+#threemonthfree .campaign_finish p+p {
+ margin-top: 5px;
+    }
+}
+
 /*キャンペーン終了*/
 
 .slick-slider {
