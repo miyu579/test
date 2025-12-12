@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*20251211アコーディオン*/
+#closenews_common .close_header_notice_bar {
+
+  cursor: pointer;
+}
+#closenews_common .close_header_notice {
+  pointer-events: none;
+}
+
+/* 実際に操作したい部分だけ有効化 */
+#closenews_common .close_header_notice_bar,
+#closenews_common .close_header_notice_content,
+#closenews_common .close_header_notice_content a {
+  pointer-events: auto;
+}
+@charset "utf-8";
+/* CSS Document */
+#closenews_common .closenews_common p{
+    margin: 0;
+}
+/*20251211アコーディオン*/
+#closenews_common .close_header_notice_content p{
+    padding:0px 0 10px;
+    margin: 0;
+    font-weight: bold;
+}
+/* 固定ヘッダー風アコーディオン */
+#closenews_common .close_header_notice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* 他要素より前面に */
+}
+
+/* 親がページの一部として存在 */
+
+
+/* バー */
+#closenews_common .close_header_notice_bar {
+  background: #f1f2f5;
+  color: #ca1032;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}#closenews_common .close_header_notice_bar p{
+position: relative;
+    padding-right: 30px;
+    margin: 0;
+}#closenews_common .close_header_notice_bar p:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-top: solid 3px #d00e31;
+    border-right: solid 3px #d00e31;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    margin:0;
+}
+#closenews_common .close_header_notice.open .close_header_notice_bar p::before {
+  transform: translateY(50%) rotate(-45deg);
+}
+/* 開閉部分 */
+#closenews_common .close_header_notice_content {
+  background: #f1f2f5;
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow: hidden;
+
+  transform: translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* 開いたとき */
+#closenews_common .close_header_notice.open .close_header_notice_content {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/*20251211アコーディオン*/
+
+
+/*20251121*/
+
+
+/*20251121おわり*/
+
+/*spヘッダー調整*/
+@media screen and (max-width: 768px) {
+    div.l-header {
+        position: static;
+        margin-bottom: 0
+    }
+    div.l-content-start p{
+        margin: 0 auto;
+    }    
+    div.l-content-start {
+        padding-top: 0;
+    }
+        .closenews_common p {
+        padding:0;
+    }
+        button.sp-drawer-menu {
+        position: relative;
+    }
+        p.l-header-d-point {
+        margin-right: 0px;
+    }
+        div.sp-menu.active {
+        z-index: 98;
+    }
+        .sp-drawer-menu button.active {
+        z-index: 101;
+    } .sp-drawer-menu div.active {
+        
+       z-index: 99;
+    }
+}
+
