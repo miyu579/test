@@ -4,7 +4,13 @@
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
 
-
+/*終了*/
+div.sticky_block {
+ position: relative; 
+    top:0;
+    z-index: 1;
+}
+/*終了*/
 /*20251014SEO*/
 .js-slider {
   display: none!important;
