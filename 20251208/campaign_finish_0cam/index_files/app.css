@@ -13,6 +13,11 @@
 #threemonthfree .terms .text span{
     color: #d00f31;
 }
+
+#threemonthfree div.main_button {
+    padding-bottom: 12px;
+    padding-top: 0;
+}
 /*キャンペーン終了*/
 
 .slick-slider {

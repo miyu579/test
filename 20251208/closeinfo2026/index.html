@@ -19,7 +19,6 @@
 <meta property="og:locale:alternate" content="ja_JP">
 <meta name="csrf-token" content="kz2Q1LyUMc2I6TdP8AgIJsIrAIGrwwZwjuWlRWgI">
 <meta name="twitter:card" content="summary_large_image">
-    <meta name="robots" content="noindex">
 <link rel="Shortcut Icon" href="https://golfme.goo.ne.jp/img/favicon.ico" type="image/x-icon">
 <link rel="icon" type="image/vnd.microsoft.icon" href="https://golfme.goo.ne.jp/img/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://golfme.goo.ne.jp/img/apple-touch-icon.png">
@@ -63,64 +62,62 @@
 <link rel="stylesheet" href="css/closeinfo2026_main.css">
 <!--終了お知らせ-->
   <link rel="stylesheet" href="../closenews_common/closenews_common.css">
-     <script>
+    <script>
 (function() {
 
-  // fetch を限界まで早く開始する
+  // ▼ closenews_common を事前 fetch
   const fetchHTML = fetch("../closenews_common/closenews_common.html")
     .then(res => res.text())
     .catch(() => "");
 
-  // DOM ができた瞬間に挿入（最速描画）
   document.addEventListener("DOMContentLoaded", async function() {
 
-    const target = document.querySelector(".closenews_common");
+    const target = document.querySelector("#closenews_common");
     if (!target) return;
 
     const html = await fetchHTML;
     if (!html) return;
 
-    // HTML 挿入
+    // ▼ HTML を挿入
     target.innerHTML = html;
 
-    // ▼ 高さ調整（ページ本体側の paddingTop）
-    const parent = target.querySelector(".header_fix_close");
-    const bar = target.querySelector(".header_fix_close_box");
+    // ▼ 挿入後に固定バーの高さで body を押し下げる
+    const notice = document.querySelector(".close_header_notice");
+    const bar = notice?.querySelector(".close_header_notice_bar");
 
-    function adjustCloseHeader() {
-      if (!bar || !parent) return;
-      const barHeight = bar.offsetHeight;
-      parent.style.paddingTop = (barHeight - 1) + "px"; // 
+    function adjustBodyPadding() {
+      if (!bar) return;
+      document.body.style.paddingTop = bar.offsetHeight + "px";
     }
 
-    adjustCloseHeader();
-    window.addEventListener("resize", adjustCloseHeader);
+    adjustBodyPadding();
+    window.addEventListener("resize", adjustBodyPadding);
 
-    // ▼ SPメニューの位置調整
-    const dropdown = target.querySelector(".header_fix_close_dropdown");
-    const dropdownContent = target.querySelector(".header_fix_close_dropdowncontent");
-    const spMenuBtn = document.querySelector(".sp-drawer-menu");
+    // ▼ 開閉処理
+    const toggleBtn = notice.querySelector(".close_header_notice_toggle");
 
-    function adjustSPMenu() {
-      if (!dropdown || !dropdownContent || !spMenuBtn) return;
-      const h = dropdown.offsetHeight + dropdownContent.offsetHeight;
-      spMenuBtn.style.top = (h + 10) + "px"; // 必要に応じて余白調整
-    }
+    // どこをクリックしても開閉したい → bar 全体にクリックイベント
+    const clickArea = notice.querySelector(".close_header_notice_bar");
 
-    adjustSPMenu();
-    window.addEventListener("resize", adjustSPMenu);
+    clickArea.addEventListener("click", () => {
+      const isOpen = notice.classList.toggle("open");
+      toggleBtn.setAttribute("aria-expanded", isOpen);
+
+      // 開閉後にバーの高さが変わる可能性があるため再調整
+      adjustBodyPadding();
+    });
 
   });
-
 })();
 </script>
+
 <!--終了お知らせ-->
 <script type="module" src="https://golfme.goo.ne.jp/build/assets/app-9898df26.js"></script>
     
 </head>
 
 <body id="top">
-    <div class="closenews_common"></div>
+    <div id="closenews_common"></div>
 <noscript>
 <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVNPHPH" height="0" width="0" style="display:none;visibility:hidden"> </iframe>
 </noscript>
@@ -485,47 +482,7 @@
   </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.popup.js"></script>
-<!--終了お知らせ-->
-  <link rel="preload" href="../closenews_common/closenews_common.html" as="fetch" crossorigin="anonymous">
-  <link rel="stylesheet" href="../closenews_common/closenews_common.css">
-    <script>
-(function() {
 
-  //早く開始する
-  const fetchHTML = fetch("../closenews_common/closenews_common.html")
-    .then(res => res.text())
-    .catch(() => "");
-
-  // DOM ができた瞬間に挿入
-  document.addEventListener("DOMContentLoaded", async function() {
-
-    const target = document.querySelector(".closenews_common");
-    if (!target) return;
-
-    const html = await fetchHTML;
-    if (!html) return;
-
-    // HTML 挿入
-    target.innerHTML = html;
-
-    // ▼ 高さ調整
-    const parent = target.querySelector(".header_fix_close");
-    const bar = target.querySelector(".header_fix_close_box");
-
-    function adjustCloseHeader() {
-      if (!bar || !parent) return;
-      const barHeight = bar.offsetHeight;
-      parent.style.paddingTop = (barHeight - 1) + "px"; // ←隙間ゼロ対応
-    }
-
-    adjustCloseHeader();
-    window.addEventListener("resize", adjustCloseHeader);
-
-  });
-
-})();
-</script>
-<!--終了お知らせ-->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -539,28 +496,26 @@ document.addEventListener('DOMContentLoaded', function () {
       const target = document.querySelector(href);
       if (!target) return;
 
-      // 高さ取得
-      const bar = document.querySelector('.header_fix_close_box');
-      const barHeight = bar ? bar.offsetHeight : 0;
+      // ▼ 上部バーの高さ（これだけを使う）
+      const noticeBar = document.querySelector('.close_header_notice_bar');
+      const barHeight = noticeBar?.offsetHeight || 0;
 
       // ▼PC/SP 判定
       const isSP = window.matchMedia('(max-width: 768px)').matches;
 
-      // margin
+      // ▼余白調整ロジック
       const type = this.dataset.type;
       let extraMargin = 0;
 
       if (!isSP) {
-        // PC
         if (type === "closeinfo_member") extraMargin = 100;
         if (type === "closeinfo_visitor") extraMargin = 50;
       } else {
-        // SP
         if (type === "closeinfo_member") extraMargin = 50;
         if (type === "closeinfo_visitor") extraMargin = 0;
       }
 
-      // ▼最終スクロール位置/固定ヘッダー分を引く
+      // ▼ 最終スクロール位置
       const position =
         target.getBoundingClientRect().top +
         window.pageYOffset -
@@ -575,30 +530,36 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 </script>
+
 <script>
-    (function() {
+(function() {
 
   function updateStickyOffset() {
-    const bar = document.querySelector('.header_fix_close_box');
+    // ▼ 実際に上部を占有しているバーの高さ
+    const noticeBar = document.querySelector('.close_header_notice_bar');
+    const barHeight = noticeBar?.offsetHeight || 0;
+
+    // ▼ アコーディオン見出しに適用
     const headers = document.querySelectorAll('.accordion-header');
-
-    const barHeight = bar ? bar.offsetHeight : 0;
-
     headers.forEach(h => {
-      h.style.top = barHeight + 'px';
+      h.style.top = (barHeight) - 1 + 'px';
     });
   }
 
-  // 共通パーツ読み込み後のタイミングで実行
+  // 初期読み込み
   window.addEventListener("DOMContentLoaded", updateStickyOffset);
+  // リサイズ対応
   window.addEventListener("resize", updateStickyOffset);
-
-  // 万が一、読み込みが遅れた場合の微補正
-  setTimeout(updateStickyOffset, 500);
+  // fetch 挿入の遅延対策
+  setTimeout(updateStickyOffset, 300);
 
 })();
 </script>
+
+
+
 
 
 </body>

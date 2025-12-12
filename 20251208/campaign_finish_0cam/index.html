@@ -74,44 +74,55 @@
     <link rel="stylesheet" href="../campaign_finish_common/campaign_finish_common.css">
 <!--終了お知らせ-->
   <link rel="stylesheet" href="../closenews_common/closenews_common.css">
-     <script>
+    <script>
 (function() {
 
-  // fetch を限界まで早く開始する
+  // ▼ closenews_common を事前 fetch
   const fetchHTML = fetch("../closenews_common/closenews_common.html")
     .then(res => res.text())
     .catch(() => "");
 
-  // DOM ができた瞬間に挿入（最速描画）
   document.addEventListener("DOMContentLoaded", async function() {
 
-    const target = document.querySelector(".closenews_common");
+    const target = document.querySelector("#closenews_common");
     if (!target) return;
 
     const html = await fetchHTML;
     if (!html) return;
 
-    // HTML 挿入
+    // ▼ HTML を挿入
     target.innerHTML = html;
 
-    // ▼ 高さ調整（ページ本体側の paddingTop）
-    const parent = target.querySelector(".header_fix_close");
-    const bar = target.querySelector(".header_fix_close_box");
+    // ▼ 挿入後に固定バーの高さで body を押し下げる
+    const notice = document.querySelector(".close_header_notice");
+    const bar = notice?.querySelector(".close_header_notice_bar");
 
-    function adjustCloseHeader() {
-      if (!bar || !parent) return;
-      const barHeight = bar.offsetHeight;
-      parent.style.paddingTop = (barHeight - 1) + "px"; // 
+    function adjustBodyPadding() {
+      if (!bar) return;
+      document.body.style.paddingTop = bar.offsetHeight + "px";
     }
 
-    adjustCloseHeader();
-    window.addEventListener("resize", adjustCloseHeader);
+    adjustBodyPadding();
+    window.addEventListener("resize", adjustBodyPadding);
 
-    
+    // ▼ 開閉処理
+    const toggleBtn = notice.querySelector(".close_header_notice_toggle");
+
+    // どこをクリックしても開閉したい → bar 全体にクリックイベント
+    const clickArea = notice.querySelector(".close_header_notice_bar");
+
+    clickArea.addEventListener("click", () => {
+      const isOpen = notice.classList.toggle("open");
+      toggleBtn.setAttribute("aria-expanded", isOpen);
+
+      // 開閉後にバーの高さが変わる可能性があるため再調整
+      adjustBodyPadding();
+    });
+
   });
-
 })();
 </script>
+
 <!--終了お知らせ-->
 <!--キャンペーン終了-->
 <link rel="stylesheet" href="../campaign_finish_common/campaign_finish_common.css">
@@ -129,44 +140,49 @@
   const fetchFixedNewsHTML = fetch("../campaign_finish_common_fixednews/campaign_finish_common_fixednews.html")
     .then(res => res.ok ? res.text() : "")
     .catch(() => "");
-    
+
   // ▼ テキスト要素（新規追加分）
-const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_common_text.html")
-  .then(res => res.ok ? res.text() : "")
-  .catch(() => "");
+  const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_common_text.html")
+    .then(res => res.ok ? res.text() : "")
+    .catch(() => "");
 
   // ▼ 挿入処理
   document.addEventListener("DOMContentLoaded", async function () {
 
-    // ---- ① 元の挿入先 ----
-    const finishTarget = document.querySelector("#campaign_finish");
-
-    // ---- ② 追加したい挿入先 ----
-    const fixedNewsTarget = document.querySelector("#campaign_finish_common_fixednews");
-    
-      // ---- ③ 新規挿入先（テキスト用） ----
-  const textTarget = document.querySelector("#campaign_finish_common_text");
-
-    // ---- ① campaign_finish_common.html を挿入 ----
+    // ---- ① 複数箇所 (.campaign_finish)
+    const finishTargets = document.querySelectorAll(".campaign_finish");
     const finishHTML = await fetchFinishHTML;
-    if (finishTarget && finishHTML) {
-      finishTarget.innerHTML = finishHTML;
+
+    if (finishTargets.length && finishHTML) {
+      finishTargets.forEach(el => {
+        el.innerHTML = finishHTML;
+      });
     }
 
-    // ---- ② campaign_finish_common_fixednews.index を挿入 ----
+    // ---- ② 固定ニュース（IDは1箇所）
+    const fixedNewsTarget = document.querySelector("#campaign_finish_common_fixednews");
     const fixedNewsHTML = await fetchFixedNewsHTML;
+
     if (fixedNewsTarget && fixedNewsHTML) {
       fixedNewsTarget.innerHTML = fixedNewsHTML;
     }
-        // ---- ③ campaign_finish_common_text.html を挿入 ----
-  const textHTML = await fetchTextHTML;
-  if (textTarget && textHTML) {
-    textTarget.innerHTML = textHTML;
-  }
-  });
-})();
 
+    // ---- ③ テキスト要素（クラスで複数対応）
+    const textTargets = document.querySelectorAll(".campaign_finish_common_text");
+    const textHTML = await fetchTextHTML;
+
+    if (textTargets.length && textHTML) {
+      textTargets.forEach(el => {
+        el.innerHTML = textHTML;
+      });
+    }
+
+  });
+
+})();
 </script>
+
+
     <!--キャンペーン終了-->
   <script type="module" src="./index_files/app2.js.%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"></script>
   <script src="./index_files/97202015.js.%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89" type="text/javascript" async="" data-ueto="ueto_875c5ef780"></script>
@@ -175,7 +191,7 @@ const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_comm
 </head>
 
 <body id="top" class="threemonthfree-compaign-body">
-    <div class="closenews_common"></div>
+     <div id="closenews_common"></div>
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVNPHPH" height="0" width="0" style="display:none;visibility:hidden">
     </iframe>
@@ -273,7 +289,7 @@ const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_comm
       <div id="threemonthfree">
 
         <section>
-            <div id="campaign_finish"></div>
+            
           <div class="main_bg">
               
             <div class="main">
@@ -287,8 +303,9 @@ const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_comm
                 </p>
               </div>
             </div>
+              <div class="campaign_finish"></div>
             <div class="main_button">
-              <div class="campaign_button">
+              <div class="campaign_button campaign_finish_none">
                 <a href="https://golfme.goo.ne.jp/register/email/member">
                   <p>
                     <strong>メンバー登録
@@ -668,7 +685,8 @@ const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_comm
               </h2>
             </div>
             <div class="detail">
-              <div class="campaign_button">
+                <div class="campaign_finish"></div>
+              <div class="campaign_button campaign_finish_none">
                 <a href="https://golfme.goo.ne.jp/register/email/member">
                   <p>
                     <strong>メンバー登録
@@ -709,7 +727,7 @@ const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_comm
                         <br>
                         <span class="pc_br">あなたとお友達がメンバー会員登録すると、</span>それぞれにdポイント1,500Pプレゼント！</p>
                     </div>
-                      <div id="campaign_finish_common_text"></div>
+                      <div class="campaign_finish_common_text"></div>
                   </a>
                 </li>
               </ul>
