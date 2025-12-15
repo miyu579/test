@@ -27,7 +27,7 @@ div.campaign_finish {
 
 @media (max-width: 1100px) {
 #threemonthfree div.campaign_finish {
-        padding: 0px 0 129px;
+        padding:0;
         display: block;
     }
     #threemonthfree section {
