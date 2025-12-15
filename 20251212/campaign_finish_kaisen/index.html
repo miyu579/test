@@ -73,10 +73,9 @@
   <link rel="stylesheet" href="./index_files/app2.css">
 <!--終了お知らせ-->
   <link rel="stylesheet" href="../closenews_common/closenews_common.css">
-    <script>
+<script>
 (function() {
 
-  // ▼ closenews_common を事前 fetch
   const fetchHTML = fetch("../closenews_common/closenews_common.html")
     .then(res => res.text())
     .catch(() => "");
@@ -89,38 +88,42 @@
     const html = await fetchHTML;
     if (!html) return;
 
-    // ▼ HTML を挿入
+    // HTML 挿入
     target.innerHTML = html;
 
-    // ▼ 挿入後に固定バーの高さで body を押し下げる
-    const notice = document.querySelector(".close_header_notice");
+    const notice = target.querySelector(".close_header_notice");
     const bar = notice?.querySelector(".close_header_notice_bar");
+    if (!notice || !bar) return;
 
-    function adjustBodyPadding() {
-      if (!bar) return;
-      document.body.style.paddingTop = bar.offsetHeight + "px";
-    }
+    // 通常表示ブロックの高さを基準にする
+    const normal = target.querySelector(".close_header_notice_content_normal");
+    const threshold = normal ? normal.offsetHeight : 0;
 
-    adjustBodyPadding();
-    window.addEventListener("resize", adjustBodyPadding);
+    function onScroll() {
+  if (!notice) return;
+  if (window.scrollY > threshold) {
+    notice.classList.add("is-active");
+  } else {
+    notice.classList.remove("is-active", "open");
+  }
+}
 
-    // ▼ 開閉処理
-    const toggleBtn = notice.querySelector(".close_header_notice_toggle");
 
-    // どこをクリックしても開閉したい → bar 全体にクリックイベント
-    const clickArea = notice.querySelector(".close_header_notice_bar");
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    onScroll();
 
-    clickArea.addEventListener("click", () => {
-      const isOpen = notice.classList.toggle("open");
-      toggleBtn.setAttribute("aria-expanded", isOpen);
-
-      // 開閉後にバーの高さが変わる可能性があるため再調整
-      adjustBodyPadding();
+    // 開閉（fixed 表示中のみ）
+    bar.addEventListener("click", () => {
+      if (!notice.classList.contains("is-active")) return;
+      notice.classList.toggle("open");
     });
 
   });
 })();
 </script>
+
+
 
 <!--終了お知らせ-->
   <!--キャンペーン終了-->
