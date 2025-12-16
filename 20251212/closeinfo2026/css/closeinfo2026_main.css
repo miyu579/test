@@ -484,6 +484,33 @@ div.closeinfo_popup {
     }
 }
 /*メンバー会員スケジュールおわり*/
+
+/*ご利用継続*/
+#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation img{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation div{
+    text-align: center;
+}#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation p{
+    margin-top: 10px;
+    text-align: center;
+}#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_boxwrap{
+    display: flex;
+    flex-wrap: wrap;
+}#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_boxwrap div{
+    width: 25%;
+}
+@media screen and (max-width:768px) {
+    #closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation img{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+}
+
+/*ご利用継続おわり*/
+
 @media screen and (max-width:768px) {
     #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule >div>ul> li, #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule >div>ul> li {
     width: 90%;
@@ -556,8 +583,8 @@ line-height: 23px;
 #closeinfo2026 .closeinfo_thanks div{
     padding: 25px 0;
     display: inline-block;
-    border-top: 8px dotted #a9bdc8;
-     border-bottom: 8px dotted #a9bdc8;
+    border-top: 8px dotted #a3bedb;
+     border-bottom: 8px dotted #a3bedb;
 }#closeinfo2026 .closeinfo_thanks div p{
     padding: 0 20px;
 }
@@ -574,8 +601,8 @@ line-height: 23px;
     #closeinfo2026 .closeinfo_thanks div{
     padding: 20px 0;
     display: inline-block;
-    border-top: 4px dotted #a9bdc8;
-     border-bottom: 4px dotted #a9bdc8;
+    border-top: 4px dotted #a3bedb;
+     border-bottom: 4px dotted #a3bedb;
 }
 }
 /*thanksおわり*/
