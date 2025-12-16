@@ -591,6 +591,26 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[href^="#closeinfo_member_box_continuation_contents_"]');
+  if (!a) return;
+
+  e.preventDefault();
+
+  const target = document.querySelector(a.getAttribute('href'));
+  if (!target) return;
+
+  const barHeight =
+    document.querySelector('.close_header_notice_bar')?.offsetHeight || 0;
+
+  const y =
+    target.getBoundingClientRect().top +
+    window.pageYOffset -
+    barHeight -
+    10; // 微調整
+
+  window.scrollTo({ top: y, behavior: 'smooth' });
+});
 
 </script>
 
