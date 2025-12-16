@@ -592,7 +592,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('click', (e) => {
-  const a = e.target.closest('a[href^="#closeinfo_member_box_continuation_contents_"]');
+  const a = e.target.closest(
+    'a[href^="#closeinfo_member_box_continuation_contents_"]'
+  );
   if (!a) return;
 
   e.preventDefault();
@@ -600,16 +602,27 @@ document.addEventListener('click', (e) => {
   const target = document.querySelector(a.getAttribute('href'));
   if (!target) return;
 
-  const barHeight =
-    document.querySelector('.close_header_notice_bar')?.offsetHeight || 0;
+  // ▼ 上部告知バーの高さ
+  const noticeBar = document.querySelector('.close_header_notice_bar');
+  const barHeight = noticeBar?.offsetHeight || 0;
 
+  // ▼ 対象が属するセクション内の accordion-header を取得
+  const section = target.closest('#closeinfo_member, #closeinfo_visitor');
+  const accordionHeader = section?.querySelector('.accordion-header');
+  const accordionHeight = accordionHeader?.offsetHeight || 0;
+
+  // ▼ 最終スクロール位置
   const y =
     target.getBoundingClientRect().top +
     window.pageYOffset -
     barHeight -
+    accordionHeight -
     10; // 微調整
 
-  window.scrollTo({ top: y, behavior: 'smooth' });
+  window.scrollTo({
+    top: y,
+    behavior: 'smooth'
+  });
 });
 
 </script>
