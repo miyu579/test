@@ -504,6 +504,7 @@ div.closeinfo_popup {
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation >p{
     margin: 10px auto 0;
     text-align: center;
+    font-weight: bold;
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_caution{
     width: 75%;
     margin: 5px auto 30px;
@@ -548,11 +549,24 @@ div.closeinfo_popup {
    margin-top: 50px;
     background-color: #f8f8f8;
     padding: 30px 15px;
+}#closeinfo2026 #closeinfo_member .close_flow1{
+   text-align: center;
+    width: 70%;
+   margin: 35px auto 30px;
+}
+#closeinfo2026 #closeinfo_member .close_flow1 p{
+    font-size: 20px;
+   font-weight: bold;
 }
 /*#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation_contents .closeinfo_member_box_continuation_contents_box:nth-of-type(n+3){
     background-color: #333;
 }*/
 @media screen and (max-width:768px) {
+    #closeinfo2026 #closeinfo_member .close_flow1 {
+    text-align: center;
+    width: 100%;
+    margin: 35px auto 30px;
+}
     #closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_caution {
     width: 100%;
         padding: 0 15px;
