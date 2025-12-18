@@ -380,7 +380,7 @@ background-position: center 56%;
 }
 #closeinfo2026 #closeinfo_member section{
     background-color: #fff;
-    padding: 50px 30px 100px;
+    padding: 50px 30px 60px;
     border: 2px solid #f0f0f0;
 }#closeinfo2026 #closeinfo_visitor section{
 
@@ -409,7 +409,7 @@ background-position: center 56%;
     border: none;
 }
 #closeinfo2026 #closeinfo_member .closeinfo2026_inner,#closeinfo2026 #closeinfo_visitor .closeinfo2026_inner{
-    margin: 30px auto 30px;
+    margin: 30px auto 80px;
 }
 #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule,
 #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule{
@@ -521,6 +521,10 @@ background-position: center 56%;
     border:1px solid #bec7ce;
 }
 @media screen and (max-width: 768px) {
+    #closeinfo2026 #closeinfo_member .closeinfo2026_inner, #closeinfo2026 #closeinfo_visitor .closeinfo2026_inner
+ {
+    margin: 30px auto 30px;
+}
     #closeinfo2026 #closeinfo_member h2, #closeinfo2026 #closeinfo_visitor h2 {
            padding: 5px 0 4px;
     font-size: 18px;
@@ -587,6 +591,12 @@ background-position: center 56%;
     width: 24px;
         background-color: #d00f31;
     z-index: 1;
+    
+}
+#closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule >div>ul> li:before{
+        background-color: #2ba23a;
+
+    
 }
 #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule >div>ul> li+li,
 #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule >div>ul> li+li{
@@ -598,23 +608,26 @@ background-position: center 56%;
     font-size: 20px;
     margin-bottom: 5px;
 }
-#closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule,
-#closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule {
+#closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule ul,
+#closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule ul{
   position: relative;
 }
 
 #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule i ,
 #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule i {
-      position: absolute;
-    top: 50%;
+    position: absolute;
+    top:6%;
     bottom: 0;
-    left: -56px;
+    left: 59px;
     width: 0;
     border-left: 6px dotted #b5b5b5;
     content: "";
     display: block;
     z-index: 0;
-        height: 100%;
+    height: 83%;
+}#closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule li+li i ,
+#closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule li+li i {
+    height: calc(100% + 0px);
 }
 #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule li:last-of-type i{
      height:50%;
@@ -697,7 +710,7 @@ div.closeinfo_popup {
     width: 95%;
     max-width:800px;
         background-color: #fff;
-    padding: 50px 15px 100px;
+    padding: 50px 15px 0px;
     border: 2px solid #f0f0f0;
     margin: auto;
 }#closeinfo2026 #closeinfo_member .closeinfo2026_inner_continuation .closeinfo2026_h3box h3{
@@ -717,7 +730,7 @@ div.closeinfo_popup {
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation_boxwrap img{
     width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 27px auto 0;
     display: block;
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation div{
     text-align: center;
@@ -783,7 +796,7 @@ div.closeinfo_popup {
 #closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation_contents p{
     text-align: left;
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation_contents{
-    margin-top: 80px;
+    margin-top: 50px;
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation_contents .closeinfo2026_caution{
    font-size: 14px;
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation_contents .closeinfo2026_caution p{
@@ -793,7 +806,7 @@ div.closeinfo_popup {
     padding-left: 16px;
 }
 #closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation_contents .closeinfo_member_box_continuation_contents_box{
-   margin-top: 50px;
+   margin-bottom: 50px;
     background-color: #f8f8f8;
     padding: 30px 15px;
 }#closeinfo2026 #closeinfo_member .close_flow1{
@@ -832,10 +845,10 @@ div.closeinfo_popup {
         border: 0;
         position: absolute;
         top: 20px;
-        left: 40%;
         bottom: 0;
         background-size: 100%;
         background-repeat: no-repeat;
+  transform: translateX(-50%);
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation_contents_box:nth-of-type(1):before{
     background-image: url(../img/close_flow_icon1.png);
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation_contents_box:nth-of-type(2):before{
@@ -887,7 +900,7 @@ div.closeinfo_popup {
 }
     #closeinfo2026 #closeinfo_member section.closeinfo2026_inner_continuation{
     width: 100%;
-    padding: 50px 0 20px;
+    padding: 0;
     border: none;
     margin: auto;
 }
@@ -915,11 +928,9 @@ div.closeinfo_popup {
     #closeinfo2026 ol, #closeinfo2026 ul {
     font-size: 16px;
 }
-    #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule i {
-    left: -30px;
-}    #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule i{
-    left: -30px;
-}
+    #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule i , #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule i{
+    left: 5px;
+}  
     #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule >div>ul> li, #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule >div>ul> li {
     margin-left: 35px;
 }
@@ -931,7 +942,7 @@ div.closeinfo_popup {
 }
     #closeinfo2026 #closeinfo_member {
     background-color: #fff;
-    padding: 50px 0 50px;
+    padding: 50px 0 0;
 }
     #closeinfo2026 #closeinfo_member .closeinfo_member_box li, #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box li {
 font-size: 16px;
@@ -954,7 +965,7 @@ line-height: 23px;
 
     #closeinfo2026 #closeinfo_member section {
     border: none;
-    padding: 50px 15px 20px;
+    padding: 0px 15px 30px;
 }   #closeinfo2026 #closeinfo_visitor section {
     border: none;
     padding: 10px 15px 20px;
@@ -990,7 +1001,8 @@ line-height: 23px;
     text-align: center;
     font-size: 17px;
     font-weight: bold;
-    margin: 25px 0 30px;
+    padding: 0 0 50px;
+        margin: 0
     }
     #closeinfo2026 .closeinfo_thanks p+p{
         margin-top: 10px;
@@ -1167,6 +1179,7 @@ line-height: 23px;
 /*お問い合わせおわり*/
 
 /*よくある質問*/
+
 #closeinfo2026 #close_question>div{
     width: 800px;
     background-color: #f9f9f9;
@@ -1192,6 +1205,9 @@ line-height: 23px;
     display: inline;
     }
 @media screen and (max-width: 768px) {
+    #closeinfo2026 #close_question{
+     padding-top: 1px; margin-top: -1px;
+  }
     #closeinfo2026 #close_question .closeinfo2026_inner {
     font-size: 17px;
         margin: 18px auto 0px;
@@ -1202,7 +1218,7 @@ line-height: 23px;
         margin: 0 auto 0;
 }
     #closeinfo2026 #close_question{
-        padding: 50px 15px 20px;
+        padding: 10px 15px 20px;
     }
     #closeinfo2026 #close_question .closeinfo2026_h3box h3 {
                padding: 4px 7px 4px;

@@ -33,13 +33,13 @@
       });
   
   // 本番ではJavaScriptのconsole.logを非表示にする
-  if(true){
+  /*if(true){
       window.console.log = function(i){return;};
       window.console.error = function(i){return;};
       window.console.warn = function(i){return;};
       window.console.debug = function(i){return;};
       window.console.info = function(i){return;};
-  }
+  }*/
   </script> 
 <script>
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -62,7 +62,8 @@
 <link rel="stylesheet" href="css/closeinfo2026_main.css">
 <!--終了お知らせ-->
   <link rel="stylesheet" href="../closenews_common/closenews_common.css">
-<script>
+
+<!--<script>
 (function() {
 
   const fetchHTML = fetch("../closenews_common/closenews_common.html")
@@ -110,8 +111,7 @@
 
   });
 })();
-</script>
-
+</script>-->
 
 
 <!--終了お知らせ-->
@@ -120,7 +120,7 @@
 </head>
 
 <body id="top">
-    <div id="closenews_common"></div>
+   <!-- <div id="closenews_common"></div>-->
 <noscript>
 <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVNPHPH" height="0" width="0" style="display:none;visibility:hidden"> </iframe>
 </noscript>
@@ -180,16 +180,16 @@
                 <div>
                 <p>目次</p>
                 <div>
-                    <div><a href="#close_service"><p>サービスの取り扱いについて</p></a></div>
-                <div><a href="#close_schedule"><p>サービス終了までのスケジュール</p></a></div>
-                <div><a href="#close_continuation"><p>ご利用の継続について</p></a></div>
+                    <div><a href="#close_service" class="close_anchor_accordion-header"><p>サービスの取り扱いについて</p></a></div>
+                <div><a href="#close_schedule" class="close_anchor_accordion-header"><p>サービス終了までのスケジュール</p></a></div>
+                <div><a href="#close_continuation" class="close_anchor_accordion-header"><p>[重要]ご利用の継続について</p></a></div>
                 <div><a href="#close_question"><p>サービス終了に伴うよくあるご質問</p></a></div>
 
                     </div>
                 </div>
             </div>
          <section  class="closeinfo2026_inner" id="close_service">
-             <div class="closeinfo2026_h3box"><h3>本日2026年▽月▽日からの<br class="spOnly">サービスの取り扱いについて</h3></div>
+             <div class="closeinfo2026_h3box"><h3>本日2026年1月19日からの<br class="spOnly">サービスの取り扱いについて</h3></div>
              <div class="closeinfo_member_box">
                  <ul>
                      <li>1.&nbsp;ラウンド最終日は2026年6月4日となります。<br>但し、提携ゴルフ場によってはラウンド最終日の枠のご提供が無い場合もございますのでご容赦ください。</li>
@@ -209,31 +209,31 @@
             <section class="closeinfo_member_box_schedule" id="close_schedule">
              <div class="closeinfo2026_h3box"><h3>サービス終了までのスケジュール</h3></div>
              <div class="closeinfo2026_inner">
-                 <ul>
+                 <ul><i></i>
                      <li><div>
                          <p class="closeinfo_date">2026年1月19日</p>
                          <p>サービス終了に関するお知らせ</p>
-                         <i></i>
+                     
                     </div></li> 
                      <li><div>
                          <p class="closeinfo_date">2026年3月4日●時</p>
                          <p>新規登録及びご契約プランの更新、ドコモの対象料金プラン特典・dカード特典を除くすべてのキャンペーンを停止いたします。</p>
                          <ul><li>3月4日以降の途中解約には違約金は発生いたしません。</li></ul>
-                         <i></i>
+                 
                     </div></li>                                                 
                      <li><div>
                          <p class="closeinfo_date">2026年6月4日</p>
                          <p>ラウンド最終日（プレー予約提供・ラウンド終了）</p>
-                         <i></i>
+                   
                     </div></li><li><div>
                          <p class="closeinfo_date">2026年6月18日●時</p>
                          <p>サービス提供終了</p>
-                         <i></i>
+                        
                     </div></li>
                      <li><div>
                          <p class="closeinfo_date">2026年□月□日</p>
                          <p>マイページへのログインを停止し、サービスページ、GOLF me！事務局を閉鎖いたします。ご登録いただいた個人情報を削除いたします。</p>
-                         <i></i>
+                     
                     </div></li>
                 </ul>
                  <!--<div class="close_flow1">
@@ -262,13 +262,13 @@
                  </div>
                  <div><img src="img/close_flow.png" alt=""/>
                  <div class="closeinfo_member_box_continuation_boxwrap">
-                     <div><a href="#closeinfo_member_box_continuation_contents_one"><img src="img/close_flow_icon1.png" alt="①"/></a></div><div><a href="#closeinfo_member_box_continuation_contents_two"><img src="img/close_flow_icon2.png" alt="②"/></a></div><div><a href="#closeinfo_member_box_continuation_contents_three"><img src="img/close_flow_icon3.png" alt="③"/></a></div><div><a href="#closeinfo_member_box_continuation_contents_four"><img src="img/close_flow_icon4.png" alt="④"/></a></div>
+                     <div><a href="#closeinfo_member_box_continuation_contents_one" class="close_anchor_accordion-header"><img src="img/close_flow_icon1.png" alt="①"/></a></div><div><a href="#closeinfo_member_box_continuation_contents_two" class="close_anchor_accordion-header"><img src="img/close_flow_icon2.png" alt="②"/></a></div><div><a href="#closeinfo_member_box_continuation_contents_three" class="close_anchor_accordion-header"><img src="img/close_flow_icon3.png" alt="③"/></a></div><div><a href="#closeinfo_member_box_continuation_contents_four" class="close_anchor_accordion-header"><img src="img/close_flow_icon4.png" alt="④"/></a></div>
                      </div>
                      <p class="close_flow_guide">▲該当の数字を押すと、下の説明へ移動します</p>
                  </div>
                  <div class="closeinfo_member_box_continuation_contents">
                      <div class="closeinfo_member_box_continuation_contents_box" id="closeinfo_member_box_continuation_contents_one">
-                         <p class="closeinfo_member_box_continuation_contents_box_title">GOLF me！の継続利用を<span>希望し</span>、<br>2026年<span>3月4日まで</span>に現在のプランが契約期間満了予定の方</p>2026年3月4日までに現在の契約プランが契約期間満了予定の方
+                         <p class="closeinfo_member_box_continuation_contents_box_title">GOLF me！の継続利用を<span>希望し</span>、<br>2026年<span>3月4日まで</span>に現在のプランが契約期間満了予定の方</p>
                          <div>
                          <p>これまで通り、お客様から変更のお手続きがない限り、現在のプランが自動的に更新されます。現在のご契約プラン以外のプランへ変更をご希望される場合は、会員ページにてプランの変更手続きをお願いいたします。詳しくは<a href="https://golfme.goo.ne.jp/guide/plan-update" target="_blank" rel="noopener nowrapper">こちら</a></p>
                              <div class="closeinfo2026_caution">
@@ -328,31 +328,32 @@
              <div class="closeinfo2026_h3box"><h3>サービス終了までのスケジュール</h3></div>
              <div class="closeinfo2026_inner">
                  <ul>
+                     <i></i>
                      <li><div>
                          <p class="closeinfo_date">2026年1月19日</p>
                          <p>サービス終了に関するお知らせ</p>
-                         <i></i>
+
                     </div>
                      </li><li><div>
-                         <p class="closeinfo_date">2026年3月4日時</p>
+                         <p class="closeinfo_date">2026年3月4日●時</p>
                          <p>新規ビジター会員受付、メンバー（有料）会員への登録変更受付を停止いたします。</p>
-                         <i></i>
+
                     </div>
                      </li>
                      <li><div>
                          <p class="closeinfo_date">2026年6月4日</p>
                          <p>ラウンド最終日（プレー予約提供・ラウンド終了）</p>
-                         <i></i>
+
                     </div></li>
                      <li><div>
                          <p class="closeinfo_date">2026年6月4日●時</p>
                          <p>サービス提供終了</p>
-                         <i></i>
+
                     </div></li>
                      <li><div>
                          <p class="closeinfo_date">2026年□月□日</p>
                          <p>マイページへのログインを停止し、サービスページ、GOLF me！事務局を閉鎖いたします。ご登録いただいた個人情報を削除いたします。</p>
-                         <i></i>
+
                     </div></li>
                 </ul>
              </div>
@@ -360,12 +361,12 @@
             
         </div>
       </section>
-        <div class="closeinfo_thanks">
+        <section><div class="closeinfo_thanks">
                 <div>
                     <p>これまで、GOLF me！をご利用いただき<br class="spOnly">誠にありがとうございました。</p>
                     <p>サービス終了日まで、<br class="spOnly">変らぬご愛顧を賜りますよう<br class="spOnly">何卒よろしくお願い申し上げます。</p>
                 </div>
-            </div>
+            </div></section>
       <section id="close_question">
         
             <div>
@@ -480,62 +481,45 @@
 <script>
 (function () {
 
-  function isSP() {
-    return window.matchMedia('(max-width: 768px)').matches;
-  }
-
   function getNoticeBarHeight() {
     const bar = document.querySelector('.close_header_notice_bar');
     return bar ? bar.offsetHeight : 0;
   }
 
-  function getBlockingTopHeight() {
-    let total = 0;
-    const elements = document.body.querySelectorAll('*');
-
-    elements.forEach(el => {
-      const style = window.getComputedStyle(el);
-      if (style.display === 'none') return;
-
-      if (style.position === 'fixed' || style.position === 'sticky') {
-        const rect = el.getBoundingClientRect();
-        if (rect.top <= 0) {
-          total += rect.height;
-        }
-      }
-    });
-
-    return Math.round(total);
+  function getAccordionHeaderHeight() {
+    const header = document.querySelector('.accordion-header');
+    return header ? header.offsetHeight : 0;
   }
 
   document.addEventListener('click', function (e) {
     const a = e.target.closest('a[href^="#"]');
     if (!a) return;
 
-    // メンバー・ビジター用アンカーは別JSで処理
-    if (a.classList.contains('closeinfo_anchor_mv')) {
-      e.preventDefault();
-      return;
-    }
+    // ▼ メンバー／ビジターは別JS（必須）
+    if (a.classList.contains('closeinfo_anchor_mv')) return;
 
-    const href = a.getAttribute('href');
-    if (!href || href === '#' || href.length <= 1) return;
-
-    const target = document.querySelector(href);
+    const target = document.querySelector(a.getAttribute('href'));
     if (!target) return;
 
     e.preventDefault();
 
-    // ★ SP / PC で offset を切り替える
-    const offset = isSP()
-      ? getNoticeBarHeight()
-      : getBlockingTopHeight();
+    let offset = 0;
+
+    // ▼ 基本：notice bar
+    offset += getNoticeBarHeight();
+
+    // ▼ accordion-header を加算するアンカー
+    if (
+      a.classList.contains('close_anchor_accordion-header') ||
+      a.classList.contains('close_anchor_accordion-header_notice_bar')
+    ) {
+      offset += getAccordionHeaderHeight();
+    }
 
     const y =
       target.getBoundingClientRect().top +
       window.pageYOffset -
-      offset -
-      30; // 微調整
+      offset - 30;
 
     window.scrollTo({
       top: y,
@@ -545,6 +529,9 @@
 
 })();
 </script>
+
+
+
 
 <!--メンバー、ビジターアンカーだけ例外でアンカー動かす-->
 <script>
@@ -583,7 +570,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const position =
         target.getBoundingClientRect().top +
         window.pageYOffset -
-        barHeight +
+        (barHeight - 1) +
         extraMargin;
 
       window.scrollTo({
