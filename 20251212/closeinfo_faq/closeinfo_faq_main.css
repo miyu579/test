@@ -1,0 +1,298 @@
+/*アコーディオン*/
+#closeinfo2026 .accordion-header {
+  position: -webkit-sticky; /* Safari対策 */
+  position: sticky;
+  top: 0;
+  background: #f0f0f0;
+  z-index: 1; /* ヘッダーなどに隠れないように */
+}
+#closeinfo2026 #closeinfo_member .accordion-header {
+  position: -webkit-sticky; /* Safari対策 */
+  position: sticky;
+  top: 0;
+  background:#ffeff1;
+  z-index: 1;
+    border-radius: 0;/* ヘッダーなどに隠れないように */
+}
+#closeinfo2026 #closeinfo_visitor .accordion-header {
+  position: -webkit-sticky; /* Safari対策 */
+  position: sticky;
+  top: 0;
+  background:#e9f3e8;
+  z-index: 1;
+    border-radius: 0;/* ヘッダーなどに隠れないように */
+}
+#closeinfo2026 section.accordion {
+    padding: 0;
+      width: unset;
+    margin: 2em auto;
+}
+@media screen and (max-width: 1200px) {
+    #closeinfo2026 section.accordion {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+#closeinfo2026 .accordion-btn {
+      padding: 0;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+    font-size: 24px;
+}
+#closeinfo2026 .accordion-btn.active {
+  border-bottom: 1px solid #bec7ce;
+}
+
+#closeinfo2026 .accordion-btn.active::after {
+  transform: translateY(50%) rotate(315deg);
+    
+}
+#closeinfo2026 .accordion-content {
+   max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#closeinfo2026 .accordion-content.open {
+  max-height: none; /* 高さ制限なしで開く */
+}
+#closeinfo2026 .c-setting-box {
+  margin-bottom: 2em;
+  padding: 1em 2em;
+  border:1px solid #bec7ce;
+  text-align: left;
+    box-shadow: none;
+}
+    #closeinfo2026 .c-plan {
+  width: 100%;
+  margin: 2em auto;
+  padding: .1em 2em 2em;
+  box-sizing: border-box;
+  background-color: #e4f2fc;
+  text-align: center;
+    border:1px solid #bec7ce;
+}
+@media screen and (max-width: 768px) {
+    #closeinfo2026 #closeinfo_member h2, #closeinfo2026 #closeinfo_visitor h2 {
+           padding: 5px 0 4px;
+    font-size: 18px;
+}
+    #closeinfo2026 .price-list_subscribe table {
+    border-right: none;
+    border-left: none;
+}
+      #closeinfo2026 .c-setting-dl__small {
+    display: block;
+              width: 95%;
+        margin: auto;
+  }
+    #closeinfo2026 section{
+        overflow-x: visible;
+        overflow-y: visible; 
+    }
+     #closeinfo2026 .accordion-btn { /* ヘッダーの高さに合わせる（pxは正確に） */
+    position: sticky; /* 念のため再宣言 */
+    padding: 8px;
+    font-size: 20px;
+  }
+    #closeinfo2026 .accordion-header{
+        top: 56px;
+           z-index: 1;
+    }
+    #closeinfo2026 .accordion-btn::after {
+    width: 14px;
+    height: 14px;
+    right: -7px;
+}
+        #closeinfo2026 section.accordion {
+       width: 96%;
+       margin: 0 auto 20px;
+    }
+    #closeinfo2026 section.c-setting-box{
+                padding: 0;
+        width: 96%;
+        margin: 20px auto;
+    }
+}
+/*アコーディオンおわり*/
+#closeinfo2026 .question_bg{
+       padding: 80px 0;
+}
+#closeinfo2026 .bic_ac {
+	width:90%;
+	margin: auto;
+}
+#closeinfo2026 .bic_ac .question_caution{
+	font-size: 12px;
+    padding-left: 0px;
+    margin-top: 0px;
+    line-height: 14px;
+	
+}
+#closeinfo2026 .bic_ac .bic_acitem{
+}
+#closeinfo2026 .bic_ac .bic_acquestion{
+	background-image: url("../img/closeinfo2026_q.png");
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	background-size: 30px;
+}
+#closeinfo2026 .bic_ac .bic_acanswer{
+	background-image: url("../img/closeinfo2026_a1.png");
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: 10px 54%;
+}
+#closeinfo2026 .bic_ac .bic_acquestion p{
+
+}
+#closeinfo2026 .bic_ac .bic_acanswer p{
+	font-size: 17px;
+	
+}
+
+#closeinfo2026 .bic_ac .bic_acitem+.bic_acitem {
+}
+
+
+
+#closeinfo2026 .bic_ac .bic_acitem {
+position: relative;
+overflow: hidden;
+border-top: 1px solid #e0e0e0;
+border-bottom: 1px solid #e0e0e0;
+}
+#closeinfo2026 .bic_ac .bic_acitem +.bic_acitem{
+border-top: none;
+}
+
+
+#closeinfo2026 .bic_ac .bic_acitem>input {
+display: none;
+}
+
+#closeinfo2026 .bic_ac .bic_acquestion {
+position: relative;
+cursor: pointer;
+padding: 20px 61px 20px 56px;
+
+}
+
+	/* アコーディオン */
+#closeinfo2026 .bic_ac .bic_acanswer {
+position: absolute;
+visibility: hidden;
+transform: translateY(-100%);
+border-top: none;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+#closeinfo2026 .bic_ac .bic_acitem>input:checked+label+.bic_acanswer {
+position: relative;
+visibility: visible;
+transform: translateY(0);
+background-color: #f4f4f4;
+padding: 20px 20px 20px 56px;
+}
+
+
+#closeinfo2026 .bic_ac .bic_acquestion::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 0;
+        border-top: solid 4px #ca1032;
+    border-right: solid 4px #ca1032;
+        transform: rotate(135deg);
+        position: absolute;
+        top: -12%;
+        right: 0;
+        bottom: 0;
+        margin: auto 25px auto auto;
+
+}
+
+#closeinfo2026 .bic_ac .bic_acitem>input:checked+label>.bic_acquestion::before {
+transform: translateY(50%) rotate(315deg);
+	
+}
+	#closeinfo2026 .bic_ac .bic_acquestion {
+    background-position: 10px 50%;
+    background-size: 35px 35px;
+}
+	#closeinfo2026 .bic_ac .bic_acquestion::before {
+    right: -16px;
+		top: -5%;
+}
+	#closeinfo2026 .bic_ac .bic_acquestion p {
+    font-size: 17px;
+    line-height: 21px;
+}
+	#closeinfo2026 .bic_ac .bic_acanswer {
+   background-size: 35px 35px;
+    background-position: 10px 54%;
+}
+	#closeinfo2026 .bic_ac .question_caution li{
+    text-indent: -10px;
+        padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #closeinfo2026 .question_bg {
+    padding: 0px 0;
+}
+    #closeinfo2026 .bic_ac .bic_acanswer {
+    background-position: 13px 50%;
+}
+    #closeinfo2026 .bic_ac .bic_acquestion {
+    background-position: 13px 50%;
+
+}
+       
+    #closeinfo2026 .bic_ac .bic_acquestion::before {
+    right: -3px;
+    top: -5%;
+}
+    #closeinfo2026 .bic_ac {
+    width: 95%;
+    margin: auto;
+}
+
+    #closeinfo2026 .bic_ac .question_caution{
+    margin-top: 3px;
+	
+}
+    #closeinfo2026 .bic_ac .bic_acanswer {
+    background-size: 28px 28px;
+}
+    #closeinfo2026 .bic_ac .bic_acquestion {
+    background-size: 28px 28px;
+}
+    #closeinfo2026 .bic_ac .bic_acquestion p{
+        font-size: 16px;
+    }
+    #closeinfo2026 .bic_ac .bic_acanswer p {
+    font-size: 16px;
+        line-height: 21px;
+}
+    #closeinfo2026 .bic_ac .bic_acquestion::before {
+    width: 14px;
+    height: 14px;
+    border-top: solid 3px #ca1032;
+    border-right: solid 3px #ca1032;
+}
+    #closeinfo2026 .bic_ac .bic_acquestion {
+    padding: 12px 54px 12px 54px;
+}
+     #closeinfo2026 .bic_ac .bic_acitem>input:checked+label+.bic_acanswer {
+    padding: 20px 20px 20px 54px;
+}
+    #closeinfo2026 .bic_ac .bic_acquestion p {
+    line-height: 21px;
+}
+}
+/*よくある質問おわり*/

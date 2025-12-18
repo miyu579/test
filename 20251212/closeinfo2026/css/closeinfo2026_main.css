@@ -1174,6 +1174,10 @@ line-height: 23px;
     padding: 23px 0 11px;
     border: 2px solid #4d4d4d;
     
+}#closeinfo2026 #close_question>div>div{
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
 }
 #closeinfo2026 #close_question .closeinfo2026_h3box{
    text-align: center;
@@ -1190,8 +1194,6 @@ line-height: 23px;
 @media screen and (max-width: 768px) {
     #closeinfo2026 #close_question .closeinfo2026_inner {
     font-size: 17px;
-        font-weight: bold;
-        text-align: center;
         margin: 18px auto 0px;
 }
     #closeinfo2026 #close_question>div{
@@ -1203,11 +1205,12 @@ line-height: 23px;
         padding: 50px 15px 20px;
     }
     #closeinfo2026 #close_question .closeinfo2026_h3box h3 {
-        padding: 6px 20px 6px;
+               padding: 4px 7px 4px;
         margin: 0 auto 20px;
-        font-size: 18px;
-        width: 97%;
+                font-size: 17px;
+        width: 94%;
         line-height: 20px;
+        display: block;
     }
 }
 /*よくある質問おわり*/

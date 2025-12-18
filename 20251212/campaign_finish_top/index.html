@@ -151,6 +151,74 @@
 })();
 </script>
 
+<script>
+(function () {
+
+  function isSP() {
+    return window.matchMedia('(max-width: 768px)').matches;
+  }
+
+  function getNoticeBarHeight() {
+    const bar = document.querySelector('.close_header_notice_bar');
+    return bar ? bar.offsetHeight : 0;
+  }
+
+  function getBlockingTopHeight() {
+    let total = 0;
+    const elements = document.body.querySelectorAll('*');
+
+    elements.forEach(el => {
+      const style = window.getComputedStyle(el);
+      if (style.display === 'none') return;
+
+      if (style.position === 'fixed' || style.position === 'sticky') {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= 0) {
+          total += rect.height;
+        }
+      }
+    });
+
+    return Math.round(total);
+  }
+
+  document.addEventListener('click', function (e) {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+
+    // メンバー・ビジター用アンカーは別JSで処理
+    if (a.classList.contains('closeinfo_anchor_mv')) {
+      e.preventDefault();
+      return;
+    }
+
+    const href = a.getAttribute('href');
+    if (!href || href === '#' || href.length <= 1) return;
+
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    e.preventDefault();
+
+    // ★ SP / PC で offset を切り替える
+    const offset = isSP()
+      ? getNoticeBarHeight()
+      : getBlockingTopHeight();
+
+    const y =
+      target.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset -
+      30; // 微調整
+
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
+    });
+  });
+
+})();
+</script>
 
 
 <!--終了お知らせ-->

@@ -480,6 +480,15 @@
 <script>
 (function () {
 
+  function isSP() {
+    return window.matchMedia('(max-width: 768px)').matches;
+  }
+
+  function getNoticeBarHeight() {
+    const bar = document.querySelector('.close_header_notice_bar');
+    return bar ? bar.offsetHeight : 0;
+  }
+
   function getBlockingTopHeight() {
     let total = 0;
     const elements = document.body.querySelectorAll('*');
@@ -503,7 +512,7 @@
     const a = e.target.closest('a[href^="#"]');
     if (!a) return;
 
-    // メンバービジターアンカー
+    // メンバー・ビジター用アンカーは別JSで処理
     if (a.classList.contains('closeinfo_anchor_mv')) {
       e.preventDefault();
       return;
@@ -517,13 +526,16 @@
 
     e.preventDefault();
 
-    const offset = getBlockingTopHeight();
+    // ★ SP / PC で offset を切り替える
+    const offset = isSP()
+      ? getNoticeBarHeight()
+      : getBlockingTopHeight();
 
     const y =
       target.getBoundingClientRect().top +
       window.pageYOffset -
       offset -
-      30;
+      30; // 微調整
 
     window.scrollTo({
       top: y,
@@ -532,8 +544,8 @@
   });
 
 })();
-
 </script>
+
 <!--メンバー、ビジターアンカーだけ例外でアンカー動かす-->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
