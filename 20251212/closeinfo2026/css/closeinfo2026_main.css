@@ -753,7 +753,7 @@ div.closeinfo_popup {
 
     font-weight: bold;
     text-decoration: underline;
-    text-underline-offset:3px;
+    text-underline-offset:4px;
 }/*#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_contents_box> div>p span span{
     font-weight: bold;
 }*/#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_boxwrap{
@@ -830,6 +830,11 @@ div.closeinfo_popup {
     background-color: #333;
 }*/
 @media screen and (max-width:768px) {
+    #closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_contents_box> div>p span {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
     #closeinfo2026 #closeinfo_member .closeinfo2026_inner_continuation .closeinfo2026_h3box h3 {
     background-color: #ca1032;
     width: unset;
