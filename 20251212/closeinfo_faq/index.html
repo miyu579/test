@@ -1,20 +1,143 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ja" class="closeinfo_faq_html">
 <head>
+    <!--終了お知らせ-->
+  <link rel="preload" href="../closenews_common/closenews_common.html" as="fetch" crossorigin="anonymous">
+    <!--終了お知らせ-->
 <meta charset="utf-8">
-<title>無題ドキュメント</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GOLF me！サービス終了のお知らせ</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="description" content="GOLF me！は2026年6月18日14時をもちましてサービスの提供を終了いたします。">
+<meta name="keywords" content="ゴルフ, ラウンド, サブスクリプション, サブスク">
+<meta property="og:url" content="https://golfme.goo.ne.jp/campaign/3monthfree">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="img/622_380_zero.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GOLF me！">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="csrf-token" content="kz2Q1LyUMc2I6TdP8AgIJsIrAIGrwwZwjuWlRWgI">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="Shortcut Icon" href="https://golfme.goo.ne.jp/img/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/vnd.microsoft.icon" href="https://golfme.goo.ne.jp/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://golfme.goo.ne.jp/img/apple-touch-icon.png">
+<meta name="format-detection" content="telephone=no">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+      uid: "",
+      goo_login_type: "nologin",
+      golfme_login_type: "nologin",
+      golfme_plan_type: "",
+      });
+  
+  // 本番ではJavaScriptのconsole.logを非表示にする
+  /*if(true){
+      window.console.log = function(i){return;};
+      window.console.error = function(i){return;};
+      window.console.warn = function(i){return;};
+      window.console.debug = function(i){return;};
+      window.console.info = function(i){return;};
+  }*/
+  </script> 
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KVNPHPH');
+  </script>
+<link rel="stylesheet" href="https://cdn.golfme.goo.ne.jp/build/1.20.13/assets/app2.css">
+<link rel="stylesheet" href="https://cdn.golfme.goo.ne.jp/build/1.20.13/assets/app.css">
+<link rel="preload" as="style" href="https://golfme.goo.ne.jp/build/assets/app-5f672df3.css">
+<link rel="preload" as="style" href="https://golfme.goo.ne.jp/build/assets/app-87de2585.css">
+<link rel="modulepreload" href="https://golfme.goo.ne.jp/build/assets/app-9898df26.js">
+<link rel="modulepreload" href="https://golfme.goo.ne.jp/build/assets/vendor-b59c12f8.js">
+<!--<link rel="stylesheet" href="https://golfme.goo.ne.jp/build/assets/app-4ca57741.css" />
+<link rel="stylesheet" href="https://golfme.goo.ne.jp/build/assets/app-3542aa08.css" />-->
+<link rel="stylesheet" href="https://golfme.goo.ne.jp/build/assets/app-5f672df3.css">
+<link rel="stylesheet" href="https://golfme.goo.ne.jp/build/assets/app-87de2585.css">
+<link rel="stylesheet" href="css/closeinfo_faq_main.css">
+<!--終了お知らせ-->
+  <link rel="stylesheet" href="../closenews_common/closenews_common.css">
+
+<script>
+(function() {
+
+  const fetchHTML = fetch("../closenews_common/closenews_common.html")
+    .then(res => res.text())
+    .catch(() => "");
+
+  document.addEventListener("DOMContentLoaded", async function() {
+
+    const target = document.querySelector("#closenews_common");
+    if (!target) return;
+
+    const html = await fetchHTML;
+    if (!html) return;
+
+    // HTML 挿入
+    target.innerHTML = html;
+
+    const notice = target.querySelector(".close_header_notice");
+    const bar = notice?.querySelector(".close_header_notice_bar");
+    if (!notice || !bar) return;
+
+    // 通常表示ブロックの高さを基準にする
+    const normal = target.querySelector(".close_header_notice_content_normal");
+    const threshold = normal ? normal.offsetHeight : 0;
+
+    function onScroll() {
+  if (!notice) return;
+  if (window.scrollY > threshold) {
+    notice.classList.add("is-active");
+  } else {
+    notice.classList.remove("is-active", "open");
+  }
+}
+
+
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    onScroll();
+
+    // 開閉（fixed 表示中のみ）
+    bar.addEventListener("click", () => {
+      if (!notice.classList.contains("is-active")) return;
+      notice.classList.toggle("open");
+    });
+
+  });
+})();
+</script>
+
+
+<!--終了お知らせ-->
+<script type="module" src="https://golfme.goo.ne.jp/build/assets/app-9898df26.js"></script>
+    
 </head>
 
-<body>
-</body>
-</html>
-
-
-    <section id="close_question" class="question_bg">
+<body id="top">
+    <div id="closenews_common"></div>
+    <div class="sp_header_entry">
+      <div>
+        <div class="logo_wrap"> <a class="none_deco" href="https://golfme.goo.ne.jp/"  target="_blank" rel="noopener noreferrer"><img src="img/logo.png" alt="GOLF me！"> <br>
+            <span>ドコモのラウンドサブスク</span></a></div>
+      </div>
+    </div>
+    <main id="closeinfo_faq"> 
+        <section class="closeinfo_faq_sec">
         <div class="closeinfo2026_inner">
           <h2>サービス終了に伴うよくあるご質問<span class="underline_red"> </span> </h2>
+            <div class="closeinfo_box">
+            <div class="closeinfo_member_an"><a href="#closeinfo_member" class="closeinfo_anchor_mv" data-type="closeinfo_member"><p>メンバー（有料）会員の皆様向けの<br class="sptbOnly">よくあるご質問</p></a></div>
+            <div class="closeinfo_visitor_an"><a href="#closeinfo_visitor" class="closeinfo_anchor_mv" data-type="closeinfo_visitor"><p>ビジター（無料）<br class="sptbOnly">会員の皆様</p></a></div>
+                      
+                  </div>
+             <div>
+           <div class="accordion-header"><div class="accordion-btn" data-target="content1"><h2>メンバー（有料）会員の皆様向け<span class="underline_red"> </span></h2></div></div>
             <section>
-                <h3>メンバー会員の方</h3>
           <div>
             <div class="bic_ac">
               <div class="bic_acitem">
@@ -123,24 +246,304 @@
             </div>
           </div>
             </section>
-            <section>
-                <h3>ビジター会員の方</h3>
-          <div>
-            <div class="bic_ac">
-              <div class="bic_acitem">
-                <input id="bic_ac-1" type="checkbox">
-                <label for="bic_ac-1">
-                <div class="bic_acquestion">
-                  <p>ドコモユーザーではありませんが、利用できますか？</p>
-                </div>
-                </label>
-                <div class="bic_acanswer">
-                  <p>どのキャリアの方でもご利用いただけます。</p>
-                </div>
-              </div>
             </div>
-          </div>
-            </section>
-            
         </div>
-      </section>
+      </section></main>
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVNPHPH" height="0" width="0" style="display:none;visibility:hidden"> </iframe>
+</noscript>
+<div id="app">
+<!--  <div class="sticky_block">
+    <div class="sticky_block_inner_wrap">
+      <div class="sticky_block_inner">
+        <div class="sticky_nav">
+          <h1>
+            <a  class="none_deco" href="https://golfme.goo.ne.jp/" target="_blank"><div class="pcOnly">
+              <div> <img src="img/logo.png" width="224" height="54" alt="GOLF me！(ゴルフミー)"> </div>
+              <div class="logo_text"> <span>ドコモのラウンドサブスク</span> </div>
+            </div></a>
+          </h1>
+          <div class="sticky_nav_inner_box">
+            <div class="nav_item whatis"> <a href="#whatis"> <span>GOLF me！とは</span> </a> </div>
+            <div class="nav_item price"> <a href="#price"> <span>料金プラン</span> </a> </div>
+            <div class="nav_item course"> <a href="#course"> <span>ゴルフ場一覧</span> </a> </div>
+            <div class="nav_item flow"> <a href="#flow"> <span>登録の流れ</span> </a> </div>
+            <div class="nav_item question"> <a href="#question"> <span>よくある質問</span> </a> </div>
+            <div class="nav_item question"> <a href="#question"> <span>よくある質問</span> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+ <div>
+    <div class="sp_header_entry">
+      <div>
+        <div class="logo_wrap"> <a class="none_deco" href="https://golfme.goo.ne.jp/"  target="_blank" rel="noopener noreferrer"><img src="img/logo.png" alt="GOLF me！"> <br>
+            <span>ドコモのラウンドサブスク</span></a></div>
+      </div>
+    </div>
+  </div>
+ <footer class="l-footer">
+        <div class="l-footer__inner">
+          <ul class="l-footer-links l-footer-links-above">
+            <li>
+              <a href="https://golfme.goo.ne.jp/about">GOLF me！とは</a>
+            </li>
+            <li>
+              <a href="https://golfme.goo.ne.jp/guide">GOLF me！の使い方</a>
+            </li>
+            <li>
+              <a href="https://golfme.goo.ne.jp/qa">よくあるご質問</a>
+            </li>
+            <li>
+              <a href="https://golfme.goo.ne.jp/terms">GOLF me！サービス利用規約</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.docomo.ne.jp/utility/privacy/">プライバシーポリシー</a>
+            </li>
+            <li>
+              <a href="https://golfme.goo.ne.jp/transaction">特定商取引法に基づく表記</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener noreferrer" href="https://help.goo.ne.jp/help/article/711/">免責事項</a>
+            </li>
+          </ul>
+          <ul class="l-footer-links">
+            <li>
+              <a href="https://golfme.goo.ne.jp/course">提携ゴルフ場一覧</a>
+            </li>
+            <li>
+              <a href="https://golfme.goo.ne.jp/inquiry">お問い合わせ</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.goo.ne.jp/">gooトップ</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.docomo.ne.jp/corporate/">企業情報</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener noreferrer" href="https://advertising.nttr.co.jp/adinfo/">広告掲載</a>
+            </li>
+          </ul>
+          <div class="l-footer-sns">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61556339857220" target="_blank" rel="noopener nowrapper">
+                  <img src="https://cdn.golfme.goo.ne.jp/build/1.20.13/assets/icon-facebook.png" width="60" height="60" alt="Facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/golfme.official/" target="_blank" rel="noopener nowrapper">
+                  <img src="https://cdn.golfme.goo.ne.jp/build/1.20.13/assets/icon-instagram.png" width="60" height="60" alt="Instagram" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="l-footer-copyright">&copy; NTT DOCOMO</p>
+        </div>
+      </footer>
+  <div class="l-footer-docomo"> <img src="https://cdn.golfme.goo.ne.jp/build/1.20.13/assets/footer-docomo.png" width="120" height="30" alt="NTT DOCOMO"> </div>
+</div>
+    <div id="closeinfo_wrapper">
+    <div class="closeinfo_popup">
+      <div class="popup-banner">
+        <a href="#">
+          <div class="popup-img">
+            <img src="img/pagetop.png" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+      <div class="show"></div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.popup.js"></script>
+<script>
+(function () {
+
+  function getNoticeBarHeight() {
+    const bar = document.querySelector('.close_header_notice_bar');
+    return bar ? bar.offsetHeight : 0;
+  }
+
+  function getAccordionHeaderHeight() {
+    const header = document.querySelector('.accordion-header');
+    return header ? header.offsetHeight : 0;
+  }
+
+  document.addEventListener('click', function (e) {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+
+    // ▼ メンバー／ビジターは別JS（必須）
+    if (a.classList.contains('closeinfo_anchor_mv')) return;
+
+    const target = document.querySelector(a.getAttribute('href'));
+    if (!target) return;
+
+    e.preventDefault();
+
+    let offset = 0;
+
+    // ▼ 基本：notice bar
+    offset += getNoticeBarHeight();
+
+    // ▼ accordion-header を加算するアンカー
+    if (
+      a.classList.contains('close_anchor_accordion-header') ||
+      a.classList.contains('close_anchor_accordion-header_notice_bar')
+    ) {
+      offset += getAccordionHeaderHeight();
+    }
+
+    const y =
+      target.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset - 30;
+
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
+    });
+  });
+
+})();
+</script>
+<script>
+(function () {
+
+  function getNoticeBarHeight() {
+    const bar = document.querySelector('.close_header_notice_bar');
+    return bar ? bar.offsetHeight : 0;
+  }
+
+  function getAccordionHeaderHeight() {
+    const header = document.querySelector('.accordion-header');
+    return header ? header.offsetHeight : 0;
+  }
+
+  document.addEventListener('click', function (e) {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+
+    // ▼ メンバー／ビジターは別JS（必須）
+    if (a.classList.contains('closeinfo_anchor_mv')) return;
+
+    const target = document.querySelector(a.getAttribute('href'));
+    if (!target) return;
+
+    e.preventDefault();
+
+    let offset = 0;
+
+    // ▼ 基本：notice bar
+    offset += getNoticeBarHeight();
+
+    // ▼ accordion-header を加算するアンカー
+    if (
+      a.classList.contains('close_anchor_accordion-header') ||
+      a.classList.contains('close_anchor_accordion-header_notice_bar')
+    ) {
+      offset += getAccordionHeaderHeight();
+    }
+
+    const y =
+      target.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset - 30;
+
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
+    });
+  });
+
+})();
+</script>
+
+
+
+
+<!--メンバー、ビジターアンカーだけ例外でアンカー動かす-->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const anchorLinks = document.querySelectorAll('.closeinfo_anchor_mv');
+
+  anchorLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const href = this.getAttribute('href');
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      // ▼ 上部バーの高さ（これだけを使う）
+      const noticeBar = document.querySelector('.close_header_notice_bar');
+      const barHeight = noticeBar?.offsetHeight || 0;
+
+      // ▼PC/SP 判定
+      const isSP = window.matchMedia('(max-width: 768px)').matches;
+
+      // ▼余白調整ロジック
+      const type = this.dataset.type;
+      let extraMargin = 0;
+
+      if (!isSP) {
+        if (type === "closeinfo_member") extraMargin = 100;
+        if (type === "closeinfo_visitor") extraMargin = 50;
+      } else {
+        if (type === "closeinfo_member") extraMargin = 50;
+        if (type === "closeinfo_visitor") extraMargin = 0;
+      }
+
+      // ▼ 最終スクロール位置
+      const position =
+        target.getBoundingClientRect().top +
+        window.pageYOffset -
+        (barHeight - 1) +
+        extraMargin;
+
+      window.scrollTo({
+        top: position,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+</script>
+
+
+<!--メンバービジターのヘッダー調整sticky（アンカー関係ない)-->
+<script>
+(function() {
+
+  function updateStickyOffset() {
+    // ▼ 実際に上部を占有しているバーの高さ
+    const noticeBar = document.querySelector('.close_header_notice_bar');
+    const barHeight = noticeBar?.offsetHeight || 0;
+
+    // ▼ アコーディオン見出しに適用
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(h => {
+      h.style.top = (barHeight) - 1 + 'px';
+    });
+  }
+
+  // 初期読み込み
+  window.addEventListener("DOMContentLoaded", updateStickyOffset);
+  // リサイズ対応
+  window.addEventListener("resize", updateStickyOffset);
+  // fetch 挿入の遅延対策
+  setTimeout(updateStickyOffset, 300);
+
+})();
+</script>
+
+
+
+
+
+</body>
+</html>
+

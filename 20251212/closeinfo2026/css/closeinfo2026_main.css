@@ -427,7 +427,8 @@ background-position: center 56%;
     display: inline;
 }
 #closeinfo2026 #closeinfo_member  .closeinfo2026_h3box,#closeinfo2026 #closeinfo_visitor  .closeinfo2026_h3box {
-   text-align: center
+   text-align: center;
+        margin-bottom: 30px;
 }
 /*#closeinfo2026 #closeinfo_member h3 {
     color: #ca1032;
@@ -616,7 +617,7 @@ background-position: center 56%;
 #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule i ,
 #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule i {
     position: absolute;
-    top:6%;
+    top:7%;
     bottom: 0;
     left: 59px;
     width: 0;
@@ -624,7 +625,7 @@ background-position: center 56%;
     content: "";
     display: block;
     z-index: 0;
-    height: 83%;
+    height: 78%;
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule li+li i ,
 #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule li+li i {
     height: calc(100% + 0px);
@@ -742,10 +743,12 @@ div.closeinfo_popup {
     width: 75%;
     margin: 5px auto 30px;
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_caution p{
-    text-align: left;
+    text-align: center;
     font-size: 16px;
     margin:0 auto 0;
     line-height: 20px;
+        color: #ca1032;
+    font-weight: bold;
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_contents_box> div>p{
     text-align: left;
     margin: 0 auto 10px;
@@ -889,6 +892,7 @@ div.closeinfo_popup {
     line-height: 18px;
     text-indent: -16px;
     padding-left: 16px;
+    text-align: left;
 }
     #closeinfo2026 #closeinfo_member .closeinfo_member_box_continuation .closeinfo_member_box_continuation_contents_box> div>p {
     font-size: 16px;
@@ -1193,7 +1197,8 @@ line-height: 23px;
 /*よくある質問*/
 
 #closeinfo2026 #close_question>div{
-    width: 800px;
+    max-width: 800px;
+    width: 95%;
     background-color: #fffeef;
         margin: 130px auto 50px;
     padding: 23px 0 11px;
