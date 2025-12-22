@@ -439,6 +439,14 @@ background-position: center 56%;
     width: 100%;
     background-color: transparent;
 }*/
+#closeinfo2026 .closeinfo_member_box .closeinfo2026_caution,#closeinfo2026 .closeinfo_visitor_box .closeinfo2026_caution{
+    font-size: 14px;
+}#closeinfo2026 .closeinfo_member_box .closeinfo2026_caution p,#closeinfo2026 .closeinfo_visitor_box .closeinfo2026_caution p{
+        margin: 3px 0;
+    line-height: 18px;
+    text-indent: -29px;
+    padding-left: 29px;
+}
 #closeinfo2026 #closeinfo_member .closeinfo_member_box li ,#closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box li {
     text-indent: -19px;
     padding-left: 22px;
@@ -569,6 +577,14 @@ background-position: center 56%;
 }
 /*メンバービジター帯おわり*/
 /*メンバー会員スケジュール*/
+#closeinfo2026 .closeinfo_member_box_schedule .closeinfo2026_caution{
+    font-size: 14px;
+}#closeinfo2026 .closeinfo_member_box_schedule .closeinfo2026_caution p{
+        margin: 3px 0;
+    line-height: 18px;
+    text-indent: -16px;
+    padding-left: 16px;
+}
 #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule >div>ul> li,
 #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule >div>ul> li{
     width: 80%;
@@ -617,7 +633,6 @@ background-position: center 56%;
 #closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule i ,
 #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule i {
     position: absolute;
-    top:7%;
     bottom: 0;
     left: 59px;
     width: 0;
@@ -625,7 +640,14 @@ background-position: center 56%;
     content: "";
     display: block;
     z-index: 0;
-    height: 78%;
+}
+#closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule i {
+        top:6%;
+     height: 83%;
+}
+#closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule i {
+       top: 7%;
+    height: 82%;
 }#closeinfo2026 #closeinfo_member .closeinfo_member_box_schedule li+li i ,
 #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule li+li i {
     height: calc(100% + 0px);
@@ -650,6 +672,10 @@ background-position: center 56%;
     font-size: 19px;
 }*/
 @media screen and (max-width:768px) {
+    #closeinfo2026 #closeinfo_visitor .closeinfo_visitor_box_schedule i {
+                 top: 6%;
+        height: 82%;
+}
     #closeinfo2026 .close_toc >div>div>div p {
     padding: 0 30px 2px 4px;
     font-size: 17px;

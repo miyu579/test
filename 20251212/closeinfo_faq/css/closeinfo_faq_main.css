@@ -249,15 +249,27 @@ background-position: center 56%;
     }}
 /*KVおわり*/
 
-
+/*質問アイコン*/
+#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion span{
+    
+}　
+/*質問アイコンおわり*/
 
 #closeinfo_faq .closeinfo_faq_sec{
     width: 95%;
     max-width: 800px;
     margin: auto;
-}#closeinfo_faq .closeinfo_faq_sec h2{
+}#closeinfo_faq h2{
     text-align: center;
-    font-size:28px;
+            padding: 20px 0 18px;
+        font-size: 25px;
+}
+#closeinfo_faq h2 span {
+    display: block;
+    padding: 3px 0;
+    background-color: #d00f31;
+    width: 160px;
+    margin: 4px auto 0px;
 }
 /*アコーディオン*/
 
@@ -384,60 +396,60 @@ background-position: center 56%;
 #closeinfo_faq .question_bg{
        padding: 80px 0;
 }
-#closeinfo_faq .bic_ac {
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap {
 	width:90%;
 	margin: auto;
 }
-#closeinfo_faq .bic_ac .question_caution{
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution{
 	font-size: 12px;
     padding-left: 0px;
     margin-top: 0px;
     line-height: 14px;
 	
 }
-#closeinfo_faq .bic_ac .bic_acitem{
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem{
 }
-#closeinfo_faq .bic_ac .bic_acquestion{
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion{
 	background-image: url("../img/closeinfo_faq_q.png");
 	background-repeat: no-repeat;
 	background-position: 10px 50%;
 	background-size: 30px;
 }
-#closeinfo_faq .bic_ac .bic_acanswer{
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer{
 	background-image: url("../img/closeinfo_faq_a.png");
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 10px 54%;
 }
-#closeinfo_faq .bic_ac .bic_acquestion p{
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p{
 
 }
-#closeinfo_faq .bic_ac .bic_acanswer p{
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer p{
 	font-size: 17px;
 	
 }
 
-#closeinfo_faq .bic_ac .bic_acitem+.bic_acitem {
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem+.closeinfo_faq_bic_acitem {
 }
 
 
 
-#closeinfo_faq .bic_ac .bic_acitem {
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem {
 position: relative;
 overflow: hidden;
 border-top: 1px solid #e0e0e0;
 border-bottom: 1px solid #e0e0e0;
 }
-#closeinfo_faq .bic_ac .bic_acitem +.bic_acitem{
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem +.closeinfo_faq_bic_acitem{
 border-top: none;
 }
 
 
-#closeinfo_faq .bic_ac .bic_acitem>input {
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input {
 display: none;
 }
 
-#closeinfo_faq .bic_ac .bic_acquestion {
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
 position: relative;
 cursor: pointer;
 padding: 23px 61px 23px 56px;
@@ -445,7 +457,7 @@ padding: 23px 61px 23px 56px;
 }
 
 	/* アコーディオン */
-#closeinfo_faq .bic_ac .bic_acanswer {
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer {
 position: absolute;
 visibility: hidden;
 transform: translateY(-100%);
@@ -454,7 +466,7 @@ padding-top: 15px;
 padding-bottom: 15px;
 }
 
-#closeinfo_faq .bic_ac .bic_acitem>input:checked+label+.bic_acanswer {
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input:checked+label+.closeinfo_faq_bic_acanswer {
 position: relative;
 visibility: visible;
 transform: translateY(0);
@@ -463,7 +475,7 @@ padding: 23px 20px 23px 56px;
 }
 
 
-#closeinfo_faq .bic_ac .bic_acquestion::before {
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion::before {
         content: '';
         width: 16px;
         height: 16px;
@@ -479,29 +491,29 @@ padding: 23px 20px 23px 56px;
 
 }
 
-#closeinfo_faq .bic_ac .bic_acitem>input:checked+label>.bic_acquestion::before {
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input:checked+label>.closeinfo_faq_bic_acquestion::before {
 transform: translateY(50%) rotate(315deg);
 	
 }
-	#closeinfo_faq .bic_ac .bic_acquestion {
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
     background-position: 10px 50%;
     background-size: 35px 35px;
-}	#closeinfo_faq .bic_ac .bic_acquestion p,#closeinfo_faq .bic_ac .bic_acanswer p{
+}	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p,#closeinfo_faq .bic_ac .closeinfo_faq_bic_acanswer p{
     margin: 0;
 }
-	#closeinfo_faq .bic_ac .bic_acquestion::before {
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion::before {
     right: -16px;
 		top: -5%;
 }
-	#closeinfo_faq .bic_ac .bic_acquestion p {
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p {
     font-size: 17px;
     line-height: 21px;
 }
-	#closeinfo_faq .bic_ac .bic_acanswer {
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer {
    background-size: 35px 35px;
     background-position: 10px 54%;
 }
-	#closeinfo_faq .bic_ac .question_caution li{
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution li{
     text-indent: -10px;
         padding-left: 10px;
         list-style: none;
@@ -511,53 +523,53 @@ transform: translateY(50%) rotate(315deg);
     #closeinfo_faq .question_bg {
     padding: 0px 0;
 }
-    #closeinfo_faq .bic_ac .bic_acanswer {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer {
     background-position: 13px 50%;
 }
-    #closeinfo_faq .bic_ac .bic_acquestion {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
     background-position: 13px 50%;
 
 }
        
-    #closeinfo_faq .bic_ac .bic_acquestion::before {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion::before {
     right: -3px;
     top: -5%;
 }
-    #closeinfo_faq .bic_ac {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap {
     width: 95%;
     margin: auto;
 }
 
-    #closeinfo_faq .bic_ac .question_caution{
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution{
     margin-top: 3px;
 	
 }
-    #closeinfo_faq .bic_ac .bic_acanswer {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer {
     background-size: 28px 28px;
 }
-    #closeinfo_faq .bic_ac .bic_acquestion {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
     background-size: 28px 28px;
 }
-    #closeinfo_faq .bic_ac .bic_acquestion p{
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p{
         font-size: 16px;
     }
-    #closeinfo_faq .bic_ac .bic_acanswer p {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer p {
     font-size: 16px;
         line-height: 21px;
 }
-    #closeinfo_faq .bic_ac .bic_acquestion::before {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion::before {
     width: 14px;
     height: 14px;
     border-top: solid 3px #ca1032;
     border-right: solid 3px #ca1032;
 }
-    #closeinfo_faq .bic_ac .bic_acquestion {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
     padding: 12px 54px 12px 54px;
 }
-     #closeinfo_faq .bic_ac .bic_acitem>input:checked+label+.bic_acanswer {
+     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input:checked+label+.closeinfo_faq_bic_acanswer {
     padding: 20px 20px 20px 54px;
 }
-    #closeinfo_faq .bic_ac .bic_acquestion p {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p {
     line-height: 21px;
 }
 }
