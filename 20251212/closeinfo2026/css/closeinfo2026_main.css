@@ -403,6 +403,8 @@ background-position: center 56%;
 #closeinfo2026 #closeinfo_visitor section.closeinfo2026_inner >div{
    text-align: center;
     
+}#closeinfo2026 #closeinfo_visitor section.closeinfo2026_inner .closeinfo_visitor_box p+p{
+   font-size: 16px;
 }
 #closeinfo2026 #closeinfo_member section.closeinfo_member_box_schedule,
 #closeinfo2026 #closeinfo_visitor section.closeinfo_visitor_box_schedule{
@@ -530,6 +532,9 @@ background-position: center 56%;
     border:1px solid #bec7ce;
 }
 @media screen and (max-width: 768px) {
+    #closeinfo2026 #closeinfo_visitor section.closeinfo2026_inner .closeinfo_visitor_box p+p{
+   font-size: 14px;
+}
     #closeinfo2026 #closeinfo_member .closeinfo2026_inner, #closeinfo2026 #closeinfo_visitor .closeinfo2026_inner
  {
     margin: 30px auto 30px;
