@@ -10,7 +10,12 @@
 #closenews_common .close_header_notice_content a {
   pointer-events: auto;
 }
-
+#closenews_common {
+    line-height: 1.6;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    color: #333;
+}
 
 #closenews_common .closenews_common p{
   margin: 0;
