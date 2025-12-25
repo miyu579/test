@@ -503,7 +503,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })();
 </script>
+<script>
+(function() {
 
+  function updateStickyOffset() {
+    // ▼ 実際に上部を占有しているバーの高さ
+    const noticeBar = document.querySelector('.close_header_notice_bar');
+    const barHeight = noticeBar?.offsetHeight || 0;
+
+    // ▼ アコーディオン見出しに適用
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(h => {
+      h.style.top = (barHeight - 1) + 'px';
+    });
+  }
+
+  // ▼ ページ内の全リソース（fetch挿入含む）が終わった後に実行
+  window.addEventListener("load", updateStickyOffset);
+
+  // ▼ リサイズ時にも再調整
+  window.addEventListener("resize", updateStickyOffset);
+
+})();
+</script>
 
 
 
