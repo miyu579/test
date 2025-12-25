@@ -105,7 +105,14 @@
     margin: 5px 0 10px;
     width: 240px;
     font-size: 16px;
+}.closeinfo_faq_html .sp_header_entry {
+    
+    line-height: 1.6;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    color: #333;
 }
+
 .closeinfo_faq_html .logo_wrap img{
            width: 190px;
         margin-bottom:-3px;
@@ -124,7 +131,7 @@
  
     .closeinfo_faq_html .logo_wrap img {
         width: 140px;
-        margin-bottom: -5px;
+        margin-bottom: -3px;
     }
 	.closeinfo_faq_html .logo_wrap span{
 		font-size: 12px;
