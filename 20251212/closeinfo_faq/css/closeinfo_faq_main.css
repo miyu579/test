@@ -1,11 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
-/*#closeinfo_faq {
+#closeinfo_faq {
     line-height: 1.6;
     font-family: "Noto Sans JP", sans-serif;
     font-size: 18px;
     color: #333;
-}*/
+}
 @media screen and (min-width:1100px) {
 	.closeinfo_faq_html .sptbOnly{
 		display: none!important;
