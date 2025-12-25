@@ -152,7 +152,7 @@
 /* SP調整 */
 @media screen and (max-width: 768px) {
     #closenews_common .close_header_notice_content_normal,#closenews_common .close_header_notice_content{
-    padding-bottom: 6px;
+                padding: 0 10px 6px;
 }
     #closenews_common .close_header_notice_bar p:before{
   top: 28%;
@@ -198,7 +198,7 @@
     #closenews_common .close_header_notice_content p {
     padding: 0px 0 10px;
     margin: 0;
-    font-weight: normal;
+    font-weight: bold;
         line-height: 20px;
 }
     #closenews_common .close_header_notice_bar {
