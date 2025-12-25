@@ -125,7 +125,7 @@
                      
                     </div></li> 
                      <li><div>
-                         <p class="closeinfo_date">2026年3月4日（水）●時</p>
+                         <p class="closeinfo_date">2026年3月4日（水）14時</p>
                          <p>新規登録及びご契約プランの更新、ドコモの対象料金プラン特典・dカード特典を除くすべてのキャンペーンの受付最終日となります。</p>
                          <p>3月5日（木）以降の途中解約には違約金は発生いたしません。</p>
                  
@@ -142,7 +142,7 @@
                    
                     </div></li>
                      <li><div>
-                         <p class="closeinfo_date">2026年6月18日（木）●時</p>
+                         <p class="closeinfo_date">2026年6月18日（木）14時</p>
                      <p>サービス終了</p>
                      <p>マイページへのログイン機能を停止し、サービスページ・GOLF me！事務局を閉鎖いたします。また、ご登録いただいた個人情報は削除いたします。</p>
                     </div></li>
@@ -177,7 +177,7 @@
                      <div class="closeinfo_member_box_continuation_contents_box" id="closeinfo_member_box_continuation_contents_two">
                          <p class="closeinfo_member_box_continuation_contents_box_title">GOLF me！の継続利用を<span>希望し</span>、<br>2026年<span>3月5日（木）以降</span>に現在のプランが契約期間満了予定の方</p>
                          <div>
-                         <p>2026年3月5日（木）以降は<span>契約の自動更新が行われません</span>。そのため、現在の契約期間満了日以降も契約継続をご希望の方は2026年3月4日（水）までに、会員ページにて早期更新のお手続きをお願いいたします。お手続きは<a href="https://golfme.goo.ne.jp/my_page/user/plan/early_update" target="_blank" rel="noopener nowrapper">こちら</a>よりお願いいたします。</p>
+                         <p>2026年3月5日（木）以降は<span>契約の自動更新が行われません</span>。そのため、現在の契約期間満了日以降も契約継続をご希望の方は2026年3月4日（水）14時までに、会員ページにて早期更新のお手続きをお願いいたします。お手続きは<a href="https://golfme.goo.ne.jp/my_page/user/plan/early_update" target="_blank" rel="noopener nowrapper">こちら</a>よりお願いいたします。</p>
                              <div class="closeinfo2026_caution">
                                  <p>※&nbsp;現在のご契約プランが2026年6月5日（金）以降に契約期間満了となる方で、ラウンド最終日までサービスのご利用をご希望の場合はお手続きの必要はありません。ラウンド最終日をもって契約終了となります。</p>
                              <p>※&nbsp;2026年3月5日（木）以降は契約の自動更新が行われませんので、ラウンド最終日までの間に契約期間が満了となる場合は、満了日をもって契約終了となります。</p>
@@ -232,7 +232,7 @@
 
                     </div>
                      </li><li><div>
-                         <p class="closeinfo_date">2026年3月4日（水）●時</p>
+                         <p class="closeinfo_date">2026年3月4日（水）14時</p>
                          <p>新規ビジター会員受付、メンバー（有料）会員への登録変更受付を停止いたします。</p>
 
                     </div>
@@ -249,7 +249,7 @@
 
                     </div></li>
                      <li><div>
-                         <p class="closeinfo_date">2026年6月18日（木）●時</p>
+                         <p class="closeinfo_date">2026年6月18日（木）14時</p>
                          <p>サービス終了</p>
                          <p>マイページへのログイン機能を停止し、サービスページ・GOLF me！事務局を閉鎖いたします。また、ご登録いただいた個人情報は削除いたします。</p>
                     </div></li>
@@ -503,32 +503,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })();
 </script>
-<script>
-(function() {
-
-  function updateStickyOffset() {
-    // ▼ 実際に上部を占有しているバーの高さ
-    const noticeBar = document.querySelector('.close_header_notice_bar');
-    const barHeight = noticeBar?.offsetHeight || 0;
-
-    // ▼ アコーディオン見出しに適用
-    const headers = document.querySelectorAll('.accordion-header');
-    headers.forEach(h => {
-      h.style.top = (barHeight - 1) + 'px';
-    });
-  }
-
-  // ▼ ページ内の全リソース（fetch挿入含む）が終わった後に実行
-  window.addEventListener("load", updateStickyOffset);
-
-  // ▼ リサイズ時にも再調整
-  window.addEventListener("resize", updateStickyOffset);
-
-})();
-</script>
-
-
-
 
 </body>
 </html>
