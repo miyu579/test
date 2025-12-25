@@ -3,7 +3,16 @@
 @import"https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
-/*20251210*/
+.close_mypageuser_btn a{
+    text-align: center;
+
+}
+.close_mypageuser{
+    color: #ca1032;
+    font-size: 18px;
+    text-align: center;
+}
+/*20251210
 .close_mypageuser{
     color: #ca1032;
     font-size: 18px;
@@ -36,7 +45,7 @@
     border-left: 0;
     border-bottom: 0;
     transform: translateY(-25%) rotate(45deg);
-}
+}*/
 @media screen and (max-width: 768px) {
     .close_mypageuser{
     font-size: 18px;
