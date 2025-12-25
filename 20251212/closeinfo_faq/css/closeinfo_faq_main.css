@@ -1,8 +1,88 @@
 @charset "utf-8";
 /* CSS Document */
+/*#closeinfo_faq {
+    line-height: 1.6;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    color: #333;
+}*/
+@media screen and (min-width:1100px) {
+	.closeinfo_faq_html .sptbOnly{
+		display: none!important;
+	}
+}
+@media screen and (min-width:768px) {
+	.closeinfo_faq_html .spOnly{
+		display: none!important;
+	}
+}
+@media screen and (max-width:1100px) {
+	.closeinfo_faq_html .pcOnly {
+		display: none!important;
+	}
+	.closeinfo_faq_html .sptbOnly{
+		display: block!important;
+	}
+	.closeinfo_faq_html .spOnly{
+		display: block!important;
+	}
+}
+@media screen and (max-width:768px) {
+	.closeinfo_faq_html .spOnly{
+		display: block!important;
+	}
+}
 .closeinfo_faq_html body{
     margin: 0;
 }
+/*目次*/
+#closeinfo_faq .close_faq_toc >div{
+    /*border: 1px solid #ca1032; */
+ 
+}#closeinfo_faq .close_faq_toc >div>div{
+
+    flex-direction: column;
+    padding: 8px 0 20px;
+   
+}#closeinfo_faq .close_faq_toc >div>div>div{
+        width: 100%;
+    margin: 15px auto;
+    position: relative;
+    max-width: 266px;
+}#closeinfo_faq .close_faq_toc >div>div>div a{
+    text-decoration: none;
+    color:#333;
+  
+}#closeinfo_faq .close_faq_toc >div>div>div p{
+    border-bottom: 1px solid #8f8f8f;
+    padding: 0 30px 3px 4px;
+  
+}#closeinfo_faq .close_faq_toc >div>div>div p:before{
+     content: '';
+    width: 10px;
+    height: 10px;
+    border: 0;
+    transform: rotate(135deg);
+    position: absolute;
+    top: -16%;
+    bottom: 0;
+    margin: auto 25px auto auto;
+    right: -12px;
+}#closeinfo_faq .close_faq_toc >div>div>div:nth-of-type(1) p:before{
+    border-top: solid 3px #ca1032;
+    border-right: solid 3px #ca1032;
+}#closeinfo_faq .close_faq_toc >div>div>div:nth-of-type(2) p:before{
+    border-top: solid 3px #2ba23a;
+    border-right: solid 3px #2ba23a;
+}
+
+#closeinfo_faq #closeinfo_member .close_faq_toc{
+   width: 95%;
+    max-width:800px;
+    margin: auto;
+}
+
+/*目次おわり*/
 /*ロゴ*/
 .closeinfo_faq_html .logo_text {
     font-weight: bold;
@@ -44,9 +124,10 @@
 
 }
 @media screen and (max-width: 768px) {
+ 
     .closeinfo_faq_html .logo_wrap img {
         width: 140px;
-        margin-bottom: -2px;
+        margin-bottom: -10px;
     }
 	.closeinfo_faq_html .logo_wrap span{
 		font-size: 12px;
@@ -61,21 +142,17 @@
 }
 /*ロゴ終わり*/
 /*KV*/
-#closeinfo_faq .closeinfo {
+#closeinfo_faq  h1{
+    font-size: 26px;
     text-align: center;
-    width: 95%;
-    max-width:800px;
-    margin: auto;
-    padding: 22px 0;
-	border-radius: 10px;
-	/*box-shadow: 0px 0px 5px #bdbdbd;*/
+    margin: 15px auto 0px;
 }
 
-#closeinfo_faq .closeinfo_bg{
+#closeinfo_faq .closeinfo_faq_bg{
 background-image: url("../img/kv_bg.jpg");
 background-color: #f1f2f599;
 background-size: 85%;
-padding: 50px 0 80px;
+padding: 50px 0 50px;
 background-position: center 56%;
         margin: 0 auto
 }
@@ -95,10 +172,10 @@ background-position: center 56%;
 }
 #closeinfo_faq .closeinfo_box{
     width: 850px;
-    margin: auto;
+            margin: 0 auto 15px;
       display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: relative;
     top: 25px;
    
@@ -117,12 +194,14 @@ background-position: center 56%;
 }
 #closeinfo_faq .closeinfo_box >div{
     position: relative;
-    width: 44%;
+    width: 40%;
 }
 #closeinfo_faq .closeinfo_box >div p {
-    padding: 22px 46px 22px 20px;
+    padding: 16px 46px 15px 20px;
     text-align: center;
     line-height: 22px;
+        font-size: 18px;
+    margin: 0;
 }
 #closeinfo_faq .closeinfo_box >.closeinfo_member_an:before{
      content: '';
@@ -179,8 +258,8 @@ background-position: center 56%;
     text-align: center;
     line-height: 22px;
 }
-    #closeinfo_faq .closeinfo_bg {
-    padding: 10px 0 80px;
+    #closeinfo_faq .closeinfo_faq_bg {
+    padding: 40px 0 35px;
 
 }
     #closeinfo_faq .closeinfo p {
@@ -196,7 +275,7 @@ background-position: center 56%;
 	}
     #closeinfo_faq .closeinfo_box {
     width: 95%;
-    margin: auto;
+        margin: 0 auto 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -205,6 +284,20 @@ background-position: center 56%;
 }
 }
 @media screen and (max-width:768px) {
+        #closeinfo_faq .closeinfo_faq_bg {
+            padding: 30px 0 20px;
+    }
+       #closeinfo_faq h1 {
+    font-size: 19px;
+    text-align: center;
+           margin: 30px auto 0px;
+}
+    #closeinfo_faq .closeinfo_box >div p {
+        padding: 7px 19px 7px 7px;
+        text-align: center;
+                line-height: 19px;
+        font-size: 16px;
+    }
 #closeinfo_faq .closeinfo_box >div:before{
     right: -14px;
 }
@@ -222,8 +315,8 @@ background-position: center 56%;
      right: -17px;
 }
     #closeinfo_faq .closeinfo_box {
-        top: 18px;
-        
+    top:0;
+    margin: 20px auto 30px;
     }
     #closeinfo_faq .closeinfo p{
         text-align: left;
@@ -250,30 +343,80 @@ background-position: center 56%;
 /*KVおわり*/
 
 /*質問アイコン*/
-#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion span{
-    
-}　
+#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_icon{
+    color: #fff;
+    font-size:14px;
+   border-radius: 3px;
+   padding: 0px 7px 1px;
+        margin: 0 10px 5px 0px;
+    display: inline-block;
+    flex-shrink: 0;
+  white-space: nowrap;
+}#closeinfo_faq .closeinfo_faq_bic_acquestion p:not(.closeinfo_faq_icon) {
+padding-bottom: 1px;
+    margin: 0;
+}
+#closeinfo_faq .closeinfo_faq_bic_acquestion > p:not(.closeinfo_faq_icon) {
+  margin: 0;
+}
+#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_application{
+    background-color:#a12525;
+}#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_fee{
+    background-color:#e97132;
+}#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_contractrenewal{
+    background-color:#196b24;
+}#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_reserve{
+    background-color:#1790c0;
+}#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_others{
+    background-color:#78276f;
+}
+@media screen and (max-width:768px) {
+    #closeinfo_faq .closeinfo_faq_bic_acquestion p:not(.closeinfo_faq_icon) {
+    padding-bottom: 0;
+}
+    #closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_icon{
+        font-size: 12px;
+        border-radius: 2px;
+        padding: 0px 5px 1
+            px;
+        margin: 0 0 3px;
+        display: inline-block;
+        line-height: 19px;
+}
+}
 /*質問アイコンおわり*/
-
+#closeinfo_faq .close_faq_texttoguide{
+    font-size: 16px;
+    color: #d00f31;
+    font-weight: bold;
+}
 #closeinfo_faq .closeinfo_faq_sec{
     width: 95%;
     max-width: 800px;
-    margin: auto;
+    margin: 35px auto 80px;
 }#closeinfo_faq h2{
     text-align: center;
-            padding: 20px 0 18px;
-        font-size: 25px;
+         padding: 14px 0 10px;
+        font-size: 20px;
+        margin: 30px 0 0;
 }
-#closeinfo_faq h2 span {
-    display: block;
-    padding: 3px 0;
+#closeinfo_faq #closeinfo_faq_mamber h2 span {
+        display: block;
+    padding: 2px 0;
     background-color: #d00f31;
     width: 160px;
-    margin: 4px auto 0px;
+    margin: 5px auto 0px;
+}
+#closeinfo_faq #closeinfo_faq_visitor h2 span {
+        display: block;
+    padding: 2px 0;
+    background-color: #2ba23a;
+    width: 160px;
+    margin: 5px auto 0px;
 }
 /*アコーディオン*/
 
-#closeinfo_faq .accordion-header {
+#closeinfo_faq #closeinfo_faq_mamber.accordion-header {
   position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -281,15 +424,7 @@ background-position: center 56%;
     z-index: 1;
     border-radius: 0;
 }
-#closeinfo_faq #closeinfo_member .accordion-header {
-  position: -webkit-sticky; /* Safari対策 */
-  position: sticky;
-  top: 0;
-  background:#ffeff1;
-  z-index: 1;
-    border-radius: 0;/* ヘッダーなどに隠れないように */
-}
-#closeinfo_faq #closeinfo_visitor .accordion-header {
+#closeinfo_faq #closeinfo_faq_visitor.accordion-header {
   position: -webkit-sticky; /* Safari対策 */
   position: sticky;
   top: 0;
@@ -301,12 +436,6 @@ background-position: center 56%;
     padding: 0;
       width: unset;
     margin: 2em auto;
-}
-@media screen and (max-width: 1200px) {
-    #closeinfo_faq section.accordion {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 }
 #closeinfo_faq .accordion-btn {
       padding: 0;
@@ -350,8 +479,27 @@ background-position: center 56%;
   text-align: center;
     border:1px solid #bec7ce;
 }
+#closeinfo_faq h2 span {
+      padding: 2px 0;
+        width: 84px;
+        margin: 0px auto 0px;
+}
 @media screen and (max-width: 768px) {
-    #closeinfo_faq #closeinfo_member h2, #closeinfo_faq #closeinfo_visitor h2 {
+    #closeinfo_faq .close_faq_texttoguide{
+    width:95%;
+        margin:30px auto 0;
+}
+    #closeinfo_faq h2 {
+    padding: 2px 0 0px;
+    font-size: 18px;
+        margin: 0;
+}
+    #closeinfo_faq #closeinfo_faq_mamber h2 span,#closeinfo_faq #closeinfo_faq_visitor h2 span{
+    padding: 2px 0;
+        width: 84px;
+                margin: 5px auto 0px;
+}
+#closeinfo_faq #closeinfo_member h2, #closeinfo_faq #closeinfo_visitor h2 {
            padding: 5px 0 4px;
     font-size: 18px;
 }
@@ -370,8 +518,9 @@ background-position: center 56%;
     }
      #closeinfo_faq .accordion-btn { /* ヘッダーの高さに合わせる（pxは正確に） */
     position: sticky; /* 念のため再宣言 */
-    padding: 8px;
-    font-size: 20px;
+                 padding: 8px;
+        font-size: 20px;
+        margin: 0;
   }
     #closeinfo_faq .accordion-header{
         top: 56px;
@@ -397,13 +546,14 @@ background-position: center 56%;
        padding: 80px 0;
 }
 #closeinfo_faq .closeinfo_faq_bic_ac_wrap {
-	width:90%;
-	margin: auto;
+	    width: 98%;
+    max-width: 800px;
+    margin: auto;
 }
 #closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution{
 	font-size: 12px;
     padding-left: 0px;
-    margin-top: 0px;
+    margin-top: -14px;
     line-height: 14px;
 	
 }
@@ -452,7 +602,7 @@ display: none;
 #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
 position: relative;
 cursor: pointer;
-padding: 23px 61px 23px 56px;
+padding: 23px 61px 23px 64px;
 
 }
 
@@ -471,7 +621,7 @@ position: relative;
 visibility: visible;
 transform: translateY(0);
 background-color: #f4f4f4;
-padding: 23px 20px 23px 56px;
+padding: 12px 20px 12px 64px;
 }
 
 
@@ -480,8 +630,8 @@ padding: 23px 20px 23px 56px;
         width: 16px;
         height: 16px;
         border: 0;
-        border-top: solid 4px #ca1032;
-    border-right: solid 4px #ca1032;
+        border-top: solid 4px #333;
+    border-right: solid 4px #333;
         transform: rotate(135deg);
         position: absolute;
         top: -12%;
@@ -496,8 +646,13 @@ transform: translateY(50%) rotate(315deg);
 	
 }
 	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
-    background-position: 10px 50%;
+        background-position: 14px 50%;
     background-size: 35px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
 }	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p,#closeinfo_faq .bic_ac .closeinfo_faq_bic_acanswer p{
     margin: 0;
 }
@@ -520,6 +675,14 @@ transform: translateY(50%) rotate(315deg);
 }
 
 @media screen and (max-width: 768px) {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
+    align-items: flex-start;
+    flex-direction: column;
+}
+   #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
+
+        
+}	
     #closeinfo_faq .question_bg {
     padding: 0px 0;
 }
@@ -536,12 +699,13 @@ transform: translateY(50%) rotate(315deg);
     top: -5%;
 }
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap {
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution{
-    margin-top: 3px;
+    margin-top: 5px;
+        margin-bottom: 0;
 	
 }
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer {
@@ -556,18 +720,19 @@ transform: translateY(50%) rotate(315deg);
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer p {
     font-size: 16px;
         line-height: 21px;
+        margin: 0;
 }
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion::before {
-    width: 14px;
-    height: 14px;
-    border-top: solid 3px #ca1032;
-    border-right: solid 3px #ca1032;
+    width: 12px;
+        height: 12px;
+        border-top: solid 2px #333;
+        border-right: solid 2px #333;
 }
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
-    padding: 12px 54px 12px 54px;
+    padding: 12px 54px 12px 50px;
 }
      #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input:checked+label+.closeinfo_faq_bic_acanswer {
-    padding: 20px 20px 20px 54px;
+   padding: 12px 20px 11px 54px;
 }
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p {
     line-height: 21px;
