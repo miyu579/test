@@ -23,9 +23,6 @@
 	.closeinfo_faq_html .sptbOnly{
 		display: block!important;
 	}
-	.closeinfo_faq_html .spOnly{
-		display: block!important;
-	}
 }
 @media screen and (max-width:768px) {
 	.closeinfo_faq_html .spOnly{
@@ -127,7 +124,7 @@
  
     .closeinfo_faq_html .logo_wrap img {
         width: 140px;
-        margin-bottom: -10px;
+        margin-bottom: -5px;
     }
 	.closeinfo_faq_html .logo_wrap span{
 		font-size: 12px;
@@ -377,8 +374,7 @@ padding-bottom: 1px;
     #closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_icon{
         font-size: 12px;
         border-radius: 2px;
-        padding: 0px 5px 1
-            px;
+        padding: 0px 5px 0px;
         margin: 0 0 3px;
         display: inline-block;
         line-height: 19px;
@@ -490,7 +486,7 @@ padding-bottom: 1px;
         margin:30px auto 0;
 }
     #closeinfo_faq h2 {
-    padding: 2px 0 0px;
+    padding: 4px 0 0px;
     font-size: 18px;
         margin: 0;
 }
@@ -672,9 +668,16 @@ transform: translateY(50%) rotate(315deg);
     text-indent: -10px;
         padding-left: 10px;
         list-style: none;
+        line-height: 18px;
 }
 
 @media screen and (max-width: 768px) {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution li
+ {
+    text-indent: -16px;
+    padding-left: 16px;
+    line-height: 17px;
+}
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
     align-items: flex-start;
     flex-direction: column;
@@ -729,10 +732,10 @@ transform: translateY(50%) rotate(315deg);
         border-right: solid 2px #333;
 }
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
-    padding: 12px 54px 12px 50px;
+    padding: 15px 54px 15px 50px;
 }
      #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input:checked+label+.closeinfo_faq_bic_acanswer {
-   padding: 12px 20px 11px 54px;
+   padding: 15px 20px 15px 54px;
 }
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p {
     line-height: 21px;
