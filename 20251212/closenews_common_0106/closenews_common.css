@@ -3,6 +3,7 @@
 
 /*20251211アコーディオン*/
 
+
 /* 実際に操作したい部分だけ有効化 */
 #closenews_common .close_header_notice_bar,
 #closenews_common .close_header_notice_content,
@@ -37,6 +38,12 @@
   pointer-events: none;
   transition: opacity .2s ease;
 }
+
+#closenews_common .close_header_notice.is-active {
+  opacity: 1;
+    pointer-events: none;
+}
+
 /* 改行制御 */
 #closenews_common br{
   display: none;
@@ -46,10 +53,7 @@
     display: block!important;
   }
 }
-#closenews_common .close_header_notice.is-active {
-  opacity: 1;
-    pointer-events: none;
-}
+
 /* バー */
 #closenews_common .close_header_notice_bar {
   background: #f1f2f5;
@@ -111,17 +115,12 @@
   pointer-events: none;
   transition: transform .2s ease, opacity .2s ease;
      padding-bottom: 10px;
-}#closenews_common .close_header_notice_content a{
-  pointer-events: none;
 }
 
 #closenews_common .close_header_notice.open
 .close_header_notice_content {
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto;
-}#closenews_common .close_header_notice.open
-.close_header_notice_content a{
   pointer-events: auto;
 }
 
@@ -169,10 +168,10 @@
   }
 }
 /* 通常表示用（スクロール前） */
-#closenews_common .close_header_notice_normal{
+#closenews_common .close_header_notice.is-normal {
   position: static;
   opacity: 1;
-    pointer-events: auto;
+  pointer-events: none;
 }
 /* =========================
    fixed 非表示中は bar を無効化
