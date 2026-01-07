@@ -671,7 +671,7 @@ transform: translateY(50%) rotate(315deg);
    background-size: 35px 35px;
     background-position: 14px 54%;
 }
-	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution li{
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution p{
        text-indent: -22px;
     padding-left: 22px;
         list-style: none;
@@ -679,7 +679,7 @@ transform: translateY(50%) rotate(315deg);
 }
 
 @media screen and (max-width: 768px) {
-    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution li
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution p
  {
     text-indent: -20px;
         padding-left: 20px;
