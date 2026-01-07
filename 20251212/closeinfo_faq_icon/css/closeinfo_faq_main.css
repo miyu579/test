@@ -1,0 +1,771 @@
+@charset "utf-8";
+/* CSS Document */
+#closeinfo_faq {
+    line-height: 1.6;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+@media screen and (min-width:1100px) {
+	.closeinfo_faq_html .sptbOnly{
+		display: none!important;
+	}
+}
+@media screen and (min-width:768px) {
+	.closeinfo_faq_html .spOnly{
+		display: none!important;
+	}
+}
+@media screen and (max-width:1100px) {
+	.closeinfo_faq_html .pcOnly {
+		display: none!important;
+	}
+	.closeinfo_faq_html .sptbOnly{
+		display: block!important;
+	}
+}
+@media screen and (max-width:768px) {
+	.closeinfo_faq_html .spOnly{
+		display: block!important;
+	}
+}
+.closeinfo_faq_html body{
+    margin: 0;
+}
+/*20260107アイコン追加*/
+
+#closeinfo_faq .closeinfo_faq_answer_icon{
+    text-align: center;
+}#closeinfo_faq .closeinfo_faq_answer_icon img{
+    width: 60%;
+    height:100%;
+}
+@media screen and (max-width:768px) {
+	#closeinfo_faq .closeinfo_faq_answer_icon img{
+    width: 100%;
+    height:100%;
+}
+}
+/*20260107アイコン追加*/
+/*目次*/
+#closeinfo_faq .close_faq_toc >div{
+    /*border: 1px solid #ca1032; */
+ 
+}#closeinfo_faq .close_faq_toc >div>div{
+
+    flex-direction: column;
+    padding: 8px 0 20px;
+   
+}#closeinfo_faq .close_faq_toc >div>div>div{
+        width: 100%;
+    margin: 15px auto;
+    position: relative;
+    max-width: 266px;
+}#closeinfo_faq .close_faq_toc >div>div>div a{
+    text-decoration: none;
+    color:#333;
+  
+}#closeinfo_faq .close_faq_toc >div>div>div p{
+    border-bottom: 1px solid #8f8f8f;
+    padding: 0 30px 3px 4px;
+  
+}#closeinfo_faq .close_faq_toc >div>div>div p:before{
+     content: '';
+    width: 10px;
+    height: 10px;
+    border: 0;
+    transform: rotate(135deg);
+    position: absolute;
+    top: -16%;
+    bottom: 0;
+    margin: auto 25px auto auto;
+    right: -12px;
+}#closeinfo_faq .close_faq_toc >div>div>div:nth-of-type(1) p:before{
+    border-top: solid 3px #ca1032;
+    border-right: solid 3px #ca1032;
+}#closeinfo_faq .close_faq_toc >div>div>div:nth-of-type(2) p:before{
+    border-top: solid 3px #2ba23a;
+    border-right: solid 3px #2ba23a;
+}
+
+#closeinfo_faq #closeinfo_member .close_faq_toc{
+   width: 95%;
+    max-width:800px;
+    margin: auto;
+}
+
+/*目次おわり*/
+/*ロゴ*/
+.closeinfo_faq_html .logo_text {
+    font-weight: bold;
+    color: #008344;
+    font-size: 14px;
+    text-align: center;
+    margin-top:1px;
+}
+.closeinfo_faq_html .header {
+	padding-top: 10px;
+}
+.closeinfo_faq_html .none_deco span{
+	text-decoration: none;
+    color:#008344;
+}.closeinfo_faq_html .none_deco{
+	text-decoration: none;
+}
+.closeinfo_faq_html .logo_wrap {
+    padding-top: 8px;
+    padding-left: 20px;
+    color: #008344;
+    font-weight: bold;
+    margin: 5px 0 10px;
+    width: 240px;
+    font-size: 16px;
+}.closeinfo_faq_html .sp_header_entry {
+    
+    line-height: 1.6;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+.closeinfo_faq_html .logo_wrap img{
+           width: 190px;
+        margin-bottom:-3px;
+    }
+@media screen and (max-width: 1100px) {
+	.closeinfo_faq_html .logo_wrap {
+        padding-top: 8px;
+		padding-left: 20px;
+		color: #008344;
+		font-weight: bold;
+	        margin-bottom: 10px;
+	}
+
+}
+@media screen and (max-width: 768px) {
+ 
+    .closeinfo_faq_html .logo_wrap img {
+        width: 140px;
+        margin-bottom: -6px;
+    }
+	.closeinfo_faq_html .logo_wrap span{
+		font-size: 12px;
+	}
+	.closeinfo_faq_html .logo_wrap {
+        padding-left: 15px;
+        padding-top: 6px;
+        color: #008344;
+        font-weight: bold;
+		padding-bottom: 0px;
+    }
+}
+/*ロゴ終わり*/
+/*KV*/
+#closeinfo_faq  h1{
+    font-size: 26px;
+    text-align: center;
+    margin: 15px auto 0px;
+}
+
+#closeinfo_faq .closeinfo_faq_bg{
+background-image: url("../img/kv_bg.jpg");
+background-color: #f1f2f599;
+background-size: 85%;
+padding: 50px 0 50px;
+background-position: center 56%;
+        margin: 0 auto
+}
+#closeinfo_faq .closeinfo p{
+       font-size: 20px;
+    font-weight: bold;
+    margin: 10px auto 10px;
+}
+#closeinfo_faq .closeinfo .closeinfo_title{
+         font-size: 32px;
+        font-weight: bold;
+    color: #ca1032;
+}
+
+#closeinfo_faq .closeinfo .closeinfo_middle{
+        
+}
+#closeinfo_faq .closeinfo_box{
+    width: 850px;
+            margin: 0 auto 15px;
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: 25px;
+   
+}
+#closeinfo_faq .closeinfo_box >div p{
+    background-color: #fff;
+    box-shadow: 0px 1px 5px #c6c6c666;
+    padding: 26px 46px 26px 20px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}#closeinfo_faq .closeinfo_box >.closeinfo_member_an p{
+    background-color: #ffeff1;
+}#closeinfo_faq .closeinfo_box >.closeinfo_visitor_an p{
+    background-color: #e9f3e8;
+}
+#closeinfo_faq .closeinfo_box >div{
+    position: relative;
+    width: 40%;
+}
+#closeinfo_faq .closeinfo_box >div p {
+    padding: 16px 46px 15px 20px;
+    text-align: center;
+    line-height: 22px;
+        font-size: 18px;
+    margin: 0;
+}
+#closeinfo_faq .closeinfo_box >.closeinfo_member_an:before{
+     content: '';
+    width: 12px;
+    height: 12px;
+    border: 0;
+    transform: rotate(135deg);
+    position: absolute;
+    top: -2%;
+    bottom: 0;
+    margin: auto 25px auto auto;
+           border-top: solid 4px #ca1032;
+    border-right: solid 4px #ca1032;
+    right: 0;
+}#closeinfo_faq .closeinfo_box >.closeinfo_visitor_an:before{
+     content: '';
+    width: 12px;
+    height: 12px;
+    border: 0;
+    transform: rotate(135deg);
+    position: absolute;
+    top: -2%;
+    bottom: 0;
+    margin: auto 25px auto auto;
+           border-top: solid 4px #2ba23a;
+    border-right: solid 4px #2ba23a;
+    right: 0;
+}/*#closeinfo_faq .closeinfo_box >.closeinfo_visitor_an:before{
+        border-top: solid 4px #2ba23a;
+    border-right: solid 4px #2ba23a;
+}
+#closeinfo_faq .closeinfo_box >.closeinfo_member_an:before{
+        border-top: solid 4px #ca1032;
+    border-right: solid 4px #ca1032;
+}*/
+#closeinfo_faq .closeinfo_box >div a{
+    font-weight:    bold;
+    text-decoration: none;
+}
+/*#closeinfo_faq .closeinfo_box .closeinfo_member_an p{
+    color: #ca1032;
+}
+#closeinfo_faq .closeinfo_box .closeinfo_member_an{
+    border: 2px solid #ca1032;
+}
+#closeinfo_faq .closeinfo_box .closeinfo_visitor_an p{
+    color: #2ba23a;
+}#closeinfo_faq .closeinfo_box .closeinfo_visitor_an {
+        border: 2px solid #2ba23a;
+}*/
+@media screen and (max-width:1100px) {
+    #closeinfo_faq .closeinfo_box >div p {
+    padding: 12px 46px 12px 20px;
+    text-align: center;
+    line-height: 22px;
+}
+    #closeinfo_faq .closeinfo_faq_bg {
+    padding: 40px 0 35px;
+
+}
+    #closeinfo_faq .closeinfo p {
+        text-align: left;
+    }
+#closeinfo_faq p.closeinfo_title {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+}
+	#closeinfo_faq .closeinfo {
+		width: 90%;
+	}
+    #closeinfo_faq .closeinfo_box {
+    width: 95%;
+        margin: 0 auto 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: 25px;
+}
+}
+@media screen and (max-width:768px) {
+        #closeinfo_faq .closeinfo_faq_bg {
+            padding: 30px 0 20px;
+    }
+       #closeinfo_faq h1 {
+    font-size: 19px;
+    text-align: center;
+           margin: 30px auto 0px;
+}
+    #closeinfo_faq .closeinfo_box >div p {
+        padding: 7px 19px 7px 7px;
+        text-align: center;
+                line-height: 19px;
+        font-size: 16px;
+    }
+#closeinfo_faq .closeinfo_box >div:before{
+    right: -14px;
+}
+    #closeinfo_faq .closeinfo_box >.closeinfo_member_an:before{
+    width: 10px;
+    height: 10px;
+    border-top: solid 3px #ca1032;
+    border-right: solid 3px #ca1032;
+        right: -17px;
+}  #closeinfo_faq .closeinfo_box >.closeinfo_visitor_an:before{
+    width: 10px;
+    height: 10px;
+    border-top: solid 3px #2ba23a;
+    border-right: solid 3px #2ba23a;
+     right: -17px;
+}
+    #closeinfo_faq .closeinfo_box {
+    top:0;
+    margin: 20px auto 30px;
+    }
+    #closeinfo_faq .closeinfo p{
+        text-align: left;
+                font-size: 16px;
+    }
+    #closeinfo_faq .closeinfo p.closeinfo_title {
+    font-size: 23px;
+        line-height: 28px;
+        text-align: center;
+        margin: 20px auto 20px;
+}    
+    #closeinfo_faq .closeinfo p.closeinfo_title span{
+    font-size: 23px;
+}    #closeinfo_faq .closeinfo p.closeinfo_middle {
+    font-size: 16px;
+}
+
+#closeinfo_faq .closeinfo_box >div {
+    width: 48%;
+}
+    #closeinfo_faq .closeinfo_box >div:nth-of-type(n+3){
+    margin-top: 10px;
+    }}
+/*KVおわり*/
+
+/*質問アイコン*/
+#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_icon{
+    color: #fff;
+    font-size:14px;
+   border-radius: 3px;
+   padding: 0px 7px 1px;
+        margin: 0 10px 5px 0px;
+    display: inline-block;
+    flex-shrink: 0;
+  white-space: nowrap;
+}#closeinfo_faq .closeinfo_faq_bic_acquestion p:not(.closeinfo_faq_icon) {
+padding-bottom: 1px;
+    margin: 0;
+}
+#closeinfo_faq .closeinfo_faq_bic_acquestion > p:not(.closeinfo_faq_icon) {
+  margin: 0;
+}
+#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_application{
+    background-color:#a12525;
+}#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_fee{
+    background-color:#e97132;
+}#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_contractrenewal{
+    background-color:#196b24;
+}#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_reserve{
+    background-color:#1790c0;
+}#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_others{
+    background-color:#78276f;
+}
+@media screen and (max-width:768px) {
+    #closeinfo_faq .closeinfo_faq_bic_acquestion p:not(.closeinfo_faq_icon) {
+    padding-bottom: 0;
+}
+    #closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_icon{
+        font-size: 12px;
+        border-radius: 2px;
+        padding: 0px 5px 0px;
+        margin: 0 0 3px;
+        display: inline-block;
+        line-height: 19px;
+}
+}
+/*質問アイコンおわり*/
+#closeinfo_faq .close_faq_texttoguide{
+    font-size: 16px;
+    color: #d00f31;
+    font-weight: bold;
+}
+#closeinfo_faq .closeinfo_faq_sec{
+    width: 95%;
+    max-width: 800px;
+    margin: 35px auto 80px;
+}#closeinfo_faq h2{
+    text-align: center;
+         padding: 14px 0 10px;
+        font-size: 20px;
+        margin: 30px 0 0;
+}
+#closeinfo_faq #closeinfo_faq_mamber h2 span {
+        display: block;
+    padding: 2px 0;
+    background-color: #d00f31;
+    width: 160px;
+    margin: 5px auto 0px;
+}
+#closeinfo_faq #closeinfo_faq_visitor h2 span {
+        display: block;
+    padding: 2px 0;
+    background-color: #2ba23a;
+    width: 160px;
+    margin: 5px auto 0px;
+}
+/*アコーディオン*/
+
+#closeinfo_faq #closeinfo_faq_mamber.accordion-header {
+  position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #ffeff1;
+    z-index: 1;
+    border-radius: 0;
+}
+#closeinfo_faq #closeinfo_faq_visitor.accordion-header {
+  position: -webkit-sticky; /* Safari対策 */
+  position: sticky;
+  top: 0;
+  background:#e9f3e8;
+  z-index: 1;
+    border-radius: 0;/* ヘッダーなどに隠れないように */
+}
+#closeinfo_faq section.accordion {
+    padding: 0;
+      width: unset;
+    margin: 2em auto;
+}
+#closeinfo_faq .accordion-btn {
+      padding: 0;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+    font-size: 24px;
+}
+#closeinfo_faq .accordion-btn.active {
+  border-bottom: 1px solid #bec7ce;
+}
+
+#closeinfo_faq .accordion-btn.active::after {
+  transform: translateY(50%) rotate(315deg);
+    
+}
+#closeinfo_faq .accordion-content {
+   max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#closeinfo_faq .accordion-content.open {
+  max-height: none; /* 高さ制限なしで開く */
+}
+#closeinfo_faq .c-setting-box {
+  margin-bottom: 2em;
+  padding: 1em 2em;
+  border:1px solid #bec7ce;
+  text-align: left;
+    box-shadow: none;
+}
+    #closeinfo_faq .c-plan {
+  width: 100%;
+  margin: 2em auto;
+  padding: .1em 2em 2em;
+  box-sizing: border-box;
+  background-color: #e4f2fc;
+  text-align: center;
+    border:1px solid #bec7ce;
+}
+#closeinfo_faq h2 span {
+      padding: 2px 0;
+        width: 84px;
+        margin: 0px auto 0px;
+}
+@media screen and (max-width: 768px) {
+    #closeinfo_faq .close_faq_texttoguide{
+    width:95%;
+        margin:30px auto 0;
+}
+    #closeinfo_faq h2 {
+    padding: 4px 0 0px;
+    font-size: 18px;
+        margin: 0;
+}
+    #closeinfo_faq #closeinfo_faq_mamber h2 span,#closeinfo_faq #closeinfo_faq_visitor h2 span{
+    padding: 2px 0;
+        width: 84px;
+                margin: 5px auto 0px;
+}
+#closeinfo_faq #closeinfo_member h2, #closeinfo_faq #closeinfo_visitor h2 {
+           padding: 5px 0 4px;
+    font-size: 18px;
+}
+    #closeinfo_faq .price-list_subscribe table {
+    border-right: none;
+    border-left: none;
+}
+      #closeinfo_faq .c-setting-dl__small {
+    display: block;
+              width: 95%;
+        margin: auto;
+  }
+    #closeinfo_faq section{
+        overflow-x: visible;
+        overflow-y: visible; 
+    }
+     #closeinfo_faq .accordion-btn { /* ヘッダーの高さに合わせる（pxは正確に） */
+    position: sticky; /* 念のため再宣言 */
+                 padding: 8px;
+        font-size: 20px;
+        margin: 0;
+  }
+    #closeinfo_faq .accordion-header{
+        top: 56px;
+           z-index: 1;
+    }
+    #closeinfo_faq .accordion-btn::after {
+    width: 14px;
+    height: 14px;
+    right: -7px;
+}
+        #closeinfo_faq section.accordion {
+       width: 96%;
+       margin: 0 auto 20px;
+    }
+    #closeinfo_faq section.c-setting-box{
+                padding: 0;
+        width: 96%;
+        margin: 20px auto;
+    }
+}
+/*アコーディオンおわり*/
+#closeinfo_faq .question_bg{
+       padding: 80px 0;
+}
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap {
+	    width: 98%;
+    max-width: 800px;
+    margin: auto;
+}
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution{
+	font-size: 12px;
+    padding-left: 0px;
+    margin-top: -14px;
+    line-height: 14px;
+	
+}
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem{
+}
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion{
+	background-image: url("../img/closeinfo_faq_q.png");
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	background-size: 30px;
+}
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer{
+	background-image: url("../img/closeinfo_faq_a.png");
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: 10px 54%;
+}
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p{
+
+}
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer p{
+	font-size: 17px;
+	
+}
+
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem+.closeinfo_faq_bic_acitem {
+}
+
+
+
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem {
+position: relative;
+overflow: hidden;
+border-top: 1px solid #e0e0e0;
+border-bottom: 1px solid #e0e0e0;
+}
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem +.closeinfo_faq_bic_acitem{
+border-top: none;
+}
+
+
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input {
+display: none;
+}
+
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
+position: relative;
+cursor: pointer;
+padding: 23px 61px 23px 64px;
+
+}
+
+	/* アコーディオン */
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer {
+position: absolute;
+visibility: hidden;
+transform: translateY(-100%);
+border-top: none;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input:checked+label+.closeinfo_faq_bic_acanswer {
+position: relative;
+visibility: visible;
+transform: translateY(0);
+background-color: #f4f4f4;
+padding: 12px 20px 12px 64px;
+}
+
+
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 0;
+        border-top: solid 4px #333;
+    border-right: solid 4px #333;
+        transform: rotate(135deg);
+        position: absolute;
+        top: -12%;
+        right: 0;
+        bottom: 0;
+        margin: auto 25px auto auto;
+
+}
+
+#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input:checked+label>.closeinfo_faq_bic_acquestion::before {
+transform: translateY(50%) rotate(315deg);
+	
+}
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
+        background-position: 14px 50%;
+    background-size: 35px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
+}	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p,#closeinfo_faq .bic_ac .closeinfo_faq_bic_acanswer p{
+    margin: 0;
+}
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion::before {
+    right: -16px;
+		top: -5%;
+}
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p {
+    font-size: 17px;
+    line-height: 21px;
+}
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer {
+   background-size: 35px 35px;
+    background-position: 14px 54%;
+}
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap div.question_caution p{
+    text-indent: -16px;
+    padding-left: 16px;
+        list-style: none;
+          line-height: 16px;
+    margin: 0;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap div.question_caution p{
+
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution p
+ {
+    text-indent: -20px;
+        padding-left: 20px;
+    line-height: 17px;
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
+    align-items: flex-start;
+    flex-direction: column;
+}
+   #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
+
+        
+}	
+    #closeinfo_faq .question_bg {
+    padding: 0px 0;
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer {
+    background-position: 13px 50%;
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
+    background-position: 13px 50%;
+
+}
+       
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion::before {
+    right: -3px;
+    top: -5%;
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap {
+    width: 100%;
+    margin: auto;
+}
+
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution{
+    margin-top: 5px;
+        margin-bottom: 0;
+	
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer {
+    background-size: 28px 28px;
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
+    background-size: 28px 28px;
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p{
+        font-size: 16px;
+    }
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acanswer p {
+    font-size: 16px;
+        line-height: 21px;
+        margin: 0;
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion::before {
+    width: 12px;
+        height: 12px;
+        border-top: solid 2px #333;
+        border-right: solid 2px #333;
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion {
+    padding: 15px 54px 15px 50px;
+}
+     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acitem>input:checked+label+.closeinfo_faq_bic_acanswer {
+   padding: 15px 20px 15px 54px;
+}
+    #closeinfo_faq .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion p {
+    line-height: 21px;
+}
+}
+/*よくある質問おわり*/
