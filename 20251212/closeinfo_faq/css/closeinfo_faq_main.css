@@ -671,11 +671,13 @@ transform: translateY(50%) rotate(315deg);
    background-size: 35px 35px;
     background-position: 14px 54%;
 }
-	#closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution p{
-       text-indent: -22px;
-    padding-left: 22px;
+	#closeinfo_faq .closeinfo_faq_bic_ac_wrap div.question_caution p{
+    text-indent: -15px;
+    padding-left: 15px;
         list-style: none;
-        line-height: 18px;
+          line-height: 16px;
+    margin: 0;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 768px) {
