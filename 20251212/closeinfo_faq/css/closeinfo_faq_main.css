@@ -2,7 +2,7 @@
 /* CSS Document */
 #closeinfo_faq {
     line-height: 1.6;
-    font-family: "Noto Sans JP", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 18px;
     color: #333;
 }
