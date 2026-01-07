@@ -682,8 +682,7 @@ transform: translateY(50%) rotate(315deg);
 
 @media screen and (max-width: 768px) {
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap div.question_caution p{
-    text-indent: -17px;
-    padding-left: 17px;
+
 }
     #closeinfo_faq .closeinfo_faq_bic_ac_wrap .question_caution p
  {
