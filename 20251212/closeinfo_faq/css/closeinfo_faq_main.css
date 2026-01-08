@@ -32,6 +32,21 @@
 .closeinfo_faq_html body{
     margin: 0;
 }
+/*20260107アイコン追加*/
+
+#closeinfo_faq .closeinfo_faq_answer_icon{
+    text-align: center;
+}#closeinfo_faq .closeinfo_faq_answer_icon img{
+    width: 60%;
+    height:100%;
+}
+@media screen and (max-width:768px) {
+	#closeinfo_faq .closeinfo_faq_answer_icon img{
+    width: 100%;
+    height:100%;
+}
+}
+/*20260107アイコン追加*/
 /*目次*/
 #closeinfo_faq .close_faq_toc >div{
     /*border: 1px solid #ca1032; */
@@ -372,6 +387,8 @@ padding-bottom: 1px;
 }#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_reserve{
     background-color:#1790c0;
 }#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_others{
+    background-color:#747379;
+}#closeinfo_faq .closeinfo_faq_sec .closeinfo_faq_bic_ac_wrap .closeinfo_faq_bic_acquestion .closeinfo_faq_insurance{
     background-color:#78276f;
 }
 @media screen and (max-width:768px) {
