@@ -723,52 +723,54 @@
   </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.popup.js"></script>
+
 <script>
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
 
-  function getNoticeBarHeight() {
-    const bar = document.querySelector('.close_header_notice_bar');
-    return bar ? bar.offsetHeight : 0;
-  }
+  const anchorLinks = document.querySelectorAll('.closeinfo_anchor_mv');
 
-  function getAccordionHeaderHeight() {
-    const header = document.querySelector('.accordion-header');
-    return header ? header.offsetHeight : 0;
-  }
+  anchorLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
 
-  document.addEventListener('click', function (e) {
-    const a = e.target.closest('a[href^="#"]');
-    if (!a) return;
+      const href = this.getAttribute('href');
+      const target = document.querySelector(href);
+      if (!target) return;
 
-    const target = document.querySelector(a.getAttribute('href'));
-    if (!target) return;
+      // ▼ 上部バーの高さ（これだけを使う）
+      const noticeBar = document.querySelector('.close_header_notice_bar');
+      const barHeight = noticeBar?.offsetHeight || 0;
 
-    e.preventDefault();
+      // ▼PC/SP 判定
+      const isSP = window.matchMedia('(max-width: 768px)').matches;
 
-    let offset = getNoticeBarHeight();
+      // ▼余白調整ロジック
+      const type = this.dataset.type;
+      let extraMargin = 0;
 
-    if (
-      a.classList.contains('close_anchor_accordion-header') ||
-      a.classList.contains('close_anchor_accordion-header_notice_bar')
-    ) {
-      offset += getAccordionHeaderHeight();
-    }
+      if (!isSP) {
+        if (type === "closeinfo_member") extraMargin = 100;
+        if (type === "closeinfo_visitor") extraMargin = 50;
+      } else {
+        if (type === "closeinfo_member") extraMargin = 50;
+        if (type === "closeinfo_visitor") extraMargin = 0;
+      }
 
-    const y =
-      target.getBoundingClientRect().top +
-      window.pageYOffset -
-      offset -
-      20;
+      // ▼ 最終スクロール位置
+      const position =
+        target.getBoundingClientRect().top +
+        window.pageYOffset -
+        (barHeight - 1) +
+        extraMargin;
 
-    window.scrollTo({
-      top: y,
-      behavior: 'smooth'
+      window.scrollTo({
+        top: position,
+        behavior: 'smooth'
+      });
     });
   });
-
-})();
+});
 </script>
-
 
 <!--メンバービジターのヘッダー調整sticky（アンカー関係ない)-->
 <script>
