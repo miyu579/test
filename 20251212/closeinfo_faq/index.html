@@ -119,6 +119,7 @@
       </div>
     </div>
     <main id="closeinfo_faq"> 
+        <a href="#closeinfo_faq_bic_ac-member1-1">aa</a>
         <div class="closeinfo_faq_bg"> <h1>サービス終了に伴う<span>よくあるご質問</span><span class="underline_red"> </span> </h1>
             <div class="closeinfo_box">
             <div class="closeinfo_member_an"><a href="#closeinfo_faq_mamber" class="closeinfo_anchor_mv" data-type="closeinfo_member"><p>メンバー（有料）<br class="sptbOnly">会員の皆様</p></a></div>
@@ -723,7 +724,62 @@
   </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.popup.js"></script>
+<script>
+(function () {
 
+  function getNoticeBarHeight() {
+    const bar = document.querySelector('.close_header_notice_bar');
+    return bar ? bar.offsetHeight : 0;
+  }
+
+  function getAccordionHeaderHeight() {
+    const header = document.querySelector('.accordion-header');
+    return header ? header.offsetHeight : 0;
+  }
+
+  document.addEventListener('click', function (e) {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+
+    // ▼ メンバー／ビジターは別JS（必須）
+    if (a.classList.contains('closeinfo_anchor_mv')) return;
+
+    const target = document.querySelector(a.getAttribute('href'));
+    if (!target) return;
+
+    e.preventDefault();
+
+    let offset = 0;
+
+    // ▼ 基本：notice bar
+    offset += getNoticeBarHeight();
+
+    // ▼ accordion-header を加算するアンカー
+    if (
+      a.classList.contains('close_anchor_accordion-header') ||
+      a.classList.contains('close_anchor_accordion-header_notice_bar')
+    ) {
+      offset += getAccordionHeaderHeight();
+    }
+
+    const y =
+      target.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset - 30;
+
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
+    });
+  });
+
+})();
+</script>
+
+
+
+
+<!--メンバー、ビジターアンカーだけ例外でアンカー動かす-->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -772,6 +828,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+
 <!--メンバービジターのヘッダー調整sticky（アンカー関係ない)-->
 <script>
 (function() {
@@ -784,18 +841,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // ▼ アコーディオン見出しに適用
     const headers = document.querySelectorAll('.accordion-header');
     headers.forEach(h => {
-      h.style.top = (barHeight - 1) + 'px';
+      h.style.top = (barHeight) - 1 + 'px';
     });
   }
 
-  // ▼ ページ内の全リソース（fetch挿入含む）が終わった後に実行
-  window.addEventListener("load", updateStickyOffset);
-
-  // ▼ リサイズ時にも再調整
+  // 初期読み込み
+  window.addEventListener("DOMContentLoaded", updateStickyOffset);
+  // リサイズ対応
   window.addEventListener("resize", updateStickyOffset);
+  // fetch 挿入の遅延対策
+  setTimeout(updateStickyOffset, 300);
 
 })();
 </script>
+
 
 
 
