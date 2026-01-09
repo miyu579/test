@@ -119,7 +119,6 @@
       </div>
     </div>
     <main id="closeinfo_faq"> 
-        <a href="#closeinfo_faq_bic_ac-member1-1">aa</a>
         <div class="closeinfo_faq_bg"> <h1>サービス終了に伴う<span>よくあるご質問</span><span class="underline_red"> </span> </h1>
             <div class="closeinfo_box">
             <div class="closeinfo_member_an"><a href="#closeinfo_faq_mamber" class="closeinfo_anchor_mv" data-type="closeinfo_member"><p>メンバー（有料）<br class="sptbOnly">会員の皆様</p></a></div>
@@ -593,7 +592,7 @@
                     </p>
                 </div>
               </div>
-                 <div class="closeinfo_faq_bic_acitem"  id="closeinfo_faq_bic_ac-member1-1">
+                 <div class="closeinfo_faq_bic_acitem">
                 <input id="closeinfo_faq_bic_ac-visitor9" type="checkbox">
                 <label for="closeinfo_faq_bic_ac-visitor9">
                 <div class="closeinfo_faq_bic_acquestion">
@@ -741,20 +740,13 @@
     const a = e.target.closest('a[href^="#"]');
     if (!a) return;
 
-    // ▼ メンバー／ビジターは別JS（必須）
-    if (a.classList.contains('closeinfo_anchor_mv')) return;
-
     const target = document.querySelector(a.getAttribute('href'));
     if (!target) return;
 
     e.preventDefault();
 
-    let offset = 0;
+    let offset = getNoticeBarHeight();
 
-    // ▼ 基本：notice bar
-    offset += getNoticeBarHeight();
-
-    // ▼ accordion-header を加算するアンカー
     if (
       a.classList.contains('close_anchor_accordion-header') ||
       a.classList.contains('close_anchor_accordion-header_notice_bar')
@@ -765,7 +757,8 @@
     const y =
       target.getBoundingClientRect().top +
       window.pageYOffset -
-      offset - 30;
+      offset -
+      20;
 
     window.scrollTo({
       top: y,
@@ -774,58 +767,6 @@
   });
 
 })();
-</script>
-
-
-
-
-<!--メンバー、ビジターアンカーだけ例外でアンカー動かす-->
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-
-  const anchorLinks = document.querySelectorAll('.closeinfo_anchor_mv');
-
-  anchorLinks.forEach(link => {
-    link.addEventListener('click', function (event) {
-      event.preventDefault();
-
-      const href = this.getAttribute('href');
-      const target = document.querySelector(href);
-      if (!target) return;
-
-      // ▼ 上部バーの高さ（これだけを使う）
-      const noticeBar = document.querySelector('.close_header_notice_bar');
-      const barHeight = noticeBar?.offsetHeight || 0;
-
-      // ▼PC/SP 判定
-      const isSP = window.matchMedia('(max-width: 768px)').matches;
-
-      // ▼余白調整ロジック
-      const type = this.dataset.type;
-      let extraMargin = 0;
-
-      if (!isSP) {
-        if (type === "closeinfo_member") extraMargin = 100;
-        if (type === "closeinfo_visitor") extraMargin = 50;
-      } else {
-        if (type === "closeinfo_member") extraMargin = 50;
-        if (type === "closeinfo_visitor") extraMargin = 0;
-      }
-
-      // ▼ 最終スクロール位置
-      const position =
-        target.getBoundingClientRect().top +
-        window.pageYOffset -
-        (barHeight - 1) +
-        extraMargin;
-
-      window.scrollTo({
-        top: position,
-        behavior: 'smooth'
-      });
-    });
-  });
-});
 </script>
 
 
@@ -841,22 +782,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // ▼ アコーディオン見出しに適用
     const headers = document.querySelectorAll('.accordion-header');
     headers.forEach(h => {
-      h.style.top = (barHeight) - 1 + 'px';
+      h.style.top = (barHeight - 1) + 'px';
     });
   }
 
-  // 初期読み込み
-  window.addEventListener("DOMContentLoaded", updateStickyOffset);
-  // リサイズ対応
+  // ▼ ページ内の全リソース（fetch挿入含む）が終わった後に実行
+  window.addEventListener("load", updateStickyOffset);
+
+  // ▼ リサイズ時にも再調整
   window.addEventListener("resize", updateStickyOffset);
-  // fetch 挿入の遅延対策
-  setTimeout(updateStickyOffset, 300);
 
 })();
 </script>
-
-
-
 
 </body>
 </html>
