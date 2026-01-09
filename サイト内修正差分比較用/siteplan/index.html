@@ -51,6 +51,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="modulepreload" href="https://cdn.golfme.goo.ne.jp/build/3.71.25/chunk/vendor.js">
 <link rel="stylesheet" href="./index_files/app.css">
 <link rel="stylesheet" href="./index_files/app2.css">
+    <!--終了お知らせ-->
+  <link rel="stylesheet" href="../closenews_common/closenews_common.css">
+<script>
+(function() {
+
+  const fetchHTML = fetch("../closenews_common/closenews_common.html")
+    .then(res => res.text())
+    .catch(() => "");
+
+  document.addEventListener("DOMContentLoaded", async function() {
+
+    const target = document.querySelector("#closenews_common");
+    if (!target) return;
+
+    const html = await fetchHTML;
+    if (!html) return;
+
+    // HTML 挿入
+    target.innerHTML = html;
+
+    const notice = target.querySelector(".close_header_notice");
+    const bar = notice?.querySelector(".close_header_notice_bar");
+    if (!notice || !bar) return;
+
+    // 通常表示ブロックの高さを基準にする
+    const normal = target.querySelector(".close_header_notice_content_normal");
+    const threshold = normal ? normal.offsetHeight : 0;
+
+    function onScroll() {
+  if (!notice) return;
+  if (window.scrollY > threshold) {
+    notice.classList.add("is-active");
+  } else {
+    notice.classList.remove("is-active", "open");
+  }
+}
+
+
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    onScroll();
+
+    // 開閉（fixed 表示中のみ）
+    bar.addEventListener("click", () => {
+      if (!notice.classList.contains("is-active")) return;
+      notice.classList.toggle("open");
+    });
+
+  });
+})();
+</script>
+
+
+
+<!--終了お知らせ-->
     <!--キャンペーン終了-->
 <link rel="stylesheet" href="../campaign_finish_common_text/campaign_finish_common_text.css">
 <script>
@@ -83,6 +138,7 @@ const fetchTextHTML = fetch("../campaign_finish_common_text/campaign_finish_comm
 <script type="text/javascript" src="./index_files/f.txt"></script><script type="text/javascript" async="" src="./index_files/f(1).txt"></script>
 </head>
 <body id="top" class="choice">
+     <div id="closenews_common"></div>
 <noscript>
 <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVNPHPH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -194,7 +250,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                   <li>※&nbsp;必ず適用条件をご確認の上、お申込みください。</li>
                   <li><a href="https://golfme.goo.ne.jp/information/121?before=top" target="_blank">適用条件の確認はこちら</a></li>
                 </ul>
-                  <div id="campaign_finish_common_text"></div>
+                  <div class="close_planupdate"><p>本キャンペーンは2026年3月4日（水）14時で終了いたします 詳細は<a href="https://golfme.goo.ne.jp/campaign/3monthfree" rel="noopener noreferrer">こちら</a>をご確認ください</p></div>
               </div>
             </div>
             </label>
@@ -581,6 +637,31 @@ document.querySelectorAll('.accordion-btn').forEach(button => {
 });
 
 
+</script>
+    <!--追加sticky用-->
+    <script>
+(function() {
+
+  function updateStickyOffset() {
+    // ▼ 実際に上部を占有しているバーの高さ
+    const noticeBar = document.querySelector('.close_header_notice_bar');
+    const barHeight = noticeBar?.offsetHeight || 0;
+
+    // ▼ アコーディオン見出しに適用
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(h => {
+      h.style.top = (barHeight) - 1 + 'px';
+    });
+  }
+
+  // 初期読み込み
+  window.addEventListener("DOMContentLoaded", updateStickyOffset);
+  // リサイズ対応
+  window.addEventListener("resize", updateStickyOffset);
+  // fetch 挿入の遅延対策
+  setTimeout(updateStickyOffset, 300);
+
+})();
 </script>
 <script>
     // エンターキーで発火しないように処理を追加

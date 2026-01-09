@@ -3,8 +3,28 @@
 @import"https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
+/*20251210*/
 
-/*20250829 */
+div.c-setting-choice-3month div.close_planupdate p{
+    background-color: transparent;
+    color: #ca1032;
+    font-size: 18px;
+    text-align: center;
+     width: unset;
+}
+@media screen and (max-width: 768px) {div.c-setting-choice-3month div.close_planupdate p{
+    background-color: transparent;
+    color: #ca1032;
+    font-size: 16px;
+    text-align: center;
+}}
+@media screen and (max-width: 768px) {
+    .close_planupdate{
+    font-size: 18px;
+    }}
+/*20251210*/
+
+
 #planchoice_all .accordion-header {
   position: -webkit-sticky; /* Safari対策 */
   position: sticky;
