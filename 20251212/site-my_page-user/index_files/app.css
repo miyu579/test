@@ -12,6 +12,11 @@
 .close_mypageuser_btn a{
     text-align: center;
 }
+.close_mypageuser_btn div{
+display: inline-block;
+}
+.close_mypageuser_btn{
+text-align: center;}
 @media screen and (max-width: 768px) {
     .close_mypageuser{
     font-size: 18px;

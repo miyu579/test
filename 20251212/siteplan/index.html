@@ -602,42 +602,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </footer>
   <div class="l-footer-docomo"><img src="./index_files/footer-docomo.png" width="120" height="30" alt="NTT DOCOMO"></div>
 </div></div>
-<script>
-document.querySelectorAll('.accordion-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    const targetId = button.dataset.target;
-    const content = document.getElementById(targetId);
-    const isOpen = content.classList.contains('open');
-    const header = document.querySelector('.l-header');
-    let headerHeight = 0;
-
-    if (header && window.getComputedStyle(header).position === 'fixed') {
-      headerHeight = header.offsetHeight;
-    }
-
-    if (isOpen) {
-      content.classList.remove('open');
-      button.classList.remove('active');
-        
-      button.textContent = '料金プランの詳細を見る';
-
-      if (button.getBoundingClientRect().top <= headerHeight + 1) {
-        const y = button.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-        window.scrollTo({ top: y, behavior: 'auto' });
-      }
-    } else {
-      openedScrollTop = window.pageYOffset;
-      openedButtonTop = button.getBoundingClientRect().top + window.pageYOffset;
-      content.classList.add('open');
-      button.classList.add('active');
-
-      button.textContent = '料金プランの詳細を閉じる';
-    }
-  });
-});
-
-
-</script>
     <!--追加sticky用-->
     <script>
 (function() {
@@ -671,6 +635,56 @@ document.querySelectorAll('.accordion-btn').forEach(button => {
         }
     });
 </script> 
+   
+<script>
+document.querySelectorAll('.accordion-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const targetId = button.dataset.target;
+    const content = document.getElementById(targetId);
+    const isOpen = content.classList.contains('open');
+
+    // 終了お知らせバーの高さ取得
+    const bar = document.querySelector('.close_header_notice_bar');
+    const barHeight = bar ? bar.offsetHeight : 0;
+
+    if (isOpen) {
+      // ---- 閉じる ----
+      content.classList.remove('open');
+      button.classList.remove('active');
+      button.textContent = '料金プランの詳細を見る';
+
+     
+      requestAnimationFrame(() => {
+        const buttonTop = button.getBoundingClientRect().top;
+
+       
+        const isStuck =
+          Math.abs(buttonTop - barHeight) <= 1;
+
+      
+        if (!isStuck && buttonTop < barHeight) {
+          const y =
+            buttonTop +
+            window.pageYOffset -
+            barHeight;
+
+          window.scrollTo({
+            top: y,
+            behavior: 'auto'
+          });
+        }
+      });
+
+    } else {
+  
+      content.classList.add('open');
+      button.classList.add('active');
+      button.textContent = '料金プランの詳細を閉じる';
+    }
+  });
+});
+</script>
+
 
 <script type="text/javascript" id="" charset="">var _dcmlinker=_dcmlinker||[],_paq=_paq||[];_paq.push(["trackPageView"]);var u="//id.dmc.docomo.ne.jp/dcm/";(function(){_paq.push(["setTrackerUrl",u+"tr/dcmAn/gafour"]);_paq.push(["setSiteId",559]);_paq.push(["trackingType",1]);_paq.push(["afterAuthFlg",1]);var a=document,b=a.createElement("script");a=a.getElementsByTagName("script")[0];b.type="text/javascript";b.async=!0;b.defer=!0;b.src="//cdn.dmc.docomo.ne.jp/js/contents/union3.js";a.parentNode.insertBefore(b,a)})();</script><script type="text/javascript" id="" charset="">(function(b,a,e,f,c){b[c]=b[c]||function(){(b[c].q=b[c].q||[]).push(arguments)};var d=a.createElement(e);a=a.getElementsByTagName(e)[0];d.async=1;d.src=f;a.parentNode.insertBefore(d,a)})(window,document,"script","https://js.affiliate-sp.docomo.ne.jp/lp.min.js","daffFunc");daffFunc({});</script> 
 <script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1392595418700198");fbq("trackSingle","1392595418700198","PageView");</script>
