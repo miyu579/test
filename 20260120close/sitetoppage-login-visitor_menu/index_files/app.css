@@ -4,22 +4,37 @@
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
 /*終了時*/
-.close_top_visitor_inactive .l-header-member-button:hover,.close_top_visitor_inactive .l-header-member-button:focus,.close_top_visitor_inactive .l-header-member-button:active{
-    opacity: 1;
-}
-.close_top_visitor_inactive .l-header-member-button {
+
+@media screen and (max-width: 768px) {
+    .close_top_visitor_inactive .c-cta-member {
+    display: block;
+    width: 300px;
+        margin: 40px auto 0;
+    padding: 1em;
+    border-radius: 8px;
+    box-sizing: border-box;
     background-color:#d9d6d2;
     color: #aca8a3;
+    text-align: center;
+    box-shadow: none;
     position: relative;
-}.close_top_visitor_inactive .l-header-member-button:before{
+}
+.close_top_visitor_inactive .c-cta-member:before{
     content: "新規受付終了";
     position: absolute;
     color: #ca1032;
-    font-size: 12px;
-    top: -17px;
+    font-size: 14px;
+    top: -21px;
     left: 35%;
-    width: 80px;
-} 
+    width: 100px;
+}
+.close_top_visitor_inactive .c-cta-member {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /*終了時*/
 .slick-slider {
   margin-bottom: 30px;
