@@ -20,11 +20,12 @@
     font-size: 48px;
     font-weight: 700;
 }#lp20250501lp3 .endtext p{
-     padding-top: 120px;
-    font-size: 34px;
-    width: 100%;
-    margin: 0 auto;
+font-size: 34px;
+    margin: 120px auto 0;
     text-align: center;
+    color: #c33;
+    background-color: #fff;
+    padding: 20px;
 }
 #lp20250501lp3 br.lp20250501lp3_pcOnly{
         display: block;
@@ -36,9 +37,11 @@
         display: none;
     }
    #lp20250501lp3 .endtext p{
-font-size:20px;
-       width: 95%;
-       padding-top: 200px;
+        font-size: 20px;
+        margin-top: 200px;
+        width: 94%;
+        box-sizing: border-box;
+        padding: 10px 3px;
 }
 }
 /*終了時*/

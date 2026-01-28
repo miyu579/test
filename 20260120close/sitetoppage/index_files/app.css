@@ -9,6 +9,11 @@
     top:0;
     z-index: 1;
 }
+@media screen and (max-width: 768px) {
+    div#app>div.top-renew-logout-ov {
+        padding-top: 1em;
+    }
+}
 /*会員登録ボタン*/
 .close_top_inactive .sp_header_entry div.member a {
     color: #aca8a3;

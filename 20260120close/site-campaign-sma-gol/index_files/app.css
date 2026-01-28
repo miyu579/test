@@ -5,8 +5,8 @@
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
 /*20251210*/
 .close_smartgolf{
-    background-color: #f1f2f5;
-    color:#ca1032;
+    background-color: #edf2ff;
+    color:#0a3280;
     font-weight: bold;
     font-size: 22px;
     margin: 10px auto 0;
@@ -23,7 +23,7 @@
         display: none;
     }
 .close_smartgolf_fix {
-    background:#f1f2f5f2;
+    background:#edf2ffde;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -31,16 +31,61 @@
     text-align: center;
     padding: 10px 0;
 }
+#smartgolf202506 div.smartgolf202506_btn:before{
+         content: "本キャンペーンは終了しました";
+    position: absolute;
+    color: #ca1032;
+    font-size: 19px;
+    top: -32px;
+    left: 20%;
+
+}
 @media screen and (max-width:768px) {
+    #smartgolf202506 div.smartgolf202506_btn:before {
+    font-size: 16px;
+    top: -24px;
+    left: 17%;
+}
 .close_smartgolf p{
-            font-size: 16px;
+            font-size: 17px;
         line-height: 19px;
+    padding: 0;
 }
   .close_smartgolf br{
         display: block;
     }
 }
-
+#smartgolf202506 div.smartgolf202506_btn{
+    position: relative;
+    text-align: center;
+    border-radius: 30px;
+    color:none;
+    font-weight: 500;
+    background-color: #d9d6d2;
+    box-shadow: none;
+}
+#smartgolf202506 div.smartgolf202506_btn a:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    right: 19px;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-top: 12px solid transparent;
+    border-right: 0 solid transparent;
+    border-left: 17px solid #aca8a3;
+    border-bottom: 12px solid transparent;
+    box-sizing: border-box;
+}
+#smartgolf202506 div.smartgolf202506_benefits a, #smartgolf202506 div.smartgolf202506_whatis a {
+    text-decoration: none;
+    color: #aca8a3;
+    pointer-events: none;
+}#smartgolf202506 div.smartgolf202506_benefits .smartgolf202506_btn:hover, #smartgolf202506 div.smartgolf202506_whatis .smartgolf202506_btn:hover,#smartgolf202506 div.smartgolf202506_benefits .smartgolf202506_btn:focus, #smartgolf202506 div.smartgolf202506_whatis .smartgolf202506_btn:focus,#smartgolf202506 div.smartgolf202506_benefits .smartgolf202506_btn:active, #smartgolf202506 div.smartgolf202506_whatis .smartgolf202506_btn:active{
+    opacity: 1;
+}
 /*20251210*/
 .slick-slider {
   margin-bottom: 30px;
