@@ -5,8 +5,8 @@
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
 /*20251210*/
 .close_smartgolf{
-    background-color: #f1f2f5;
-    color:#ca1032;
+    background-color: #edf2ff;
+    color:#0a3280;
     font-weight: bold;
     font-size: 22px;
     margin: 10px auto 0;
@@ -23,7 +23,7 @@
         display: none;
     }
 .close_smartgolf_fix {
-    background:#f1f2f5f2;
+    background:#edf2ffde;
     width: 100%;
     position: fixed;
     bottom: 0;
