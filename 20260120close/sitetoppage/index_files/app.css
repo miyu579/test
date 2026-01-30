@@ -72,6 +72,9 @@
         left: 24%;
     width: 100px;
     }
+    div#app>div.top-renew-logout-ov {
+        padding-top: 0px;
+    }
 }
 @media screen and (max-width: 768px) {
    .close_top_inactive .sp_header_entry {
