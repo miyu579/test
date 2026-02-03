@@ -3,6 +3,40 @@
 @import"https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
+/*終了時*/
+.c-cta p.close_button_text{
+    color: #c33;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 auto -20px;
+}
+.about-c-plan-content div.c-setting-choice-3month .plan-p {
+    padding: .5em 0;
+}
+a.c-cta-member {
+    background-color: #cc333369;
+    box-shadow: none;
+    pointer-events: none;
+}
+a.c-cta-visitor {
+    background-color: #00840a59;
+    box-shadow: none;
+    pointer-events: none;
+}
+@media screen and (max-width: 768px){
+section.c-cta {
+padding: 0;
+    }
+ a.c-cta-visitor {
+        margin-top: -10px;
+    }
+    .c-cta p.close_button_text{
+    font-size: 16px;
+    margin: 0 auto -20px;
+}
+}
+/*終了時*/
+
 .slick-slider{
 	margin-bottom:30px;
 	position:relative;

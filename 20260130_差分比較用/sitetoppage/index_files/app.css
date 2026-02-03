@@ -4,11 +4,84 @@
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
 /*終了*/
-div.sticky_block {
+.close_top_inactive div.sticky_block {
  position: relative; 
     top:0;
     z-index: 1;
 }
+@media screen and (max-width: 768px) {
+    div#app>div.top-renew-logout-ov {
+        padding-top: 1em;
+    }
+}
+/*会員登録ボタン*/
+.close_top_inactive .sp_header_entry div.member a {
+    color: #aca8a3;
+    background:#d9d6d2;
+ border: 2px solid #d9d6d2;
+    position: relative;
+}.close_top_inactive .sp_header_entry div.member a:hover,.sp_header_entry div.member a:focus,.sp_header_entry div.member a:active,.close_top_inactive div.sticky_nav .sticky_nav_inner_box .nav_item.member a:hover,.close_top_inactive div.sticky_nav .sticky_nav_inner_box .nav_item.member a:focus,.close_top_inactive div.sticky_nav .sticky_nav_inner_box .nav_item.member a:active{
+    opacity: 1;
+}
+.close_top_inactive .sp_header_entry div.member a:before{
+ content: "新規受付終了";
+    position: absolute;
+    color: #ca1032;
+    font-size: 12px;
+    top: -19px;
+    left: -11px;
+    width: 100px;
+}
+.close_top_inactive div.sticky_nav .sticky_nav_inner_box .nav_item.member a {
+    padding: 6px 10px 8px;
+    color: #aca8a3;
+        background:#d9d6d2;
+    border: 2px solid #d9d6d2;
+    transition: none;
+    position: relative;
+}.close_top_inactive div.sticky_nav .sticky_nav_inner_box .nav_item.member a:before{
+    content: "新規受付終了";
+    position: absolute;
+    color: #ca1032;
+    font-size: 12px;
+    top: -19px;
+    left: 0%;
+    width: 84px;
+}
+@media (max-width: 1099.98px) {
+    .close_top_inactive .menu-slide ul.menu-slide_link_block_02 li:nth-of-type(n+2) {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 1099.98px) {
+    .close_top_inactive .menu-slide ul.menu-slide_link_block_02
+{margin: 40px auto 0;
+    }
+}
+@media (max-width: 1099.98px) {
+    .close_top_inactive .menu-slide ul.menu-slide_link_block_02 li.member a {
+       color: #aca8a3;
+        background:#d9d6d2;
+        position: relative;
+    }.close_top_inactive .menu-slide ul.menu-slide_link_block_02 li.member a:before{
+      content: "新規受付終了";
+    position: absolute;
+    color: #ca1032;
+    font-size: 12px;
+         top: -19px;
+        left: 24%;
+    width: 100px;
+    }
+    div#app>div.top-renew-logout-ov {
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+   .close_top_inactive .sp_header_entry {
+        margin: 14px auto 2px;
+    }
+}
+/*会員登録ボタン*/
 /*終了*/
 .slick-slider {
   margin-bottom: 30px;
