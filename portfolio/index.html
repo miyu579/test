@@ -534,71 +534,64 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const stack  = document.querySelector(".notebook-stack");
-  const sticky = document.querySelector(".notebook-sticky");
   const sheet1 = document.querySelector(".sheet-1");
   const sheet2 = document.querySelector(".sheet-2");
 
-  if (!stack || !sticky || !sheet1 || !sheet2) return;
+  if (!stack || !sheet1 || !sheet2) return;
+
+  // ===== 調整用パラメータ =====
+  const PHASE1_END = 0.6; // ここまで sheet1、以降 sheet2
+
+  const S1_START_Y = 120;
+  const S1_END_Y   = 0;
+  const S1_START_R = -3;
+  const S1_END_R   = 0; // ← 最後も少し斜め
+
+  const S2_START_Y = 700; // ← sheet2 初期位置（下）
+  const S2_END_Y   = 0;
+  const S2_START_R = -18;
+  const S2_END_R   = 0;
+  const S2_START_X = 0;
+  const S2_END_X   = 13;  // ← 最終的に少し右へ
+
+  const clamp = (v) => Math.min(Math.max(v, 0), 1);
 
   const update = () => {
     const start = stack.offsetTop;
     const end   = start + stack.offsetHeight - window.innerHeight;
 
-    const progress = Math.min(
-      Math.max((window.scrollY - start) / (end - start), 0),
-      1
-    );
+    const progress = clamp((window.scrollY - start) / (end - start));
 
-    /* =========================
-       sheet1（常に表示・最後も斜め）
-    ========================= */
-    const s1StartY = 120;
-    const s1EndY   = 0;
+    /* =====================
+       phase 分割
+    ===================== */
+    const phase1 = clamp(progress / PHASE1_END);
+    const phase2 = clamp((progress - PHASE1_END) / (1 - PHASE1_END));
 
-    const s1StartR = -3; // 最初
-    const s1EndR   = 0; // 最後も少し斜め
+    /* =====================
+       sheet1（先に完了）
+    ===================== */
+    const s1Y = S1_START_Y + (S1_END_Y - S1_START_Y) * phase1;
+    const s1R = S1_START_R + (S1_END_R - S1_START_R) * phase1;
 
-    const s1Y = s1StartY + (s1EndY - s1StartY) * progress;
-    const s1R = s1StartR + (s1EndR - s1StartR) * progress;
-
-    /* =========================
-       sheet2（後半からゆっくり）
-    ========================= */
-    const delayStart = 0.4;
-const delayRange = 0.6;
-
-const delay = Math.min(
-  Math.max((progress - delayStart) / delayRange, 0),
-  1
-);
-
-const s2StartY = window.innerHeight * 0.9;
-const s2EndY   = 0;
-
-const s2StartR = -14;
-const s2EndR   = 0;
-
-// ← 追加
-const s2EndX = 13; // 右に5px（左なら -5）
-
-const s2Y = s2StartY + (s2EndY - s2StartY) * delay;
-const s2R = s2StartR + (s2EndR - s2StartR) * delay;
-const s2X = s2EndX * delay;
-
-    /* =========================
-       apply
-    ========================= */
     sheet1.style.transform =
       `translateY(${s1Y}px) rotate(${s1R}deg)`;
 
-   
-sheet2.style.transform =
-  `translate(${s2X}px, ${s2Y}px) rotate(${s2R}deg)`;
+    /* =====================
+       sheet2（sheet1完了後）
+    ===================== */
+    const s2Y = S2_START_Y + (S2_END_Y - S2_START_Y) * phase2;
+    const s2R = S2_START_R + (S2_END_R - S2_START_R) * phase2;
+    const s2X = S2_START_X + (S2_END_X - S2_START_X) * phase2;
+
+    sheet2.style.transform =
+      `translate(${s2X}px, ${s2Y}px) rotate(${s2R}deg)`;
   };
 
   window.addEventListener("scroll", update, { passive: true });
   update();
 });
+
 </script>
 
 
