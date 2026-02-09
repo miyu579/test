@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WEB DESIGN PORTFOLIO</title>
+
+  <!-- Fonts (好みで差し替えOK) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      /* ===== palette (画像の雰囲気) ===== */
+      --primary-500:#4A63ED;   /* ultramarine-ish */
+      --primary-700:#141CB8;
+      --accent-500:#D9F577;    /* mindaro */
+      --accent-600:#BFF141;
+
+      --bg-0:#FBFBFF;
+      --bg-1:#EEF0FF;          /* subtle lavender */
+      --ink:#0B0F1A;
+
+      --line: #0B0F1A;         /* 太めの黒ライン */
+      --line-soft: rgba(11,15,26,.25);
+
+      --card: #FFFFFF;
+
+      --shadow-1: 0 6px 0 rgba(11,15,26,.22);
+      --shadow-2: 0 10px 0 rgba(11,15,26,.16);
+
+      --radius-xl: 24px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+
+      --container: 1120px;
+
+      --grid: 48px; /* 背景グリッド */
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(1000px 520px at 30% 0%, rgba(74,99,237,.14), transparent 60%),
+        radial-gradient(900px 520px at 85% 30%, rgba(217,245,119,.18), transparent 60%),
+        linear-gradient(var(--bg-0), var(--bg-0));
+      overflow-x:hidden;
+    }
+
+    /* ===== 背景グリッド（薄く） ===== */
+    .grid-bg{
+      position:fixed; inset:0;
+      pointer-events:none;
+      background-image:
+        linear-gradient(rgba(74,99,237,.10) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(74,99,237,.10) 1px, transparent 1px);
+      background-size: var(--grid) var(--grid);
+      mix-blend-mode:multiply;
+      opacity:.45;
+      z-index:-1;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    .container{
+      width:min(var(--container), calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    /* ===== Header ===== */
+    header{
+      position:sticky; top:0;
+      z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(251,251,255,.72);
+      border-bottom: 3px solid rgba(11,15,26,.08);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:14px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:900;
+      letter-spacing:.02em;
+    }
+    .badge{
+      width:38px;height:38px;
+      border-radius: 12px;
+      background: var(--accent-500);
+      border:3px solid var(--line);
+      box-shadow: var(--shadow-1);
+      display:grid;
+      place-items:center;
+      font-weight:900;
+    }
+    .navlinks{
+      display:flex; gap:14px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .chip{
+      padding:10px 12px;
+      border:3px solid var(--line);
+      border-radius: 999px;
+      background: var(--card);
+      box-shadow: var(--shadow-1);
+      font-weight:800;
+      font-size:12px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      transition: transform .15s ease;
+    }
+    .chip:hover{ transform: translateY(-2px); }
+
+    /* ===== Hero ===== */
+    .hero{
+      padding:42px 0 26px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){
+      .heroGrid{ grid-template-columns: 1fr; }
+    }
+
+    .heroCopy{
+      border:3px solid var(--line);
+      border-radius: var(--radius-xl);
+      background: var(--card);
+      box-shadow: var(--shadow-2);
+      padding:26px 24px;
+      position:relative;
+      overflow:hidden;
+    }
+    .heroCopy:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(520px 220px at 18% 18%, rgba(217,245,119,.25), transparent 55%),
+        radial-gradient(520px 220px at 88% 35%, rgba(74,99,237,.18), transparent 55%);
+      z-index:0;
+    }
+    .heroCopy > *{ position:relative; z-index:1; }
+
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border:3px solid var(--line);
+      border-radius: 999px;
+      background: rgba(217,245,119,.55);
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:12px;
+      box-shadow: var(--shadow-1);
+    }
+    .kicker .dot{
+      width:10px;height:10px;border-radius:99px;
+      background: var(--primary-500);
+      border:2px solid var(--line);
+    }
+
+    h1{
+      margin:14px 0 10px;
+      font-size: clamp(36px, 4.6vw, 56px);
+      line-height:1.0;
+      letter-spacing:-.02em;
+      text-transform:uppercase;
+    }
+    .titleStroke{
+      display:inline-block;
+      color: var(--primary-500);
+      -webkit-text-stroke: 4px var(--line);
+      paint-order: stroke fill;
+      text-shadow:
+        1px 0 0 var(--line), -1px 0 0 var(--line),
+        0 1px 0 var(--line),  0 -1px 0 var(--line);
+    }
+    .sub{
+      margin:0;
+      font-size:14px;
+      line-height:1.8;
+      max-width: 62ch;
+      color: rgba(11,15,26,.78);
+      font-weight:600;
+    }
+
+    .heroMeta{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .pill{
+      padding:10px 12px;
+      border:3px solid var(--line);
+      border-radius: 12px;
+      background: var(--bg-1);
+      box-shadow: var(--shadow-1);
+      font-weight:800;
+      font-size:12px;
+      letter-spacing:.04em;
+    }
+
+    /* ===== Puzzle Card ===== */
+    .puzzleCard{
+      border:3px solid var(--line);
+      border-radius: var(--radius-xl);
+      background: var(--card);
+      box-shadow: var(--shadow-2);
+      padding:18px;
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .puzzleHead{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .puzzleHead .label{
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-size:12px;
+      padding:10px 12px;
+      border:3px solid var(--line);
+      border-radius:999px;
+      background: rgba(74,99,237,.10);
+      box-shadow: var(--shadow-1);
+    }
+    .btn{
+      appearance:none;
+      border:3px solid var(--line);
+      background: var(--accent-500);
+      border-radius: 999px;
+      padding:10px 12px;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:12px;
+      box-shadow: var(--shadow-1);
+      cursor:pointer;
+      transition: transform .15s ease;
+    }
+    .btn:hover{ transform: translateY(-2px); }
+
+    .board{
+      width:100%;
+      aspect-ratio: 700/400;
+      border:3px solid var(--line);
+      border-radius: 18px;
+      background: #FFFFFF;
+      box-shadow: var(--shadow-1);
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* ピース */
+    .piece{
+      position:absolute;
+      left:0; top:0;
+      will-change: transform;
+      transition: transform 1.25s cubic-bezier(.22,.61,.36,1);
+      filter:none;
+      pointer-events:none;
+    }
+    /* ジグソー形（強めに丸い） */
+    .piece svg{
+      width:100%; height:100%;
+      display:block;
+    }
+
+    /* 盤面の文字（ピースより上） */
+    .textLayer{
+      position:absolute; inset:0;
+      display:grid;
+      place-items:center;
+      z-index:5;
+      pointer-events:none;
+    }
+    .textLayer .stack{
+      text-align:center;
+      line-height:1.0;
+      transform: translateY(-2px);
+      user-select:none;
+    }
+    .textLayer .t1{
+      font-size: clamp(34px, 4.2vw, 54px);
+      font-weight:900;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      margin:0;
+      color: var(--primary-500);
+      -webkit-text-stroke: 4px var(--line);
+      paint-order: stroke fill;
+      text-shadow:
+        1px 0 0 var(--line), -1px 0 0 var(--line),
+        0 1px 0 var(--line),  0 -1px 0 var(--line);
+    }
+    .textLayer .t2{
+      margin:8px 0 0;
+      font-size: 12px;
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color: rgba(11,15,26,.65);
+    }
+
+    /* 欠けピース（最後にハマる） */
+    .missingSlot{
+      position:absolute;
+      width: calc(100% / 7);
+      height: calc(100% / 4);
+      left: calc(100% * (6/7));
+      top:  calc(100% * (3/4));
+      z-index:4;
+      display:grid;
+      place-items:center;
+      pointer-events:none;
+    }
+    .missingSlot .hint{
+      width:92%; height:92%;
+      border:3px dashed rgba(11,15,26,.28);
+      border-radius: 14px;
+      background: rgba(217,245,119,.10);
+      transform: rotate(-2deg);
+    }
+
+    /* ===== Sections ===== */
+    section{
+      padding: 34px 0;
+    }
+    .sectionHead{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:16px;
+    }
+    .sectionTitle{
+      font-size:22px;
+      font-weight:900;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      margin:0;
+    }
+    .sectionNote{
+      margin:0;
+      font-size:12px;
+      font-weight:700;
+      color: rgba(11,15,26,.65);
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
+    }
+    .card{
+      grid-column: span 6;
+      border:3px solid var(--line);
+      border-radius: var(--radius-xl);
+      background: var(--card);
+      box-shadow: var(--shadow-2);
+      padding:18px;
+      position:relative;
+      overflow:hidden;
+    }
+    .card.small{ grid-column: span 4; }
+    .card.wide{ grid-column: span 8; }
+
+    @media (max-width: 980px){
+      .card, .card.small, .card.wide{ grid-column: span 12; }
+    }
+
+    .cardTop{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:12px;
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border:3px solid var(--line);
+      border-radius:999px;
+      font-weight:900;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      box-shadow: var(--shadow-1);
+      background: rgba(74,99,237,.10);
+    }
+    .tag .mini{
+      width:10px;height:10px;border-radius:99px;
+      background: var(--accent-500);
+      border:2px solid var(--line);
+    }
+    .cardTitle{
+      margin:0;
+      font-size:18px;
+      font-weight:900;
+      letter-spacing:.02em;
+    }
+    .cardDesc{
+      margin:10px 0 0;
+      color: rgba(11,15,26,.75);
+      line-height:1.8;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    .kv{
+      margin-top:12px;
+      border:3px solid var(--line);
+      border-radius: 18px;
+      background:
+        linear-gradient(135deg, rgba(74,99,237,.18), rgba(217,245,119,.18)),
+        #ffffff;
+      height: 180px;
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      box-shadow: var(--shadow-1);
+      position:relative;
+    }
+    .kv .ph{
+      font-weight:900;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      font-size:12px;
+      padding:10px 12px;
+      border:3px solid var(--line);
+      border-radius:999px;
+      background:#fff;
+      box-shadow: var(--shadow-1);
+    }
+
+    .list{
+      margin:10px 0 0;
+      padding:0 0 0 18px;
+      line-height:1.9;
+      font-weight:600;
+      color: rgba(11,15,26,.75);
+      font-size:13px;
+    }
+
+    /* Footer */
+    footer{
+      padding: 26px 0 48px;
+      border-top: 3px solid rgba(11,15,26,.08);
+      background: rgba(251,251,255,.65);
+    }
+    .foot{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      color: rgba(11,15,26,.65);
+      font-weight:700;
+      font-size:12px;
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce){
+      .piece{ transition:none; }
+      .chip:hover, .btn:hover{ transform:none; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div class="brand">
+          <div class="badge">W</div>
+          <div>
+            <div style="font-size:13px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;">Web Design</div>
+            <div style="font-size:11px;font-weight:700;opacity:.68;letter-spacing:.04em;">Portfolio / Case Studies</div>
+          </div>
+        </div>
+
+        <nav class="navlinks" aria-label="site">
+          <a class="chip" href="#works">Works</a>
+          <a class="chip" href="#about">About</a>
+          <a class="chip" href="#skills">Skills</a>
+          <a class="chip" href="#process">Process</a>
+          <a class="chip" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="heroGrid">
+          <div class="heroCopy">
+            <div class="kicker"><span class="dot"></span> UI / UX + Design + Frontend</div>
+            <h1>
+              <span class="titleStroke">WEB DESIGN</span><br>
+              <span style="font-weight:900;letter-spacing:.02em;text-transform:uppercase;">PORTFOLIO</span>
+            </h1>
+            <p class="sub">
+              白ベースに、太めのアウトラインと差し色（ウルトラマリンブルー×ライム）で組むトンマナ。
+              <br>上流の目的整理→設計→デザイン→実装までを一気通貫で見せる構成にしています。
+            </p>
+
+            <div class="heroMeta">
+              <div class="pill">Case Study 중심</div>
+              <div class="pill">Prototype + Motion</div>
+              <div class="pill">Design System 느낌</div>
+            </div>
+          </div>
+
+          <div class="puzzleCard">
+            <div class="puzzleHead">
+              <div class="label">Key Visual / Motion</div>
+              <button class="btn" id="replayBtn" type="button">Replay</button>
+            </div>
+
+            <div class="board" id="board" aria-label="puzzle board">
+              <div class="missingSlot" aria-hidden="true"><div class="hint"></div></div>
+
+              <!-- text layer (枠の上に文字がある) -->
+              <div class="textLayer">
+                <div class="stack">
+                  <div class="t1">WEB DESIGN<br>PORTFOLIO</div>
+                  <div class="t2">PIECES → ALIGN → COMPLETE</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+              <div class="pill" style="background:rgba(74,99,237,.10)">Outline UI</div>
+              <div class="pill" style="background:rgba(217,245,119,.22)">Accent Green</div>
+              <div class="pill" style="background:rgba(11,15,26,.06)">No 3D / Flat</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="sectionTitle">Works</h2>
+          <p class="sectionNote">※ ここは作品に合わせて差し替え（画像・URL・数値）</p>
+        </div>
+
+        <div class="cards">
+          <article class="card wide">
+            <div class="cardTop">
+              <div>
+                <div class="tag"><span class="mini"></span> Case Study</div>
+                <h3 class="cardTitle">GOLF me! / UI改善・導線設計</h3>
+              </div>
+              <div class="tag" style="background:rgba(217,245,119,.40)"><span class="mini" style="background:var(--primary-500)"></span> Metric</div>
+            </div>
+
+            <p class="cardDesc">
+              改善施策の目的整理→影響範囲の洗い出し→実装→公開までを一気通貫で担当。<br>
+              例：登録導線の離脱率を <b>30%→26%</b> に改善、CVRを <b>3.34%→9%</b> に向上。
+            </p>
+
+            <div class="kv">
+              <div class="ph">Thumbnail / Key Visual Placeholder</div>
+            </div>
+
+            <ul class="list">
+              <li>担当：情報設計 / UIデザイン / HTML・CSS・JS実装 / 公開調整</li>
+              <li>工数短縮：デザイン〜コーディング <b>14営 → 6営</b>（部分改修は <b>3営</b>）</li>
+              <li>判断基準：ユーザー迷子・事故・再修正を先に潰す</li>
+            </ul>
+          </article>
+
+          <article class="card small">
+            <div class="cardTop">
+              <div>
+                <div class="tag"><span class="mini"></span> Landing Page</div>
+                <h3 class="cardTitle">キャンペーンLP制作</h3>
+              </div>
+            </div>
+            <p class="cardDesc">
+              依頼の粒度が粗い状態でも、目的・優先度・必要素材を整理し、確認フローを作って進行。
+            </p>
+            <ul class="list">
+              <li>要件整理 → ワイヤー → デザイン → 実装</li>
+              <li>他リンク削除提案で成果導線を保護</li>
+            </ul>
+          </article>
+
+          <article class="card small">
+            <div class="cardTop">
+              <div>
+                <div class="tag"><span class="mini"></span> Frontend</div>
+                <h3 class="cardTitle">UI実装（CSS/JS）</h3>
+              </div>
+            </div>
+            <p class="cardDesc">
+              フローティングバナー / タブ / カルーセル / レスポンシブ表など、目的に合わせて実装。
+            </p>
+            <ul class="list">
+              <li>ユーザー層に合わせた可読性・操作性の担保</li>
+              <li>運用を想定した保守しやすい設計</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="sectionTitle">About</h2>
+          <p class="sectionNote">自己紹介・職務要約の要点をここに置く</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="tag"><span class="mini"></span> Summary</div>
+            <h3 class="cardTitle" style="margin-top:12px;">制作前に「目的とリスク」を揃える</h3>
+            <p class="cardDesc">
+              要件が十分に定まっていない状態で依頼を受けることが多く、
+              そのまま作業に入るのではなく、目的や優先度を整理したうえで、進め方を判断しながら制作してきました。<br>
+              特に広い範囲に影響する修正や公開対応では、
+              「このまま進めた場合のリスク」を先に想定し、必要な確認や改善提案を行うことで、
+              事故やユーザー離脱を防いできた点が強みです。
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="tag" style="background:rgba(217,245,119,.40)"><span class="mini" style="background:var(--primary-500)"></span> What I want</div>
+            <h3 class="cardTitle" style="margin-top:12px;">次は “制作そのもの” が強い環境へ</h3>
+            <p class="cardDesc">
+              常用型派遣の構造上、配属先のフェーズに左右されやすく、
+              数値検証など「内側」まで踏み込みづらい場面がありました。<br>
+              そのため、継続的にクリエイティブ度の高い制作に関わり、
+              デザイナー同士でレビュー・改善しながら伸ばせる環境を志向しています。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="sectionTitle">Skills</h2>
+          <p class="sectionNote">実際に使えるスキルを “できること” として整理</p>
+        </div>
+
+        <div class="cards">
+          <article class="card small">
+            <div class="tag"><span class="mini"></span> UI/UX</div>
+            <ul class="list">
+              <li>目的整理 / 要件整理 / 情報設計</li>
+              <li>導線設計 / UI改善提案</li>
+              <li>影響範囲・リスクの洗い出し</li>
+            </ul>
+          </article>
+
+          <article class="card small">
+            <div class="tag"><span class="mini"></span> Design</div>
+            <ul class="list">
+              <li>Webデザイン（LP/サイト）</li>
+              <li>バナー制作・運用</li>
+              <li>デザインレビュー耐性（意図で説明）</li>
+            </ul>
+          </article>
+
+          <article class="card small">
+            <div class="tag"><span class="mini"></span> Frontend</div>
+            <ul class="list">
+              <li>HTML / CSS / JavaScript</li>
+              <li>レスポンシブ実装</li>
+              <li>UI実装（タブ/カルーセル等）</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="sectionTitle">Process</h2>
+          <p class="sectionNote">あなたの “強みの出る型” を面接でも説明できるようにする</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="tag"><span class="mini"></span> How I work</div>
+            <h3 class="cardTitle" style="margin-top:12px;">① 目的・優先度を言語化 → ② 影響範囲 → ③ 実装</h3>
+            <p class="cardDesc">
+              「依頼が抽象的」でも、先に “事故が起きるパターン” を潰すことで、結果的に手戻りを減らします。<br>
+              例：公開直前の差し戻し、抜け漏れによる再修正、離脱につながる導線の取りこぼし、など。
+            </p>
+            <ul class="list">
+              <li>前提/目的：誰の何を解決するか</li>
+              <li>リスク：どこに波及するか・ユーザーは迷わないか</li>
+              <li>実装：最短で安全に出す（必要なら段階リリース）</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="tag" style="background:rgba(217,245,119,.40)"><span class="mini" style="background:var(--primary-500)"></span> Example</div>
+            <h3 class="cardTitle" style="margin-top:12px;">リンク削除提案で成果導線を保護</h3>
+            <p class="cardDesc">
+              タイアップLPで他ページリンクが多いと、成果導線から離脱するリスクが高い。<br>
+              目的に立ち返って “必要最小限のリンク” に整理し、提案→反映まで実施。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="sectionTitle">Contact</h2>
+          <p class="sectionNote">ここはフォーム or メールリンクに差し替え</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="tag"><span class="mini"></span> Message</div>
+            <p class="cardDesc">
+              お仕事のご相談・面談のご連絡はこちらから。<br>
+              （デモなので入力は送信されません）
+            </p>
+
+            <form onsubmit="event.preventDefault(); alert('Demo: 送信はされません');">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;">
+                <label style="display:block;">
+                  <div style="font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;">Name</div>
+                  <input required
+                    style="width:100%;padding:12px 12px;border:3px solid var(--line);border-radius:14px;box-shadow:var(--shadow-1);font-weight:700;"
+                    placeholder="Your name">
+                </label>
+                <label style="display:block;">
+                  <div style="font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;">Email</div>
+                  <input required type="email"
+                    style="width:100%;padding:12px 12px;border:3px solid var(--line);border-radius:14px;box-shadow:var(--shadow-1);font-weight:700;"
+                    placeholder="you@example.com">
+                </label>
+              </div>
+
+              <label style="display:block;margin-top:12px;">
+                <div style="font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;">Message</div>
+                <textarea required rows="5"
+                  style="width:100%;padding:12px 12px;border:3px solid var(--line);border-radius:14px;box-shadow:var(--shadow-1);font-weight:700;resize:vertical;"
+                  placeholder="Tell me about your project..."></textarea>
+              </label>
+
+              <div style="display:flex;justify-content:flex-end;margin-top:12px;">
+                <button class="btn" type="submit">Send</button>
+              </div>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div>© 2026 WEB DESIGN PORTFOLIO</div>
+        <div>Built with HTML/CSS/JS · Outline UI × Ultramarine × Lime</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /**
+     * Puzzle KV
+     * - 7x4 をベースに「1マス欠け」→最後に欠けピースがはまる
+     * - ピースはSVGで黒フチ／フラット塗り（立体感ほぼ無し）
+     */
+    const board = document.getElementById("board");
+    const replayBtn = document.getElementById("replayBtn");
+
+    const ROWS = 4;
+    const COLS = 7;
+
+    // 欠けスロット（右下）
+    const MISS_R = 3;
+    const MISS_C = 6;
+
+    let pieces = [];
+    let missingPiece = null;
+
+    function clearPieces(){
+      pieces.forEach(p => p.el.remove());
+      pieces = [];
+      if(missingPiece) missingPiece.el.remove();
+      missingPiece = null;
+    }
+
+    // そのマスの色（雰囲気：青系中心＋ライム差し）
+    function cellColor(r,c){
+      const key = (r*COLS + c) % 6;
+      const palette = [
+        "rgba(74,99,237,.20)",
+        "rgba(74,99,237,.28)",
+        "rgba(238,240,255,1)",
+        "rgba(217,245,119,.40)",
+        "rgba(74,99,237,.14)",
+        "rgba(217,245,119,.22)"
+      ];
+      // 欠けピースはライム強め
+      if(r===MISS_R && c===MISS_C) return "rgba(217,245,119,.70)";
+      return palette[key];
+    }
+
+    // 1ピースSVG（丸み強め・黒フチ）を作る
+    function createPieceSVG(fill){
+      // viewBoxは固定 (100x100) → どのサイズでもスケール
+      // コネクタは「左右/上下」ランダムに出す（外周は出さない）
+      const svgNS = "http://www.w3.org/2000/svg";
+      const svg = document.createElementNS(svgNS, "svg");
+      svg.setAttribute("viewBox", "0 0 100 100");
+      svg.setAttribute("preserveAspectRatio", "none");
+
+      const path = document.createElementNS(svgNS, "path");
+
+      // “丸み強め” のパス（基本は四角＋4辺に丸コブ）
+      // コブの向き（+外、-内、0なし）を受け取る
+      function makePath(top,right,bottom,left){
+        // knob radius-ish
+        const k = 18; // knob size
+        const r = 14; // corner radius
+
+        // helper for edge with knob centered
+        // We keep it simple: cubic curves
+        let d = "";
+
+        // start top-left corner
+        d += `M ${r} 0`;
+        // top edge to before knob
+        d += ` H ${50-k}`;
+        if(top !== 0){
+          const dir = top; // +1 out, -1 in
+          d += ` C ${50-k/2} 0, ${50-k/2} ${dir*16}, 50 ${dir*16}`;
+          d += ` C ${50+k/2} ${dir*16}, ${50+k/2} 0, ${50+k} 0`;
+        }
+        d += ` H ${100-r}`;
+        // top-right corner
+        d += ` Q 100 0, 100 ${r}`;
+
+        // right edge
+        d += ` V ${50-k}`;
+        if(right !== 0){
+          const dir = right;
+          d += ` C 100 ${50-k/2}, ${100 - dir*16} ${50-k/2}, ${100 - dir*16} 50`;
+          d += ` C ${100 - dir*16} ${50+k/2}, 100 ${50+k/2}, 100 ${50+k}`;
+        }
+        d += ` V ${100-r}`;
+        // bottom-right corner
+        d += ` Q 100 100, ${100-r} 100`;
+
+        // bottom edge (right -> left)
+        d += ` H ${50+k}`;
+        if(bottom !== 0){
+          const dir = bottom;
+          d += ` C ${50+k/2} 100, ${50+k/2} ${100 - dir*16}, 50 ${100 - dir*16}`;
+          d += ` C ${50-k/2} ${100 - dir*16}, ${50-k/2} 100, ${50-k} 100`;
+        }
+        d += ` H ${r}`;
+        // bottom-left corner
+        d += ` Q 0 100, 0 ${100-r}`;
+
+        // left edge (bottom -> top)
+        d += ` V ${50+k}`;
+        if(left !== 0){
+          const dir = left;
+          d += ` C 0 ${50+k/2}, ${dir*16} ${50+k/2}, ${dir*16} 50`;
+          d += ` C ${dir*16} ${50-k/2}, 0 ${50-k/2}, 0 ${50-k}`;
+        }
+        d += ` V ${r}`;
+        // top-left corner
+        d += ` Q 0 0, ${r} 0`;
+        d += " Z";
+        return d;
+      }
+
+      // knob directions random-ish (外周は0)
+      // ここは “分割線” と厳密一致させない。見た目優先で「パズルっぽさ」だけ出す。
+      // ※本当に噛み合わせたい場合は、ピースごとに隣接と逆向きを共有する必要あり。
+      const knobs = {
+        top: 0, right: 0, bottom: 0, left: 0
+      };
+      // 各辺 50%で出す
+      knobs.top    = (Math.random() < .55 ? (Math.random() < .5 ?  1 : -1) : 0);
+      knobs.right  = (Math.random() < .55 ? (Math.random() < .5 ?  1 : -1) : 0);
+      knobs.bottom = (Math.random() < .55 ? (Math.random() < .5 ?  1 : -1) : 0);
+      knobs.left   = (Math.random() < .55 ? (Math.random() < .5 ?  1 : -1) : 0);
+
+      // path
+      path.setAttribute("d", makePath(knobs.top,knobs.right,knobs.bottom,knobs.left));
+      path.setAttribute("fill", fill);
+      path.setAttribute("stroke", getComputedStyle(document.documentElement).getPropertyValue('--line').trim() || "#0B0F1A");
+      path.setAttribute("stroke-width", "3");
+      path.setAttribute("stroke-linejoin", "round");
+      path.setAttribute("vector-effect", "non-scaling-stroke");
+
+      svg.appendChild(path);
+      return svg;
+    }
+
+    function buildPuzzle(){
+      clearPieces();
+
+      const rect = board.getBoundingClientRect();
+      const bw = rect.width;
+      const bh = rect.height;
+      const pw = bw / COLS;
+      const ph = bh / ROWS;
+
+      // 通常ピース（欠け以外）
+      for(let r=0;r<ROWS;r++){
+        for(let c=0;c<COLS;c++){
+          if(r===MISS_R && c===MISS_C) continue;
+
+          const el = document.createElement("div");
+          el.className = "piece";
+          el.style.width  = pw + "px";
+          el.style.height = ph + "px";
+          el.style.left = (c * pw) + "px";
+          el.style.top  = (r * ph) + "px";
+          el.style.zIndex = "2";
+
+          // SVG（フラット）
+          const svg = createPieceSVG(cellColor(r,c));
+          el.appendChild(svg);
+
+          // 初期散らし
+          const randX = (Math.random()*520 - 260);
+          const randY = (Math.random()*360 - 180);
+          const randR = (Math.random()*22 - 11);
+          el.style.transform = `translate(${randX}px, ${randY}px) rotate(${randR}deg)`;
+
+          board.appendChild(el);
+          pieces.push({r,c,el});
+        }
+      }
+
+      // 欠けピース（最後にハマる）
+      const missEl = document.createElement("div");
+      missEl.className = "piece";
+      missEl.style.width  = pw + "px";
+      missEl.style.height = ph + "px";
+      missEl.style.left = (MISS_C * pw) + "px";
+      missEl.style.top  = (MISS_R * ph) + "px";
+      missEl.style.zIndex = "3";
+
+      const missSvg = createPieceSVG(cellColor(MISS_R,MISS_C));
+      missEl.appendChild(missSvg);
+
+      // 初期：盤外右下
+      missEl.style.transform = `translate(${pw*1.4}px, ${ph*1.3}px) rotate(10deg)`;
+      board.appendChild(missEl);
+      missingPiece = {r:MISS_R,c:MISS_C,el:missEl};
+
+      // assemble 1
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          pieces.forEach(p => p.el.style.transform = "translate(0,0) rotate(0deg)");
+        }, 120);
+      });
+
+      // assemble 2（欠けピース）
+      setTimeout(() => {
+        if(missingPiece){
+          missingPiece.el.style.transform = "translate(0,0) rotate(0deg)";
+        }
+      }, 980);
+    }
+
+    // 初期生成
+    buildPuzzle();
+
+    // リプレイ
+    replayBtn.addEventListener("click", buildPuzzle);
+
+    // リサイズで再計算（ボード比率が変わるため）
+    let resizeTimer = null;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(buildPuzzle, 120);
+    });
+  </script>
+</body>
+</html>
