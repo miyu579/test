@@ -1,0 +1,397 @@
+var resize_flag = false;
+// 画面読み込み時の動作
+$(document).ready(function(){
+  var win_width = $(window).width();
+  // accordionの開閉
+  accordion();
+  listAccordion();
+
+  // fittext(テキストサイズ自動調整)
+  $('.fittext70').fitText(0.7);
+  $('.fittext100').fitText(1.0);
+  $('.fittext110').fitText(1.1);
+
+  // PCで電話番号リンク無効
+  tel_link();
+
+  // 要素の動的挿入
+  afterloadElements();
+
+  // タブ切り替え
+  if($('.card-navi').length) tabHash();
+
+  // スマフォ時に'display_sp-only'表示する
+  displayUaOnMobile('.display_sp-only');
+
+  // 前回開いたサブナビゲーションのタブの切り替え
+  tabReminder();
+
+  //iOSのみ表示のものをiOS以外で削除
+  displayios();
+
+  // PC、SP画像切替
+  image_switch(win_width);
+
+  // 要素の高さを合わせる
+  uniform_height(win_width);
+
+  setTimeout(function() {
+    //ポップアップウィンドウ呼び出し
+    //popupWindow();
+    //ログインモーダル呼出
+    //loginPopup();
+    // copyright年号修正
+    copyright();
+    // accordionの設定
+    checkListAccordion(win_width);
+  }, 500);
+});
+
+// 画面読み込み時とリサイズ時の動作
+$(window).on('resize', function(){
+  // 画面幅習得
+  var win_width = $(window).width();
+
+  if (resize_flag !== false) {
+    clearTimeout(resize_flag);
+  }
+
+  // 要素の高さを合わせる
+  uniform_height(win_width);
+
+  // PC、SP画像切替
+  image_switch(win_width);
+
+  timer = setTimeout(function() {
+    // accordionの設定
+    checkListAccordion(win_width);
+  }, 1000);
+});
+
+//ポップアップウィンドウ
+$(document).ajaxStop(function popupWindow(){
+  $(".link_popup").click(function(){
+    window.open(this.href,"windowName","width=600,height=600,resizable=yes,scrollbars=yes");
+    
+    // GTMイベントトリガー
+    var $t = $(this),
+        text = $t.text(),
+        link = $t.attr("href"),
+        id = ($t.attr("id")) ? $t.attr("id") : "",
+        link = link.replace(/(#|&)_ga(.*?)$/, "");
+
+    if(text)
+    {
+      eventLabel = text + ', ' + link + ', ' + id;
+    }
+    else if($t.find("img").length)
+    {
+      src = $t.find("img").attr("src");
+      src = src.replace(/(http|\.|\/)(.*)\//, "");
+      alt = ($t.find("img").attr("alt")) ? $t.find("img").attr("alt") : "";
+      eventLabel = src + ', ' + alt + ', ' + link + ', ' + id;
+    }
+    else
+    {
+      eventLabel = 'NoText' + ', ' + link + ', ' + id;
+    }
+
+    var url = location.pathname + location.search + location.hash;
+    url = url.replace(/(#|&)_ga(.*?)$/, "");
+
+    dataLayer.push({
+      "eventCategory": "Internal_link",
+      "eventLabel": eventLabel,
+      "eventAction": url,
+      "event": "click.popupWindow"
+    });
+    return false;
+  });
+
+  var popupWindowArray = {};
+  $('.link_popup_multiple').off('click');
+  $(".link_popup_multiple").click(function(){
+    var index = $(".link_popup_multiple").index($(this));
+    var windowName = "windowName_" + index;
+
+    if (typeof popupWindowArray[windowName] === "undefined" || popupWindowArray[windowName].closed) {
+      popupWindowArray[windowName] = window.open(this.href,windowName,"width=600,height=600,resizable=yes,scrollbars=yes");
+    }
+    else {
+      popupWindowArray[windowName].focus();
+    }
+
+    // GTMイベントトリガー
+    var $t = $(this),
+        text = $t.text(),
+        link = $t.attr("href"),
+        id = ($t.attr("id")) ? $t.attr("id") : "",
+        link = link.replace(/(#|&)_ga(.*?)$/, "");
+
+    if(text)
+    {
+      eventLabel = text + ', ' + link + ', ' + id;
+    }
+    else if($t.find("img").length)
+    {
+      src = $t.find("img").attr("src");
+      src = src.replace(/(http|\.|\/)(.*)\//, "");
+      alt = ($t.find("img").attr("alt")) ? $t.find("img").attr("alt") : "";
+      eventLabel = src + ', ' + alt + ', ' + link + ', ' + id;
+    }
+    else
+    {
+      eventLabel = 'NoText' + ', ' + link + ', ' + id;
+    }
+
+    var url = location.pathname + location.search + location.hash;
+    url = url.replace(/(#|&)_ga(.*?)$/, "");
+
+    dataLayer.push({
+      "eventCategory": "Internal_link",
+      "eventLabel": eventLabel,
+      "eventAction": url,
+      "event": "click.popupWindow"
+    });
+    return false;
+  });
+});
+
+//ログインモーダル
+function loginPopup(){
+  $(".header-menu__login").click(function(){
+    $('#login_popup').css('display', 'block');
+    $('.overlay').css('display', 'block');
+  });
+
+  $('.overlay').click(function(){
+    $('#login_popup').css('display', 'none');
+    $('.overlay').css('display', 'none');
+  });
+}
+
+function afterloadElements(){
+  var callback = function(){};
+  var elm = null;
+  var elmsSet = {
+    'header': '/std/common/inc/_header.html?date=20191114',
+    'nav': '/std/common/inc/_navi.html',
+    'footer': '/std/common/inc/_footer.html',
+    'address': '/std/common/inc/_address.html',
+    'information-address': '/std/common/inc/_information-address.html'
+  };
+  if($('header').hasClass('campaign_header')){
+    elmsSet['header'] = '/std/common/inc/_cpn-header.html';
+  }else if($('header').hasClass('campaign_fn_header')){
+    elmsSet['header'] = '/std/common/inc/_cpn-fn-header.html';
+  }
+  if($('footer').hasClass('campaign_footer')){
+    elmsSet['footer'] = '/std/common/inc/_cpn-footer.html';
+  }
+  
+  for(var n in elmsSet){
+    if(!elmsSet.hasOwnProperty(n)) continue;
+    elm = $(n);
+    if(n == 'nav'){
+      callback = function(){
+        // グローバルナビゲーションのアクティブ表示設定
+        setGlobalNaviStatus();
+      };
+    }else if(n == 'address' || n == 'information-address'){
+      elm = $('[data-include="'+n+'"]');
+      callback = (function(hasClass, n){
+        return function(_elm){
+          for(var i = 0; i < _elm.length; i++){
+            if($(_elm[i]).attr('data-include') == n){
+              $(_elm[i]).addClass(hasClass);
+            }
+          }
+        };
+      })(elm.attr('class'), n);
+    }else if(n == 'header'){
+      callback = function(){
+        //ログインモーダル呼出
+        loginPopup();
+        // スマフォ時に'display_sp-only'表示する
+        displayUaOnMobile('.display_sp-only');
+
+        // PC時に'display_pc-only'表示する
+        displayUaOnPC('.display_pc-only');
+      };  
+    }
+    dynamicInsertElement(elm, elmsSet[n], callback);
+  }
+}
+
+function dynamicInsertElement(element, value_path, callback){
+  $.ajax({
+    url: value_path
+  }).then(function(data){
+    var elm = $(data);
+    element.after(elm);
+    element.remove();
+    if(callback) callback(elm);
+  });
+}
+
+function setGlobalNaviStatus(){
+  var url = location.pathname;
+  var urlDir = url.split('/');
+  var gnName = [
+    'abouts',
+    'campaigns',
+    'services',
+    'supports'
+  ];
+
+  if(urlDir[2] && gnName.indexOf(urlDir[2]) != -1){
+    $('#gn-' + urlDir[2]).addClass('navi-table__tab--state_active');
+  }else if(urlDir[1] == "st" && (urlDir[2] == "" || urlDir[2] == "index.html")){
+    $('#gn-' + "abouts").addClass('navi-table__tab--state_active');
+  }
+}
+
+function accordion(){
+  $('.accordion__button').click(function(){
+    $(this).siblings($('.accordion__body')).animate({opacity: 'toggle', height: 'toggle'}, 500);
+    $(this).children($('.accordion_close')).toggle(0);
+  });
+}
+
+function listAccordion(){
+  $('.list-accordion').click(function(e){
+    // spの場合のみボタンを動作
+    var target = e.target;
+    if($(window).width() <= 768){
+      $(this).find($('.list-accordion__contents--title')).toggleClass('list-accordion__contents--title_close list-accordion__contents--title_open');
+      $(this).find($('.list-accordion-link')).animate({opacity: 'toggle', height: 'toggle'}, 500);
+    }
+  });
+}
+
+function checkListAccordion(win_width){
+  if($(window).width() > 768){
+    $('.list-link--column_3').css('border-bottom','');
+    $('.list-accordion-link').css({display: 'block'});
+    $('.list-accordion__contents--title').addClass('list-accordion__contents--title_close').removeClass('list-accordion__contents--title_open');
+  }else if(win_width >= 768){
+    $('.list-link__text').css({height: ''});
+    $('.list-accordion-link').css({display: 'none'});
+  }
+}
+
+function copyright(){
+  var date = new Date();
+  $('.copy').text($('.copy').text().replace('2015', date.getFullYear()));
+}
+
+function tel_link(){
+  $('address').on('click', function(){
+    var win_width = $(window).width();
+    if(win_width > 768){
+      return false;
+    }
+  });
+}
+
+function uniform_height(win_width){
+  $('.subnavi__tab .subnavi__link').css('height', 'auto');
+  $('.subnavi__tab').autoHeight({height: 'minHeight'});
+  $('.subnavi__tab .subnavi__link').css('height', $('.subnavi__tab').css('height'));
+  $('.card-navi__tab--column_2 p').autoHeight();
+  // PCのみ合わせる
+  if(win_width > 768){
+    $('.subnavi__tab .subnavi__link').css('height', 'auto');
+    $('.subnavi__tab').autoHeight();
+    $('.subnavi__tab .subnavi__link').css('height',parseInt($('.subnavi__tab').css('height')) + 2 + 'px');
+    $('.list-link--column_3 .list-link__text').autoHeight({column:3});
+    $('.list-link--column_2 .list-link__text').autoHeight({column:2});
+    $('.list-accordion-link--column_2 .list-link__text').autoHeight({column:2});
+    $('.step__head--column_2').autoHeight({column:2});
+    $('.step__head--column_3').autoHeight({column:3});
+    $('.step__head--column_4').autoHeight({column:4});
+    $('.uses__title').autoHeight({column:3});
+  }else{
+    $('.uses__title').autoHeight({column:2});
+  }
+}
+
+function image_switch(win_width){
+  $('.image_switch').each(function(){
+    if(win_width > 768){
+      $(this).attr('src',$(this).attr('src').replace(/(.+\/[^\/]+)_sp\.(.+)/, '$1.$2'));
+    }else if(!$(this).attr('src').match('_sp')){
+      $(this).attr('src',$(this).attr('src').replace(/(.+\/[^\/]+)\.(.+)/, '$1_sp.$2'));
+    };
+  });
+}
+
+function tabHash(){
+  var hash = location.hash;
+  if(hash.match(/#tabContents2/)){
+    changeTab('tabContents2', 'tabContents1');
+  }else{
+    changeTab('tabContents1', 'tabContents2');
+  }
+}
+
+function changeTab(tabactive, tabstatic){
+  // 表示要素の切り替え
+  if(tabactive == 'tabContents2'){
+    $('#tab1').hide();
+    $('#tab2').show();
+  }else{
+    $('#tab2').hide();
+    $('#tab1').show();
+  }
+  // タブの切り替え
+  $('#card-navi--' + tabstatic).removeClass('card-navi__tab--column_2--state_active');
+  $('#card-navi--' + tabactive).addClass('card-navi__tab--column_2--state_active');
+  // 切り替えた表示要素の高さを整理
+  $('.list-link--column_3 .list-link__text').autoHeight({column: 3});
+}
+
+function tabReminder(){
+  var url = location.pathname;
+  var urlDir = url.split('/');
+  var currentDir = '';
+  var currentFileName = '';
+  var remind = '';
+  var remindName = 'tabRmd_';
+  var param = location.href.replace(window.location.protocol + '//' + location.host + location.pathname, "");
+
+  if($('.subnavi--location_cookies').length == 0) return;
+
+  currentDir = urlDir[urlDir.length - 2];
+  currentFileName = urlDir[urlDir.length - 1];
+
+  if(currentDir == "") return;
+
+  remindName += currentDir;
+  remind = $.cookie(remindName);
+  if(remind){
+    if(currentFileName == "")
+      location.replace(remind + param);
+    else
+      $.cookie(remindName, currentFileName, {expires: 3650});
+  }else{
+    $.cookie(remindName, currentFileName);
+  }
+}
+
+function uaOnMobile(){
+  return navigator.userAgent.search(/iPhone|Android/) != -1;
+};
+
+function displayUaOnMobile(selector, disProp){
+  disProp = disProp? disProp: 'block';
+  if(uaOnMobile())
+    $(selector).css({'cssText':'display: ' + disProp + '!important;'});
+};
+
+function displayios(){
+  if(navigator.userAgent.search(/iPhone|iPad|iPod/) == -1){
+    $('.display_ios').remove();
+  }
+}
+

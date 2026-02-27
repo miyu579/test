@@ -1,0 +1,19 @@
+var baseW = 1100;	//基準となるブレークポイント
+
+function updateMetaViewport(){
+	var viewportContent;
+	var w = screen.width;
+	if(768 < w && w < 1000){ 		// 画面幅が769～999pxまでかどうかを判定する
+		viewportContent = "width="+ baseW +"px,user-scalable=no,shrink-to-fit=yes"; 	// タブレット用viewport書き換え内容
+	}else{
+		viewportContent = "width=device-width,user-scalable=no,shrink-to-fit=yes"; 	// PCおよびSP用viewport書き換え内容
+	}
+	document.querySelector("meta[name='viewport']").setAttribute("content", viewportContent);
+}
+//回転・リサイズイベントハンドラ登録
+window.addEventListener("resize", updateMetaViewport, false);
+window.addEventListener("orientationchange", updateMetaViewport, false);
+//初回イベント強制発動
+var ev = document.createEvent("UIEvent");
+ev.initEvent("resize", true, true)
+window.dispatchEvent(ev);
