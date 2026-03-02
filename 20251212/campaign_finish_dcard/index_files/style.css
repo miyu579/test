@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+.l-content-start{
+    background-color: #fff;
+}
 /* 追加191031サイト内検索案件
 --------------------------------------------------------- */
 @import url("/std/common/css/ss_search.css");
@@ -237,9 +239,7 @@ q:before, q:after {
 #close_dcard_html header {
   background-color: #ffffff;
 }
-#close_dcard_html footer {
-  background-color: #333333;
-}
+
 #close_dcard_html h1, .text_h1 {
   font-size: 32px;
   line-height: 38px;

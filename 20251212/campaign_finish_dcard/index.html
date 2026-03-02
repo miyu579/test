@@ -146,15 +146,83 @@
 </head>
 <body id="top" class="summer_golfmeday2024_body pgm_2024_welcome_body compe_20240704_body has-dpoint_docomo2025">
      <div id="closenews_common"></div>
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVNPHPH" height="0" width="0" style="display:none;visibility:hidden">
-    </iframe>
-  </noscript>
-    <header>
-    <div class="header clearfix">
-      <img src="index_files/logo_d-card.jpg" class="header__logo" alt="d CARD">
-    </div><!-- /header -->
-  </header>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVNPHPH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <div id="app">
+        <header class="l-header">
+            <p class="l-header-logo">
+                <a href="https://golfme.goo.ne.jp"><img src="https://cdn.golfme.goo.ne.jp/build/1.16.2/assets/logo.png"
+                        width="224" height="54" alt="GOLF me！" /></a>
+            </p>
+            <p class="l-header-login">
+                <a class="l-header-member-button" href="https://golfme.goo.ne.jp/register">メンバー登録（有料）はこちら</a>
+                <a class="l-header-login-button"
+                    href="https://login.mail.goo.ne.jp/id/rp/request?Site=golfme.goo.ne.jp&amp;Success=https%3A%2F%2Fgolfme.goo.ne.jp%2Flogin%2Fcallback&amp;Provider=docomo&amp;siteId=golfme.goo.ne.jp">ログイン</a>
+            </p>
+        </header>
+
+        <nav class="l-global-nav">
+            <ul class="l-global-nav-above">
+                <li><a href="https://golfme.goo.ne.jp/round/search/reserve/guest">プレー枠検索</a></li>
+                <li><a href="https://golfme.goo.ne.jp/course">ゴルフ場一覧</a></li>
+
+                <li><a href="https://golfme.goo.ne.jp/about">GOLF me！とは？</a></li>
+                <li><a href="https://golfme.goo.ne.jp/guide">GOLF me！の使い方</a></li>
+            </ul>
+        </nav>
+
+        <hamburger-button>
+            <template v-slot:hamburger-button>
+                <span></span>
+                <span></span>
+                <span></span>
+            </template>
+            <template v-slot:content>
+                <p class="sp-menu-logo">
+                    <a href="https://golfme.goo.ne.jp">
+                        <img src="https://cdn.golfme.goo.ne.jp/build/1.16.2/assets/logo.png" width="226" height="60"
+                            alt="GOLF me！" />
+                    </a>
+                </p>
+                <nav class="sp-menu-nav">
+                    <ul>
+                        <li><a href="https://golfme.goo.ne.jp/round/search/reserve/guest">プレー枠検索</a></li>
+                        <li><a href="https://golfme.goo.ne.jp/course">ゴルフ場一覧</a></li>
+
+                        <li><a href="https://golfme.goo.ne.jp/about">GOLF me！とは？</a></li>
+                        <li><a href="https://golfme.goo.ne.jp/guide">GOLF me！の使い方</a></li>
+                    </ul>
+                </nav>
+                <div class="c-cta">
+                    <p class="c-cta-above">
+                        <a class="c-cta-member"
+                            href="https://golfme.goo.ne.jp/register/email/member"><strong>メンバー登録<span>（有料）</span>はこちら</strong></a>
+                    </p>
+                    <p class="c-cta-below">
+                        <a class="c-cta-visitor"
+                            href="https://golfme.goo.ne.jp/register/email/visitor"><strong>ビジター登録<span>（無料）</span>はこちら</strong><br />招待されているプレーの予約確認のみ可能。</a>
+                        <a class="c-cta-login"
+                            href="https://login.mail.goo.ne.jp/id/rp/request?Site=golfme.goo.ne.jp&amp;Success=https%3A%2F%2Fgolfme.goo.ne.jp%2Flogin%2Fcallback&amp;Provider=docomo&amp;siteId=golfme.goo.ne.jp"><strong>ログインする</strong><br />すでに会員の方はこちら</a>
+                    </p>
+                    <p class="u-ta-c">ご利用にはdアカウントが必要です。</p>
+                    <p class="u-ta-c">
+                        dアカウントをお持ちでない場合は<br class="u-sp-on-i" />
+                        <a href="https://id.smt.docomo.ne.jp/cgi8/id/register" target="_blank" rel="noopener nowrapper"
+                            style="color: #343434; text-decoration:underline;">
+                            dアカウントを作成
+                        </a>
+                        してください。
+                    </p>
+                </div>
+            </template>
+        </hamburger-button>
+
+        <div class="l-content-start l-bread-crumb">
+            <p>
+                <a href="https://golfme.goo.ne.jp">トップ</a> <span>&gt;</span>
+                <span>第３回GOLF me！CUP</span>
+            </p>
+        </div>
   <div id="app" data-v-app="">
     <div id="close_dcard" class="main">
       <div id="cpn-main" class="contents">
@@ -366,7 +434,51 @@
           </a>
         </div>
       </div>
+      </div>
+        
     </div>
+                <div class="c-back-to-top">
+            <p><a href="#top">ページ上部へ</a></p>
+        </div>
+        <footer class="l-footer">
+            <div class="l-footer__inner">
+                <ul class="l-footer-links l-footer-links-above">
+                    <li><a href="https://golfme.goo.ne.jp/about">GOLF me！とは</a></li>
+                    <li><a href="https://golfme.goo.ne.jp/guide">GOLF me！の使い方</a></li>
+                    <li><a href="https://golfme.goo.ne.jp/qa">よくあるご質問</a></li>
+                    <li><a href="https://golfme.goo.ne.jp/terms">GOLF me！サービス利用規約</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                            href="https://www.docomo.ne.jp/utility/privacy/">プライバシーポリシー</a></li>
+                    <li><a href="https://golfme.goo.ne.jp/transaction">特定商取引法に基づく表記</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                            href="https://help.goo.ne.jp/help/article/711/">免責事項</a></li>
+                </ul>
+                <ul class="l-footer-links">
+                    <li><a href="https://golfme.goo.ne.jp/course">提携ゴルフ場一覧</a></li>
+                    <li><a href="https://golfme.goo.ne.jp/inquiry">お問い合わせ</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.goo.ne.jp/">gooトップ</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.docomo.ne.jp/corporate/">企業情報</a>
+                    </li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                            href="https://advertising.nttr.co.jp/adinfo/">広告掲載</a></li>
+                </ul>
+                <div class="l-footer-sns">
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=61556339857220" target="_blank"
+                                rel="noopener nowrapper"><img
+                                    src="https://cdn.golfme.goo.ne.jp/build/1.16.2/assets/icon-facebook.png" width="60"
+                                    height="60" alt="Facebook" /></a></li>
+                        <li><a href="https://www.instagram.com/golfme.official/" target="_blank"
+                                rel="noopener nowrapper"><img
+                                    src="https://cdn.golfme.goo.ne.jp/build/1.16.2/assets/icon-instagram.png" width="60"
+                                    height="60" alt="Instagram" /></a></li>
+                    </ul>
+                </div>
+                <p class="l-footer-copyright">&copy; NTT DOCOMO</p>
+            </div>
+        </footer>
+        <div class="l-footer-docomo"><img src="https://cdn.golfme.goo.ne.jp/build/1.16.2/assets/footer-docomo.png"
+                width="120" height="30" alt="NTT DOCOMO"></div>
     </div>
     <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
  </body></html>
