@@ -1,0 +1,1 @@
+(function(d){(function(a,c){if("browsingTopics"in a&&a.featurePolicy.allowsFeature("browsing-topics")){var b=a.getElementsByTagName("body");b&&0<b.length&&(b=b[0],a=a.createElement("iframe"),a.width=1,a.height=1,a.style.display="none",a.src=c,b.appendChild(a))}})(document,d.p2);})({"p2":"https://cd.ladsp.com/html/getTopics2.html?stu=ZcKw7I5KzVc3IwTtfnOCNA-RGiA99neQjyHxpMQb93w"});

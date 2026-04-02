@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://cd.ladsp.com/html/getTopics2.html?stu=ZcKw7I5KzVc3IwTtfnOCNA-RGiA99neQjyHxpMQb93w -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
+<body>
+<script>
+    (function (w, d) {
+        try {
+            if ('browsingTopics' in d && d.featurePolicy.allowsFeature('browsing-topics')) {
+                d.browsingTopics().then(
+                    function (t) {
+                        d.cookie = `tpc=${Math.round(Date.now() / 1000) + '&' + (new URLSearchParams(w.location.search)).get("stu") + '&' + t.map(x => x.topic).join('_')}; secure; path=/; domain=.ladsp.com; samesite=None; max-age=1209600`;
+                    }
+                )
+            }
+        } catch (error) {
+        }
+    })(window, document);
+</script>
+
+</body></html>

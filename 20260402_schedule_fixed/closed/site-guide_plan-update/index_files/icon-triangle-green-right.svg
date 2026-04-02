@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #006934;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: #006934;
+      }
+    </style>
+  </defs>
+  <g id="多角形_145" data-name="多角形 145" class="cls-1" transform="translate(10) rotate(90)">
+    <path class="cls-2" d="M 11.11690044403076 9.5 L 0.8830999732017517 9.5 L 6 0.971833348274231 L 11.11690044403076 9.5 Z"/>
+    <path class="cls-3" d="M 6 1.943650245666504 L 1.766189575195312 9 L 10.23381042480469 9 L 6 1.943650245666504 M 6 0 L 12 10 L 0 10 L 6 0 Z"/>
+  </g>
+</svg>
