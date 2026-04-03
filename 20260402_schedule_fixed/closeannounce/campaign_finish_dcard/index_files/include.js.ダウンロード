@@ -1,0 +1,28 @@
+// js読み込み
+importJS();
+
+function importJS(){
+  if (! [].push) return;
+  var scripts = [
+  	'/std/common/js/viewport.js',
+    '/std/common/js/jquery-3.5.1.min.js',
+    '/std/common/js/jquery-1.11.3.min.js',
+    '/std/common/js/jquery.fittext.js',
+    '/std/common/js/jquery.openwin.js',
+    '/std/common/js/jQueryAutoHeight.js',
+    '/std/common/js/jquery.cookie.js',
+    '/std/common/js/base.js?date=20191114',
+    '/std/common/js/ua.js',
+    '/std/common/js/point.js?date=180501',
+    '/std/common/js/app_ua.js',
+    '/std/common/js/lazysizes.min.js',
+    '/std/common/js/tabnab.js'  
+  ];
+  for (var i = 0; i < scripts.length; i++){
+    document.write('<script type="text/javascript" src="' + scripts[i] + '"><\/script>');
+  }
+
+	if(!document.URL.match("site_search.html*")) {
+	document.write('<script type="text/javascript" src="/std/common/js/ss_suggest_config.js"><\/script>');
+	}
+}

@@ -1,0 +1,42 @@
+$(document).ready(function(
+	){var ua=window.navigator.userAgent;var
+	ipApp=ua.indexOf('jp.d-card.apl.spap.ios_v');
+		var anApp=ua.indexOf('jp.d-card.apl.spap.and_v');
+	var iPhone=ua.indexOf('iPhone');
+	var Android=ua.indexOf('Android');
+	if(ipApp!=-1){
+		$("header, footer, nav.navi, .breadcrumb-list").remove();$('.main--page_campaing').attr('style','margin: 0 auto 0');
+		$(".liquid-contents__copy").addClass("display_sp-only");
+		$('.liquid-contents__copy.display_sp-only').attr('style','display:none !important');	
+		//$(".campaign-box .-sp-content, #cpn-takashimaya16 .-sp-content").addClass("display_sp-only");
+		$('.campaign-box .display_sp-only, #cpn-takashimaya16 .display_sp-only').attr('style','display:none !important');		
+		$('.campaign-dpoint__link li a, .last_content #cpn_footer ul li a').each(function(){
+			var txt=$(this).text();$(this).text(txt.replace(/dカードサイトTOPへ/g,"dカードTOPへ"));
+		});
+	}else if(anApp!=-1){
+		$("header, footer, nav.navi, .breadcrumb-list").remove();$('.main--page_campaing').attr('style','margin: 0 auto 0');		
+		$(".liquid-contents__copy").addClass("display_sp-only");
+		$('.liquid-contents__copy.display_sp-only').attr('style','display:none !important');		
+		//$(".campaign-box .-sp-content, #cpn-takashimaya16 .-sp-content").addClass("display_sp-only");
+		$('.campaign-box .display_sp-only, #cpn-takashimaya16 .display_sp-only').attr('style','display:none !important');		
+		$('.campaign-dpoint__link li a, .last_content #cpn_footer ul li a').each(function(){
+			var txt=$(this).text();$(this).text(txt.replace(/dカードサイトTOPへ/g,"dカードTOPへ"));
+		});
+	}else if((ipApp!=-1)||(anApp!=-1)){
+		$("header, footer, nav.navi, .breadcrumb-list").remove();$('.main--page_campaing').attr('style','margin: 0 auto 0');		
+		$(".liquid-contents__copy").addClass("display_sp-only");
+		$('.liquid-contents__copy.display_sp-only').attr('style','display:none !important');		
+		//$(".campaign-box .-sp-content, #cpn-takashimaya16 .-sp-content").addClass("display_sp-only");
+		$('.campaign-box .display_sp-only, #cpn-takashimaya16 .display_sp-only').attr('style','display:none !important');		
+		$('.campaign-dpoint__link li a, .last_content #cpn_footer ul li a').each(function(){
+			var txt=$(this).text();$(this).text(txt.replace(/dカードサイトTOPへ/g,"dカードTOPへ"));
+		});
+	}else if(iPhone!=-1){
+		$('.campaign-dpoint__link li a, .last_content #cpn_footer ul li a').each(function(){
+			var txt=$(this).text();$(this).text(txt.replace(/dカードサイトTOPへ/g,"dカードTOPへ"));
+		});
+	}else if(Android!=-1){
+		$('.campaign-dpoint__link li a, .last_content #cpn_footer ul li a').each(function(){
+			var txt=$(this).text();$(this).text(txt.replace(/dカードサイトTOPへ/g,"dカードTOPへ"));
+		});
+	}else{}});

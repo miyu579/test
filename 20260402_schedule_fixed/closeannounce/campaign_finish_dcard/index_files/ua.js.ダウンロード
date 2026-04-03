@@ -1,0 +1,34 @@
+$(document).ready(function(){
+  setTimeout(function() {
+    // スマフォ時に'display_sp-only'表示する
+    displayUaOnMobile('.display_sp-only');
+
+    // PC時に'display_pc-only'表示する
+    displayUaOnPC('.display_pc-only');
+
+    //iOSのみ表示のものをiOS以外で削除
+    displayios();
+  }, 500);
+});
+
+function uaOnMobile(){
+  return navigator.userAgent.search(/iPhone|Android/) != -1;
+};
+
+function displayUaOnMobile(selector, disProp){
+  disProp = disProp? disProp: 'block';
+  if(uaOnMobile())
+    $(selector).css({'cssText':'display: ' + disProp + '!important;'});
+};
+
+function displayUaOnPC(selector, disProp){
+  disProp = disProp? disProp: 'block';
+  if(!uaOnMobile())
+    $(selector).css({'cssText':'display: ' + disProp + '!important;'});
+};
+
+function displayios(){
+  if(navigator.userAgent.search(/iPhone|iPad|iPod/) == -1){
+    $('.display_ios').remove();
+  }
+}

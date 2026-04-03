@@ -1,0 +1,35 @@
+	$(document).on('click', 'a', function () { // クリックイベント
+		var href = $(this).attr('href'); // クリックされたAタグのリンクURLを取得して変数へ代入
+		// ドメイン名を取り出す
+		var match = href.match(/^(http:|https:)?\/\/([^\/\?&#]+)/);
+		var domain = match ? match[match.length - 1] : "";
+		var target = $(this).attr('target');	 // クリックされたAタグのtarget属性を取得して変数へ代入
+		var arr = [ 
+			document.domain, //内部リンク（同一ドメイン判定）
+			'd-card.jp', 
+			'dcmx.jp', 
+			'id-credit.com', 
+			'docomo-de.net', 
+			'mydocomo.com', 
+			'dmkt-sp.jp', 
+			'docomo-inv.com', 
+			'dpoint.docomo.ne.jp', 
+			'docomo.ne.jp', 
+			'docomo.pointupmall.com',
+			'docomo.ne.jp'
+			]; 
+		var chk = arr.some(
+			function chk(item) {
+				return domain == item || domain.search('\.' + item + '$') > 0;
+			});  // href条件
+			if (domain && chk == false && target == ('_blank')){  // 追加条件
+				var rels = !$(this).attr('rel') ? [] : $(this).attr('rel').split(' '); 
+				if (!~rels.indexOf('noopener')) {
+				rels.push('noopener');
+				}
+				if (!~rels.indexOf('noreferrer')) {
+				rels.push('noreferrer');
+				}
+				$(this).attr('rel', rels.join(' ').trim());  // rel属性追加
+			}
+	});
