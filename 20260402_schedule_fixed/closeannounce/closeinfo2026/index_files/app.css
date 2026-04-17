@@ -3,7 +3,75 @@
 @import"https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
-/*20260331 css修正*/
+/*202604116*/
+#closeinfo2026 .closeinfo_red{
+        text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+#closeinfo2026 .closeinfo .closeinfo2026_caution p{
+        margin: -15px 0 0;
+    line-height: 18px;
+    text-indent: -16px;
+    padding-left: 16px;
+    font-size: 14px;
+    text-align: left;
+}
+#closeinfo2026 .closeinfo .closeinfo_title {
+    line-height: 40px;
+}
+#closeinfo2026 div.closeinfo p {
+    line-height: 30px;
+    margin: 20px auto;
+    
+}
+#closeinfo2026 #closeinfo_visitor .close_toc>div>p {
+    background-color: #2ba23a;
+    color: #fff;
+    font-weight: 700;
+    padding: 2px 20px;
+    text-align: center;
+    margin: auto;
+    width: 77px;
+    font-size:18px;
+}#closeinfo2026 #closeinfo_visitor .close_toc{
+    margin: 60px auto 0
+}
+#closeinfo2026 #closeinfo_visitor .close_toc>div>div>div p:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 0;
+    transform: rotate(135deg);
+    position: absolute;
+    top: -16%;
+    bottom: 0;
+    margin: auto 25px auto auto;
+    border-top: solid 3px #2ba23a;
+    border-right: solid 3px #2ba23a;
+    right: -12px;
+}
+#closeinfo2026 #closeinfo_member section.closeinfo_member_box_schedule i {
+    top: 3%;
+    height: 91%;
+}
+#closeinfo2026 #closeinfo_visitor section.closeinfo_visitor_box_schedule i {
+    top: 4%;
+    height: 89%;
+}
+@media screen and (max-width: 768px) {
+  #closeinfo2026 div.closeinfo p {
+    line-height: 20px;    
+}
+   #closeinfo2026 #closeinfo_visitor section.closeinfo2026_inner>div.close_toc {
+    margin: 60px auto 0
+}
+    #closeinfo2026 #closeinfo_visitor section.closeinfo_visitor_box_schedule i {
+    top: 3%;
+    height: 91%;
+}
+}
+/*202604116*/
 .slick-slider {
   margin-bottom: 30px;
   position: relative;

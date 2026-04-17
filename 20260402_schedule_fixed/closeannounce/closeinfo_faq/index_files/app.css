@@ -3,6 +3,14 @@
 @import"https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap";
 @import"https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap";
+/*20260416*/
+#closeinfo_faq #closeinfo_faq_bic_ac-member10-a .question_caution p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+/*20260416*/
+
 
 .slick-slider {
   margin-bottom: 30px;
