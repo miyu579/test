@@ -9,6 +9,16 @@
     line-height: 20px;
     font-weight: bold;
 }
+#closeinfo_faq .closeinfo_faq_tocloseinfo{
+    text-align: center;
+    margin: 40px auto 0;
+}
+@media screen and (max-width:768px) {
+    #closeinfo_faq .closeinfo_faq_tocloseinfo{
+    font-size:14px;
+        margin-top: 10px;
+}
+}
 /*20260416*/
 
 
