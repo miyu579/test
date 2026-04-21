@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Logicad Topics</title>
+    
+    <script>
+        async function getTopics() {
+            try {
+                if ('browsingTopics' in document &&
+                    document.featurePolicy.allowsFeature('browsing-topics')
+                ) {
+                    const topics = await document.browsingTopics();
+                    return Promise.resolve(topics);
+                } else {
+                }
+            } catch (error) {
+                console.log('Error:', error);
+            }
+        }
+
+        (async function () {
+            const topics = await getTopics();
+            const message = JSON.stringify({
+                segment: {
+                    domain: 'ladsp.com',
+                    topics,
+                    bidder: 'logicad'
+                },
+                date: Date.now(),
+            });
+            window.parent.postMessage(message, '*');
+        })();
+    </script>
+</head>
+<body>
+
+</body></html>

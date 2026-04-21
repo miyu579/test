@@ -1,0 +1,1 @@
+(function(){var a=document.createElement("script");a.src="//alxc.addlv.smt.docomo.ne.jp/1.0/allox.js";document.getElementsByTagName("body")[0].appendChild(a)})();

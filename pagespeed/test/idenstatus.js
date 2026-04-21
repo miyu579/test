@@ -1,0 +1,1 @@
+dpcLogin({"result_code":"0000","response":{"auth_info":{"return_info":"0","auth_status":"0"}}});

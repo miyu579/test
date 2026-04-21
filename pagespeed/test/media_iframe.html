@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- [if lt IE 9] -->
+  <script>
+    async function getTopics() {
+      try {
+        if ("browsingTopics" in document && document.featurePolicy.allowsFeature("browsing-topics")) {
+          const topics = await document.browsingTopics();
+          return Promise.resolve(topics);
+        } else {
+          return Promise.resolve(null);
+        }
+      } catch (error) {
+        return Promise.resolve(null);
+      }
+    }
+    (async function () {
+      let message = null;
+      const topics = await getTopics();
+      if (topics !== null) {
+        message = JSON.stringify({
+          segment: {
+            domain: window.location.hostname,
+            topics,
+          }
+        });
+      }
+      window.parent.postMessage(message, "*");
+    })();
+  </script>
+  <!-- [endif] -->
+</head>
+
+<body>
+
+</body></html>
